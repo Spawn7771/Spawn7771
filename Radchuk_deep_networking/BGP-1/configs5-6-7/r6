@@ -1,0 +1,7622 @@
+spawn@mydebian:~$ telnet 192.168.1.14 32774
+Trying 192.168.1.14...
+Connected to 192.168.1.14.
+Escape character is '^]'.
+
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]: no
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:01.094: %ATA-6-DEV_FOUND: device 0x1F0
+*Mar  1 00:00:09.766: %NVRAM-5-CONFIG_NVRAM_NOT_FOUND: NVRAM configuration 'flash:/nvram' could not be found on disk.
+*Dec 23 09:24:26.777: %C3600-3-NOMAC: Can't allocate MAC address for interface 0/0
+*Dec 23 09:24:27.025: %C3600-3-NOMAC: Can't allocate MAC address for interface 0/0
+*Dec 23 09:24:29.252: %C3600-3-NOMAC: Can't allocate MAC address for interface 0/0
+*Dec 23 09:24:37.179: %PA-3-PA_INIT_FAILED: Performance Agent failed to initialize (Missing Data License)
+*Dec 23 09:24:42.999: %PNP-6-PNP_DISCOVERY_STARTED: PnP Discovery started
+*Dec 23 09:24:43.005: %PNP-6-PNP_GOOD_UDI_UPDATE: Good UDI [PID:IOSv,VID:,SN:9TMJUPH7LCD775Z5J0YGX] identified via (platform-registry)
+*Dec 23 09:24:43.006: %PNP-6-PNP_CDP_UPDATE: Device UDI [PID:IOSv,VID:,SN:9TMJUPH7LCD775Z5J0YGX] identified for CDP
+*Dec 23 09:24:43.112: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+*Dec 23 09:24:43.118: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+*Dec 23 09:24:43.121: %LINK-3-UPDOWN: Interface GigabitEthernet0/2, changed state to up
+*Dec 23 09:24:43.123: %LINK-3-UPDOWN: Interface GigabitEthernet0/3, changed state to up
+*Dec 23 09:24:45.033: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+*Dec 23 09:24:45.035: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+*Dec 23 09:24:45.036: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/2, changed state to up
+*Dec 23 09:24:45.037: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/3, changed state to up
+*Dec 23 09:
+-Traceback= 13148Bz 16079Ez 1604DBz 1602B8z 15A275z 15AE3Fz 41A1982z 4189E5Bz 4194222z 5723951z 51D89CCz 519A688z 5185B7Dz 517FE37z 519A681z 5192576z - Process "Crypto CA", CPU hog, PC 0x00155F54
+44:35.969: %IP-5-WEBINST_KILL: Terminating DNS process
+*Dec 23 09:44:36.683: %LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to administratively down
+*Dec 23 09:44:36.725: %LINK-5-CHANGED: Interface GigabitEthernet0/1, changed state to administratively down
+*Dec 23 09:44:36.752: %LINK-5-CHANGED: Interface GigabitEthernet0/2, changed state to administratively down
+*Dec 23 09:44:36.759: %PNP-6-PNP_SAVING_TECH_SUMMARY: Saving PnP tech summary (/pnp-tech/pnp-tech-discovery-summary)... Please wait. Do not interrupt.
+*Dec 23 09:44:36.782: %LINK-5-CHANGED: Interface GigabitEthernet0/3, changed state to administratively down
+*Dec 23 09:44:37.682: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to down
+*Dec 23 09:44:37.725: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
+*Dec 23 09:44:37.754: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/2, changed state to down
+*Dec 23 09:44:37.781: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/3, changed state to down
+*Dec 23 09:44:42.736: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, IOSv Software (VIOS-ADVENTERPRISEK9-M), Version 15.9(3)M2, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2020 by Cisco Systems, Inc.
+Compiled Tue 28-Jul-20 07:09 by prod_rel_team
+*Dec 23 09:44:42.951: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Dec 23 09:44:42.952: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Dec 23 09:44:56.782: %PNP-6-PNP_BEST_UDI_UPDATE: Best UDI [PID:IOSv,VID:1.0,SN:9TMJUPH7LCD775Z5J0YGX] identified via (entity-mibs)
+*Dec 23 09:45:05.017: %SYS-3-CPUHOG: Task is running for (1998)msecs, more than (2000)msecs (0/0),process = Crypto CA.
+*Dec 23 09:45:07.241: %PNP-6-PNP_TECH_SUMMARY_SAVED_WITH_ALARM: PnP tech summary (/pnp-tech/pnp-tech-discovery-summary) saved with alarm (1/3) (elapsed time: 31 seconds).
+*Dec 23 09:45:07.243: %PNP-6-PNP_DISCOVERY_STOPPED: PnP Discovery stopped (Config Wizard)
+*Dec 23 09:45:26.390: %PLATFORM-5-SIGNATURE_VERIFIED: Image 'flash0:/vios-adventerprisek9-m' passed code signing verification
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Router>
+Router>conf t
+          ^
+% Invalid input detected at '^' marker.
+
+Router>en
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#host
+Router(config)#hostname R6
+R6(config)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*Dec 23 09:56:15.599: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#int gi 0/1
+R6(config-if)#ip addr
+R6(config-if)#ip address 172.16.0.2 255.255.255.252
+R6(config-if)#no shut
+R6(config-if)#
+*Dec 23 10:00:29.825: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+*Dec 23 10:00:30.826: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+R6(config-if)#exit
+R6(config)#int gi 0/2
+R6(config-if)#ip add
+R6(config-if)#ip address 172.16.0.6 255.255.255.252
+R6(config-if)#no shut
+R6(config-if)#
+*Dec 23 10:01:18.513: %LINK-3-UPDOWN: Interface GigabitEthernet0/2, changed state to up
+*Dec 23 10:01:19.510: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/2, changed state to up
+R6(config-if)#do ping 172.16.0.5
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 172.16.0.5, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5), round-trip min/avg/max = 4/4/7 ms
+R6(config-if)#do ping 172.16.0.1
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 172.16.0.1, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5), round-trip min/avg/max = 3/5/7 ms
+R6(config-if)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+*Dec 23 10:11:45.686: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>
+R6>
+R6>en
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#int gi 0/0
+R6(config-if)#ip addre
+R6(config-if)#ip address 188.24.0.2 255.255.255.252
+R6(config-if)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+*Dec 23 10:35:29.843: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#int l0
+R6(config-if)#
+*Dec 23 11:40:43.487: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback0, changed state to up   
+R6(config-if)#ip addr
+R6(config-if)#ip address 6.6.6.6 255.255.255.255
+R6(config-if)#exit
+R6(config)#router
+R6(config)#router ospf 1
+R6(config-router)#router
+R6(config-router)#router-id 6.6.6.6
+R6(config-router)#netw
+R6(config-router)#network 172.16.0.0 0.0.0.255 area 0
+R6(config-router)#
+*Dec 23 11:41:50.341: %OSPF-5-ADJCHG: Process 1, Nbr 8.8.8.8 on GigabitEthernet0/2 from LOADING to FULL, Loading Done
+R6(config-router)#
+*Dec 23 11:42:53.684: %OSPF-5-ADJCHG: Process 1, Nbr 7.7.7.7 on GigabitEthernet0/1 from LOADING to FULL, Loading Done
+R6(config-router)#exit
+R6(config)#int gi 0/1
+R6(config-if)#ip ospf network point-to-point
+R6(config-if)#
+*Dec 23 11:46:16.073: %OSPF-5-ADJCHG: Process 1, Nbr 7.7.7.7 on GigabitEthernet0/1 from FULL to DOWN, Neighbor Down: Interface down or detached
+*Dec 23 11:46:16.090: %OSPF-4-NET_TYPE_MISMATCH: Received Hello from 7.7.7.7 on GigabitEthernet0/1 indicating a  potential 
+	     network type mismatch
+*Dec 23 11:46:16.119: %OSPF-5-ADJCHG: Process 1, Nbr 7.7.7.7 on GigabitEthernet0/1 from LOADING to FULL, Loading Done
+*Dec 23 11:46:18.404: %OSPF-5-ADJCHG: Process 1, Nbr 7.7.7.7 on GigabitEthernet0/1 from LOADING to FULL, Loading Done
+R6(config-if)#int gi 0/2
+R6(config-if)#ip ospf network point-to-point
+*Dec 23 11:46:44.592: %OSPF-5-ADJCHG: Process 1, Nbr 8.8.8.8 on GigabitEthernet0/2 from LOADING to FULL, Loading Done
+R6(config-if)#
+*Dec 23 11:46:47.650: %OSPF-5-ADJCHG: Process 1, Nbr 8.8.8.8 on GigabitEthernet0/2 from FULL to DOWN, Neighbor Down: Interface down or detached
+*Dec 23 11:46:47.695: %OSPF-5-ADJCHG: Process 1, Nbr 8.8.8.8 on GigabitEthernet0/2 from LOADING to FULL, Loading Done
+R6(config-if)#exit
+R6(config)#exit
+R6#
+*Dec 23 11:46:58.276: %SYS-5-CONFIG_I: Configured from console by consolesho
+% Type "show ?" for a list of subcommands
+R6#sho ip ospf nei
+R6#sho ip ospf neighbor 
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+8.8.8.8           0   FULL/  -        00:00:37    172.16.0.5      GigabitEthernet0/2
+7.7.7.7           0   FULL/  -        00:00:30    172.16.0.1      GigabitEthernet0/1
+R6#wr
+Building configuration...
+[OK]
+R6#
+*Dec 23 11:54:46.661: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Dec 23 11:54:47.661: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#int lo1
+R6(config-if)#ip
+*Dec 23 14:19:53.897: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback1, changed state to up addr
+R6(config-if)#ip address 10.6.6.6 255.255.255.255
+R6(config-if)#exit
+R6(config)#exit
+R6#
+*Dec 23 14:20:12.799: %SYS-5-CONFIG_I: Configured from console by console
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>
+R6>
+R6>en
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#int gi 0/0
+R6(config-if)#no shut
+R6(config-if)#
+*Dec 23 17:32:42.800: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+*Dec 23 17:32:43.799: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+R6(config-if)#do ping 188.24.0.1
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 188.24.0.1, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5), round-trip min/avg/max = 2/3/5 ms
+R6(config-if)#exit
+R6(config)#router bgp 700
+R6(config-router)#neigh
+R6(config-router)#neighbor 188.24.0.1 ?
+  activate                 Enable the Address Family for this Neighbor
+  additional-paths         Negotiate additional paths capabilities with this
+                           neighbor
+  advertise                Advertise to this neighbor
+  advertise-map            specify route-map for conditional advertisement
+  advertisement-interval   Minimum interval between sending BGP routing updates
+  aigp                     Enable a AIGP on neighbor
+  allow-policy             Enable the policy support for this IBGP Neighbor
+  allowas-in               Accept as-path with my AS present in it
+  as-override              Override matching AS-number while sending update
+  bmp-activate             Activate the BMP monitoring for a BGP peer
+  capability               Advertise capability to the peer
+  cluster-id               Configure Route-Reflector Cluster-id (peers may
+                           reset)
+  default-originate        Originate default route to this neighbor
+  description              Neighbor specific description
+  disable-connected-check  one-hop away EBGP peer using loopback address
+  distribute-list          Filter updates to/from this neighbor
+  dmzlink-bw               Propagate the DMZ link bandwidth
+  ebgp-multihop            Allow EBGP neighbors not on directly connected
+                           networks
+  fall-over                session fall on peer route lost
+  filter-list              Establish BGP filters
+  ha-mode                  high availability mode
+  inherit                  Inherit a template
+  local-as                 Specify a local-as number
+  log-neighbor-changes     Log neighbor up/down and reset reason
+  maximum-prefix           Maximum number of prefixes accepted from this peer
+  next-hop-self            Disable the next hop calculation for this neighbor
+  next-hop-unchanged       Propagate next hop unchanged for iBGP paths to this
+                           neighbor
+  password                 Set a password
+  path-attribute           BGP optional attribute filtering
+  peer-group               Member of the peer-group
+  prefix-list              Filter updates to/from this neighbor
+  remote-as                Specify a BGP neighbor
+  remove-private-as        Remove private AS number from outbound updates
+  route-map                Apply route map to neighbor
+  route-reflector-client   Configure a neighbor as Route Reflector client
+  route-server-client      Configure a neighbor as Route Server client
+  send-community           Send Community attribute to this neighbor
+  send-label               Send NLRI + MPLS Label to this peer
+  shutdown                 Administratively shut down this neighbor
+  slow-peer                Configure slow-peer
+  soft-reconfiguration     Per neighbor soft reconfiguration
+          
+R6(config-router)#neighbor 188.24.0.1 remo
+R6(config-router)#neighbor 188.24.0.1 remote
+R6(config-router)#neighbor 188.24.0.1 remote-as 300
+R6(config-router)#
+*Dec 23 17:37:18.081: %BGP-5-ADJCHANGE: neighbor 188.24.0.1 Up 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+*Dec 23 17:46:05.960: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#wr
+Building configuration...
+[OK]
+R6#
+*Dec 23 17:48:28.044: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Dec 23 17:48:28.971: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>Q
+R6>Q
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#show ip bgp ?
+  A.B.C.D            Network in the BGP routing table to display
+  A.B.C.D/nn         IP prefix <network>/<length>, e.g., 35.0.0.0/8
+  all                All address families
+  bmp                BGP BMP information
+  cidr-only          Display only routes with non-natural netmasks
+  cluster-ids        Display configured cluster IDs
+  community          Display routes matching the communities
+  community-list     Display routes matching the community-list
+  dampening          Display detailed information about dampening
+  detail             Display detailed routes
+  extcommunity-list  Display routes matching the extcommunity-list
+  filter-list        Display routes conforming to the filter-list
+  import             Display route topology import / export activity
+  inconsistency      Display all inconsistent paths
+  inconsistent-as    Display only routes with inconsistent origin ASs
+  injected-paths     Display all injected paths
+  ipv4               Address family
+  ipv6               Address family
+  l2vpn              Address family
+  labels             Display Labels for IPv4 NLRI specific information
+  neighbors          Detailed information on TCP and BGP neighbor connections
+  nexthops           Nexthop address table
+  nsap               Address family
+  oer-paths          Display all oer controlled paths
+  path-attribute     Display path-attribute specific information
+  paths              Path information
+  peer-group         Display information on peer-groups
+  pending-prefixes   Display prefixes pending deletion
+  prefix-list        Display routes matching the prefix-list
+  quote-regexp       Display routes matching the AS path "regular expression"
+  regexp             Display routes matching the AS path regular expression
+  replication        Display replication status of update-group(s)
+  rib-failure        Display bgp routes that failed to install in the routing
+                     table (RIB)
+  route-map          Display routes matching the route-map
+  route-server       Route server information
+  rpki               Display RPKI Neighbor Cache
+  rtfilter           Address family
+  summary            Summary of BGP neighbor status
+  template           Display peer-policy/peer-session templates
+  topology           Routing topology instance
+  update-group       Display information on update-groups
+  update-sources     Update source interface table
+  va                 Display virtual aggregation prefixes 
+  version            Display prefixes with matching version numbers
+  vpnv4              Address family
+  vpnv6              Address family
+  |                  Output modifiers
+  <cr>               <cr>
+
+R6#show ip bgp peer-group
+R6#show ip bgp neighbors 
+BGP neighbor is 188.24.0.1,  remote AS 300, external link
+  BGP version 4, remote router ID 10.3.3.3
+  BGP state = Established, up for 12:58:00
+  Last read 00:00:10, last write 00:00:02, hold time is 180, keepalive interval is 60 seconds
+  Neighbor sessions:
+    1 active, is not multisession capable (disabled)
+  Neighbor capabilities:
+    Route refresh: advertised and received(new)
+    Four-octets ASN Capability: advertised and received
+    Address family IPv4 Unicast: advertised and received
+    Enhanced Refresh Capability: advertised and received
+    Multisession Capability: 
+    Stateful switchover support enabled: NO for session 1
+  Message statistics:
+    InQ depth is 0
+    OutQ depth is 0
+    
+                         Sent       Rcvd
+    Opens:                  1          1
+    Notifications:          0          0
+    Updates:                1          1
+    Keepalives:           858        860
+    Route Refresh:          0          0
+    Total:                860        862
+  Do log neighbor state changes (via global configuration)
+  Default minimum time between advertisement runs is 30 seconds
+
+ For address family: IPv4 Unicast
+  Session: 188.24.0.1
+  BGP table version 1, neighbor version 1/0
+  Output queue size : 0
+  Index 1, Advertise bit 0
+  1 update-group member
+  Slow-peer detection is disabled
+  Slow-peer split-update-group dynamic is disabled
+                                 Sent       Rcvd
+  Prefix activity:               ----       ----
+    Prefixes Current:               0          0
+    Prefixes Total:                 0          0
+    Implicit Withdraw:              0          0
+    Explicit Withdraw:              0          0
+    Used as bestpath:             n/a          0
+    Used as multipath:            n/a          0
+    Used as secondary:            n/a          0
+
+                                   Outbound    Inbound
+  Local Policy Denied Prefixes:    --------    -------
+    Total:                                0          0
+  Number of NLRIs in the update sent: max 0, min 0
+  Last detected as dynamic slow peer: never
+  Dynamic slow peer recovered: never
+  Refresh Epoch: 1
+  Last Sent Refresh Start-of-rib: never
+  Last Sent Refresh End-of-rib: never
+  Last Received Refresh Start-of-rib: never
+  Last Received Refresh End-of-rib: never
+				       Sent	  Rcvd
+	Refresh activity:	       ----	  ----
+	  Refresh Start-of-RIB          0          0
+	  Refresh End-of-RIB            0          0
+
+  Address tracking is enabled, the RIB does have a route to 188.24.0.1
+  Route to peer address reachability Up: 1; Down: 0
+    Last notification 12:59:13
+  Connections established 1; dropped 0
+  Last reset never
+  External BGP neighbor configured for connected checks (single-hop no-disable-connected-check)
+  Interface associated: GigabitEthernet0/0 (peering address in same link)
+  Transport(tcp) path-mtu-discovery is enabled
+  Graceful-Restart is disabled
+  SSO is disabled
+Connection state is ESTAB, I/O status: 1, unread input bytes: 0            
+Connection is ECN Disabled, Mininum incoming TTL 0, Outgoing TTL 1
+Local host: 188.24.0.2, Local port: 179
+Foreign host: 188.24.0.1, Foreign port: 54156
+Connection tableid (VRF): 0
+Maximum output segment queue size: 50
+
+Enqueued packets for retransmit: 0, input: 0  mis-ordered: 0 (0 bytes)
+
+Event Timers (current time is 0x48BBFD7):
+Timer          Starts    Wakeups            Next
+Retrans           859          0             0x0
+TimeWait            0          0             0x0
+AckHold           861        843             0x0
+SendWnd             0          0             0x0
+KeepAlive           0          0             0x0
+GiveUp              0          0             0x0
+PmtuAger            0          0             0x0
+DeadWait            0          0             0x0
+          
+R6#show ip bgp topology 
+% Incomplete command.
+
+R6#
+R6#show ip bgp paths   
+Address    Hash Refcount Metric Path
+R6#show ip bgp detail
+R6#show ip bgp dumm  
+R6#show ip bgp summ
+R6#show ip bgp summary 
+BGP router identifier 10.6.6.6, local AS number 700
+BGP table version is 1, main routing table version 1
+
+Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+188.24.0.1      4          300     863     861        1    0    0 12:59:29        0
+R6#show ip bgp summa   
+R6#show ip bgp summary ?
+  slow  Summary of slow-peer status
+  |     Output modifiers
+  <cr>  <cr>
+
+R6#show ip bgp all     
+R6#show ip bgp all ?
+  bmp                BGP BMP information
+  cluster-ids        Display configured cluster IDs
+  community          Display routes matching the communities
+  community-list     Display routes matching the community-list
+  dampening          Display detailed information about dampening
+  detail             Display detailed routes
+  extcommunity-list  Display routes matching the extcommunity-list
+  filter-list        Display routes conforming to the filter-list
+  inconsistent-as    Display only routes with inconsistent origin ASs
+  neighbors          Detailed information on TCP and BGP neighbor connections
+  nexthops           Nexthop address table
+  path-attribute     Display path-attribute specific information
+  paths              Path information
+  peer-group         Display information on peer-groups
+  pending-prefixes   Display prefixes pending deletion
+  quote-regexp       Display routes matching the AS path "regular expression"
+  regexp             Display routes matching the AS path regular expression
+  replication        Display replication status of update-group(s)
+  rib-failure        Display bgp routes that failed to install in the routing
+                     table (RIB)
+  summary            Summary of BGP neighbor status
+  update-group       Display information on update-groups
+  update-sources     Update source interface table
+  version            Display prefixes with matching version numbers
+  |                  Output modifiers
+  <cr>               <cr>
+
+R6#show ip bgp all 
+For address family: IPv4 Unicast
+
+
+For address family: IPv4 Multicast
+
+
+For address family: L2VPN E-VPN
+
+
+For address family: MVPNv4 Unicast
+
+R6#
+R6#show ip bgp summary 
+BGP router identifier 10.6.6.6, local AS number 700
+BGP table version is 1, main routing table version 1
+
+Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+188.24.0.1      4          300     866     864        1    0    0 13:01:41        0
+R6#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>
+R6>
+R6>enable
+R6#terminal length 0
+R6#more system:running-config
+!
+! Last configuration change at 17:46:05 UTC Wed Dec 23 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ neighbor 188.24.0.1 remote-as 300
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+R6#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+*Dec 24 06:59:09.974: %OSPF-5-ADJCHG: Process 1, Nbr 8.8.8.8 on GigabitEthernet0/2 from FULL to DOWN, Neighbor Down: Dead timer expired
+*Dec 24 06:59:52.704: %OSPF-5-ADJCHG: Process 1, Nbr 8.8.8.8 on GigabitEthernet0/2 from LOADING to FULL, Loading DoneConnection closed by foreign host.
+spawn@mydebian:~$ telnet 192.168.1.14 32774
+Trying 192.168.1.14...
+Connected to 192.168.1.14.
+Escape character is '^]'.
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#router bgp 700
+R6(config-router)#neigh
+R6(config-router)#neighbor 172.16.0.1 remote
+R6(config-router)#neighbor 172.16.0.1 remote-as 700
+R6(config-router)#
+*Dec 24 11:49:44.838: %BGP-5-ADJCHANGE: neighbor 172.16.0.1 Up 
+R6(config-router)#neighbor 172.16.0.1 next         
+R6(config-router)#neighbor 172.16.0.1 next-hop-sel
+R6(config-router)#neighbor 172.16.0.1 next-hop-self 
+R6(config-router)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+*Dec 24 12:01:26.236: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>
+R6>
+R6>
+R6>en
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#router bgp 700
+R6(config-router)#redistribute ospf 1
+R6(config-router)#exit
+R6(config)#exit
+R6#
+*Dec 24 12:04:38.236: %SYS-5-CONFIG_I: Configured from console by consoleshow ip bpb
+            ^
+% Invalid input detected at '^' marker.
+
+R6#show ip bgp
+BGP table version is 18, local router ID is 10.6.6.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+              t secondary path, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ * i  5.5.5.5/32       13.201.255.5             3    100      0 300 ?
+ *>                    188.24.0.1               3             0 300 ?
+ *>   10.0.0.0/30      188.24.0.1               2             0 300 ?
+ * i  10.0.0.4/30      13.201.255.5             2    100      0 300 ?
+ *>                    188.24.0.1               3             0 300 ?
+ *>   10.0.0.8/30      188.24.0.1               0             0 300 ?
+ *>   10.0.0.12/30     188.24.0.1               4             0 300 ?
+ * i                   13.201.255.5             0    100      0 300 ?
+ *>   10.0.0.16/30     188.24.0.1               0             0 300 ?
+ * i                   13.201.255.5             0    100      0 300 ?
+ *>   10.3.3.3/32      188.24.0.1               0             0 300 ?
+ * i  172.16.0.0/30    172.16.0.1               0    100      0 ?
+ *>                    0.0.0.0                  0         32768 ?
+     Network          Next Hop            Metric LocPrf Weight Path
+ * i  172.16.0.4/30    172.16.0.9               2    100      0 ?
+ *>                    0.0.0.0                  0         32768 ?
+ * i  172.16.0.8/30    172.16.0.1               0    100      0 ?
+ *>                    172.16.0.5               2         32768 ?
+R6#ping 10.0.0.5
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.0.0.5, timeout is 2 seconds:
+.....
+Success rate is 0 percent (0/5)
+R6#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>
+R6>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>
+R6>en] 
+% Bad IP address or host name
+% Unknown command or computer name, or unable to find computer address
+R6>en
+R6#sho ip bgp     
+BGP table version is 25, local router ID is 10.6.6.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+              t secondary path, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ * i  5.5.5.5/32       13.201.255.5             3    100      0 300 ?
+ *>   10.0.0.0/30      188.24.0.1               2             0 300 i
+ *>   10.0.0.4/30      188.24.0.1               3             0 300 i
+ *>   10.0.0.8/30      188.24.0.1               0             0 300 i
+ *>   10.0.0.12/30     188.24.0.1               4             0 300 i
+ *>   10.0.0.16/30     188.24.0.1               0             0 300 i
+ * i  10.3.3.3/32      13.201.255.5             2    100      0 300 ?
+ * i  172.16.0.0/30    172.16.0.1               0    100      0 ?
+ *>                    0.0.0.0                  0         32768 ?
+ * i  172.16.0.4/30    172.16.0.9               2    100      0 ?
+ *>                    0.0.0.0                  0         32768 ?
+ * i  172.16.0.8/30    172.16.0.1               0    100      0 ?
+ *>                    172.16.0.5               2         32768 ?
+R6#sho ip bgp
+BGP table version is 25, local router ID is 10.6.6.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+              t secondary path, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ * i  5.5.5.5/32       13.201.255.5             3    100      0 300 ?
+ *>   10.0.0.0/30      188.24.0.1               2             0 300 i
+ *>   10.0.0.4/30      188.24.0.1               3             0 300 i
+ *>   10.0.0.8/30      188.24.0.1               0             0 300 i
+ *>   10.0.0.12/30     188.24.0.1               4             0 300 i
+ *>   10.0.0.16/30     188.24.0.1               0             0 300 i
+ * i  10.3.3.3/32      13.201.255.5             2    100      0 300 ?
+ * i  172.16.0.0/30    172.16.0.1               0    100      0 ?
+ *>                    0.0.0.0                  0         32768 ?
+ * i  172.16.0.4/30    172.16.0.9               2    100      0 ?
+ *>                    0.0.0.0                  0         32768 ?
+ * i  172.16.0.8/30    172.16.0.1               0    100      0 ?
+ *>                    172.16.0.5               2         32768 ?
+R6# clea
+R6# clear ip bgp * soft
+R6#sho ip bgp          
+BGP table version is 25, local router ID is 10.6.6.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+              t secondary path, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ * i  5.5.5.5/32       13.201.255.5             3    100      0 300 ?
+ *>   10.0.0.0/30      188.24.0.1               2             0 300 i
+ *>   10.0.0.4/30      188.24.0.1               3             0 300 i
+ *>   10.0.0.8/30      188.24.0.1               0             0 300 i
+ *>   10.0.0.12/30     188.24.0.1               4             0 300 i
+ *>   10.0.0.16/30     188.24.0.1               0             0 300 i
+ * i  10.3.3.3/32      13.201.255.5             2    100      0 300 ?
+ * i  172.16.0.0/30    172.16.0.1               0    100      0 ?
+ *>                    0.0.0.0                  0         32768 ?
+ * i  172.16.0.4/30    172.16.0.9               2    100      0 ?
+ *>                    0.0.0.0                  0         32768 ?
+ * i  172.16.0.8/30    172.16.0.1               0    100      0 ?
+ *>                    172.16.0.5               2         32768 ?
+R6#sh ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         188.24.0.2      YES NVRAM  up                    up      
+GigabitEthernet0/1         172.16.0.2      YES NVRAM  up                    up      
+GigabitEthernet0/2         172.16.0.6      YES NVRAM  up                    up      
+GigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    
+Loopback0                  6.6.6.6         YES NVRAM  up                    up      
+Loopback1                  10.6.6.6        YES NVRAM  up                    up      
+R6#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>
+R6>
+R6>
+R6>en
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#$ist pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30    
+R6(config)#route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+R6(config-route-map)#match ip address prefix-list pl_ALLOWING-17216
+R6(config-route-map)#set local-preference 5
+R6(config-route-map)#set origin igp
+R6(config-route-map)#exit
+R6(config)#route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+R6(config-route-map)#exit
+R6(config)#exit
+R6#clear ip bgp * soft
+*Dec 24 22:06:35.813: %SYS-5-CONFIG_I: Configured from console by console
+R6#ping 10.0.0.17
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.0.0.17, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 3/7/14 ms
+R6#traceroute 10.0.0.17
+Type escape sequence to abort.
+Tracing the route to 10.0.0.17
+VRF info: (vrf in name/id, vrf out name/id)
+  1 188.24.0.1 3 msec 6 msec * 
+R6#traceroute 10.0.0.18
+Type escape sequence to abort.
+Tracing the route to 10.0.0.18
+VRF info: (vrf in name/id, vrf out name/id)
+  1 188.24.0.1 4 msec 6 msec 5 msec
+  2  *  *  * 
+  3  *  *  * 
+  4  *  *  * 
+  5  *  *  * 
+  6  *  *  * 
+  7  *  *  * 
+  8  *  *  * 
+  9  *  *  * 
+ 10  *  *  * 
+ 11  *  *  * 
+ 12  *  *  * 
+ 13  *  *  * 
+ 14  *  *  * 
+ 15  *  *  * 
+ 16  *  *  * 
+ 17  *  *  * 
+ 18  *  *  * 
+ 19  *  *  * 
+ 20  *  *  * 
+ 21  *  *  * 
+ 22  *  *  * 
+ 23  *  *  * 
+ 24  *  *  * 
+ 25  *  *  * 
+ 26  *  *  * 
+ 27  *  *  * 
+ 28  *  *  * 
+ 29  *  *  * 
+ 30  *  *  * 
+R6#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#ping 10.0.0.18
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.0.0.18, timeout is 2 seconds:
+.....
+Success rate is 0 percent (0/5)
+R6#ping 10.0.0.14
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.0.0.14, timeout is 2 seconds:
+.....
+Success rate is 0 percent (0/5)
+R6#ping 10.0.0.13
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.0.0.13, timeout is 2 seconds:
+.....
+Success rate is 0 percent (0/5)
+R6#ping 10.0.0.18
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.0.0.18, timeout is 2 seconds:
+.....
+Success rate is 0 percent (0/5)
+R6#sho ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      6.0.0.0/32 is subnetted, 1 subnets
+C        6.6.6.6 is directly connected, Loopback0
+      10.0.0.0/8 is variably subnetted, 6 subnets, 2 masks
+B        10.0.0.0/30 [20/2] via 188.24.0.1, 1d09h
+B        10.0.0.4/30 [20/3] via 188.24.0.1, 1d09h
+B        10.0.0.8/30 [20/0] via 188.24.0.1, 1d09h
+B        10.0.0.12/30 [20/4] via 188.24.0.1, 1d09h
+B        10.0.0.16/30 [20/0] via 188.24.0.1, 1d09h
+C        10.6.6.6/32 is directly connected, Loopback1
+      172.16.0.0/16 is variably subnetted, 5 subnets, 2 masks
+C        172.16.0.0/30 is directly connected, GigabitEthernet0/1
+L        172.16.0.2/32 is directly connected, GigabitEthernet0/1
+C        172.16.0.4/30 is directly connected, GigabitEthernet0/2
+L        172.16.0.6/32 is directly connected, GigabitEthernet0/2
+O        172.16.0.8/30 [110/2] via 172.16.0.5, 1d19h, GigabitEthernet0/2
+                       [110/2] via 172.16.0.1, 1d19h, GigabitEthernet0/1
+      188.24.0.0/16 is variably subnetted, 2 subnets, 2 masks
+C        188.24.0.0/30 is directly connected, GigabitEthernet0/0
+L        188.24.0.2/32 is directly connected, GigabitEthernet0/0
+R6#show ip bgp summary
+BGP router identifier 10.6.6.6, local AS number 700
+BGP table version is 25, main routing table version 25
+8 network entries using 1152 bytes of memory
+14 path entries using 1176 bytes of memory
+10/6 BGP path/bestpath attribute entries using 1600 bytes of memory
+1 BGP AS-PATH entries using 24 bytes of memory
+0 BGP route-map cache entries using 0 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+BGP using 3952 total bytes of memory
+BGP activity 10/2 prefixes, 26/12 paths, scan interval 60 secs
+
+Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+172.16.0.1      4          700    2866    2876       25    0    0 1d18h           6
+188.24.0.1      4          300    2959    2931       25    0    0 1d20h           5
+R6#sho ip bgp
+BGP table version is 25, local router ID is 10.6.6.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+              t secondary path, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>   10.0.0.0/30      188.24.0.1               2             0 300 i
+ * i  10.0.0.4/30      13.201.255.5             2    100      0 300 i
+ *>                    188.24.0.1               3             0 300 i
+ *>   10.0.0.8/30      188.24.0.1               0             0 300 i
+ * i  10.0.0.12/30     13.201.255.5             0    100      0 300 i
+ *>                    188.24.0.1               4             0 300 i
+ * i  10.0.0.16/30     13.201.255.5             0    100      0 300 i
+ *>                    188.24.0.1               0             0 300 i
+ * i  172.16.0.0/30    172.16.0.1               0    100      0 ?
+ *>                    0.0.0.0                  0         32768 ?
+ * i  172.16.0.4/30    172.16.0.9               2    100      0 ?
+ *>                    0.0.0.0                  0         32768 ?
+ * i  172.16.0.8/30    172.16.0.1               0    100      0 ?
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>                    172.16.0.5               2         32768 ?
+R6#sho ip bgp 10.0.0.0/30
+BGP routing table entry for 10.0.0.0/30, version 19
+Paths: (1 available, best #1, table default)
+  Advertised to update-groups:
+     3         
+  Refresh Epoch 5
+  300
+    188.24.0.1 from 188.24.0.1 (10.3.3.3)
+      Origin IGP, metric 2, localpref 100, valid, external, best
+      rx pathid: 0, tx pathid: 0x0
+R6#sho ip bgp 10.0.0.4/30
+BGP routing table entry for 10.0.0.4/30, version 20
+Paths: (2 available, best #2, table default)
+  Advertised to update-groups:
+     3         
+  Refresh Epoch 4
+  300
+    13.201.255.5 (inaccessible) from 172.16.0.1 (10.7.7.7)
+      Origin IGP, metric 2, localpref 100, valid, internal
+      rx pathid: 0, tx pathid: 0
+  Refresh Epoch 5
+  300
+    188.24.0.1 from 188.24.0.1 (10.3.3.3)
+      Origin IGP, metric 3, localpref 100, valid, external, best
+      rx pathid: 0, tx pathid: 0x0
+R6#sho ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         188.24.0.2      YES NVRAM  up                    up      
+GigabitEthernet0/1         172.16.0.2      YES NVRAM  up                    up      
+GigabitEthernet0/2         172.16.0.6      YES NVRAM  up                    up      
+GigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    
+Loopback0                  6.6.6.6         YES NVRAM  up                    up      
+Loopback1                  10.6.6.6        YES NVRAM  up                    up      
+R6#ping 172.16.0.1
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 172.16.0.1, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 3/6/9 ms
+R6#sho ip route 13.201.255.5
+% Network not in table
+R6#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#sho ip bgp
+BGP table version is 27, local router ID is 10.6.6.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+              t secondary path, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>   10.0.0.0/30      188.24.0.1               2             0 300 i
+ *>i  10.0.0.4/30      172.16.0.1               2    100      0 300 i
+ *                     188.24.0.1               3             0 300 i
+ *>   10.0.0.8/30      188.24.0.1               0             0 300 i
+ *>i  10.0.0.12/30     172.16.0.1               0    100      0 300 i
+ *                     188.24.0.1               4             0 300 i
+ * i  10.0.0.16/30     172.16.0.1               0    100      0 300 i
+ *>                    188.24.0.1               0             0 300 i
+ * i  172.16.0.0/30    172.16.0.1               0    100      0 ?
+ *>                    0.0.0.0                  0         32768 ?
+ * i  172.16.0.4/30    172.16.0.1               2    100      0 ?
+ *>                    0.0.0.0                  0         32768 ?
+ * i  172.16.0.8/30    172.16.0.1               0    100      0 ?
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>                    172.16.0.5               2         32768 ?
+R6#sho ip route 13.201.255.5
+% Network not in table
+R6#clear ip bgp * soft
+R6#sho ip bgp               
+BGP table version is 27, local router ID is 10.6.6.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+              t secondary path, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>   10.0.0.0/30      188.24.0.1               2             0 300 i
+ *>i  10.0.0.4/30      172.16.0.1               2    100      0 300 i
+ *                     188.24.0.1               3             0 300 i
+ *>   10.0.0.8/30      188.24.0.1               0             0 300 i
+ *>i  10.0.0.12/30     172.16.0.1               0    100      0 300 i
+ *                     188.24.0.1               4             0 300 i
+ * i  10.0.0.16/30     172.16.0.1               0    100      0 300 i
+ *>                    188.24.0.1               0             0 300 i
+ * i  172.16.0.0/30    172.16.0.1               0    100      0 ?
+ *>                    0.0.0.0                  0         32768 ?
+ * i  172.16.0.4/30    172.16.0.1               2    100      0 ?
+ *>                    0.0.0.0                  0         32768 ?
+ * i  172.16.0.8/30    172.16.0.1               0    100      0 ?
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>                    172.16.0.5               2         32768 ?
+R6#sho ip bgp 10.0.0.0/30
+BGP routing table entry for 10.0.0.0/30, version 19
+Paths: (1 available, best #1, table default)
+  Advertised to update-groups:
+     3         
+  Refresh Epoch 6
+  300
+    188.24.0.1 from 188.24.0.1 (10.3.3.3)
+      Origin IGP, metric 2, localpref 100, valid, external, best
+      rx pathid: 0, tx pathid: 0x0
+R6#ping 10.0.0.18        
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.0.0.18, timeout is 2 seconds:
+.....
+Success rate is 0 percent (0/5)
+R6#ping 10.0.0.17
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.0.0.17, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 5/7/11 ms
+R6#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>
+R6>
+R6>
+R6>
+R6>en
+R6#sho ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         188.24.0.2      YES NVRAM  up                    up      
+GigabitEthernet0/1         172.16.0.2      YES NVRAM  up                    up      
+GigabitEthernet0/2         172.16.0.6      YES NVRAM  up                    up      
+GigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    
+Loopback0                  6.6.6.6         YES NVRAM  up                    up      
+Loopback1                  10.6.6.6        YES NVRAM  up                    up      
+R6#     
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#router bgp 700
+R6(config-router)#neigh
+R6(config-router)#exit        
+R6(config)#exit
+R6#p
+*Dec 26 08:13:58.216: %SYS-5-CONFIG_I: Configured from console by consoleing 10.0.0.6
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.0.0.6, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 13/123/557 ms
+R6#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      6.0.0.0/32 is subnetted, 1 subnets
+C        6.6.6.6 is directly connected, Loopback0
+      10.0.0.0/8 is variably subnetted, 6 subnets, 2 masks
+B        10.0.0.0/30 [20/2] via 188.24.0.1, 1d10h
+B        10.0.0.4/30 [200/2] via 172.16.0.1, 01:01:31
+B        10.0.0.8/30 [20/0] via 188.24.0.1, 1d10h
+B        10.0.0.12/30 [200/0] via 172.16.0.1, 01:01:31
+B        10.0.0.16/30 [20/0] via 188.24.0.1, 1d10h
+C        10.6.6.6/32 is directly connected, Loopback1
+      172.16.0.0/16 is variably subnetted, 5 subnets, 2 masks
+C        172.16.0.0/30 is directly connected, GigabitEthernet0/1
+L        172.16.0.2/32 is directly connected, GigabitEthernet0/1
+C        172.16.0.4/30 is directly connected, GigabitEthernet0/2
+L        172.16.0.6/32 is directly connected, GigabitEthernet0/2
+O        172.16.0.8/30 [110/2] via 172.16.0.5, 1d21h, GigabitEthernet0/2
+                       [110/2] via 172.16.0.1, 1d21h, GigabitEthernet0/1
+      188.24.0.0/16 is variably subnetted, 2 subnets, 2 masks
+C        188.24.0.0/30 is directly connected, GigabitEthernet0/0
+L        188.24.0.2/32 is directly connected, GigabitEthernet0/0
+R6#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>
+R6>
+R6>en
+R6#sho ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      6.0.0.0/32 is subnetted, 1 subnets
+C        6.6.6.6 is directly connected, Loopback0
+      10.0.0.0/8 is variably subnetted, 6 subnets, 2 masks
+B        10.0.0.0/30 [20/2] via 188.24.0.1, 1d13h
+B        10.0.0.4/30 [200/2] via 172.16.0.1, 03:30:44
+B        10.0.0.8/30 [20/0] via 188.24.0.1, 1d13h
+B        10.0.0.12/30 [200/0] via 172.16.0.1, 03:30:44
+B        10.0.0.16/30 [20/0] via 188.24.0.1, 1d13h
+C        10.6.6.6/32 is directly connected, Loopback1
+      172.16.0.0/16 is variably subnetted, 5 subnets, 2 masks
+C        172.16.0.0/30 is directly connected, GigabitEthernet0/1
+L        172.16.0.2/32 is directly connected, GigabitEthernet0/1
+C        172.16.0.4/30 is directly connected, GigabitEthernet0/2
+L        172.16.0.6/32 is directly connected, GigabitEthernet0/2
+O        172.16.0.8/30 [110/2] via 172.16.0.5, 2d00h, GigabitEthernet0/2
+                       [110/2] via 172.16.0.1, 2d00h, GigabitEthernet0/1
+      188.24.0.0/16 is variably subnetted, 2 subnets, 2 masks
+C        188.24.0.0/30 is directly connected, GigabitEthernet0/0
+L        188.24.0.2/32 is directly connected, GigabitEthernet0/0
+R6#clear ip bgp * soft
+R6#sho ip route       
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      5.0.0.0/32 is subnetted, 1 subnets
+B        5.5.5.5 [20/3] via 188.24.0.1, 00:00:06
+      6.0.0.0/32 is subnetted, 1 subnets
+C        6.6.6.6 is directly connected, Loopback0
+      10.0.0.0/8 is variably subnetted, 7 subnets, 2 masks
+B        10.0.0.0/30 [200/3] via 172.16.0.1, 00:00:06
+B        10.0.0.4/30 [200/2] via 172.16.0.1, 03:33:19
+B        10.0.0.8/30 [200/4] via 172.16.0.1, 00:00:06
+B        10.0.0.12/30 [200/0] via 172.16.0.1, 03:33:19
+B        10.0.0.16/30 [200/0] via 172.16.0.1, 00:00:06
+B        10.3.3.3/32 [20/0] via 188.24.0.1, 00:00:06
+C        10.6.6.6/32 is directly connected, Loopback1
+      172.16.0.0/16 is variably subnetted, 5 subnets, 2 masks
+C        172.16.0.0/30 is directly connected, GigabitEthernet0/1
+L        172.16.0.2/32 is directly connected, GigabitEthernet0/1
+C        172.16.0.4/30 is directly connected, GigabitEthernet0/2
+L        172.16.0.6/32 is directly connected, GigabitEthernet0/2
+O        172.16.0.8/30 [110/2] via 172.16.0.5, 2d00h, GigabitEthernet0/2
+                       [110/2] via 172.16.0.1, 2d00h, GigabitEthernet0/1
+      188.24.0.0/16 is variably subnetted, 2 subnets, 2 masks
+C        188.24.0.0/30 is directly connected, GigabitEthernet0/0
+L        188.24.0.2/32 is directly connected, GigabitEthernet0/0
+R6#ping 10.0.0.6
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.0.0.6, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 7/8/9 ms
+R6#trace 10.0.0.6
+Type escape sequence to abort.
+Tracing the route to 10.0.0.6
+VRF info: (vrf in name/id, vrf out name/id)
+  1 172.16.0.1 7 msec 9 msec 8 msec
+  2 13.201.255.5 10 msec 9 msec 3 msec
+  3 10.0.0.13 [AS 300] 6 msec 11 msec * 
+R6#trace 10.0.0.18
+Type escape sequence to abort.
+Tracing the route to 10.0.0.18
+VRF info: (vrf in name/id, vrf out name/id)
+  1 172.16.0.1 7 msec 11 msec 6 msec
+  2 13.201.255.5 9 msec 11 msec * 
+R6#sho run
+Building configuration...
+
+Current configuration : 3640 bytes
+!
+! Last configuration change at 08:13:58 UTC Sat Dec 26 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+ipv6 ioam timestamp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+ match ip address prefix-list pl_ALLOWING-17216
+ set local-preference 5
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+          
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#router bgp 700
+R6(config-router)#neighbor 188.24.0.1 route
+R6(config-router)#neighbor 188.24.0.1 route-m
+R6(config-router)#neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+R6(config-router)#exit
+R6(config)#exit
+R6#sho 
+*Dec 26 11:16:58.447: %SYS-5-CONFIG_I: Configured from console by consoleip bgp
+BGP table version is 34, local router ID is 10.6.6.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+              t secondary path, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>   5.5.5.5/32       188.24.0.1               3             0 300 ?
+ *>i  10.0.0.0/30      172.16.0.1               3    100      0 300 i
+ *                     188.24.0.1               2             0 300 ?
+ *>i  10.0.0.4/30      172.16.0.1               2    100      0 300 i
+ *                     188.24.0.1               3             0 300 ?
+ *>i  10.0.0.8/30      172.16.0.1               4    100      0 300 i
+ *                     188.24.0.1               0             0 300 ?
+ *>i  10.0.0.12/30     172.16.0.1               0    100      0 300 i
+ *                     188.24.0.1               4             0 300 ?
+ *>i  10.0.0.16/30     172.16.0.1               0    100      0 300 i
+ *                     188.24.0.1               0             0 300 ?
+ *>   10.3.3.3/32      188.24.0.1               0             0 300 ?
+ * i  172.16.0.0/30    172.16.0.1               0    100      0 ?
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>                    0.0.0.0                  0         32768 ?
+ * i  172.16.0.4/30    172.16.0.1               2    100      0 ?
+ *>                    0.0.0.0                  0         32768 ?
+ * i  172.16.0.8/30    172.16.0.1               0    100      0 ?
+ *>                    172.16.0.5               2         32768 ?
+R6#
+R6#ping 10.0.0.9
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.0.0.9, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 8/10/13 ms
+R6#trace 10.0.0.9
+Type escape sequence to abort.
+Tracing the route to 10.0.0.9
+VRF info: (vrf in name/id, vrf out name/id)
+  1 172.16.0.1 5 msec 9 msec 1 msec
+  2 13.201.255.5 4 msec 3 msec 7 msec
+  3 10.0.0.13 [AS 300] 13 msec 18 msec 7 msec
+  4  *  *  * 
+  5 10.0.0.2 [AS 300] 9 msec 12 msec * 
+R6#sho run
+Building configuration...
+
+Current configuration : 3698 bytes
+!
+! Last configuration change at 11:16:58 UTC Sat Dec 26 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+ipv6 ioam timestamp
+!         
+route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+ match ip address prefix-list pl_ALLOWING-17216
+ set local-preference 5
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+          
+R6#sho ip bgp
+BGP table version is 34, local router ID is 10.6.6.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+              t secondary path, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>   5.5.5.5/32       188.24.0.1               3             0 300 ?
+ *>i  10.0.0.0/30      172.16.0.1               3    100      0 300 i
+ *                     188.24.0.1               2             0 300 ?
+ *>i  10.0.0.4/30      172.16.0.1               2    100      0 300 i
+ *                     188.24.0.1               3             0 300 ?
+ *>i  10.0.0.8/30      172.16.0.1               4    100      0 300 i
+ *                     188.24.0.1               0             0 300 ?
+ *>i  10.0.0.12/30     172.16.0.1               0    100      0 300 i
+ *                     188.24.0.1               4             0 300 ?
+ *>i  10.0.0.16/30     172.16.0.1               0    100      0 300 i
+ *                     188.24.0.1               0             0 300 ?
+ *>   10.3.3.3/32      188.24.0.1               0             0 300 ?
+ * i  172.16.0.0/30    172.16.0.1               0    100      0 ?
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>                    0.0.0.0                  0         32768 ?
+ * i  172.16.0.4/30    172.16.0.1               2    100      0 ?
+ *>                    0.0.0.0                  0         32768 ?
+ * i  172.16.0.8/30    172.16.0.1               0    100      0 ?
+ *>                    172.16.0.5               2         32768 ?
+R6#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>
+R6>
+R6>enable
+R6#terminal length 0
+R6#more system:running-config
+!
+! Last configuration change at 11:16:58 UTC Sat Dec 26 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+ipv6 ioam timestamp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+ match ip address prefix-list pl_ALLOWING-17216
+ set local-preference 5
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+R6#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#wr
+Building configuration...
+[OK]
+R6#
+*Dec 26 12:23:48.920: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Dec 26 12:23:50.283: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>
+R6>en
+R6#sho ip bgp
+BGP table version is 34, local router ID is 10.6.6.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+              t secondary path, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>   5.5.5.5/32       188.24.0.1               3             0 300 ?
+ *>i  10.0.0.0/30      172.16.0.1               3    100      0 300 i
+ *                     188.24.0.1               2             0 300 ?
+ *>i  10.0.0.4/30      172.16.0.1               2    100      0 300 i
+ *                     188.24.0.1               3             0 300 ?
+ *>i  10.0.0.8/30      172.16.0.1               4    100      0 300 i
+ *                     188.24.0.1               0             0 300 ?
+ *>i  10.0.0.12/30     172.16.0.1               0    100      0 300 i
+ *                     188.24.0.1               4             0 300 ?
+ *>i  10.0.0.16/30     172.16.0.1               0    100      0 300 i
+ *                     188.24.0.1               0             0 300 ?
+ *>   10.3.3.3/32      188.24.0.1               0             0 300 ?
+ * i  172.16.0.0/30    172.16.0.1               0    100      0 ?
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>                    0.0.0.0                  0         32768 ?
+ * i  172.16.0.4/30    172.16.0.1               2    100      0 ?
+ *>                    0.0.0.0                  0         32768 ?
+ * i  172.16.0.8/30    172.16.0.1               0    100      0 ?
+ *>                    172.16.0.5               2         32768 ?
+R6#wr
+Building configuration...
+[OK]
+R6#
+*Dec 26 12:51:00.643: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Dec 26 12:51:01.523: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+R6#
+R6#
+R6#terminal length 0
+R6#more system:running-config
+!
+! Last configuration change at 11:16:58 UTC Sat Dec 26 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+ipv6 ioam timestamp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+ match ip address prefix-list pl_ALLOWING-17216
+ set local-preference 5
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+R6#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+Connection closed by foreign host.
+spawn@mydebian:~$ 
+spawn@mydebian:~$ telnet 192.168.1.14 32774
+Trying 192.168.1.14...
+Connected to 192.168.1.14.
+Escape character is '^]'.
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#sho ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      5.0.0.0/32 is subnetted, 1 subnets
+B        5.5.5.5 [20/3] via 188.24.0.1, 01:29:06
+      6.0.0.0/32 is subnetted, 1 subnets
+C        6.6.6.6 is directly connected, Loopback0
+      10.0.0.0/8 is variably subnetted, 8 subnets, 2 masks
+B        10.0.0.0/30 [200/3] via 172.16.0.1, 01:26:03
+B        10.0.0.4/30 [200/2] via 172.16.0.1, 01:26:03
+B        10.0.0.8/30 [200/4] via 172.16.0.1, 01:26:03
+B        10.0.0.12/30 [200/0] via 172.16.0.1, 01:26:03
+B        10.0.0.16/30 [200/0] via 172.16.0.1, 01:26:03
+B        10.3.3.3/32 [20/0] via 188.24.0.1, 01:29:06
+C        10.6.6.6/32 is directly connected, Loopback1
+O        10.8.8.8/32 [110/2] via 172.16.0.5, 00:12:58, GigabitEthernet0/2
+      172.16.0.0/16 is variably subnetted, 5 subnets, 2 masks
+C        172.16.0.0/30 is directly connected, GigabitEthernet0/1
+L        172.16.0.2/32 is directly connected, GigabitEthernet0/1
+C        172.16.0.4/30 is directly connected, GigabitEthernet0/2
+L        172.16.0.6/32 is directly connected, GigabitEthernet0/2
+O        172.16.0.8/30 [110/2] via 172.16.0.5, 01:26:44, GigabitEthernet0/2
+                       [110/2] via 172.16.0.1, 01:26:54, GigabitEthernet0/1
+      188.24.0.0/16 is variably subnetted, 2 subnets, 2 masks
+C        188.24.0.0/30 is directly connected, GigabitEthernet0/0
+L        188.24.0.2/32 is directly connected, GigabitEthernet0/0
+R6#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#ping 5.5.5.5
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 5.5.5.5, timeout is 2 seconds:
+.....
+Success rate is 0 percent (0/5)
+R6#sho ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      5.0.0.0/32 is subnetted, 1 subnets
+B        5.5.5.5 [20/3] via 188.24.0.1, 01:44:31
+      6.0.0.0/32 is subnetted, 1 subnets
+C        6.6.6.6 is directly connected, Loopback0
+      10.0.0.0/8 is variably subnetted, 8 subnets, 2 masks
+B        10.0.0.0/30 [200/3] via 172.16.0.1, 01:41:28
+B        10.0.0.4/30 [200/2] via 172.16.0.1, 01:41:28
+B        10.0.0.8/30 [200/4] via 172.16.0.1, 01:41:28
+B        10.0.0.12/30 [200/0] via 172.16.0.1, 01:41:28
+B        10.0.0.16/30 [200/0] via 172.16.0.1, 01:41:28
+B        10.3.3.3/32 [20/0] via 188.24.0.1, 01:44:31
+C        10.6.6.6/32 is directly connected, Loopback1
+O        10.8.8.8/32 [110/2] via 172.16.0.5, 00:28:23, GigabitEthernet0/2
+      172.16.0.0/16 is variably subnetted, 5 subnets, 2 masks
+C        172.16.0.0/30 is directly connected, GigabitEthernet0/1
+L        172.16.0.2/32 is directly connected, GigabitEthernet0/1
+C        172.16.0.4/30 is directly connected, GigabitEthernet0/2
+L        172.16.0.6/32 is directly connected, GigabitEthernet0/2
+O        172.16.0.8/30 [110/2] via 172.16.0.5, 01:42:09, GigabitEthernet0/2
+                       [110/2] via 172.16.0.1, 01:42:19, GigabitEthernet0/1
+      188.24.0.0/16 is variably subnetted, 2 subnets, 2 masks
+C        188.24.0.0/30 is directly connected, GigabitEthernet0/0
+L        188.24.0.2/32 is directly connected, GigabitEthernet0/0
+R6#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#sho run
+Building configuration...
+
+Current configuration : 3636 bytes
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!         
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!
+!
+!         
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+ipv6 ioam timestamp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+ match ip address prefix-list pl_ALLOWING-17216
+ set local-preference 5
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+          
+R6#sho ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      5.0.0.0/32 is subnetted, 1 subnets
+B        5.5.5.5 [20/3] via 188.24.0.1, 2d17h
+      6.0.0.0/32 is subnetted, 1 subnets
+C        6.6.6.6 is directly connected, Loopback0
+      10.0.0.0/8 is variably subnetted, 8 subnets, 2 masks
+B        10.0.0.0/30 [200/3] via 172.16.0.1, 2d17h
+B        10.0.0.4/30 [200/2] via 172.16.0.1, 2d17h
+B        10.0.0.8/30 [200/4] via 172.16.0.1, 2d17h
+B        10.0.0.12/30 [200/0] via 172.16.0.1, 2d17h
+B        10.0.0.16/30 [200/0] via 172.16.0.1, 2d17h
+B        10.3.3.3/32 [20/0] via 188.24.0.1, 2d17h
+C        10.6.6.6/32 is directly connected, Loopback1
+O        10.8.8.8/32 [110/2] via 172.16.0.5, 2d15h, GigabitEthernet0/2
+      172.16.0.0/16 is variably subnetted, 5 subnets, 2 masks
+C        172.16.0.0/30 is directly connected, GigabitEthernet0/1
+L        172.16.0.2/32 is directly connected, GigabitEthernet0/1
+C        172.16.0.4/30 is directly connected, GigabitEthernet0/2
+L        172.16.0.6/32 is directly connected, GigabitEthernet0/2
+O        172.16.0.8/30 [110/2] via 172.16.0.5, 2d17h, GigabitEthernet0/2
+                       [110/2] via 172.16.0.1, 2d17h, GigabitEthernet0/1
+      188.24.0.0/16 is variably subnetted, 2 subnets, 2 masks
+C        188.24.0.0/30 is directly connected, GigabitEthernet0/0
+L        188.24.0.2/32 is directly connected, GigabitEthernet0/0
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#router ospf 1
+R6(config-router)#redist
+R6(config-router)#redistribute bgp 700 ?  
+  metric       Metric for redistributed routes
+  metric-type  OSPF/IS-IS exterior metric type for redistributed routes
+  nssa-only    Limit redistributed routes to NSSA areas
+  route-map    Route map reference
+  subnets      Consider subnets for redistribution into OSPF
+  tag          Set tag for routes redistributed into OSPF
+  <cr>         <cr>
+
+R6(config-router)#redistribute bgp 700 subnets
+R6(config-router)#exit
+R6(config)#router bgp 700
+R6(config-router)#no redistribute ospf 1
+R6(config-router)#redistribute ospf 1 ?
+  match      Redistribution of OSPF routes
+  metric     Metric for redistributed routes
+  route-map  Route map reference
+  vrf        VPN Routing/Forwarding Instance
+  <cr>       <cr>
+
+R6(config-router)#redistribute ospf 1 subnets
+                                      ^
+% Invalid input detected at '^' marker.
+
+R6(config-router)#redistribute ospf 1
+R6(config-router)#exit
+R6(config)#exit
+R6#sho
+*Jan 10 15:43:39.092: %SYS-5-CONFIG_I: Configured from console by console run
+Building configuration...
+
+Current configuration : 3728 bytes
+!
+! Last configuration change at 15:43:39 UTC Sun Jan 10 2021
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ redistribute bgp 700 subnets
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+          
+R6#sho ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      5.0.0.0/32 is subnetted, 1 subnets
+B        5.5.5.5 [20/3] via 188.24.0.1, 2d17h
+      6.0.0.0/32 is subnetted, 1 subnets
+C        6.6.6.6 is directly connected, Loopback0
+      10.0.0.0/8 is variably subnetted, 8 subnets, 2 masks
+B        10.0.0.0/30 [200/3] via 172.16.0.1, 2d17h
+B        10.0.0.4/30 [200/2] via 172.16.0.1, 2d17h
+B        10.0.0.8/30 [200/4] via 172.16.0.1, 2d17h
+B        10.0.0.12/30 [200/0] via 172.16.0.1, 2d17h
+B        10.0.0.16/30 [200/0] via 172.16.0.1, 2d17h
+B        10.3.3.3/32 [20/0] via 188.24.0.1, 2d17h
+C        10.6.6.6/32 is directly connected, Loopback1
+O        10.8.8.8/32 [110/2] via 172.16.0.5, 2d16h, GigabitEthernet0/2
+      172.16.0.0/16 is variably subnetted, 5 subnets, 2 masks
+C        172.16.0.0/30 is directly connected, GigabitEthernet0/1
+L        172.16.0.2/32 is directly connected, GigabitEthernet0/1
+C        172.16.0.4/30 is directly connected, GigabitEthernet0/2
+L        172.16.0.6/32 is directly connected, GigabitEthernet0/2
+O        172.16.0.8/30 [110/2] via 172.16.0.5, 2d17h, GigabitEthernet0/2
+                       [110/2] via 172.16.0.1, 2d17h, GigabitEthernet0/1
+      188.24.0.0/16 is variably subnetted, 2 subnets, 2 masks
+C        188.24.0.0/30 is directly connected, GigabitEthernet0/0
+L        188.24.0.2/32 is directly connected, GigabitEthernet0/0
+R6#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>
+R6>en
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#router 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+*Jan 10 16:35:20.955: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#sho run
+Building configuration...
+
+Current configuration : 3728 bytes
+!
+! Last configuration change at 16:35:20 UTC Sun Jan 10 2021
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ redistribute bgp 700 subnets
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+ipv6 ioam timestamp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+ match ip address prefix-list pl_ALLOWING-17216
+ set local-preference 5
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+          
+R6#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#sho run
+Building configuration...
+
+Current configuration : 3728 bytes
+!
+! Last configuration change at 16:35:20 UTC Sun Jan 10 2021
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ redistribute bgp 700 subnets
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+ipv6 ioam timestamp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+ match ip address prefix-list pl_ALLOWING-17216
+ set local-preference 5
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+          
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#ip prefix
+R6(config)#$ist pl_ALLOWING-10.8.8.8 seq 11 permit 10.8.8.8/32 ge 32 le 32   
+% Invalid prefix range for 10.8.8.8/32, make sure: len < ge-value <= le-value
+R6(config)#$ist pl_ALLOWING-10.8.8.8 seq 11 permit 10.8.8.8/32            
+R6(config)#route
+R6(config)#route-,a
+R6(config)#route-ma
+R6(config)#route-map rm_CHOOSE-BGP-ASN700v3 permit 11
+R6(config-route-map)#match
+R6(config-route-map)#match ip address pref
+R6(config-route-map)#match ip address prefix-list pl_ALLOWING-10.8.8.8
+R6(config-route-map)#set ?
+  aigp-metric       accumulated metric value
+  as-path           Prepend string for a BGP AS-path attribute
+  automatic-tag     Automatically compute TAG value
+  clns              OSI summary address
+  comm-list         set BGP community list (for deletion)
+  community         BGP community attribute
+  dampening         Set BGP route flap dampening parameters
+  default           Set default information
+  extcomm-list      Set BGP/VPN extended community list (for deletion)
+  extcommunity      BGP extended community attribute
+  global            Set to global routing table
+  interface         Output interface
+  ip                IP specific information
+  ipv6              IPv6 specific information
+  level             Where to import route
+  lisp              Locator ID Separation Protocol specific information
+  local-preference  BGP local preference path attribute
+  metric            Metric value for destination routing protocol
+  metric-type       Type of metric for destination routing protocol
+  mpls-label        Set MPLS label for prefix
+  origin            BGP origin code
+  tag               Tag value for destination routing protocol
+          
+R6(config-route-map)#set local
+R6(config-route-map)#set local-preference 6
+R6(config-route-map)#set orig
+R6(config-route-map)#set origin ?
+  igp         local IGP
+  incomplete  unknown heritage
+
+R6(config-route-map)#set origin igp
+R6(config-route-map)#exit
+R6(config)#route
+R6(config)#route m
+% Ambiguous command:  "route m"
+R6(config)#route-ma
+R6(config)#route-map rm_CHOOSE-BGP-ASN700v3 deny 21
+R6(config-route-map)#exit
+R6(config)#exit
+R6#
+*Jan 10 20:00:24.902: %SYS-5-CONFIG_I: Configured from console by console
+R6#sho run
+Building configuration...
+
+Current configuration : 3971 bytes
+!
+! Last configuration change at 20:00:24 UTC Sun Jan 10 2021
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ redistribute bgp 700 subnets
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-10.8.8.8 seq 11 permit 10.8.8.8/32
+!         
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+ipv6 ioam timestamp
+!
+route-map rm_CHOOSE-BGP-ASN700v3 permit 11
+ match ip address prefix-list pl_ALLOWING-10.8.8.8
+ set local-preference 6
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v3 deny 21
+!
+route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+ match ip address prefix-list pl_ALLOWING-17216
+ set local-preference 5
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+!
+!
+!
+control-plane
+!
+banner exec ^C
+          
+R6#cler
+R6#cler
+R6#clea
+R6#clear ?
+  aaa                       Clear AAA values
+  access-list               Clear access list statistical information
+  access-template           Access-template
+  adjacency                 Adjacent nodes
+  alps                      Clear Alps
+  appfw                     Application Firewall information
+  archive                   Clear archive data
+  arp-cache                 Clear the entire ARP cache
+  authentication            Clear Auth Manager information
+  backhaul-session-manager  Backhaul Session Manager information
+  bfd                       Bi-directional forwarding detection
+  bgp                       Clear BGP connections
+  bridge                    Reset bridge forwarding cache
+  bsc                       Clear counters in <show bsc> command
+  bstun                     Clear counters displayed in show bstun
+  cdp                       Reset cdp information
+  cef                       Cisco Express Forwarding
+  checkpoint                Checkpoint Facility (CF)
+  clns                      CLNS
+  cns                       CNS agents
+  configuration             Clear configuration data
+  control-plane             clear control-plane counters
+  counters                  Clear counters on one or all interfaces
+  crypto                    Encryption subsystem
+  cts                       Cisco Trusted Security commands
+  cws                       Cloud Web Security
+  decnet                    Reset DECnet information
+  dialer                    Clear dialer statistics
+  dlsw                      Data Link Switching (DLSw) 
+  dmvpn                     DMVPN Session and Statistics
+  domain                    Domain Configuration Commands
+  dot1x                     Clear 802.1x information
+  drip                      Clear drip
+  eap                       Clear specified EAP details
+  eigrp                     EIGRP clear commands
+  eou                       EAPoUDP
+  ethernet                  Ethernet parameters
+  event                     Embedded event related commands
+  extended                  clear extended statistics
+  flow                      Flow information
+  frame-relay               Clear Frame Relay information
+  funi                      FUNI information
+  host                      Delete host table entries
+  http                      HTTP
+  interface                 Clear the hardware logic on an interface
+  ip                        IP
+  ipam                      Clear IP Addr Mgr (IPAM) statistics
+  ipc                       Interprocess communications commands
+  ipv6                      IPv6 clear commands
+  isis                      Clear IS-IS data structures
+  kerberos                  Clear Kerberos Values
+  l4f                       Clear L4F statistics
+  line                      Reset a terminal line
+  lisp                      Locator/ID Separation Protocol
+  lldp                      Reset lldp information
+  logging                   Clear logging buffer
+  mdns                      Clear MDNS feature
+  mediatrace                Clear Mediatrace Sessions
+  memory                    Memory counters
+  mfib                      Multicast Forwarding Information Base
+  mpls                      Reset MPLS statistical information
+  nat64                     Clear NAT64
+  ncia                      Native Client Interface Architecture (NCIA) 
+  netbios-cache             Clear the entire NetBIOS name cache
+  netconf                   NETCONF
+  nhrp                      Clear NHRP Information
+  nmsp                      Clear NMSP traffic counters
+  onep                      ONEP related commands
+          
+R6#clear ip ?
+  access-list             Clear access list statistical information
+  access-template         Access-template
+  accounting              Clear IP accounting database
+  admission               Clear Network Admission Control information
+  arp                     IP ARP table
+  auth-proxy              Clear the auth-proxy info
+  bgp                     Clear BGP connections
+  cache                   Delete cache table entries
+  cef                     Cisco Express Forwarding info
+  cgmp                    Cisco Group Management Protocol (CGMP)
+  device                  Clear IP Device
+  dhcp                    Delete items from the DHCP database
+  dns-cache               Clear addresses in DNS cache
+  dns-snoop-cache         Clear addresses in DNS cache
+  drp                     Clear director responder counters
+  eigrp                   Clear IPv4 EIGRP 
+  flow                    Clear flow information
+  http                    Clear HTTP parameters
+  icmp                    ICMP information
+  igmp                    IGMP clear commands
+  inspect                 Clear commands for IOS firewall
+  ips                     Clear IPS information
+  lisp                    Locator/ID Separation Protocol
+  mfib                    IP Multicast forwarding information base
+  mobile                  IP Mobility
+  mrm                     IP Multicast Routing Monitor clear commands
+  mroute                  Delete multicast route table entries
+  msdp                    Multicast Source Discovery Protocol (MSDP)
+  multicast               Multicast
+  nat                     Clear NAT
+  nbar                    NBAR: Network-Based Application Recognition
+  nhrp                    NHRP cache
+  ospf                    OSPF clear commands
+  pgm                     PGM Reliable Transport Protocol
+  pim                     PIM
+  prefix-list             Prefix-list
+  redirect                Redirect cache
+  route                   Delete route table entries
+  rsvp                    RSVP
+  rtp                     RTP/UDP/IP header-compression statistics
+  sap                     Session Announcement Protocol cache
+  sdee                    Clear SDEE information
+  snat                    Clear SNAT
+  tcp                     TCP/UDP/IP header-compression statistics
+  traffic                 IP protocol statistics
+          
+R6#clear ip route ?
+  *          Delete all routes
+  A.B.C.D    Destination network route to delete
+  dhcp       Delete route added by DHCP Server or Relay
+  multicast  Multicast global information
+  topology   Clear routes for a topology instance
+  vrf        Clear routes for a VPN Routing/Forwarding instance
+
+R6#clear ip route *
+R6#sho ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      5.0.0.0/32 is subnetted, 1 subnets
+B        5.5.5.5 [20/3] via 188.24.0.1, 00:00:55
+      6.0.0.0/32 is subnetted, 1 subnets
+C        6.6.6.6 is directly connected, Loopback0
+      10.0.0.0/8 is variably subnetted, 8 subnets, 2 masks
+O E2     10.0.0.0/30 [110/1] via 172.16.0.1, 00:00:55, GigabitEthernet0/1
+O E2     10.0.0.4/30 [110/1] via 172.16.0.1, 00:00:55, GigabitEthernet0/1
+O E2     10.0.0.8/30 [110/1] via 172.16.0.1, 00:00:55, GigabitEthernet0/1
+O E2     10.0.0.12/30 [110/1] via 172.16.0.1, 00:00:55, GigabitEthernet0/1
+O E2     10.0.0.16/30 [110/1] via 172.16.0.1, 00:00:55, GigabitEthernet0/1
+B        10.3.3.3/32 [20/0] via 188.24.0.1, 00:00:55
+C        10.6.6.6/32 is directly connected, Loopback1
+O        10.8.8.8/32 [110/2] via 172.16.0.5, 00:00:55, GigabitEthernet0/2
+      172.16.0.0/16 is variably subnetted, 5 subnets, 2 masks
+C        172.16.0.0/30 is directly connected, GigabitEthernet0/1
+L        172.16.0.2/32 is directly connected, GigabitEthernet0/1
+C        172.16.0.4/30 is directly connected, GigabitEthernet0/2
+L        172.16.0.6/32 is directly connected, GigabitEthernet0/2
+O        172.16.0.8/30 [110/2] via 172.16.0.5, 00:00:55, GigabitEthernet0/2
+                       [110/2] via 172.16.0.1, 00:00:55, GigabitEthernet0/1
+      188.24.0.0/16 is variably subnetted, 2 subnets, 2 masks
+C        188.24.0.0/30 is directly connected, GigabitEthernet0/0
+L        188.24.0.2/32 is directly connected, GigabitEthernet0/0
+R6#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#clear ip route *
+R6#clear ip route *
+R6#sho ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      5.0.0.0/32 is subnetted, 1 subnets
+B        5.5.5.5 [20/3] via 188.24.0.1, 00:00:47
+      6.0.0.0/32 is subnetted, 1 subnets
+C        6.6.6.6 is directly connected, Loopback0
+      10.0.0.0/8 is variably subnetted, 8 subnets, 2 masks
+O E2     10.0.0.0/30 [110/1] via 172.16.0.1, 00:00:47, GigabitEthernet0/1
+O E2     10.0.0.4/30 [110/1] via 172.16.0.1, 00:00:47, GigabitEthernet0/1
+O E2     10.0.0.8/30 [110/1] via 172.16.0.1, 00:00:47, GigabitEthernet0/1
+O E2     10.0.0.12/30 [110/1] via 172.16.0.1, 00:00:47, GigabitEthernet0/1
+O E2     10.0.0.16/30 [110/1] via 172.16.0.1, 00:00:47, GigabitEthernet0/1
+B        10.3.3.3/32 [20/0] via 188.24.0.1, 00:00:47
+C        10.6.6.6/32 is directly connected, Loopback1
+O        10.8.8.8/32 [110/2] via 172.16.0.5, 00:00:47, GigabitEthernet0/2
+      172.16.0.0/16 is variably subnetted, 5 subnets, 2 masks
+C        172.16.0.0/30 is directly connected, GigabitEthernet0/1
+L        172.16.0.2/32 is directly connected, GigabitEthernet0/1
+C        172.16.0.4/30 is directly connected, GigabitEthernet0/2
+L        172.16.0.6/32 is directly connected, GigabitEthernet0/2
+O        172.16.0.8/30 [110/2] via 172.16.0.5, 00:00:47, GigabitEthernet0/2
+                       [110/2] via 172.16.0.1, 00:00:47, GigabitEthernet0/1
+      188.24.0.0/16 is variably subnetted, 2 subnets, 2 masks
+C        188.24.0.0/30 is directly connected, GigabitEthernet0/0
+L        188.24.0.2/32 is directly connected, GigabitEthernet0/0
+R6#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>
+R6>en
+R6#sho run
+Building configuration...
+
+Current configuration : 3971 bytes
+!
+! Last configuration change at 20:00:24 UTC Sun Jan 10 2021
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ redistribute bgp 700 subnets
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-10.8.8.8 seq 11 permit 10.8.8.8/32
+!         
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+ipv6 ioam timestamp
+!
+route-map rm_CHOOSE-BGP-ASN700v3 permit 11
+ match ip address prefix-list pl_ALLOWING-10.8.8.8
+ set local-preference 6
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v3 deny 21
+!
+route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+ match ip address prefix-list pl_ALLOWING-17216
+ set local-preference 5
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+          
+R6#sho ip bgp
+BGP table version is 34, local router ID is 10.6.6.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+              t secondary path, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>   5.5.5.5/32       188.24.0.1               3             0 300 ?
+ r>i  10.0.0.0/30      172.16.0.1               3    100      0 300 i
+ r                     188.24.0.1               2             0 300 ?
+ r>i  10.0.0.4/30      172.16.0.1               2    100      0 300 i
+ r                     188.24.0.1               3             0 300 ?
+ r>i  10.0.0.8/30      172.16.0.1               4    100      0 300 i
+ r                     188.24.0.1               0             0 300 ?
+ r>i  10.0.0.12/30     172.16.0.1               0    100      0 300 i
+ r                     188.24.0.1               4             0 300 ?
+ r>i  10.0.0.16/30     172.16.0.1               0    100      0 300 i
+ r                     188.24.0.1               0             0 300 ?
+ *>   10.3.3.3/32      188.24.0.1               0             0 300 ?
+ *>   10.8.8.8/32      172.16.0.5               2         32768 ?
+     Network          Next Hop            Metric LocPrf Weight Path
+ * i                   172.16.0.1               2    100      0 ?
+ *>   172.16.0.0/30    0.0.0.0                  0         32768 ?
+ * i                   172.16.0.1               0    100      0 ?
+ *>   172.16.0.4/30    0.0.0.0                  0         32768 ?
+ * i                   172.16.0.1               2    100      0 ?
+ *>   172.16.0.8/30    172.16.0.5               2         32768 ?
+ * i                   172.16.0.1               0    100      0 ?
+R6#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>
+R6>en
+R6#sho ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      5.0.0.0/32 is subnetted, 1 subnets
+B        5.5.5.5 [20/3] via 188.24.0.1, 11:13:28
+      6.0.0.0/32 is subnetted, 1 subnets
+C        6.6.6.6 is directly connected, Loopback0
+      10.0.0.0/8 is variably subnetted, 7 subnets, 2 masks
+O E2     10.0.0.0/30 [110/1] via 172.16.0.1, 11:13:28, GigabitEthernet0/1
+O E2     10.0.0.4/30 [110/1] via 172.16.0.1, 11:13:28, GigabitEthernet0/1
+O E2     10.0.0.8/30 [110/1] via 172.16.0.1, 11:13:28, GigabitEthernet0/1
+O E2     10.0.0.12/30 [110/1] via 172.16.0.1, 11:13:28, GigabitEthernet0/1
+O E2     10.0.0.16/30 [110/1] via 172.16.0.1, 11:13:28, GigabitEthernet0/1
+B        10.3.3.3/32 [20/0] via 188.24.0.1, 11:13:28
+C        10.6.6.6/32 is directly connected, Loopback1
+      172.16.0.0/16 is variably subnetted, 5 subnets, 2 masks
+C        172.16.0.0/30 is directly connected, GigabitEthernet0/1
+L        172.16.0.2/32 is directly connected, GigabitEthernet0/1
+C        172.16.0.4/30 is directly connected, GigabitEthernet0/2
+L        172.16.0.6/32 is directly connected, GigabitEthernet0/2
+O        172.16.0.8/30 [110/2] via 172.16.0.5, 11:13:28, GigabitEthernet0/2
+                       [110/2] via 172.16.0.1, 11:13:28, GigabitEthernet0/1
+      188.24.0.0/16 is variably subnetted, 2 subnets, 2 masks
+C        188.24.0.0/30 is directly connected, GigabitEthernet0/0
+L        188.24.0.2/32 is directly connected, GigabitEthernet0/0
+R6# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#sho run
+Building configuration...
+
+Current configuration : 3971 bytes
+!
+! Last configuration change at 20:00:24 UTC Sun Jan 10 2021
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ redistribute bgp 700 subnets
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-10.8.8.8 seq 11 permit 10.8.8.8/32
+          
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#router bgp 700
+R6(config-router)#red
+R6(config-router)#redistribute osp
+R6(config-router)#redistribute ospf 1 ?
+  match      Redistribution of OSPF routes
+  metric     Metric for redistributed routes
+  route-map  Route map reference
+  vrf        VPN Routing/Forwarding Instance
+  <cr>       <cr>
+
+R6(config-router)#exit                
+R6(config)#router ospf 1
+R6(config-router)#redi
+R6(config-router)#redistribute bg
+R6(config-router)#redistribute bgp 700 ?
+  metric       Metric for redistributed routes
+  metric-type  OSPF/IS-IS exterior metric type for redistributed routes
+  nssa-only    Limit redistributed routes to NSSA areas
+  route-map    Route map reference
+  subnets      Consider subnets for redistribution into OSPF
+  tag          Set tag for routes redistributed into OSPF
+  <cr>         <cr>
+
+R6(config-router)#exit                 
+R6(config)#exit
+R6#
+*Jan 11 08:06:31.508: %SYS-5-CONFIG_I: Configured from console by console
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>
+R6>en
+R6#clear ip route *
+R6#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#sho run
+Building configuration...
+
+Current configuration : 3971 bytes
+!
+! Last configuration change at 08:06:31 UTC Mon Jan 11 2021
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ redistribute bgp 700 subnets
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-10.8.8.8 seq 11 permit 10.8.8.8/32
+!         
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+ipv6 ioam timestamp
+!
+route-map rm_CHOOSE-BGP-ASN700v3 permit 11
+ match ip address prefix-list pl_ALLOWING-10.8.8.8
+ set local-preference 6
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v3 deny 21
+!
+route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+ match ip address prefix-list pl_ALLOWING-17216
+ set local-preference 5
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+!
+!
+!
+control-plane
+!
+banner exec ^C
+          
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#router bgp 700
+R6(config-router)#neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v3 out
+R6(config-router)#exit
+R6(config)#exit
+R6#sho 
+*Jan 11 08:39:51.247: %SYS-5-CONFIG_I: Configured from console by consolerun
+Building configuration...
+
+Current configuration : 3971 bytes
+!
+! Last configuration change at 08:39:51 UTC Mon Jan 11 2021
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ redistribute bgp 700 subnets
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v3 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-10.8.8.8 seq 11 permit 10.8.8.8/32
+!         
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+ipv6 ioam timestamp
+!
+route-map rm_CHOOSE-BGP-ASN700v3 permit 11
+ match ip address prefix-list pl_ALLOWING-10.8.8.8
+ set local-preference 6
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v3 deny 21
+!
+route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+ match ip address prefix-list pl_ALLOWING-17216
+ set local-preference 5
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+!
+!
+!
+control-plane
+!
+banner exec ^C
+          
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#router bgp 700
+R6(config-router)#neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+R6(config-router)#exit
+R6(config)#ip prefix-list pl_ALLOWING-17216 seq 12 permit 10.8.8.8/32
+R6(config)#no ip prefix-list pl_ALLOWING-10.8.8.8 seq 11 permit 10.8.8.8/32
+R6(config)#no route-map rm_CHOOSE-BGP-ASN700v3 permit 11
+R6(config)#no route-map rm_CHOOSE-BGP-ASN700v3 deny 21
+R6(config)#exit
+R6#sho 
+*Jan 11 08:47:36.571: %SYS-5-CONFIG_I: Configured from console by consolerun
+Building configuration...
+
+Current configuration : 3787 bytes
+!
+! Last configuration change at 08:47:36 UTC Mon Jan 11 2021
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ redistribute bgp 700 subnets
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+ip prefix-list pl_ALLOWING-17216 seq 12 permit 10.8.8.8/32
+ipv6 ioam timestamp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+ match ip address prefix-list pl_ALLOWING-17216
+ set local-preference 5
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+          
+R6#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#route-m
+R6(config)#route-map rm_BGP-to-OSPF permit 30
+R6(config-route-map)#set ?
+  aigp-metric       accumulated metric value
+  as-path           Prepend string for a BGP AS-path attribute
+  automatic-tag     Automatically compute TAG value
+  clns              OSI summary address
+  comm-list         set BGP community list (for deletion)
+  community         BGP community attribute
+  dampening         Set BGP route flap dampening parameters
+  default           Set default information
+  extcomm-list      Set BGP/VPN extended community list (for deletion)
+  extcommunity      BGP extended community attribute
+  global            Set to global routing table
+  interface         Output interface
+  ip                IP specific information
+  ipv6              IPv6 specific information
+  level             Where to import route
+  lisp              Locator ID Separation Protocol specific information
+  local-preference  BGP local preference path attribute
+  metric            Metric value for destination routing protocol
+  metric-type       Type of metric for destination routing protocol
+  mpls-label        Set MPLS label for prefix
+  origin            BGP origin code
+  tag               Tag value for destination routing protocol
+          
+R6(config-route-map)#set tag 100
+R6(config-route-map)#do sho run| ces router ospf
+                               ^
+% Invalid input detected at '^' marker.
+
+R6(config-route-map)#do sho run| sec router ospf  
+                               ^
+% Invalid input detected at '^' marker.
+
+R6(config-route-map)#do sho run | sec router ospf
+router ospf 1
+ router-id 6.6.6.6
+ redistribute bgp 700 subnets
+ network 172.16.0.0 0.0.0.255 area 0
+R6(config-route-map)#exit
+R6(config)#route-m
+R6(config)#route-map rm_OSPF-to-BGP permit 30
+R6(config-route-map)#set tag 200
+R6(config-route-map)#do sho run
+Building configuration...
+
+Current configuration : 3887 bytes
+!
+! Last configuration change at 08:47:36 UTC Mon Jan 11 2021
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ redistribute bgp 700 subnets
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+ip prefix-list pl_ALLOWING-17216 seq 12 permit 10.8.8.8/32
+ipv6 ioam timestamp
+!
+route-map rm_BGP-to-OSPF permit 30
+ set tag 100
+!
+route-map rm_OSPF-to-BGP permit 30
+ set tag 200
+!
+route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+ match ip address prefix-list pl_ALLOWING-17216
+ set local-preference 5
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+          
+R6(config-route-map)#exit
+R6(config)#router ospf 1
+R6(config-router)#no redistribute bgp 700 subnets
+R6(config-router)#redistribute bgp 700 subnets ?  
+  metric       Metric for redistributed routes
+  metric-type  OSPF/IS-IS exterior metric type for redistributed routes
+  nssa-only    Limit redistributed routes to NSSA areas
+  route-map    Route map reference
+  tag          Set tag for routes redistributed into OSPF
+  <cr>         <cr>
+
+R6(config-router)#redistribute bgp 700 subnets route
+R6(config-router)#redistribute bgp 700 subnets route-map rm_BGP-to-OSPF
+R6(config-router)#exit
+R6(config)#router bgp 700                                       
+R6(config-router)#no redistribute ospf 1
+R6(config-router)#redistribute ospf 1 ?
+  match      Redistribution of OSPF routes
+  metric     Metric for redistributed routes
+  route-map  Route map reference
+  vrf        VPN Routing/Forwarding Instance
+  <cr>       <cr>
+
+R6(config-router)#redistribute ospf 1 subnets route-map rm_OSPF-to-BGP
+                                      ^
+% Invalid input detected at '^' marker.
+
+R6(config-router)#redistribute ospf 1 route-map rm_OSPF-to-BGP        
+% "rm_OSPF-to-BGP" used as redistribute ospf into bgp route-map, set tag not supported
+R6(config-router)#redistribute ospf 1                                 
+R6(config-router)#do sho run | sec router ospf
+router ospf 1
+ router-id 6.6.6.6
+ redistribute bgp 700 subnets route-map rm_BGP-to-OSPF
+ network 172.16.0.0 0.0.0.255 area 0
+R6(config-router)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+*Jan 11 09:39:03.908: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#route-ma
+R6(config)#route-map rm_BGP-to-OSPF deny 20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+*Jan 11 09:51:18.702: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>en
+R6#
+R6#sho run
+Building configuration...
+
+Current configuration : 3937 bytes
+!
+! Last configuration change at 09:51:18 UTC Mon Jan 11 2021
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ redistribute bgp 700 subnets route-map rm_BGP-to-OSPF
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1 route-map rm_OSPF-to-BGP
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+ip prefix-list pl_ALLOWING-17216 seq 12 permit 10.8.8.8/32
+ipv6 ioam timestamp
+!
+route-map rm_BGP-to-OSPF permit 30
+ set tag 100
+!
+route-map rm_OSPF-to-BGP permit 30
+ set tag 200
+!
+route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+ match ip address prefix-list pl_ALLOWING-17216
+ set local-preference 5
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+          
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#route-map rm_BGP-to-OSPF deny 20
+R6(config-route-map)#match tag 300
+R6(config-route-map)#exit
+R6(config)#exit
+R6#
+*Jan 11 10:33:51.051: %SYS-5-CONFIG_I: Configured from console by console
+R6#sho run
+Building configuration...
+
+Current configuration : 3987 bytes
+!
+! Last configuration change at 10:33:51 UTC Mon Jan 11 2021
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ redistribute bgp 700 subnets route-map rm_BGP-to-OSPF
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1 route-map rm_OSPF-to-BGP
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+ip prefix-list pl_ALLOWING-17216 seq 12 permit 10.8.8.8/32
+ipv6 ioam timestamp
+!
+route-map rm_BGP-to-OSPF deny 20
+ match tag 300
+!
+route-map rm_BGP-to-OSPF permit 30
+ set tag 100
+!
+route-map rm_OSPF-to-BGP permit 30
+ set tag 200
+!
+route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+ match ip address prefix-list pl_ALLOWING-17216
+ set local-preference 5
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+!
+!
+!
+control-plane
+!
+          
+R6#clear ip route *
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#no route-map rm_BGP-to-OSPF deny 20
+R6(config)#
+R6(config)#
+R6(config)#exit
+R6#sho
+*Jan 11 10:46:50.634: %SYS-5-CONFIG_I: Configured from console by console run
+Building configuration...
+
+Current configuration : 3937 bytes
+!
+! Last configuration change at 10:46:50 UTC Mon Jan 11 2021
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ redistribute bgp 700 subnets route-map rm_BGP-to-OSPF
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1 route-map rm_OSPF-to-BGP
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+ip prefix-list pl_ALLOWING-17216 seq 12 permit 10.8.8.8/32
+ipv6 ioam timestamp
+!
+route-map rm_BGP-to-OSPF permit 30
+ set tag 100
+!
+route-map rm_OSPF-to-BGP permit 30
+ set tag 200
+!
+route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+ match ip address prefix-list pl_ALLOWING-17216
+ set local-preference 5
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+R6#sho ip bgp
+BGP table version is 11475, local router ID is 10.6.6.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+              t secondary path, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>   5.5.5.5/32       188.24.0.1               3             0 300 ?
+ *>i  10.0.0.0/30      172.16.0.1               3    100      0 300 i
+ *                     188.24.0.1               2             0 300 ?
+ *>i  10.0.0.4/30      172.16.0.1               2    100      0 300 i
+ *                     188.24.0.1               3             0 300 ?
+ *>i  10.0.0.8/30      172.16.0.1               4    100      0 300 i
+ *                     188.24.0.1               0             0 300 ?
+ *>i  10.0.0.12/30     172.16.0.1               0    100      0 300 i
+ *                     188.24.0.1               4             0 300 ?
+ *>i  10.0.0.16/30     172.16.0.1               0    100      0 300 i
+ *                     188.24.0.1               0             0 300 ?
+ *>   10.3.3.3/32      188.24.0.1               0             0 300 ?
+ *>i  10.5.5.5/32      172.16.0.1               3    100      0 300 i
+     Network          Next Hop            Metric LocPrf Weight Path
+ *                     188.24.0.1               3             0 300 ?
+ *>   10.8.8.8/32      172.16.0.5               2         32768 ?
+ * i                   172.16.0.1               2    100      0 ?
+ *>   172.16.0.0/30    0.0.0.0                  0         32768 ?
+ * i                   172.16.0.1               0    100      0 ?
+ *>   172.16.0.4/30    0.0.0.0                  0         32768 ?
+ * i                   172.16.0.1               2    100      0 ?
+ *>   172.16.0.8/30    172.16.0.5               2         32768 ?
+ * i                   172.16.0.1               0    100      0 ?
+R6#trace 10.3.3.3
+Type escape sequence to abort.
+Tracing the route to 10.3.3.3
+VRF info: (vrf in name/id, vrf out name/id)
+  1 188.24.0.1 13 msec 10 msec * 
+R6#trace 10.5.5.5 
+Type escape sequence to abort.
+Tracing the route to 10.5.5.5
+VRF info: (vrf in name/id, vrf out name/id)
+  1 172.16.0.1 12 msec 5 msec 3 msec
+  2 172.16.0.2 10 msec 6 msec 6 msec
+  3 172.16.0.1 5 msec 5 msec 13 msec
+  4 172.16.0.2 4 msec 4 msec 9 msec
+  5 172.16.0.1 8 msec 10 msec 11 msec
+  6 172.16.0.2 10 msec
+    10.0.0.5 [AS 300] 19 msec 14 msec
+R6#              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>Q
+R6>enQ
+Translating "enQ"...domain server (255.255.255.255)
+ (255.255.255.255)
+Translating "enQ"...domain server (255.255.255.255)
+
+% Bad IP address or host name
+% Unknown command or computer name, or unable to find computer address
+R6>
+R6>
+R6>en
+R6#ping 10.0.0.2
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.0.0.2, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 11/15/22 ms
+R6#trace 10.0.0.2
+Type escape sequence to abort.
+Tracing the route to 10.0.0.2
+VRF info: (vrf in name/id, vrf out name/id)
+  1 172.16.0.1 11 msec 14 msec 5 msec
+  2 172.16.0.2 2 msec 10 msec 4 msec
+  3 172.16.0.1 7 msec 13 msec 3 msec
+  4 172.16.0.2 3 msec
+    10.0.0.5 [AS 300] 11 msec 13 msec
+  5 10.0.0.2 [AS 300] 6 msec 6 msec * 
+R6#sho ip bgp
+BGP table version is 24471, local router ID is 10.6.6.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+              t secondary path, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>   5.5.5.5/32       188.24.0.1               3             0 300 ?
+ *>   10.0.0.0/30      172.16.0.1               1         32768 ?
+ *                     188.24.0.1               2             0 300 ?
+ *>   10.0.0.4/30      172.16.0.1               1         32768 ?
+ *                     188.24.0.1               3             0 300 ?
+ *>   10.0.0.8/30      172.16.0.1               1         32768 ?
+ *                     188.24.0.1               0             0 300 ?
+ *>   10.0.0.12/30     172.16.0.1               1         32768 ?
+ *                     188.24.0.1               4             0 300 ?
+ *>   10.0.0.16/30     172.16.0.1               1         32768 ?
+ *                     188.24.0.1               0             0 300 ?
+ *>   10.3.3.3/32      188.24.0.1               0             0 300 ?
+ *>   10.5.5.5/32      172.16.0.1               1         32768 ?
+     Network          Next Hop            Metric LocPrf Weight Path
+ *                     188.24.0.1               3             0 300 ?
+ *>   10.8.8.8/32      172.16.0.5               2         32768 ?
+ * i                   172.16.0.1               2    100      0 ?
+ *>   172.16.0.0/30    0.0.0.0                  0         32768 ?
+ * i                   172.16.0.1               0    100      0 ?
+ *>   172.16.0.4/30    0.0.0.0                  0         32768 ?
+ * i                   172.16.0.1               2    100      0 ?
+ *>   172.16.0.8/30    172.16.0.5               2         32768 ?
+ * i                   172.16.0.1               0    100      0 ?
+R6#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>
+R6>en
+R6#sho ip bgp
+BGP table version is 41439, local router ID is 10.6.6.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+              t secondary path, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>   5.5.5.5/32       188.24.0.1               3             0 300 ?
+ *>   10.0.0.0/30      172.16.0.1               1         32768 ?
+ *                     188.24.0.1               2             0 300 ?
+ *>   10.0.0.4/30      172.16.0.1               1         32768 ?
+ *                     188.24.0.1               3             0 300 ?
+ *>   10.0.0.8/30      172.16.0.1               1         32768 ?
+ *                     188.24.0.1               0             0 300 ?
+ *>   10.0.0.12/30     172.16.0.1               1         32768 ?
+ *                     188.24.0.1               4             0 300 ?
+ *>   10.0.0.16/30     172.16.0.1               1         32768 ?
+ *                     188.24.0.1               0             0 300 ?
+ *>   10.3.3.3/32      188.24.0.1               0             0 300 ?
+ *>   10.5.5.5/32      172.16.0.1               1         32768 ?
+     Network          Next Hop            Metric LocPrf Weight Path
+ *                     188.24.0.1               3             0 300 ?
+ *>   10.8.8.8/32      172.16.0.5               2         32768 ?
+ * i                   172.16.0.1               2    100      0 ?
+ *>   172.16.0.0/30    0.0.0.0                  0         32768 ?
+ * i                   172.16.0.1               0    100      0 ?
+ *>   172.16.0.4/30    0.0.0.0                  0         32768 ?
+ * i                   172.16.0.1               2    100      0 ?
+ *>   172.16.0.8/30    172.16.0.5               2         32768 ?
+ * i                   172.16.0.1               0    100      0 ?
+R6#trace 10.5.5.5
+Type escape sequence to abort.
+Tracing the route to 10.5.5.5
+VRF info: (vrf in name/id, vrf out name/id)
+  1 172.16.0.1 15 msec 6 msec 1 msec
+  2 13.201.255.5 9 msec
+    172.16.0.2 8 msec 8 msec
+  3 172.16.0.1 7 msec 6 msec 5 msec
+  4 172.16.0.2 3 msec 9 msec 6 msec
+  5 172.16.0.1 11 msec 10 msec 6 msec
+  6 172.16.0.2 5 msec
+    10.0.0.5 [AS 300] 12 msec 10 msec
+R6#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R6>QQ^@
+Translating "QQ"...domain server (255.255.255.255)
+ (255.255.255.255)
+Translating "QQ"...domain server (255.255.255.255)
+
+% Bad IP address or host name
+% Unknown command or computer name, or unable to find computer address
+R6>en
+R6#sho run
+Building configuration...
+
+Current configuration : 3937 bytes
+!
+! Last configuration change at 10:46:50 UTC Mon Jan 11 2021
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ redistribute bgp 700 subnets route-map rm_BGP-to-OSPF
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1 route-map rm_OSPF-to-BGP
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+ip prefix-list pl_ALLOWING-17216 seq 12 permit 10.8.8.8/32
+ipv6 ioam timestamp
+!
+route-map rm_BGP-to-OSPF permit 30
+ set tag 100
+!
+route-map rm_OSPF-to-BGP permit 30
+ set tag 200
+!
+route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+ match ip address prefix-list pl_ALLOWING-17216
+ set local-preference 5
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+          
+R6#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#route-map rm_BGP-to-OSPF deny 20
+R6(config-route-map)#exit
+R6(config)#exit
+R6#sho ru
+*Jan 11 17:00:54.085: %SYS-5-CONFIG_I: Configured from console by consolen
+Building configuration...
+
+Current configuration : 3972 bytes
+!
+! Last configuration change at 17:00:54 UTC Mon Jan 11 2021
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ redistribute bgp 700 subnets route-map rm_BGP-to-OSPF
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1 route-map rm_OSPF-to-BGP
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+ip prefix-list pl_ALLOWING-17216 seq 12 permit 10.8.8.8/32
+ipv6 ioam timestamp
+!
+route-map rm_BGP-to-OSPF deny 20
+!
+route-map rm_BGP-to-OSPF permit 30
+ set tag 100
+!
+route-map rm_OSPF-to-BGP permit 30
+ set tag 200
+!
+route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+ match ip address prefix-list pl_ALLOWING-17216
+ set local-preference 5
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+!
+!
+!
+control-plane
+!
+banner exec ^C
+          
+R6#conf t 
+Enter configuration commands, one per line.  End with CNTL/Z.
+R6(config)#no route-map rm_BGP-to-OSPF deny 20
+R6(config)#no route-map rm_OSPF-to-BGP permit 30
+R6(config)#do sho run
+Building configuration...
+
+Current configuration : 3887 bytes
+!
+! Last configuration change at 17:00:54 UTC Mon Jan 11 2021
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+!
+interface Loopback1
+ ip address 10.6.6.6 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 188.24.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.2 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 6.6.6.6
+ redistribute bgp 700 subnets route-map rm_BGP-to-OSPF
+ network 172.16.0.0 0.0.0.255 area 0
+!
+router bgp 700
+ bgp log-neighbor-changes
+ redistribute ospf 1 route-map rm_OSPF-to-BGP
+ neighbor 172.16.0.1 remote-as 700
+ neighbor 172.16.0.1 next-hop-self
+ neighbor 188.24.0.1 remote-as 300
+ neighbor 188.24.0.1 route-map rm_CHOOSE-BGP-ASN700v2 out
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+ip prefix-list pl_ALLOWING-17216 seq 12 permit 10.8.8.8/32
+ipv6 ioam timestamp
+!
+route-map rm_BGP-to-OSPF permit 30
+ set tag 100
+!
+route-map rm_CHOOSE-BGP-ASN700v2 permit 10
+ match ip address prefix-list pl_ALLOWING-17216
+ set local-preference 5
+ set origin igp
+!
+route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+          
+R6(config)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R6 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+*Jan 11 17:21:03.890: %SYS-5-CONFIG_I: Configured from console by consoleConnection closed by foreign host.
+spawn@mydebian:~$ 
+

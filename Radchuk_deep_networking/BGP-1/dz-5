@@ -1,0 +1,41 @@
+Найтройка ospf:
+R5(config)#int l0
+R5(config-if)#ip address 5.5.5.5 255.255.255.255
+R5(config-if)#no shut
+R5(config-if)#exit 
+R5(config)#router ospf 1
+R5(config-router)#router-id 5.5.5.5
+R5(config-router)#network 10.0.0.0 0.0.0.255 area 1
+R5(config-router)#network 5.5.5.5 0.0.0.0 area 1
+
+
+конфиг:
+
+router ospf 1
+ router-id 5.5.5.5
+ network 5.5.5.5 0.0.0.0 area 1
+ network 10.0.0.0 0.0.0.255 area 1
+
+
+
+
+Запрет префикса (определенной сети в сторону другой area (ospf)):
+
+
+R3(config)#ip prefix-list pl_FILTER_LO1_FROM_R3 seq 13 deny 10.3.3.3/32 - префикс лист на запрет анонсирования 10.3.3.3/32
+R3(config)#ip prefix-list pl_FILTER_LO1_FROM_R3 seq 15 permit 0.0.0.0/0 le 32 - разрешение всего остального т.е. все сети со всеми возможными масками
+R3(config-router)#area 1 filter-list prefix pl_FILTER_LO1_FROM_R3 in - фильтрация  по префикс листу (разрешено все кроме 10.3.3.3/32) в сторону area 1
+
+
+настройка пиринга (сеседства между R4 и R7) по протоколу bgp
+
+На R7
+R7(config)#route bgp 700
+R7(config-router)#neighbor 13.201.255.5 remote-as 300
+
+На R4
+
+R4(config)#router bgp 300
+R4(config-router)#neighbor 13.201.255.6 remote-as 700
+
+

@@ -1,0 +1,5043 @@
+spawn@mydebian:~/.ssh$ telnet 192.168.1.14 32774
+Trying 192.168.1.14...
+Connected to 192.168.1.14.
+Escape character is '^]'.
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>en
+Switch#sho run
+Building configuration...
+
+Current configuration : 2928 bytes
+!
+! Last configuration change at 07:26:41 UTC Fri Dec 18 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!         
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+interface GigabitEthernet0/0
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!         
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!         
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#?
+Configure commands:
+  aaa                         Authentication, Authorization and Accounting.
+  access-list                 Add an access list entry
+  access-session              Access Sesion Global Configuration Commands
+  alias                       Create command alias
+  alps                        Configure Airline Protocol Support
+  ancp                        Configure ANCP
+  apollo                      Apollo global configuration commands
+  appletalk                   Appletalk global configuration commands
+  arap                        Appletalk Remote Access Protocol
+  archive                     Archive the configuration
+  arp                         Set a static ARP entry
+  async-bootp                 Modify system bootp parameters
+  authentication              Auth Manager Global Configuration Commands
+  auto                        Configure Automation
+  autoconf                    Configure autoconf
+  banner                      Define a login banner
+  beep                        Configure BEEP (Blocks Extensible Exchange
+                              Protocol)
+  bfd                         BFD configuration commands
+  bfd-template                BFD template configuration
+  boot                        Modify system boot parameters
+  bridge                      Bridge Group.
+  bridge-domain               Bridge-domain global configuration commands
+  bstun                       BSTUN global configuration commands
+  buffers                     Adjust system buffer pool parameters
+  busy-message                Display message when connection to host fails
+  captive-portal-bypass       Enable Captive portal bypass for apple devices
+  cdp                         Global CDP configuration subcommands
+  cef                         Cisco Express Forwarding
+  cfg-mode                    Enter configuration mode
+  chat-script                 Define a modem chat script
+  cisp                        Set CISP parameters
+  class-map                   Configure CPL Class Map
+  clns                        Global CLNS configuration subcommands
+  clock                       Configure time-of-day clock
+  cns                         CNS agents
+  config-register             Define the configuration register
+  configuration               Configuration access
+  connect                     cross-connect two interfaces
+  control-plane               Configure control plane services
+  crypto                      Encryption module
+  cts                         Cisco Trusted Security commands
+  decnet                      Global DECnet configuration subcommands
+  default                     Set a command to its defaults
+  default-value               Default character-bits values
+  define                      interface range macro definition
+  device-sensor               IOS Sensor Commands
+  device-tracking             Device tracking configuration commands
+  dialer                      Dialer commands
+  dialer-list                 Create a dialer list entry
+  dlsw                        Data Link Switching global configuration commands
+  dnsix-dmdp                  Provide DMDP service for DNSIX
+  dnsix-nat                   Provide DNSIX service for audit trails
+  do-exec                     To run exec commands in config mode
+  dot1x                       IEEE 802.1X Global Configuration Commands
+  downward-compatible-config  Generate a configuration compatible with older
+                              software
+  dspu                        DownStream Physical Unit Command
+  eap                         EAP Global Configuration Commands
+  enable                      Modify enable password parameters
+  end                         Exit from configure mode
+  energywise                  EnergyWise Global Configuration Commands
+  epm                         EPM Global Configuration Commands
+  errdisable                  Error disable
+  ethernet                    Ethernet configuration
+  event                       Event related configuration commands
+  exception                   Exception handling
+  exit                        Exit from configure mode
+  fallback                    Fallback configuration commands
+  feature                     feature enable config
+  fhrp                        Configure First Hop Redundancy Protocols
+  file                        Adjust file system parameters
+  flow                        Global Flow configuration subcommands
+  flow-sampler-map            Flow sampler configuration
+  format                      Format the output
+  frame-relay                 global frame relay configuration commands
+  global-address-family       Enter address-family base routing topology mode
+  help                        Description of the interactive help system
+  hostname                    Set system's network name
+  hw-module                   Control of individual components in the system
+  id-manager                  ID Pool Manager
+  identity                    Identity Configuration Commands
+  interface                   Select an interface to configure
+  ip                          Global IP configuration subcommands
+  ipc                         Configure IPC system
+  ipv6                        Global IPv6 configuration commands
+  isis                        Global ISIS configuration subcommands
+  kerberos                    Configure Kerberos
+  key                         Key management
+  keymap                      Define a new keymap
+  kron                        Kron interval Facility
+  l2                          Layer 2
+  l2                          Layer 2 configuration
+  l2protocol-tunnel           Tunnel Layer2 protocols
+  l2tp                        Layer 2 Tunneling Protocol (L2TP) parameters
+  l2tp-class                  l2tp-class configuration
+  lacp                        LACP configuration
+  li-view                     LI View
+  line                        Configure a terminal line
+  lldp                        Global LLDP configuration subcommands
+  lnm                         IBM Lan Manager
+  locaddr-priority-list       Establish queueing priorities based on LU address
+  location                    Global location configuration commands
+  logging                     Modify message logging facilities
+  login                       Enable secure login checking
+  login-string                Define a host-specific login string
+  mab                         MAC Authentication Bypass Global Configuration
+                              Commands
+  mac                         Global MAC configuration subcommands
+  macro                       Macro configuration
+  map-class                   Configure static map class
+  map-list                    Configure static map list
+  mediatrace                  Mediatrace Application
+  memory                      Configure memory management
+  memory-size                 Adjust memory size by percentage
+  menu                        Define a user-interface menu
+  metadata                    Metadata Application
+  mka                         MACsec Key Agreement (MKA) configuration
+  modemcap                    Modem Capabilities database
+  monitor                     Monitoring different system events
+  mpls                        Configure MPLS parameters
+  multilink                   PPP multilink global configuration
+  ncia                        Native Client Interface Architecture
+  netbios                     NETBIOS access control filtering
+  netconf                     Configure NETCONF
+  netconf-yang                Enable NETCONF
+  nmsp                        NMSP configuration commands
+  no                          Negate a command or set its defaults
+  ntp                         Configure NTP
+  object-group                Configure Object Group
+  onep                        ONEP functionality
+  parameter-map               Configure Parameter Map
+  parser                      Configure parser
+  partition                   Partition device
+  passthru-domain-list        Domain name's associated with FQDN name
+  password                    Configure encryption password (key)
+  pnp                         Configure PNP
+  policy-map                  Configure Policy Map
+  port-channel                EtherChannel configuration
+  port-security               Security related command
+  priority-list               Build a priority list
+  privilege                   Command privilege parameters
+  process                     Configure process
+  process-max-time            Maximum time for process to run before
+                              voluntarily relinquishing processor
+  prompt                      Set system's prompt
+  pseudowire-class            Pseudowire-class configuration
+  qos                         Global QoS configuration subcommands
+  queue-list                  Build a custom queue list
+  regexp                      regexp commands
+  resource                    Configure Resource settings
+  restconf                    Enable RESTCONF
+  resume-string               Define a host-specific resume string
+  rif                         Source-route RIF cache
+  rlogin                      Rlogin configuration commands
+  route-map                   Create route-map or enter route-map command mode
+  route-tag                   Route Tag
+  router                      Enable a routing process
+  rsrb                        RSRB LSAP/DSAP filtering
+  sampler                     Define a Sampler
+  sap-priority-list           Establish queueing priorities based on SAP and/or
+                              MAC address(es)
+  sasl                        Configure SASL
+  scheduler                   Scheduler parameters
+  scripting                   Configure options for scripting languages
+  service                     Modify use of network based services
+  service-instance            Configure a Static Service
+  service-list                Enter the service list
+  service-policy              Configure Global CPL Service Policy
+  service-routing             Configure service-routing 
+  service-routing             Configure service-routing 
+  service-template            Configure a service-template/identity policy
+  shell                       Configure shell command
+  shutdown                    Shutdown system elements
+  smrp                        Simple Multicast Routing Protocol configuration
+                              commands
+  sna                         Network Management Physical Unit Command
+  snmp                        Modify non engine SNMP parameters
+  snmp-server                 Modify SNMP engine parameters
+  source                      Get config from another source
+  source-bridge               Source-route bridging ring groups
+  spanning-tree               Spanning Tree Subsystem
+  stacks                      Configure stacks
+  standby                     Global HSRP configuration commands
+  state-machine               Define a TCP dispatch state machine
+  stun                        STUN global configuration commands
+  subscriber-policy           Subscriber policy
+  table-map                   Configure Table Map
+  tacacs-server               Modify TACACS query parameters
+  tarp                        Global TARP configuration subcommands
+  template                    Select a template to configure
+  terminal-queue              Terminal queue commands
+  tftp-server                 Provide TFTP service for netload requests
+  time-range                  Define time range entries
+  tn3270                      tn3270 configuration command
+  track                       Object tracking configuration commands
+  translate                   Translate global configuration commands
+  ttycap                      Define a new termcap
+  ttyscan                     Configure Line scanning delay time
+  udld                        Configure global UDLD setting
+  user-name                   Establish User Name Authentication
+  username                    Establish User Name Authentication
+  vines                       VINES global configuration commands
+  virtual-profile             Virtual Profile configuration
+  virtual-template            Virtual Template configuration
+  vlan                        Vlan commands
+  vrf                         VRF commands
+  vtp                         Configure global VTP state
+  vty-async                   Enable virtual async line configuration
+  wsma                        Configure Web Services Management Agents
+  x25                         X.25 Level 3
+  x29                         X29 commands
+  xconnect                    Xconnect config commands
+
+Switch(config)#
+Switch(config)#
+Switch(config)#
+*Dec 18 08:26:41.769: %PNP-6-PNP_DISCOVERY_STOPPED: PnP Discovery stopped (Config Wizard)
+Switch(config)#vlan 100
+Switch(config-vlan)#?
+VLAN configuration commands:
+  are           Maximum number of All Route Explorer hops for this VLAN (or
+                zero if none specified)
+  backupcrf     Backup CRF mode of the VLAN
+  bridge        Bridging characteristics of the VLAN
+  exit          Apply changes, bump revision number, and exit mode
+  media         Media type of the VLAN
+  mtu           VLAN Maximum Transmission Unit
+  name          Ascii name of the VLAN
+  no            Negate a command or set its defaults
+  parent        ID number of the Parent VLAN of FDDI or Token Ring type VLANs
+  private-vlan  Configure a private VLAN
+  remote-span   Configure as Remote SPAN VLAN
+  ring          Ring number of FDDI or Token Ring type VLANs
+  said          IEEE 802.10 SAID
+  shutdown      Shutdown VLAN switching
+  state         Operational state of the VLAN
+  ste           Maximum number of Spanning Tree Explorer hops for this VLAN (or
+                zero if none specified)
+  stp           Spanning tree characteristics of the VLAN
+  tb-vlan1      ID number of the first translational VLAN for this VLAN (or
+                zero if none)
+  tb-vlan2      ID number of the second translational VLAN for this VLAN (or
+                zero if none)
+
+Switch(config-vlan)#vlan 200
+Switch(config-vlan)#exit
+Switch(config)#vlan 200
+Switch(config-vlan)#exit
+Switch(config)#exit
+Switch#show 
+*Dec 18 08:30:54.254: %SYS-5-CONFIG_I: Configured from console by consolerun
+Building configuration...
+
+Current configuration : 2928 bytes
+!
+! Last configuration change at 08:30:54 UTC Fri Dec 18 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!         
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+interface GigabitEthernet0/0
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!         
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!         
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+Switch#vlan id 100
+            ^
+% Invalid input detected at '^' marker.
+
+Switch#show vlan id 100
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+100  VLAN0100                         active    
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+100  enet  100100     1500  -      -      -        -    -        0      0   
+
+Remote SPAN VLAN
+----------------
+Disabled
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+
+Switch#show vlan id 200
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+200  VLAN0200                         active    
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+200  enet  100200     1500  -      -      -        -    -        0      0   
+
+Remote SPAN VLAN
+----------------
+Disabled
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#int gi 0/1
+Switch(config-if)#?
+Interface configuration commands:
+  aaa                 Authentication, Authorization and Accounting.
+  access-expression   Build a bridge boolean access expression
+  access-session      Access Session specific Interface Configuration Commands
+  apollo              Apollo interface subcommands
+  arp                 Set arp type (arpa, probe, snap) or timeout or log
+                      options
+  backup              Modify backup parameters
+  bandwidth           Set bandwidth informational parameter
+  bfd                 BFD interface configuration commands
+  bgp-policy          Apply policy propagated by bgp community string
+  carrier-delay       Specify delay for interface transitions
+  cdp                 CDP interface subcommands
+  channel-group       Etherchannel/port bundling configuration
+  channel-protocol    Select the channel protocol (LACP, PAgP)
+  cmns                OSI CMNS
+  crypto              Encryption/Decryption commands
+  cts                 Configure Cisco Trusted Security
+  custom-queue-list   Assign a custom queue list to an interface
+  dampening           Enable event dampening
+  decnet              Interface DECnet config commands
+  default             Set a command to its defaults
+  delay               Specify interface throughput delay
+  description         Interface specific description
+  dlsw                DLSw interface subcommands
+  dot1q               dot1q interface configuration commands
+  dspu                Down Stream PU
+  duplex              Configure duplex operation.
+  ethernet            Ethernet interface parameters
+  exit                Exit from interface configuration mode
+  fair-queue          Enable Fair Queuing on an Interface
+  flow-sampler        Attach flow sampler to the interface
+  flowcontrol         Configure flow operation.
+  fras                DLC Switch Interface Command
+  help                Description of the interactive help system
+  history             Interface history histograms - 60 second, 60 minute and
+                      72 hour
+  hold-queue          Set hold queue depth
+  ip                  Interface Internet Protocol config commands
+  ipv6                IPv6 interface subcommands
+  isis                IS-IS commands
+  iso-igrp            ISO-IGRP interface subcommands
+  keepalive           Enable keepalive
+  l2protocol          Configure l2 control protocol processing
+  l2protocol-tunnel   Tunnel Layer2 protocols
+  lacp                LACP interface subcommands
+  lan-name            LAN Name command
+  link                Interface link related commands
+  lisp                Locator/ID Separation Protocol
+  llc2                LLC2 Interface Subcommands
+  lldp                LLDP interface subcommands
+  load-interval       Specify interval for load calculation for an interface
+  locaddr-priority    Assign a priority group
+  location            Interface location information
+  logging             Configure logging for interface
+  loopback            Configure internal loopback on an interface
+  mac                 MAC interface commands
+  mac-address         Manually set interface MAC address
+  macro               Command macro
+  macsec              Enable macsec on the interface
+  media-type          Configure media type
+  metadata            Metadata Application
+  mka                 MACsec Key Agreement (MKA) interface configuration
+  mpls                Configure MPLS interface parameters
+  mtu                 Set the interface Maximum Transmission Unit (MTU)
+  negotiation         Select autonegotiation mode
+  netbios             Use a defined NETBIOS access list or enable name-caching
+  nmsp                NMSP interface configuration
+  no                  Negate a command or set its defaults
+  onep                Configure onep settings
+  pagp                PAgP interface subcommands
+  priority-group      Assign a priority group to an interface
+  random-detect       Enable Weighted Random Early Detection (WRED) on an
+                      Interface
+  rate-limit          Rate Limit
+  routing             Per-interface routing configuration
+  sap-priority        Assign a priority group
+  service             Configure Ether Service
+  service-policy      Configure CPL Service Policy
+  shutdown            Shutdown the selected interface
+  smrp                Simple Multicast Routing Protocol interface subcommands
+  sna                 SNA pu configuration
+  snapshot            Configure snapshot support on the interface
+  snmp                Modify SNMP interface parameters
+  source              Get config from another source
+  spanning-tree       Spanning Tree Subsystem
+  speed               Configure speed operation.
+  subscriber          Subscriber inactivity timeout value.
+  switchport          Set switching mode characteristics
+  tarp                TARP interface subcommands
+  timeout             Define timeout values for this interface
+  topology            Configure routing topology on the interface
+  traffic-shape       Enable Traffic Shaping on an Interface or Sub-Interface
+  transmit-interface  Assign a transmit interface to a receive-only interface
+  tx-ring-limit       Configure PA level transmit ring limit
+  udld                Configure UDLD enabled or disabled and ignore global UDLD
+                      setting
+  vines               VINES interface subcommands
+  vtp                 Enable VTP on this interface
+  xconnect            Xconnect commands
+
+Switch(config-if)#switchport trunk encapsulation dot1q
+Switch(config-if)#switchport mode trunk
+Switch(config-if)##switchport trunk allow
+Switch(config-if)#exit                                   
+Switch(config)#int gi 0/0
+Switch(config-if)#switchport trunk encapsulation dot1q
+Switch(config-if)#switchport mode trunk
+Switch(config-if)#switchport trunk native vlan 100
+Switch(config-if)#exit
+Switch(config)#int gi 0/2
+Switch(config-if)#switchport trunk encapsulation dot1q
+Switch(config-if)#switchport mode trunk
+Switch(config-if)#?
+Interface configuration commands:
+  aaa                 Authentication, Authorization and Accounting.
+  access-expression   Build a bridge boolean access expression
+  access-session      Access Session specific Interface Configuration Commands
+  apollo              Apollo interface subcommands
+  arp                 Set arp type (arpa, probe, snap) or timeout or log
+                      options
+  authentication      Auth Manager Interface Configuration Commands
+  backup              Modify backup parameters
+  bandwidth           Set bandwidth informational parameter
+  bfd                 BFD interface configuration commands
+  bgp-policy          Apply policy propagated by bgp community string
+  carrier-delay       Specify delay for interface transitions
+  cdp                 CDP interface subcommands
+  channel-group       Etherchannel/port bundling configuration
+  channel-protocol    Select the channel protocol (LACP, PAgP)
+  cmns                OSI CMNS
+  crypto              Encryption/Decryption commands
+  cts                 Configure Cisco Trusted Security
+  custom-queue-list   Assign a custom queue list to an interface
+  dampening           Enable event dampening
+  decnet              Interface DECnet config commands
+  default             Set a command to its defaults
+  delay               Specify interface throughput delay
+  description         Interface specific description
+  dlsw                DLSw interface subcommands
+  dot1q               dot1q interface configuration commands
+  dot1x               Interface Config Commands for IEEE 802.1X
+  dspu                Down Stream PU
+  duplex              Configure duplex operation.
+  ethernet            Ethernet interface parameters
+  exit                Exit from interface configuration mode
+  fair-queue          Enable Fair Queuing on an Interface
+  flow-sampler        Attach flow sampler to the interface
+  flowcontrol         Configure flow operation.
+  fras                DLC Switch Interface Command
+  help                Description of the interactive help system
+  history             Interface history histograms - 60 second, 60 minute and
+                      72 hour
+  hold-queue          Set hold queue depth
+  ip                  Interface Internet Protocol config commands
+  ipv6                IPv6 interface subcommands
+  isis                IS-IS commands
+  iso-igrp            ISO-IGRP interface subcommands
+  keepalive           Enable keepalive
+  l2protocol          Configure l2 control protocol processing
+  l2protocol-tunnel   Tunnel Layer2 protocols
+  lacp                LACP interface subcommands
+  lan-name            LAN Name command
+  link                Interface link related commands
+  lisp                Locator/ID Separation Protocol
+  llc2                LLC2 Interface Subcommands
+  lldp                LLDP interface subcommands
+  load-interval       Specify interval for load calculation for an interface
+  locaddr-priority    Assign a priority group
+  location            Interface location information
+  logging             Configure logging for interface
+  loopback            Configure internal loopback on an interface
+  mab                 MAC Authentication Bypass Interface Config Commands
+  mac                 MAC interface commands
+  mac-address         Manually set interface MAC address
+  macro               Command macro
+  macsec              Enable macsec on the interface
+  media-type          Configure media type
+  metadata            Metadata Application
+  mka                 MACsec Key Agreement (MKA) interface configuration
+  mpls                Configure MPLS interface parameters
+  mtu                 Set the interface Maximum Transmission Unit (MTU)
+  negotiation         Select autonegotiation mode
+  netbios             Use a defined NETBIOS access list or enable name-caching
+  nmsp                NMSP interface configuration
+  no                  Negate a command or set its defaults
+  onep                Configure onep settings
+  pagp                PAgP interface subcommands
+  priority-group      Assign a priority group to an interface
+  random-detect       Enable Weighted Random Early Detection (WRED) on an
+                      Interface
+  rate-limit          Rate Limit
+  routing             Per-interface routing configuration
+  sap-priority        Assign a priority group
+  service             Configure Ether Service
+  service-policy      Configure CPL Service Policy
+  shutdown            Shutdown the selected interface
+  smrp                Simple Multicast Routing Protocol interface subcommands
+  sna                 SNA pu configuration
+  snapshot            Configure snapshot support on the interface
+  snmp                Modify SNMP interface parameters
+  source              Get config from another source
+  spanning-tree       Spanning Tree Subsystem
+  speed               Configure speed operation.
+  subscriber          Subscriber inactivity timeout value.
+  switchport          Set switching mode characteristics
+  tarp                TARP interface subcommands
+  timeout             Define timeout values for this interface
+  topology            Configure routing topology on the interface
+  traffic-shape       Enable Traffic Shaping on an Interface or Sub-Interface
+  transmit-interface  Assign a transmit interface to a receive-only interface
+  tx-ring-limit       Configure PA level transmit ring limit
+  udld                Configure UDLD enabled or disabled and ignore global UDLD
+                      setting
+  vines               VINES interface subcommands
+  vtp                 Enable VTP on this interface
+  xconnect            Xconnect commands
+
+Switch(config-if)#switchport trunk encapsulation dot1q ?
+  <cr>
+
+Switch(config-if)#switchport trunk encapsulation ?     
+  dot1q      Interface uses only 802.1q trunking encapsulation when trunking
+  isl        Interface uses only ISL trunking encapsulation when trunking
+  negotiate  Device will negotiate trunking encapsulation with peer on
+             interface
+
+Switch(config-if)#exit                           
+Switch(config)#int gi 1/0
+Switch(config-if)#vla
+Switch(config-if)#vla
+Switch(config-if)#vla
+Switch(config-if)#?  
+Interface configuration commands:
+  aaa                 Authentication, Authorization and Accounting.
+  access-expression   Build a bridge boolean access expression
+  access-session      Access Session specific Interface Configuration Commands
+  apollo              Apollo interface subcommands
+  arp                 Set arp type (arpa, probe, snap) or timeout or log
+                      options
+  backup              Modify backup parameters
+  bandwidth           Set bandwidth informational parameter
+  bfd                 BFD interface configuration commands
+  bgp-policy          Apply policy propagated by bgp community string
+  carrier-delay       Specify delay for interface transitions
+  cdp                 CDP interface subcommands
+  channel-group       Etherchannel/port bundling configuration
+  channel-protocol    Select the channel protocol (LACP, PAgP)
+  cmns                OSI CMNS
+  crypto              Encryption/Decryption commands
+  cts                 Configure Cisco Trusted Security
+  custom-queue-list   Assign a custom queue list to an interface
+  dampening           Enable event dampening
+  decnet              Interface DECnet config commands
+  default             Set a command to its defaults
+  delay               Specify interface throughput delay
+  description         Interface specific description
+  dlsw                DLSw interface subcommands
+  dot1q               dot1q interface configuration commands
+  dspu                Down Stream PU
+  duplex              Configure duplex operation.
+  ethernet            Ethernet interface parameters
+  exit                Exit from interface configuration mode
+  fair-queue          Enable Fair Queuing on an Interface
+  flow-sampler        Attach flow sampler to the interface
+  flowcontrol         Configure flow operation.
+  fras                DLC Switch Interface Command
+  help                Description of the interactive help system
+  history             Interface history histograms - 60 second, 60 minute and
+                      72 hour
+  hold-queue          Set hold queue depth
+  ip                  Interface Internet Protocol config commands
+  ipv6                IPv6 interface subcommands
+  isis                IS-IS commands
+  iso-igrp            ISO-IGRP interface subcommands
+  keepalive           Enable keepalive
+  l2protocol          Configure l2 control protocol processing
+  l2protocol-tunnel   Tunnel Layer2 protocols
+  lacp                LACP interface subcommands
+  lan-name            LAN Name command
+  link                Interface link related commands
+  lisp                Locator/ID Separation Protocol
+  llc2                LLC2 Interface Subcommands
+  lldp                LLDP interface subcommands
+  load-interval       Specify interval for load calculation for an interface
+  locaddr-priority    Assign a priority group
+  location            Interface location information
+  logging             Configure logging for interface
+  loopback            Configure internal loopback on an interface
+  mac                 MAC interface commands
+  mac-address         Manually set interface MAC address
+  macro               Command macro
+  macsec              Enable macsec on the interface
+  media-type          Configure media type
+  metadata            Metadata Application
+  mka                 MACsec Key Agreement (MKA) interface configuration
+  mpls                Configure MPLS interface parameters
+  mtu                 Set the interface Maximum Transmission Unit (MTU)
+  negotiation         Select autonegotiation mode
+  netbios             Use a defined NETBIOS access list or enable name-caching
+  nmsp                NMSP interface configuration
+  no                  Negate a command or set its defaults
+  onep                Configure onep settings
+  pagp                PAgP interface subcommands
+  priority-group      Assign a priority group to an interface
+  random-detect       Enable Weighted Random Early Detection (WRED) on an
+                      Interface
+  rate-limit          Rate Limit
+  routing             Per-interface routing configuration
+  sap-priority        Assign a priority group
+  service             Configure Ether Service
+  service-policy      Configure CPL Service Policy
+  shutdown            Shutdown the selected interface
+  smrp                Simple Multicast Routing Protocol interface subcommands
+  sna                 SNA pu configuration
+  snapshot            Configure snapshot support on the interface
+  snmp                Modify SNMP interface parameters
+  source              Get config from another source
+  spanning-tree       Spanning Tree Subsystem
+  speed               Configure speed operation.
+  subscriber          Subscriber inactivity timeout value.
+  switchport          Set switching mode characteristics
+  tarp                TARP interface subcommands
+  timeout             Define timeout values for this interface
+  topology            Configure routing topology on the interface
+  traffic-shape       Enable Traffic Shaping on an Interface or Sub-Interface
+  transmit-interface  Assign a transmit interface to a receive-only interface
+  tx-ring-limit       Configure PA level transmit ring limit
+  udld                Configure UDLD enabled or disabled and ignore global UDLD
+                      setting
+  vines               VINES interface subcommands
+  vtp                 Enable VTP on this interface
+  xconnect            Xconnect commands
+
+Switch(config-if)#switchport trunk encapsulation dot1q
+Switch(config-if)#switchport mode trunk
+Switch(config-if)#switchport native vlan 200
+                              ^
+% Invalid input detected at '^' marker.
+
+Switch(config-if)#switchport trunk native vlan 200
+Switch(config-if)#exit
+Switch(config)#int gi 0/3
+Switch(config-if)#switchport trunk encapsulation dot1q
+Switch(config-if)#switchport mode trunk
+Switch(config-if)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+*Dec 18 09:04:04.171: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>Q
+Switch>Q
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>
+Switch>
+Switch>en
+Switch#show run
+Switch#show running-config 
+Building configuration...
+
+Current configuration : 3301 bytes
+!
+! Last configuration change at 09:04:04 UTC Fri Dec 18 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!         
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+interface GigabitEthernet0/0
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 100
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!         
+interface GigabitEthernet1/0
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 200
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!         
+!
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+Switch#
+-Traceback= 2419228z 9605E5z 989BFEz 989920z 98972Dz 9858B5z 9864EBz 98647Fz 96BD21z 96BC8Ez 866898z 134820Bz 1349A3Dz 121629Dz 39E608Fz 39E5F0Bz - Process "Spanning Tree", CPU hog, PC 0x00981D25
+
+*Dec 18 09:19:04.222: %SYS-3-CPUHOG: Task is running for (1999)msecs, more than (2000)msecs (0/0),process = Spanning Tree.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+-Traceback= 2419228z 9605E5z 989BFEz 989920z 98972Dz 9858B5z 9864EBz 98647Fz 97094Dz 96F955z 96F3B6z 3B3EEFDz 86BCE3z - Process "Per-Second Jobs", CPU hog, PC 0x00981D25
+
+*Dec 18 18:08:59.885: %SYS-3-CPUHOG: Task is running for (1999)msecs, more than (2000)msecs (0/0),process = Per-Second Jobs.
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>
+Switch>Q
+Switch>Q
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>en
+Switch#show run
+Building configuration...
+
+Current configuration : 3301 bytes
+!
+! Last configuration change at 09:04:04 UTC Fri Dec 18 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!         
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+interface GigabitEthernet0/0
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 100
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!         
+interface GigabitEthernet1/0
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 200
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!         
+!
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+Switch#show ip int bri
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#int gi 0/0
+Switch(config-if)#switchport trunk allowed vlan 1,100
+Switch(config-if)#exit
+Switch(config)#int gi 0/1
+Switch(config-if)#switchport trunk allowed vlan 1,100
+Switch(config-if)#exit
+Switch(config)#int gi 0/2                         
+Switch(config-if)#switchport trunk allowed vlan 1,100
+Switch(config-if)#exit
+Switch(config)#int gi 1/0
+Switch(config-if)#switchport trunk allowed vlan 1,200
+Switch(config-if)#exit
+Switch(config)#int gi 0/3
+Switch(config-if)#switchport trunk allowed vlan 1,200
+Switch(config-if)#exit
+Switch(config)#
+-Traceback= 2419228z 9605E5z 989BFEz 989920z 98972Dz 9858B5z 9864EBz 98647Fz 97B0F2z 9766B4z - Process "IOSv e1000", CPU hog, PC 0x0097C63E
+
+*Dec 18 19:07:51.276: %SYS-3-CPUHOG: Task is running for (1999)msecs, more than (2000)msecs (0/0),process = IOSv e1000.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+*Dec 18 19:13:15.798: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>
+Switch>en
+Switch#sho run
+Building configuration...
+
+Current configuration : 3486 bytes
+!
+! Last configuration change at 19:13:15 UTC Fri Dec 18 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!         
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+interface GigabitEthernet0/0
+ switchport trunk allowed vlan 1,100
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 100
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk allowed vlan 1,100
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk allowed vlan 1,100
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ switchport trunk allowed vlan 1,200
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ switchport trunk allowed vlan 1,200
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 200
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+          
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#int gi 0/3
+Switch(config-if)#switchport trunk allowed vlan 1,200,100
+Switch(config-if)#exit
+Switch(config)#int gi 0/2
+Switch(config-if)#switchport trunk allowed vlan 1,100,200
+Switch(config-if)#exit
+Switch(config)#exit
+Switch#
+*Dec 18 22:34:07.802: %SYS-5-CONFIG_I: Configured from console by consoleshow run
+Building configuration...
+
+Current configuration : 3494 bytes
+!
+! Last configuration change at 22:34:07 UTC Fri Dec 18 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!         
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+interface GigabitEthernet0/0
+ switchport trunk allowed vlan 1,100
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 100
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk allowed vlan 1,100
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk allowed vlan 1,100,200
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ switchport trunk allowed vlan 1,100,200
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ switchport trunk allowed vlan 1,200
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 200
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+end       
+
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#int gi 0/2                             
+Switch(config-if)#switchport trunk allowed vlan 1,200    
+Switch(config-if)#exit
+Switch(config)#int gi 0/3                             
+Switch(config-if)#switchport trunk allowed vlan 1,100
+Switch(config-if)#exit
+Switch(config)#exit
+Switch#sho 
+*Dec 18 22:39:13.397: %SYS-5-CONFIG_I: Configured from console by consolerun
+Building configuration...
+
+Current configuration : 3486 bytes
+!
+! Last configuration change at 22:39:13 UTC Fri Dec 18 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!         
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+interface GigabitEthernet0/0
+ switchport trunk allowed vlan 1,100
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 100
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk allowed vlan 1,100
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk allowed vlan 1,200
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ switchport trunk allowed vlan 1,100
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ switchport trunk allowed vlan 1,200
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 200
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+          
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#int gi 0/3                         
+Switch(config-if)#switchport trunk allowed vlan 1,200
+Switch(config-if)#exit
+Switch(config)#int gi 0/2                         
+Switch(config-if)#switchport trunk allowed vlan 1,100
+Switch(config-if)#exit
+Switch(config)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+*Dec 18 22:50:32.244: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>
+Switch>en
+Switch#wr
+Building configuration...
+Compressed configuration from 3486 bytes to 1638 bytes[OK]
+Switch#
+*Dec 18 22:59:56.154: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Dec 18 22:59:56.996: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>en
+Switch#sho run
+Building configuration...
+
+Current configuration : 3486 bytes
+!
+! Last configuration change at 22:50:32 UTC Fri Dec 18 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!         
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+interface GigabitEthernet0/0
+ switchport trunk allowed vlan 1,100
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 100
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk allowed vlan 1,100
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk allowed vlan 1,100
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ switchport trunk allowed vlan 1,200
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ switchport trunk allowed vlan 1,200
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 200
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+          
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#int gi 0/3
+Switch(config-if)#switchport trunk allowed vlan 1,100
+Switch(config-if)#switchport trunk allowed vlan 1,200
+Switch(config-if)#exit
+Switch(config)#interface GigabitEthernet0/2
+Switch(config-if)#switchport trunk allowed vlan 1,200
+Switch(config-if)#exit
+Switch(config)#interface GigabitEthernet0/2
+Switch(config-if)#switchport trunk allowed vlan 1,100,200
+Switch(config-if)#exit
+Switch(config)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+*Dec 19 10:07:19.841: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>en
+Switch#sho run 
+Building configuration...
+
+Current configuration : 3490 bytes
+!
+! Last configuration change at 10:07:19 UTC Sat Dec 19 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!         
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+interface GigabitEthernet0/0
+ switchport trunk allowed vlan 1,100
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 100
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk allowed vlan 1,100
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk allowed vlan 1,100,200
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ switchport trunk allowed vlan 1,200
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ switchport trunk allowed vlan 1,200
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 200
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+end       
+
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan 300
+Switch(config-vlan)#exit
+Switch(config)#int gi 0/1
+Switch(config-if)#switchport trunk allowed vlan 1,300
+Switch(config-if)#exit
+Switch(config)#int gi 1/0
+Switch(config-if)#switchport trunk allowed vlan 1,300
+Switch(config-if)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+*Dec 19 10:22:22.660: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>
+Switch>en
+Switch#interface GigabitEthernet0/0
+        ^
+% Invalid input detected at '^' marker.
+
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#interface GigabitEthernet0/0
+Switch(config-if)#no switchport trunk allowed vlan 1,100
+Switch(config-if)#no switchport trunk encapsulation dot1q
+Command rejected: A port which is configured to "trunk" mode can not be configured to negotiate the encapsulation.
+Switch(config-if)#no switchport trunk native vlan 100
+Switch(config-if)#switchport mode acce
+Switch(config-if)#switchport mode access 
+Switch(config-if)#exit
+Switch(config)#exit
+Switch#show run
+*Dec 19 10:25:30.217: %SYS-5-CONFIG_I: Configured from console by console
+Building configuration...
+
+Current configuration : 3420 bytes
+!
+! Last configuration change at 10:25:30 UTC Sat Dec 19 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!         
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+interface GigabitEthernet0/0
+ switchport trunk encapsulation dot1q
+ switchport mode access
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk allowed vlan 1,300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk allowed vlan 1,100,200
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ switchport trunk allowed vlan 1,200
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ switchport trunk allowed vlan 1,300
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 200
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!         
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#no switchport trunk encapsulation dot1q
+                   ^
+% Invalid input detected at '^' marker.
+
+Switch(config)#in gi 0/0                              
+Switch(config-if)#no switchport trunk encapsulation dot1q
+Switch(config-if)#exit
+Switch(config)#int gi 0/0
+Switch(config-if)#no switchport mode access
+Switch(config-if)#switchport trunk encapsulation dot1q
+Switch(config-if)#switchport mode trunk
+Switch(config-if)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+*Dec 19 10:44:06.314: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#int gi 0/0
+Switch(config-if)#switchport trunk allowed vlan 1,200,300
+Switch(config-if)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+*Dec 19 11:00:52.504: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>en
+Switch#show run
+Building configuration...
+
+Current configuration : 3460 bytes
+!
+! Last configuration change at 11:00:52 UTC Sat Dec 19 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!         
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+interface GigabitEthernet0/0
+ switchport trunk allowed vlan 1,200,300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk allowed vlan 1,300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk allowed vlan 1,100,200
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ switchport trunk allowed vlan 1,200
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ switchport trunk allowed vlan 1,300
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 200
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ --More-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>
+Switch>
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#in GigabitEthernet0/0
+Switch(config-if)#no switchport trunk allowed vlan 1,200,300
+Switch(config-if)#exit
+Switch(config)#int GigabitEthernet0/2
+Switch(config-if)#switchport trunk allowed vlan 1,100,200
+Switch(config-if)#no switchport trunk allowed vlan 1,100,200
+Switch(config-if)#exit
+Switch(config)#int GigabitEthernet0/1
+Switch(config-if)#no switchport trunk allowed vlan 1,300
+Switch(config-if)#exit
+Switch(config)#in GigabitEthernet0/3
+Switch(config-if)#no  switchport trunk allowed vlan 1,200
+Switch(config-if)#exit
+Switch(config)#int GigabitEthernet1/0
+Switch(config-if)#no  switchport trunk allowed vlan 1,300
+Switch(config-if)#exit
+Switch(config)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+*Dec 20 06:20:56.460: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>
+Switch>
+Switch>
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#exit
+Switch#sho
+*Dec 20 06:30:04.409: %SYS-5-CONFIG_I: Configured from console by console 
+% Type "show ?" for a list of subcommands
+Switch#sho run
+Building configuration...
+
+Current configuration : 3267 bytes
+!
+! Last configuration change at 06:30:04 UTC Sun Dec 20 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!         
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+interface GigabitEthernet0/0
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 200
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!         
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#int GigabitEthernet0/1
+Switch(config-if)#switchport trunk allowed vlan 1,110,200,300
+Switch(config-if)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+*Dec 20 06:41:44.486: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>
+Switch>
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#switchport trunk native vlan 110
+                ^
+% Invalid input detected at '^' marker.
+
+Switch(config)#int gi 0/0
+Switch(config-if)#switchport trunk native vlan 110
+Switch(config-if)#exit
+Switch(config)#exit
+Switch#sho
+*Dec 20 07:16:47.091: %SYS-5-CONFIG_I: Configured from console by console run
+Building configuration...
+
+Current configuration : 3346 bytes
+!
+! Last configuration change at 07:16:47 UTC Sun Dec 20 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!         
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+interface GigabitEthernet0/0
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 110
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk allowed vlan 1,110,200,300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 200
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#int gi 0/0
+Switch(config-if)#switchport trunk allowed vlan 1,110,200,300
+Switch(config-if)#do ping 192.168.10.2
+% Unrecognized host or address, or protocol not running.
+
+Switch(config-if)#exit
+Switch(config)#exit
+Switch#ping 
+*Dec 20 07:19:36.361: %SYS-5-CONFIG_I: Configured from console by console192.168.10.2
+% Unrecognized host or address, or protocol not running.
+
+Switch#vlna
+Switch#vlaa
+Switch#vla 
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#exit   
+Switch#vlan 
+*Dec 20 07:23:26.553: %SYS-5-CONFIG_I: Configured from console by consoleid 110
+            ^
+% Invalid input detected at '^' marker.
+
+Switch#vlan id 100
+            ^
+% Invalid input detected at '^' marker.
+
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan id 100
+                       ^
+% Invalid input detected at '^' marker.
+
+Switch(config)#exit
+Switch#vlan 
+*Dec 20 07:25:39.433: %SYS-5-CONFIG_I: Configured from console by console
+% Incomplete command.
+
+Switch#vlan id 100
+            ^
+% Invalid input detected at '^' marker.
+
+Switch#vlan id 200
+            ^
+% Invalid input detected at '^' marker.
+
+Switch#vlan 100
+            ^
+% Invalid input detected at '^' marker.
+
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan id 200
+                       ^
+% Invalid input detected at '^' marker.
+
+Switch(config)#vlan 110
+Switch(config-vlan)#exit
+Switch(config)#exit
+Switch#
+*Dec 20 07:26:59.822: %SYS-5-CONFIG_I: Configured from console by consolevlan id 110
+            ^
+% Invalid input detected at '^' marker.
+
+Switch#exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>
+Switch>
+Switch>
+Switch>
+Switch>en
+Switch#vlan ?
+% Unrecognized command
+Switch#vla  
+Switch#show ?
+  aaa                Show AAA values
+  access-expression  List access expression
+  access-lists       List access lists
+  acircuit           Access circuit info
+  adjacency          Adjacent nodes
+  aliases            Display alias commands
+  alps               Alps information
+  ancp               ANCP information
+  apollo             Apollo network information
+  appletalk          AppleTalk information
+  application        Application Routing
+  arap               Show Appletalk Remote Access statistics
+  archive            Archive functions
+  arp                ARP table
+  async              Information on terminal lines used as router interfaces
+  authentication     Shows Auth Manager stats, registrations or sessions
+  auto               Show Automation Template
+  backup             Backup status
+  banner             Display banner information
+  beep               Show BEEP information
+  bfd                BFD protocol info
+  bgp                BGP information
+  bootvar            Boot and related environment variable
+  bridge             Bridge Forwarding/Filtering Database [verbose]
+  bridge-domain      Bridge-domain
+  bsc                BSC interface information
+  bstun              BSTUN interface information
+  buffers            Buffer pool statistics
+  caaa               Subscriber Policy Entity Information
+  cache              Shows Device-Sensor Cache Informations 
+  calendar           Display the hardware calendar
+  capability         Capability Information
+  cca                CCA information
+  cce                Common Classification Engine (CCE)
+  cdp                CDP information
+  cef                CEF address family independent status
+  cisp               Shows CISP information
+  class-map          Show CPL Class Map
+  clns               CLNS network information
+  clock              Display the system clock
+  cls                DLC user information
+  cns                CNS agents
+  compress           Show compression statistics
+  configuration      Contents of Non-Volatile memory
+  connection         Show Connection
+  controllers        Interface controller status
+  cops               COPS information
+  crypto             Encryption module
+  cts                Cisco Trusted Security information
+  dampening          Display dampening information 
+  data-corruption    Show data errors
+  debugging          State of each debugging option
+  decnet             DECnet information
+  derived-config     Derived operating configuration
+  device-sensor      Shows Device Sensor Information 
+  dhcp               Dynamic Host Configuration Protocol status
+  dialer             Dialer parameters and statistics
+  dlsw               Data Link Switching information
+  dnsix              Shows Dnsix/DMDP information
+  dot1q-tunnel       Display dot1q tunnel ports
+  dot1x              Dot1x information
+  drip               DRiP DB
+  dspu               Display DSPU information
+  dtp                DTP information
+  dxi                atm-dxi information
+  eap                Shows EAP registration/session information
+  eigrp              EIGRP show commands
+  energywise         EnergyWise show commands
+  entry              Queued terminal entries
+  epm                EPM information
+  errdisable         Error disable
+  etherchannel       EtherChannel information
+  ethernet           Ethernet parameters
+  event              Embedded event related commands
+  exception          exception informations
+  fallback           Display Fallback configuration
+  fhrp               FHRP information
+  file               Show filesystem information
+  flash0:            display information about flash0: file system
+  flash1:            display information about flash1: file system
+  flash2:            display information about flash2: file system
+  flash3:            display information about flash3: file system
+  flash:             display information about flash: file system
+  flow               Flow information
+  flow-sampler       Display the flow samplers configured
+  flowcontrol        show flow control information
+  format             Show format information
+  frame-relay        Frame-Relay information
+  fras               FRAS Information
+  fras-host          FRAS Host Information
+  funi               FUNI information
+  glbp               GLBP information
+  history            Display the session command history
+  hosts              IP domain-name, lookup style, nameservers, and host table
+  html               HTML helper commands
+  id-manager         ID pool manager
+  idb                List of Interface Descriptor Blocks
+  identity           Identity profiles and policies
+  if-mgr             if-mgr information
+  interfaces         Interface status and configuration
+  inventory          Show the physical inventory
+  ip                 IP information
+  ipc                Interprocess communications commands
+  ipv6               IPv6 information
+  isis               IS-IS routing information
+  kerberos           Show Kerberos Values
+  key                Key information
+  keymap             Terminal keyboard mappings
+  keystore           Show keystore information
+  kron               Kron Subsystem
+  l2                 Layer 2
+  l2protocol-tunnel  Display L2PT status and configurations
+  lacp               Port channel information
+  line               TTY line information
+  lisp               Locator/ID Separation Protocol
+  llc2               IBM LLC2 circuit information
+  lldp               LLDP information
+  lnm                IBM LAN manager
+  local-ack          Local Acknowledgement virtual circuits
+  location           Display the system location
+  logging            Show the contents of logging buffers
+  login              Display Secure Login Configurations and State
+  mab                MAB information
+  mac                MAC configuration
+  macdb              show MAC database
+  macsec             Shows MACSEC information
+  management         Display the management applications
+  mdns               MDNS feature
+  mediatrace         Mediatrace show commands
+  memory             Memory statistics
+  mfib               MFIB address family independent status
+  mka                MACsec Key Agreement (MKA) display
+  modemcap           Show Modem Capabilities database
+  monitor            Monitoring different system events
+  mpls               MPLS information
+  mtm                MTM
+  mvpn               Multicast VPN Information
+  nbf                NBF (NetBEUI) information
+  ncia               Native Client Interface Architecture
+  netbios-cache      NetBIOS name cache contents
+  netconf            Show NETCONF information
+  nmsp               nmsp show commands
+  ntp                Network time protocol
+  object-group       List object groups
+  odb                Opaque Database
+  odm-format         Show the schema used for ODM input file
+  onep               ONEP related commands
+  pagp               Port channel information
+  parameter-map      Show parameter map of type
+  parser             Display parser information
+  pas                Port Adaptor Information
+  pci                PCI Information
+  performance        Media Monitor show commands
+  persistent         Show persistent information
+  platform           Displays platform information
+  pm                 Show Port Manager commands
+  pnp                Display PNP information
+  policy-manager     Policy Manager
+  policy-map         Show Policy Map
+  port-security      Show secure port information
+  ppp                PPP parameters and statistics
+  pre                PRE show commands
+  privilege          Show current privilege level
+  processes          Active process statistics
+  protocols          Active network routing protocols
+  qos                Quality of Service show commands
+  queue              Show queue contents
+  queueing           Show queueing configuration
+  radius             Shows radius information
+  rate-limit stats   Show rate limit enforcement information
+  region             Region Manager Status
+  registry           Function registry information
+  reload             Scheduled reload information
+  resource           Resource group statistics
+  rhosts             Remote-host+user equivalences
+  rib                Routing Information Base
+  rif                RIF cache entries
+  route-map          route-map information
+  route-tag          route-tag information
+  rpl                RPL protocol status
+  running-config     Current operating configuration
+  sampler            Sampler information
+  sasl               show SASL information
+  scalable-queue     Scalable Queue statistics
+  sched-event        Scheduler event information
+  sdllc              Display sdlc - llc2 conversion information
+  service-routing    Service-Routing show commands
+  service-template   Show service-templates/identity policies
+  sessions           Information about Telnet connections
+  smf                Software MAC filter
+  smrp               Simple Multicast Routing Protocol (SMRP) information
+  sna                Display SNA host information
+  snapshot           Snapshot parameters and statistics
+  snmp               snmp statistics
+  sockets            Socket Details
+  software           List software information
+  source-bridge      Source-bridge parameters and statistics
+  spanning-tree      Spanning tree topology
+  ssh                Status of SSH server connections
+  ssm                Segment Switching Manager Status
+  stacks             Process stack utilization
+  standby            Hot Standby Router Protocol (HSRP) information
+  startup-config     Contents of startup configuration
+  stun               STUN status and configuration
+  subscriber         Subscriber Service Switch Information
+  subscriber-policy  Subscriber policy
+  subsys             Show subsystem information
+  table-map          Show Table Map
+  tacacs             Shows tacacs+ server statistics 
+  tarp               TARP information
+  tcp                Status of TCP connections
+  tech-support       Show system information for Tech-Support
+  template           Template information
+  terminal           Display terminal configuration parameters
+  test_rib_access    RIB_ACCESS TEST info
+  time-range         Time range
+  tn3270             TN3270 settings
+  topology           Topology instance information
+  trace              Show trace options
+  track              Tracking information
+  traffic-shape      traffic rate shaping configuration
+  translate          Protocol translation information
+  ttycap             Terminal capability tables
+  tunnel             Show configured tunnels
+  udld               UDLD information
+  udp                UDP Details
+  users              Display information about terminal lines
+  version            System hardware and software status
+  vfi                Virtual Forwarding Instance information
+  vines              VINES information
+  vlan               VTP VLAN status
+  vlans              Virtual LANs Information
+  vnet               Virtual NETwork instance information
+  vrf                VPN Routing/Forwarding instance information
+  vrrp               VRRP information
+  vtemplate          Virtual Template interface information
+  vtp                VTP information
+  wccp               WCCP information
+  whoami             Info on current tty line
+  wsma               Show Web Services Management Agents information
+  x25                X.25 information
+  x29                X.29 information
+  xconnect           xconnect information
+  xos                Cross-OS Library Information and Traces
+  xsd-format         Show the ODM XSD for the command
+
+Switch#show vlan ?
+  access-log    VACL Logging
+  access-map    Vlan access-map
+  brief         VTP all VLAN status in brief
+  dot1q         Display dot1q parameters
+  filter        VLAN filter information
+  group         VLAN group(s) information
+  id            VTP VLAN status by VLAN id
+  ifindex       SNMP ifIndex
+  internal      VLAN internal usage
+  mtu           VLAN MTU information
+  name          VTP VLAN status by VLAN name
+  private-vlan  Private VLAN information
+  remote-span   Remote SPAN VLANs
+  summary       VLAN summary information
+  |             Output modifiers
+  <cr>
+
+Switch#show vlan id
+% Incomplete command.
+
+Switch#show vlan id 110
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+110  VLAN0110                         active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+110  enet  100110     1500  -      -      -        -    -        0      0   
+
+Remote SPAN VLAN
+----------------
+Disabled
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+
+Switch#show vlan id 100
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+100  VLAN0100                         active    Gi0/2, Gi0/3, Gi1/0
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+100  enet  100100     1500  -      -      -        -    -        0      0   
+
+Remote SPAN VLAN
+----------------
+Disabled
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+
+Switch#show vlan id 200
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+200  VLAN0200                         active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+200  enet  100200     1500  -      -      -        -    -        0      0   
+
+Remote SPAN VLAN
+----------------
+Disabled
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+
+Switch#show vlan id 300
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+300  VLAN0300                         active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+300  enet  100300     1500  -      -      -        -    -        0      0   
+
+Remote SPAN VLAN
+----------------
+Disabled
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+
+Switch#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>
+Switch>en
+Switch#sho ip int gi 0/1
+GigabitEthernet0/1 is up, line protocol is up
+  Inbound  access list is not set
+Switch#sho run
+Building configuration...
+
+Current configuration : 3391 bytes
+!
+! Last configuration change at 07:26:59 UTC Sun Dec 20 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!         
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+interface GigabitEthernet0/0
+ switchport trunk allowed vlan 1,110,200,300
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 110
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk allowed vlan 1,110,200,300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 200
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan 400
+Switch(config-vlan)#exit
+Switch(config)#int GigabitEthernet1/0
+Switch(config-if)#no switchport trunk native vlan 200
+Switch(config-if)#switchport trunk native vlan 400
+Switch(config-if)#switchport trunk allowed vlan 1,110,200,300,400
+Switch(config-if)#exit
+Switch(config)#exit
+Switch#show 
+*Dec 20 07:52:05.114: %SYS-5-CONFIG_I: Configured from console by consolerun
+Building configuration...
+
+Current configuration : 3440 bytes
+!
+! Last configuration change at 07:52:05 UTC Sun Dec 20 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!         
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+interface GigabitEthernet0/0
+ switchport trunk allowed vlan 1,110,200,300
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 110
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk allowed vlan 1,110,200,300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ switchport trunk allowed vlan 1,110,200,300,400
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 400
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+          
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#int GigabitEthernet0/3
+Switch(config-if)#switchport trunk allowed vlan 1,110,200,300,400
+Switch(config-if)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+*Dec 20 08:05:00.413: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#int GigabitEthernet0/3
+Switch(config-if)#no switchport trunk allowed vlan 1,110,200,300,400
+Switch(config-if)#no switchport trunk native vlan 400
+Switch(config-if)#exit 
+Switch(config)#int gi 0/0
+Switch(config-if)#no switchport trunk native vlan 110
+Switch(config-if)#switchport trunk native vlan 110
+Switch(config-if)#exit
+Switch(config)#int GigabitEthernet1/0
+Switch(config-if)#exit
+Switch(config)#exit
+Switch#
+*Dec 20 08:16:19.047: %SYS-5-CONFIG_I: Configured from console by console
+Switch#sho run
+Building configuration...
+
+Current configuration : 3440 bytes
+!
+! Last configuration change at 08:16:19 UTC Sun Dec 20 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!         
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+interface GigabitEthernet0/0
+ switchport trunk allowed vlan 1,110,200,300
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 110
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk allowed vlan 1,110,200,300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ switchport trunk allowed vlan 1,110,200,300,400
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 400
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!         
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+Switch#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>en
+Switch#sho int bri
+                ^
+% Invalid input detected at '^' marker.
+
+Switch#sho ip int bri
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#int GigabitEthernet0/3
+Switch(config-if)#exit
+Switch(config)#in gi 1/0
+Switch(config-if)#no switchport trunk native vlan 400
+Switch(config-if)#no switchport trunk allowed vlan 1,110,200,300,400
+Switch(config-if)#switchport trunk allowed vlan 1,400
+Switch(config-if)#no switchport trunk allowed vlan 1,400
+Switch(config-if)#exit
+Switch(config)#in gi 1/0                                         
+Switch(config-if)#exit
+Switch(config)#exit
+Switch#sh
+*Dec 20 08:48:13.332: %SYS-5-CONFIG_I: Configured from console by console
+% Type "show ?" for a list of subcommands
+Switch#show vlan id 400
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+400  VLAN0400                         active    Gi0/2, Gi0/3, Gi1/0
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+400  enet  100400     1500  -      -      -        -    -        0      0   
+
+Remote SPAN VLAN
+----------------
+Disabled
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+
+Switch#wr
+Building configuration...
+Compressed configuration from 3357 bytes to 1597 bytes[OK]
+Switch#
+*Dec 20 08:51:26.303: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Dec 20 08:51:27.201: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+Switch#sho run
+Building configuration...
+
+Current configuration : 3357 bytes
+!
+! Last configuration change at 08:48:13 UTC Sun Dec 20 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!         
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+interface GigabitEthernet0/0
+ switchport trunk allowed vlan 1,110,200,300
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 110
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk allowed vlan 1,110,200,300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#int gi 0/0                                     
+Switch(config-if)#no switchport trunk allowed vlan 1,110,200,300
+Switch(config-if)#exit
+Switch(config)#int gi 0/1
+Switch(config-if)#no switchport trunk allowed vlan 1,110,200,300
+Switch(config-if)#exit
+Switch(config)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+*Dec 20 09:07:52.998: %SYS-5-CONFIG_I: Configured from console by console
+-Traceback= 2419228z 9605E5z 989BFEz 989920z 98972Dz 9858B5z 9864EBz 98647Fz 1471357z 14717A1z 96C678z 96BE1Ez 96BC8Ez 866898z 1451406z 1451201z - Process "IOSv e1000", CPU hog, PC 0x02130450
+
+*Dec 20 10:08:39.373: %SYS-3-CPUHOG: Task is running for (1997)msecs, more than (2000)msecs (0/0),process = IOSv e1000.
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>
+Switch>en
+Switch#wr
+Building configuration...
+Compressed configuration from 3267 bytes to 1546 bytes[OK]
+Switch#
+*Dec 20 12:02:07.998: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Dec 20 12:02:08.852: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>
+Switch>
+Switch>enable
+Switch#terminal length 0
+Switch#show running-config
+Building configuration...
+
+Current configuration : 3267 bytes
+!
+! Last configuration change at 09:07:52 UTC Sun Dec 20 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 110
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+Switch#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+qemu: terminating on signal 15 from pid 27902
+                                             Connection closed by foreign host.
+spawn@mydebian:~/.ssh$ 
+

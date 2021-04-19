@@ -1,0 +1,9 @@
+настройка iBGP в ASN300 ч/з route-reflector-client:
+
+R1:
+router bgp 300
+neighbour neighbor 10.0.0.1 route-reflector-client (анонсировали соседу R5 свои префиксы)
+
+R4:
+router bgp 300
+neighbor 10.0.0.13 route-reflector-client (анонсировали соседу R2 свои префиксы)

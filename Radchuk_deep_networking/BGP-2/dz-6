@@ -1,0 +1,41 @@
+dz-6 сети:
+
+настройка iBGP (bgp внутри одной ASN), кстати по iBGP префиксы не передаются их нужно делать через next-hop-self:
+
+R3(config-router)#neighbor 10.0.0.18 remote-as 300
+
+R4(config-router)#neighbor 10.0.0.17 remote-as 300 
+чтобы передать в качестве next-hop свой префикс (префикс на R4 передать R3) нужно делать сл командой
+R4(config-router)#neighbor 10.0.0.17 next-hop-self
+
+Залить все маршруты от скажем ospf в bgp:
+
+router bgp 300
+redistribute ospf 1
+
+
+Пишем политику по анансированию префиксов по bgp только наших из ASN 700:
+
+R7(config)#ip prefix-list pl_ALLOWING-17216 seq 10 permit 172.16.0.0/24 ge 30 le 30
+R7(config)#route-map rm_CHOOSE-BGP-ASN700v2 10
+R7(config-route-map)#match ip address prefix-list pl_ALLOWING-17216
+R7(config-route-map)#set origin igp
+R7(config-route-map)#exit
+R7(config)#route-map rm_CHOOSE-BGP-ASN700v2 deny 20
+
+R7(config)#router bgp 700
+R7(config-router)#neighbor 13.201.255.5 route-map rm_CHOOSE-BGP-ASN700v2 out
+
+
+корректировки:
+
+убрал а R3 анонсирование префикса в сторону R6 (ASN700):
+router bgp 300
+no neighbor 188.24.0.2 route-map rm_CHOOSE-BGP-ASN300 out
+
+также делаем на R7 в сторону R4 (ASN 300):
+router bgp 700
+no neighbor 13.201.255.5 route-map rm_CHOOSE-BGP-ASN700v2 out
+
+
+

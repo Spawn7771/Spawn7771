@@ -1,0 +1,1047 @@
+end
+
+Router1#ping 10.100.0.2
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.100.0.2, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5), round-trip min/avg/max = 11/15/18 ms
+Router1#ping 10.200.0.2
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.200.0.2, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5), round-trip min/avg/max = 12/14/19 ms
+Router1#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Router1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Router1>
+Router1>en
+Router1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router1(config)#inte
+Router1(config)#interface GigabitEthernet0/0.100
+Router1(config-subif)#?
+Interface configuration commands:
+  aaa              Authentication, Authorization and Accounting.
+  arp              Set arp type (arpa, probe, snap), timeout, log options or
+                   packet priority
+  backup           Modify backup parameters
+  bandwidth        Set bandwidth informational parameter
+  bfd              BFD interface configuration commands
+  bgp-policy       Apply policy propagated by bgp community string
+  bridge-group     Transparent bridging interface parameters
+  cdp              CDP interface subcommands
+  clns             CLNS interface subcommands
+  crypto           Encryption/Decryption commands
+  cts              Configure Cisco Trusted Security
+  cws              Configure Cloud Web Security
+  decnet           Interface DECnet config commands
+  default          Set a command to its defaults
+  delay            Specify interface throughput delay
+  description      Interface specific description
+  dlsw             DLSw interface subcommands
+  domain           Specify a domain
+  dspu             Down Stream PU
+  encapsulation    Set encapsulation type for an interface
+  eou              EAPoUDP Interface Configuration Commands
+  ethernet         Ethernet interface parameters
+  exit             Exit from interface configuration mode
+  fhrp             Configure FHRP
+  flow-sampler     Attach flow sampler to the interface
+  fras             DLC Switch Interface Command
+  glbp             Gateway Load Balancing Protocol interface commands
+  ip               Interface Internet Protocol config commands
+  ipv6             IPv6 interface subcommands
+  isis             IS-IS commands
+  iso-igrp         ISO-IGRP interface subcommands
+  keepalive        Enable keepalive
+  lat              LAT commands
+  lisp             Locator/ID Separation Protocol
+  llc2             LLC2 Interface Subcommands
+  lldp             LLDP interface subcommands
+  logging          Configure logging for interface
+  mpls             Configure MPLS interface parameters
+  mtu              Set the interface Maximum Transmission Unit (MTU)
+  nat64            NAT64 interface commands
+  netbios          Use a defined NETBIOS access list or enable name-caching
+  no               Negate a command or set its defaults
+  ntp              Configure NTP
+  onep             Configure onep settings
+  ospfv3           OSPFv3 interface commands
+  performance      Global performance monitor configuration
+  pppoe            pppoe interface subcommands
+  pppoe-client     pppoe client
+  rate-limit       Rate Limit
+  redundancy       RG redundancy interface config
+  routing          Per-interface routing configuration
+  service-policy   Configure CPL Service Policy
+  service-routing  Service Routing in Interface Mode
+  shutdown         Shutdown the selected interface
+  sna              SNA pu configuration
+  snapshot         Configure snapshot support on the interface
+  snmp             Modify SNMP interface parameters
+  source           Get config from another source
+  srlg             Interface Shared Risk Link Group config commands
+  standby          HSRP interface configuration commands
+  tarp             TARP interface subcommands
+  timeout          Define timeout values for this interface
+  topology         Configure routing topology on the interface
+  user-group       Interface-User-group Association
+  utd              UTD support on this interface
+  vrf              VPN Routing/Forwarding parameters on the interface
+  vrrp             VRRP Interface configuration commands
+  waas             WAN Optimization
+  xconnect         Xconnect commands
+  zone-member      Apply zone name
+
+Router1(config-subif)#vrr
+Router1(config-subif)#vrrp ?
+  <1-255>  Group number
+
+Router1(config-subif)#vrrp 1 ip 10.100.0.254
+Router1(config-subif)#
+*Dec 11 10:24:15.284: %VRRP-6-STATECHANGE: Gi0/0.100 Grp 1 state Init -> Backup
+*Dec 11 10:24:15.312: %VRRP-6-STATECHANGE: Gi0/0.100 Grp 1 state Init -> Backup
+Router1(config-subif)#
+*Dec 11 10:24:18.921: %VRRP-6-STATECHANGE: Gi0/0.100 Grp 1 state Backup -> Masterexit
+Router1(config)#sho
+Router1(config)#inet
+Router1(config)#inte
+Router1(config)#interface GigabitEthernet0/0.200 
+Router1(config-subif)#vrr
+Router1(config-subif)#vrrp 2 ip 10.200.0.254
+Router1(config-subif)#
+*Dec 11 10:25:48.756: %VRRP-6-STATECHANGE: Gi0/0.200 Grp 2 state Init -> Backup
+*Dec 11 10:25:52.364: %VRRP-6-STATECHANGE: Gi0/0.200 Grp 2 state Backup -> Master
+Router1(config-subif)#exit
+Router1(config)#exit
+Router1#s
+*Dec 11 10:26:53.522: %SYS-5-CONFIG_I: Configured from console by consolehow 
+% Type "show ?" for a list of subcommands
+Router1#show vrrp 
+Router1#show vrrp ?
+  all        Include groups in disabled state
+  brief      Brief output
+  interface  VRRP interface status and configuration
+  |          Output modifiers
+  <cr>       <cr>
+
+Router1#show vrrp inter
+Router1#show vrrp interface Gi0/0.100
+GigabitEthernet0/0.100 - Group 1  
+  State is Master  
+  Virtual IP address is 10.100.0.254
+  Virtual MAC address is 0000.5e00.0101
+  Advertisement interval is 1.000 sec
+  Preemption enabled
+  Priority is 100 
+  Master Router is 10.100.0.11 (local), priority is 100 
+  Master Advertisement interval is 1.000 sec
+  Master Down interval is 3.609 sec
+
+Router1#show vrrp interface Gi0/0.200
+GigabitEthernet0/0.200 - Group 2  
+  State is Master  
+  Virtual IP address is 10.200.0.254
+  Virtual MAC address is 0000.5e00.0102
+  Advertisement interval is 1.000 sec
+  Preemption enabled
+  Priority is 100 
+  Master Router is 10.200.0.22 (local), priority is 100 
+  Master Advertisement interval is 1.000 sec
+  Master Down interval is 3.609 sec
+
+Router1#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Router1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Router1>
+Router1>en
+Router1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router1(config)#int
+Router1(config)#interface 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Router1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+*Dec 11 10:50:55.926: %SYS-5-CONFIG_I: Configured from console by consoleCC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Router1>
+Router1>
+Router1>en 
+Router1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router1(config)#int
+Router1(config)#interface gi 0/0
+Router1(config-if)#shut
+Router1(config-if)#
+*Dec 11 10:57:33.022: %VRRP-6-STATECHANGE: Gi0/0.100 Grp 1 state Master -> Init
+*Dec 11 10:57:33.028: %VRRP-6-STATECHANGE: Gi0/0.200 Grp 2 state Master -> Init
+*Dec 11 10:57:35.030: %LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to administratively down
+*Dec 11 10:57:36.031: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to down
+Router1(config-if)#
+Router1(config-if)#
+Router1(config-if)#
+Router1(config-if)#end
+Router1#terminal length 0
+Router1#more system:running-config
+
+*Dec 11 11:06:07.025: %SYS-5-CONFIG_I: Configured from console by console
+!
+! Last configuration change at 11:06:07 UTC Fri Dec 11 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname Router1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+no ip domain lookup
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/0.100
+ encapsulation dot1Q 100
+ ip address 10.100.0.11 255.255.255.0
+ vrrp 1 ip 10.100.0.254
+!
+interface GigabitEthernet0/0.200
+ encapsulation dot1Q 200
+ ip address 10.200.0.22 255.255.255.0
+ vrrp 2 ip 10.200.0.254
+!
+interface GigabitEthernet0/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^CCC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^CCC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^CCC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+Router1#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Router1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Router1>
+Router1>
+Router1>enable
+Router1#terminal length 0
+Router1#more system:running-config
+!
+! Last configuration change at 11:06:07 UTC Fri Dec 11 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname Router1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+no ip domain lookup
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/0.100
+ encapsulation dot1Q 100
+ ip address 10.100.0.11 255.255.255.0
+ vrrp 1 ip 10.100.0.254
+!
+interface GigabitEthernet0/0.200
+ encapsulation dot1Q 200
+ ip address 10.200.0.22 255.255.255.0
+ vrrp 2 ip 10.200.0.254
+!
+interface GigabitEthernet0/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^CCC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^CCC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^CCC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+Router1#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Router1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+qConnection closed by foreign host.
+spawn@mydebian:~$ telnet 192.168.1.14 32775
+Trying 192.168.1.14...
+Connected to 192.168.1.14.
+Escape character is '^]'.
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Cisco IOSv (revision 1.0) with  with 984441K/62464K bytes of memory.Installed image archive
+
+Processor board ID 9YTU71ALDY1GYPW1LIS6R
+4 Gigabit Ethernet interfaces
+DRAM configuration is 72 bits wide with parity disabled.
+256K bytes of non-volatile configuration memory.
+2097152K bytes of ATA System CompactFlash 0 (Read/Write)
+0K bytes of ATA CompactFlash 1 (Read/Write)
+0K bytes of ATA CompactFlash 2 (Read/Write)
+0K bytes of ATA CompactFlash 3 (Read/Write)
+
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:01.167: %ATA-6-DEV_FOUND: device 0x1F0
+*Mar  1 00:00:10.262: %NVRAM-5-CONFIG_NVRAM_READ_OK: NVRAM configuration 'flash:/nvram' was read from disk.
+*Dec 13 20:56:37.811: %C3600-3-NOMAC: Can't allocate MAC address for interface 0/0
+*Dec 13 20:56:37.996: %C3600-3-NOMAC: Can't allocate MAC address for interface 0/0
+*Dec 13 20:56:40.480: %C3600-3-NOMAC: Can't allocate MAC address for interface 0/0
+*Dec 13 20:56:48.492: %PA-3-PA_INIT_FAILED: Performance 
+-Traceback= 13148Bz 16079Ez 1604DBz 1602B8z 15A275z 15AE3Fz 41A07A7z 418AB1Ez 418E593z 572397Fz 51D8A44z 5189A2Az 518AD98z 518ACF9z 518AF72z 5189C09z - Process "Crypto CA", CPU hog, PC 0x00155F4C
+Agent failed to initialize (Missing Data License)
+*Dec 13 20:56:54.534: %PNP-6-PNP_DISCOVERY_STARTED: PnP Discovery started
+*Dec 13 20:56:54.645: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+*Dec 13 20:56:54.649: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+*Dec 13 20:56:54.651: %LINK-3-UPDOWN: Interface GigabitEthernet0/2, changed state to up
+*Dec 13 20:56:54.654: %LINK-3-UPDOWN: Interface GigabitEthernet0/3, changed state to up
+*Dec 13 20:56:56.512: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+*Dec 13 20:56:56.514: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+*Dec 13 20:56:56.515: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/2, changed state to up
+*Dec 13 20:56:56.516: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/3, changed state to up
+*Dec 13 20:56:57.307: %SYS-5-CONFIG_I: Configured from memory by console
+*Dec 13 20:56:58.023: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, IOSv Software (VIOS-ADVENTERPRISEK9-M), Version 15.9(3)M2, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2020 by Cisco Systems, Inc.
+Compiled Tue 28-Jul-20 07:09 by prod_rel_team
+*Dec 13 20:56:58.032: %CVAC-4-FILE_IGNORED: Configuration file flash0:/ios_config.txt is ignored : empty file
+*Dec 13 20:56:58.222: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*DecCC
+************ 13 20:56:58.222: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Dec 13 20:56:59.020: %LINK-5-CHANGED: Interface GigabitEthernet0/1, changed state to administratively down
+*Dec 13 20:56:59.284: %LINK-5-CHANGED: Interface GigabitEthernet0/2, changed state to administratively down
+*Dec 13 20:56:59.285: %LINK-5-CHANGED: Interface GigabitEthernet0/3, changed state to administratively down
+*Dec 13 20:57:00.114: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
+*Dec 13 20:57:00.332: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/2, changed state to down
+*Dec 13 20:57:00.335: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/3, changed state to down
+*Dec 13 20:57:04.090: %PNP-6-PNP_BEST_UDI_UPDATE: Best UDI [PID:IOSv,VID:1.0,SN:9YTU71ALDY1GYPW1LIS6R] identified via (entity-mibs)
+*Dec 13 20:57:04.091: %PNP-6-PNP_CDP_UPDATE: Device UDI [PID:IOSv,VID:1.0,SN:9YTU71ALDY1GYPW1LIS6R] identified for CDP
+*Dec 13 20:57:04.098: %PNP-6-PNP_DISCOVERY_STOPPED: PnP Discovery stopped (Startup Config Present)
+*Dec 13 20:57:11.068: %SYS-3-CPUHOG: Task is running for (1998)msecs, more than (2000)msecs (0/0),process = Crypto CA.**************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Router1>
+Router1>
+*Dec 13 20:57:37.639: %PLATFORM-5-SIGNATURE_VERIFIED: Image 'flash0:/vios-adventerprisek9-m' passed code signing verification
+Router1>en
+Router1#show run
+Building configuration...
+
+Current configuration : 3078 bytes
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname Router1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!         
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+no ip domain lookup
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!
+!         
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/0.100
+ encapsulation dot1Q 100
+ ip address 10.100.0.1 255.255.255.0
+!         
+interface GigabitEthernet0/0.200
+ encapsulation dot1Q 200
+ ip address 10.200.0.1 255.255.255.0
+!
+interface GigabitEthernet0/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^CCC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^CCC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^CCC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login    
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+Router1#Connection closed by foreign host.
+spawn@mydebian:~$ 
+spawn@mydebian:~$ 
+spawn@mydebian:~$ 
+spawn@mydebian:~$ 

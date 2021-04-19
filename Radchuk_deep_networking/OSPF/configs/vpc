@@ -1,0 +1,368 @@
+spawn@mydebian:~/Загрузки$ kubectl get pod
+The connection to the server localhost:8080 was refused - did you specify the right host or port?
+spawn@mydebian:~/Загрузки$ cd ../.ssh/
+spawn@mydebian:~/.ssh$ ls
+id_rsa  id_rsa.pub  known_hosts  known_hosts.old  nginx2-KYzwVLIc.pem  nginxvirt.pub  spawndockervirt.pub  tst-aws-geek.pem
+spawn@mydebian:~/.ssh$ ssh -i id_rsa.pub centos@185.86.146.27
+The authenticity of host '185.86.146.27 (185.86.146.27)' can't be established.
+ECDSA key fingerprint is SHA256:xLuqF+27saDPe+81TXc/bpZwDcrTRFZHdUimeMxm5Kw.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '185.86.146.27' (ECDSA) to the list of known hosts.
+[centos@kubernetes-cluster-3568-default-group-0 ~]$ 
+[centos@kubernetes-cluster-3568-default-group-0 ~]$ 
+[centos@kubernetes-cluster-3568-default-group-0 ~]$ uname -a
+Linux kubernetes-cluster-3568-default-group-0.novalocal 4.18.0-147.8.1.el8_1.x86_64 #1 SMP Thu Apr 9 13:49:54 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+[centos@kubernetes-cluster-3568-default-group-0 ~]$ ps ax
+  PID TTY      STAT   TIME COMMAND
+    1 ?        Ss     0:04 /usr/lib/systemd/systemd --switched-root --system --deserialize 17
+    2 ?        S      0:00 [kthreadd]
+    3 ?        I<     0:00 [rcu_gp]
+    4 ?        I<     0:00 [rcu_par_gp]
+    6 ?        I<     0:00 [kworker/0:0H-kblockd]
+    8 ?        I<     0:00 [mm_percpu_wq]
+    9 ?        S      0:00 [ksoftirqd/0]
+   10 ?        I      0:00 [rcu_sched]
+   11 ?        S      0:00 [migration/0]
+   12 ?        S      0:00 [watchdog/0]
+   13 ?        S      0:00 [cpuhp/0]
+   15 ?        S      0:00 [kdevtmpfs]
+   16 ?        I<     0:00 [netns]
+   17 ?        S      0:00 [kauditd]
+   18 ?        S      0:00 [khungtaskd]
+   19 ?        S      0:00 [oom_reaper]
+   20 ?        I<     0:00 [writeback]
+   21 ?        S      0:00 [kcompactd0]
+   22 ?        SN     0:00 [ksmd]
+   23 ?        SN     0:00 [khugepaged]
+   24 ?        I<     0:00 [crypto]
+   25 ?        I<     0:00 [kintegrityd]
+   26 ?        I<     0:00 [kblockd]
+   27 ?        I<     0:00 [tpm_dev_wq]
+   28 ?        I<     0:00 [md]
+   29 ?        I<     0:00 [edac-poller]
+   30 ?        S      0:00 [watchdogd]
+   53 ?        S      0:00 [kswapd0]
+  146 ?        I<     0:00 [kthrotld]
+  147 ?        I<     0:00 [acpi_thermal_pm]
+  148 ?        I<     0:00 [kmpath_rdacd]
+  149 ?        I<     0:00 [kaluad]
+  150 ?        I<     0:00 [ipv6_addrconf]
+  151 ?        I<     0:00 [kstrp]
+  423 ?        I<     0:00 [kworker/0:1H-kblockd]
+  458 ?        I<     0:00 [ata_sff]
+  469 ?        S      0:00 [scsi_eh_0]
+  473 ?        I<     0:00 [scsi_tmf_0]
+  475 ?        S      0:00 [scsi_eh_1]
+  476 ?        I<     0:00 [scsi_tmf_1]
+  504 ?        S      0:01 [jbd2/vda1-8]
+  505 ?        I<     0:00 [ext4-rsv-conver]
+  569 ?        Ss     0:02 /usr/lib/systemd/systemd-journald
+  599 ?        Ss     0:00 /usr/lib/systemd/systemd-udevd
+  604 ?        Ss     0:00 /usr/bin/rpcbind -w -f
+  606 ?        S<sl   0:00 /sbin/auditd
+  608 ?        I<     0:00 [rpciod]
+  609 ?        I<     0:00 [kworker/u3:0]
+  610 ?        I<     0:00 [xprtiod]
+  694 ?        I<     0:00 [nfit]
+  699 ?        I<     0:00 [ttm_swap]
+  704 ?        Ss     0:00 login -- root
+  705 ?        Ssl    0:01 /sbin/rngd -f
+  707 ?        Ss     0:00 /usr/bin/qemu-ga --method=virtio-serial --path=/dev/virtio-ports/org.qemu.guest_agent.0 --blacklist=guest-file-open,gue
+  708 ?        Ss     0:00 /usr/lib/systemd/systemd-logind
+  709 ?        Ssl    0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+  713 ?        S<Ls   0:00 /usr/bin/atop -R -w /var/log/atop/atop_20201216 600
+  726 ?        S      0:00 /usr/sbin/chronyd
+  947 ?        Ssl    1:02 /usr/bin/dockerd
+  950 ?        Ss     0:00 /usr/sbin/sshd -D -oCiphers=aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@opens
+  953 ?        Ss     0:00 /usr/sbin/atd -f
+  954 tty1     Ss+    0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+  955 ?        Ss     0:00 /usr/sbin/crond -n
+  957 ?        Ss     0:00 /usr/lib/systemd/systemd --user
+  959 ?        S      0:00 (sd-pam)
+  965 ttyS0    Ss+    0:00 -bash
+ 1007 ?        Ssl    0:05 docker-containerd --config /var/run/docker/containerd/containerd.toml
+ 1227 ?        Ssl    0:02 /usr/local/sbin/magnum-agent --kube-config /etc/kubernetes/magnumagent-kubeconfig.yaml
+ 1610 ?        Ssl    0:00 /usr/sbin/gssproxy -D
+ 3049 ?        Ssl    0:00 /usr/sbin/NetworkManager --no-daemon
+ 3789 ?        Ss     0:00 /usr/sbin/haproxy -Ws -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid
+ 3791 ?        Ss     0:01 /usr/sbin/haproxy -Ws -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid
+ 3844 ?        Ssl    1:08 /usr/local/bin/kubelet --logtostderr=true --v=0 --node-ip=10.0.0.17 --hostname-override=kubernetes-cluster-3568-default
+ 4244 ?        Sl     0:00 docker-containerd-shim -namespace moby -workdir /var/lib/docker/containerd/daemon/io.containerd.runtime.v1.linux/moby/0
+ 4259 ?        Ss     0:00 /pause
+ 4287 ?        Sl     0:00 docker-containerd-shim -namespace moby -workdir /var/lib/docker/containerd/daemon/io.containerd.runtime.v1.linux/moby/9
+ 4304 ?        Ssl    0:02 /usr/bin/kube-proxy --logtostderr=true --v=0 --master=https://127.0.0.1:6443 --kubeconfig=/etc/kubernetes/proxy-kubecon
+ 4406 ?        Sl     0:00 docker-containerd-shim -namespace moby -workdir /var/lib/docker/containerd/daemon/io.containerd.runtime.v1.linux/moby/7
+ 4421 ?        Ssl    0:04 /fluent-bit/bin/fluent-bit -c /etc/fluentbit/fluentbit.conf -e /out_dpp.so
+ 4452 ?        Ssl    0:00 /usr/bin/docker start -a fluentbit
+ 4747 ?        Sl     0:00 docker-containerd-shim -namespace moby -workdir /var/lib/docker/containerd/daemon/io.containerd.runtime.v1.linux/moby/1
+ 4762 ?        Ss     0:00 /pause
+ 4915 ?        I      0:00 [kworker/0:1-ata_sff]
+ 5330 ?        Sl     0:12 docker-containerd-shim -namespace moby -workdir /var/lib/docker/containerd/daemon/io.containerd.runtime.v1.linux/moby/d
+ 5346 ?        Ss     0:00 /usr/local/bin/runsvdir -P /etc/service/enabled
+ 5431 ?        Ss     0:00 runsv bird6
+ 5432 ?        Ss     0:00 runsv felix
+ 5433 ?        Ss     0:00 runsv bird
+ 5434 ?        Ss     0:00 runsv confd
+ 5435 ?        Sl     0:37 calico-node -felix
+ 5436 ?        Sl     0:00 calico-node -confd
+ 5554 ?        S      0:00 bird -R -s /var/run/calico/bird.ctl -d -c /etc/calico/confd/config/bird.cfg
+ 5555 ?        S      0:00 bird6 -R -s /var/run/calico/bird6.ctl -d -c /etc/calico/confd/config/bird6.cfg
+ 5626 ?        Sl     0:00 docker-containerd-shim -namespace moby -workdir /var/lib/docker/containerd/daemon/io.containerd.runtime.v1.linux/moby/0
+ 5641 ?        Ss     0:00 /pause
+ 5704 ?        Sl     0:00 docker-containerd-shim -namespace moby -workdir /var/lib/docker/containerd/daemon/io.containerd.runtime.v1.linux/moby/a
+ 5720 ?        Ssl    0:00 /csi-node-driver-registrar --v=5 --csi-address=/csi/csi.sock --kubelet-registration-path=/var/lib/kubelet/plugins/cinde
+ 5861 ?        Sl     0:00 docker-containerd-shim -namespace moby -workdir /var/lib/docker/containerd/daemon/io.containerd.runtime.v1.linux/moby/b
+ 5876 ?        Ssl    0:00 /bin/cinder-csi-plugin --nodeid=kubernetes-cluster-3568-default-group-0 --endpoint=unix://csi/csi.sock --cloud-config=/
+ 6967 ?        I      0:00 [kworker/u2:2-events_unbound]
+ 7911 ?        I      0:00 [kworker/0:0-events_power_efficient]
+10847 ?        I      0:00 [kworker/0:2-events]
+11558 ?        Ss     0:00 sshd: centos [priv]
+11574 ?        Ss     0:00 /usr/lib/systemd/systemd --user
+11577 ?        I      0:00 [kworker/0:3-ata_sff]
+11578 ?        I      0:00 [kworker/u2:1-events_unbound]
+11579 ?        S      0:00 (sd-pam)
+11585 ?        S      0:00 sshd: centos@pts/0
+11586 pts/0    Ss     0:00 -bash
+11731 pts/0    R+     0:00 ps ax
+18110 ?        Ss     0:00 /usr/sbin/anacron -s
+26270 ?        Sl     0:00 docker-containerd-shim -namespace moby -workdir /var/lib/docker/containerd/daemon/io.containerd.runtime.v1.linux/moby/f
+26286 ?        Ss     0:00 /pause
+26557 ?        Sl     0:00 docker-containerd-shim -namespace moby -workdir /var/lib/docker/containerd/daemon/io.containerd.runtime.v1.linux/moby/8
+26573 ?        Ss     0:00 nginx: master process nginx -g daemon off;
+26613 ?        S      0:00 nginx: worker process
+28687 ?        I      0:00 [kworker/u2:0-events_unbound]
+[centos@kubernetes-cluster-3568-default-group-0 ~]$ sudo -i
+[root@kubernetes-cluster-3568-default-group-0 ~]# 
+[root@kubernetes-cluster-3568-default-group-0 ~]# 
+[root@kubernetes-cluster-3568-default-group-0 ~]# 
+[root@kubernetes-cluster-3568-default-group-0 ~]# mc
+-bash: mc: command not found
+[root@kubernetes-cluster-3568-default-group-0 ~]# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether fa:16:3e:10:4d:66 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.0.17/24 brd 10.0.0.255 scope global dynamic noprefixroute eth0
+       valid_lft 600348sec preferred_lft 600348sec
+    inet6 fe80::f816:3eff:fe10:4d66/64 scope link 
+       valid_lft forever preferred_lft forever
+3: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1400 qdisc noqueue state UP group default 
+    link/ether 02:42:a4:ec:eb:53 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:a4ff:feec:eb53/64 scope link 
+       valid_lft forever preferred_lft forever
+7: vethe2c1aff@if6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1400 qdisc noqueue master docker0 state UP group default 
+    link/ether a2:15:c4:1e:f1:29 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet6 fe80::a015:c4ff:fe1e:f129/64 scope link 
+       valid_lft forever preferred_lft forever
+10: calic440f455693@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1400 qdisc noqueue state UP group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netnsid 1
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link 
+       valid_lft forever preferred_lft forever
+[root@kubernetes-cluster-3568-default-group-0 ~]# poweroff
+[root@kubernetes-cluster-3568-default-group-0 ~]# Connection to 185.86.146.27 closed by remote host.
+Connection to 185.86.146.27 closed.
+spawn@mydebian:~/.ssh$ kubectl logs nginx nginx
+The connection to the server localhost:8080 was refused - did you specify the right host or port?
+spawn@mydebian:~/.ssh$ kubectl logs nginx
+The connection to the server localhost:8080 was refused - did you specify the right host or port?
+spawn@mydebian:~/.ssh$ kubectl logs $nginx
+error: expected 'logs [-f] [-p] (POD | TYPE/NAME) [-c CONTAINER]'.
+POD or TYPE/NAME is a required argument for the logs command
+See 'kubectl logs -h' for help and examples
+spawn@mydebian:~/.ssh$ kubectl describe pods
+The connection to the server localhost:8080 was refused - did you specify the right host or port?
+spawn@mydebian:~/.ssh$ kubectl describe pod
+The connection to the server localhost:8080 was refused - did you specify the right host or port?
+spawn@mydebian:~/.ssh$ 
+spawn@mydebian:~/.ssh$ 
+spawn@mydebian:~/.ssh$ 
+spawn@mydebian:~/.ssh$ telnet 192.168.1.14 32776
+Trying 192.168.1.14...
+telnet: Unable to connect to remote host: Connection refused
+spawn@mydebian:~/.ssh$ telnet 192.168.1.14 32776
+Trying 192.168.1.14...
+Connected to 192.168.1.14.
+Escape character is '^]'.
+
+Welcome to Virtual PC Simulator, version 1.0 (0.8c)
+Dedicated to Daling.
+Build time: Dec 31 2016 01:22:17
+Copyright (c) 2007-2015, Paul Meng (mirnshi@gmail.com)
+All rights reserved.
+
+VPCS is free software, distributed under the terms of the "BSD" licence.
+Source code and license can be found at vpcs.sf.net.
+For more information, please visit wiki.freecode.com.cn.
+Modified version supporting unetlab by unetlab team
+
+Press '?' to get help.
+
+VPCS> 
+VPCS> 
+VPCS> show ip
+
+NAME        : VPCS[1]
+IP/MASK     : 0.0.0.0/0
+GATEWAY     : 0.0.0.0
+DNS         : 
+MAC         : 00:50:79:66:68:08
+LPORT       : 20000
+RHOST:PORT  : 127.0.0.1:30000
+MTU         : 1500
+
+VPCS> ip 10.4.30.8/24 10.4.30.1
+Checking for duplicate address...
+PC1 : 10.4.30.8 255.255.255.0 gateway 10.4.30.1
+
+VPCS> show ip
+
+NAME        : VPCS[1]
+IP/MASK     : 10.4.30.8/24
+GATEWAY     : 10.4.30.1
+DNS         : 
+MAC         : 00:50:79:66:68:08
+LPORT       : 20000
+RHOST:PORT  : 127.0.0.1:30000
+MTU         : 1500
+
+VPCS> ping 10.4.30.1
+
+10.4.30.1 icmp_seq=1 timeout
+84 bytes from 10.4.30.1 icmp_seq=2 ttl=255 time=2.837 ms
+84 bytes from 10.4.30.1 icmp_seq=3 ttl=255 time=2.315 ms
+84 bytes from 10.4.30.1 icmp_seq=4 ttl=255 time=3.611 ms
+84 bytes from 10.4.30.1 icmp_seq=5 ttl=255 time=2.346 ms
+
+VPCS> 
+VPCS> 
+VPCS> ping 10.4.30.1
+
+84 bytes from 10.4.30.1 icmp_seq=1 ttl=255 time=3.247 ms
+84 bytes from 10.4.30.1 icmp_seq=2 ttl=255 time=7.322 ms
+84 bytes from 10.4.30.1 icmp_seq=3 ttl=255 time=2.829 ms
+84 bytes from 10.4.30.1 icmp_seq=4 ttl=255 time=3.557 ms
+84 bytes from 10.4.30.1 icmp_seq=5 ttl=255 time=2.123 ms
+
+VPCS> ping 192.168.30.2
+
+84 bytes from 192.168.30.2 icmp_seq=1 ttl=255 time=2.805 ms
+84 bytes from 192.168.30.2 icmp_seq=2 ttl=255 time=2.796 ms
+^C
+VPCS> ping 10.1.30.7   
+
+*10.4.30.1 icmp_seq=1 ttl=255 time=4.492 ms (ICMP type:3, code:1, Destination host unreachable)
+*10.4.30.1 icmp_seq=2 ttl=255 time=2.424 ms (ICMP type:3, code:1, Destination host unreachable)
+*10.4.30.1 icmp_seq=3 ttl=255 time=3.002 ms (ICMP type:3, code:1, Destination host unreachable)
+^C
+VPCS> trace 10.1.30.7
+trace to 10.1.30.7, 8 hops max, press Ctrl+C to stop
+ 1   10.4.30.1   3.146 ms  4.205 ms  2.671 ms
+ 2   *10.4.30.1   4.838 ms (ICMP type:3, code:1, Destination host unreachable)  *
+
+VPCS> show ip
+
+NAME        : VPCS[1]
+IP/MASK     : 10.4.30.8/24
+GATEWAY     : 10.4.30.1
+DNS         : 
+MAC         : 00:50:79:66:68:08
+LPORT       : 20000
+RHOST:PORT  : 127.0.0.1:30000
+MTU         : 1500
+
+VPCS> ping 10.1.30.7
+
+*10.4.30.1 icmp_seq=1 ttl=255 time=4.096 ms (ICMP type:3, code:1, Destination host unreachable)
+*10.4.30.1 icmp_seq=2 ttl=255 time=3.778 ms (ICMP type:3, code:1, Destination host unreachable)
+^C
+VPCS> trace 10.1.30.7 
+trace to 10.1.30.7, 8 hops max, press Ctrl+C to stop
+ 1   10.4.30.1   7.759 ms  2.772 ms  1.826 ms
+ 2   *10.4.30.1   1.993 ms (ICMP type:3, code:1, Destination host unreachable)  *
+
+VPCS> ping 10.1.30.7 
+
+*10.4.30.1 icmp_seq=1 ttl=255 time=3.812 ms (ICMP type:3, code:1, Destination host unreachable)
+*10.4.30.1 icmp_seq=2 ttl=255 time=5.151 ms (ICMP type:3, code:1, Destination host unreachable)
+*10.4.30.1 icmp_seq=3 ttl=255 time=2.411 ms (ICMP type:3, code:1, Destination host unreachable)
+*10.4.30.1 icmp_seq=4 ttl=255 time=3.167 ms (ICMP type:3, code:1, Destination host unreachable)
+*10.4.30.1 icmp_seq=5 ttl=255 time=2.670 ms (ICMP type:3, code:1, Destination host unreachable)
+
+VPCS> ping 10.1.30.7
+
+10.1.30.7 icmp_seq=1 timeout
+10.1.30.7 icmp_seq=2 timeout
+10.1.30.7 icmp_seq=3 timeout
+10.1.30.7 icmp_seq=4 timeout
+10.1.30.7 icmp_seq=5 timeout
+
+VPCS> ping 10.1.30.7
+
+84 bytes from 10.1.30.7 icmp_seq=1 ttl=60 time=25.103 ms
+84 bytes from 10.1.30.7 icmp_seq=2 ttl=60 time=26.987 ms
+^C
+VPCS> trace 10.1.30.7
+trace to 10.1.30.7, 8 hops max, press Ctrl+C to stop
+ 1   10.4.30.1   3.258 ms  1.525 ms  3.006 ms
+ 2   192.168.30.1   8.559 ms  7.751 ms  5.855 ms
+ 3   192.168.20.1   19.052 ms  10.503 ms  11.682 ms
+ 4   192.168.10.2   18.551 ms  19.717 ms  21.496 ms
+ 5   *10.1.30.7   30.823 ms (ICMP type:3, code:3, Destination port unreachable)
+
+VPCS> trace 10.1.30.7
+trace to 10.1.30.7, 8 hops max, press Ctrl+C to stop
+ 1   10.4.30.1   2.787 ms  1.703 ms  1.667 ms
+ 2   192.168.30.1   8.590 ms  11.367 ms  5.695 ms
+ 3   192.168.20.1   19.666 ms  18.073 ms  21.225 ms
+ 4   192.168.10.2   15.427 ms  12.779 ms  14.202 ms
+ 5   *10.1.30.7   18.844 ms (ICMP type:3, code:3, Destination port unreachable)
+
+VPCS> trace 10.1.30.7
+trace to 10.1.30.7, 8 hops max, press Ctrl+C to stop
+ 1   10.4.30.1   4.157 ms  2.582 ms  3.359 ms
+ 2   192.168.30.1   7.128 ms  12.818 ms  7.725 ms
+ 3   192.168.20.1   11.751 ms  8.922 ms  11.876 ms
+ 4   192.168.10.2   22.114 ms  16.128 ms  16.631 ms
+ 5   *10.1.30.7   17.196 ms (ICMP type:3, code:3, Destination port unreachable)
+
+VPCS> trace 10.1.30.7
+trace to 10.1.30.7, 8 hops max, press Ctrl+C to stop
+ 1   10.4.30.1   6.278 ms  6.929 ms  2.332 ms
+ 2   192.168.30.1   13.981 ms  5.375 ms  7.439 ms
+ 3   192.168.20.1   13.172 ms  9.491 ms  13.580 ms
+ 4   192.168.10.2   16.024 ms  21.183 ms  15.615 ms
+ 5   *10.1.30.7   17.375 ms (ICMP type:3, code:3, Destination port unreachable)
+
+VPCS> trace 10.1.30.7
+trace to 10.1.30.7, 8 hops max, press Ctrl+C to stop
+ 1   10.4.30.1   2.294 ms  2.469 ms  1.866 ms
+ 2   192.168.30.1   5.273 ms  8.175 ms  8.758 ms
+ 3   192.168.20.1   13.342 ms  9.045 ms  10.438 ms
+ 4   192.168.10.2   18.626 ms  18.239 ms  21.691 ms
+ 5   *10.1.30.7   16.846 ms (ICMP type:3, code:3, Destination port unreachable)
+
+VPCS> trace 10.1.30.7
+trace to 10.1.30.7, 8 hops max, press Ctrl+C to stop
+ 1   10.4.30.1   1.924 ms  1.480 ms  1.683 ms
+ 2   192.168.30.1   7.971 ms  10.270 ms  7.394 ms
+ 3   192.168.20.1   16.558 ms  11.881 ms  10.871 ms
+ 4   192.168.10.2   18.997 ms  21.355 ms  19.046 ms
+ 5   *10.1.30.7   18.864 ms (ICMP type:3, code:3, Destination port unreachable)
+
+VPCS> trace 10.1.30.7
+trace to 10.1.30.7, 8 hops max, press Ctrl+C to stop
+ 1   10.4.30.1   2.793 ms  1.866 ms  2.011 ms
+ 2   192.168.30.1   13.260 ms  14.389 ms  11.791 ms
+ 3   192.168.20.1   19.554 ms  22.819 ms  28.962 ms
+ 4   192.168.10.2   23.699 ms  21.936 ms  18.770 ms
+ 5   *10.1.30.7   19.690 ms (ICMP type:3, code:3, Destination port unreachable)
+
+VPCS> Connection closed by foreign host.
+spawn@mydebian:~/.ssh$ 
+

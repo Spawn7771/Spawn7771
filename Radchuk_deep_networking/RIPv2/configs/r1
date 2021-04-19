@@ -1,0 +1,3882 @@
+spawn@mydebian:~/.ssh$ tldr fdisk
+fdisk
+A program for managing partition tables and partitions on a hard disk.
+
+ - List partitions:
+   fdisk -l
+
+ - Start the partition manipulator:
+   fdisk {{/dev/sda}}
+spawn@mydebian:~/.ssh$ top
+
+top - 23:35:36 up 13 days, 11:00, 17 users,  load average: 5,11, 4,06, 2,59
+Tasks: 365 total,   2 running, 363 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 27,2 us, 26,5 sy,  0,0 ni, 46,2 id,  0,1 wa,  0,0 hi,  0,0 si,  0,0 st
+MiB Mem :  32153,3 total,   8932,4 free,   8531,3 used,  14689,6 buff/cache
+MiB Swap:   4640,0 total,   4403,0 free,    237,0 used.  14187,6 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                               
+32130 spawn     20   0 9790492   5,2g   5,2g S 215,1  16,7  21:38.28 vmware-vmx                                                                                            
+ 9622 spawn     20   0 5914112 247872 107868 R 103,4   0,8 544:00.84 chromium                                                                                              
+ 4542 spawn     20   0 3784528 868080 240016 S  61,3   2,6 451:58.81 Web Content                                                                                           
+ 4037 spawn     20   0 4158240 719284 264736 S  25,7   2,2 745:24.08 firefox-esr                                                                                           
+ 3628 spawn     20   0 4896056   1,1g  85540 S   9,6   3,3   1136:20 cinnamon                                                                                              
+ 1184 root      20   0  772176 311024 138436 S   8,6   0,9   1027:06 Xorg                                                                                                  
+ 3241 spawn      9 -11 3609756  26788  20356 S   3,1   0,1 398:01.41 pulseaudio                                                                                            
+ 4597 spawn     20   0 3330600 593324 175384 S   1,7   1,8   1284:45 Web Content                                                                                           
+  823 root     -51   0       0      0      0 S   1,4   0,0 249:50.35 irq/36-nvidia                                                                                         
+ 2928 root      20   0 1585144  66120  25212 S   1,4   0,2 255:06.36 vmware-hostd                                                                                          
+ 5224 spawn     20   0 3547592 877664 235216 S   1,0   2,7 100:15.20 Web Content                                                                                           
+ 4402 spawn     20   0 3456740 521160 178272 S   0,7   1,6 357:55.63 Web Content                                                                                           
+ 4960 spawn     20   0 3497488 600120 167564 S   0,7   1,8 163:55.25 Web Content                                                                                           
+ 9496 spawn     20   0 1512928 142792 106392 S   0,7   0,4  29:34.44 chromium                                                                                              
+ 9863 spawn     20   0 1538740 105948  93512 S   0,7   0,3   3:24.99 chromium                                                                                              
+25561 root      20   0 2108032  59712  16756 S   0,7   0,2  32:02.25 dockerd                                                                                               
+26081 spawn     20   0 1966708 247868  87372 S   0,7   0,8   0:47.51 Telegram                                                                                              
+    1 root      20   0  171364  10932   7580 S   0,3   0,0   1:59.73 systemd                                                                                               
+  325 spawn     20   0   11620   4112   3256 R   0,3   0,0   0:00.05 top                                                                                                   
+ 3891 spawn     20   0 1454724 117160  70684 S   0,3   0,4 136:49.92 cairo-dock                                                                                            
+ 4225 spawn     20   0 2840968 158184  78620 S   0,3   0,5  25:59.32 WebExtensions                                                                                         
+ 4851 spawn     20   0 3406616 449068 227328 S   0,3   1,4 207:55.34 Web Content                                                                                           
+18241 spawn     20   0 2705888 202732 127768 S   0,3   0,6   2:20.07 Web Content                                                                                           
+25573 root      20   0 2060000  23072  10772 S   0,3   0,1  26:59.83 docker-containe                                                                                       
+26317 spawn     20   0 2074580 289844  88748 S   0,3   0,9 184:12.56 vmware                                                                                                
+26342 root      20   0  139176   8516      0 S   0,3   0,0  72:10.40 gitlab-runner                                                                                         
+31554 spawn     20   0 5893700 215784 102340 S   0,3   0,7   8:15.73 chromium                                                                                              
+    2 root      20   0       0      0      0 S   0,0   0,0   0:00.47 kthreadd                                                                                              
+    3 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 rcu_gp                                                                                                
+    4 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 rcu_par_gp                                                                                            
+    6 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/0:0H-kblockd                                                                                  
+spawn@mydebian:~/.ssh$ 
+spawn@mydebian:~/.ssh$ 
+spawn@mydebian:~/.ssh$ 
+spawn@mydebian:~/.ssh$ sudo vpnc
+[sudo] пароль для spawn: 
+Enter IPSec gateway address: 213.182.180.54
+Enter IPSec ID for 213.182.180.54: support
+Enter IPSec secret for support@213.182.180.54: 
+Enter username for 213.182.180.54: kulinich
+Enter password for kulinich@213.182.180.54: 
+VPNC started in background (pid: 821)...
+spawn@mydebian:~/.ssh$ ping 192.168.82.167
+PING 192.168.82.167 (192.168.82.167) 56(84) bytes of data.
+64 bytes from 192.168.82.167: icmp_seq=1 ttl=62 time=42.5 ms
+^C
+--- 192.168.82.167 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 42.521/42.521/42.521/0.000 ms
+spawn@mydebian:~/.ssh$ sudo vpnc-disconnect 
+[sudo] пароль для spawn: 
+Terminating vpnc daemon (pid: 821)
+spawn@mydebian:~/.ssh$ cat /proc/mdstat 
+Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10] 
+md0 : active raid1 sdb[1] sda[0]
+      2930135488 blocks super 1.2 [2/2] [UU]
+      bitmap: 1/22 pages [4KB], 65536KB chunk
+
+unused devices: <none>
+spawn@mydebian:~/.ssh$ route -n
+bash: route: команда не найдена
+spawn@mydebian:~/.ssh$ route -p
+bash: route: команда не найдена
+spawn@mydebian:~/.ssh$ route --help
+bash: route: команда не найдена
+spawn@mydebian:~/.ssh$ sudo -i
+[sudo] пароль для spawn: 
+root@mydebian:~# route -n
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.1.1     0.0.0.0         UG    100    0        0 eth0
+172.16.144.0    0.0.0.0         255.255.255.0   U     0      0        0 vmnet8
+172.17.0.0      0.0.0.0         255.255.0.0     U     0      0        0 docker0
+192.168.1.0     0.0.0.0         255.255.255.0   U     100    0        0 eth0
+192.168.83.0    0.0.0.0         255.255.255.0   U     0      0        0 vmnet1
+root@mydebian:~# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 1c:6f:65:c4:97:47 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.7/24 brd 192.168.1.255 scope global dynamic noprefixroute eth0
+       valid_lft 86120sec preferred_lft 86120sec
+    inet6 fe80::1e6f:65ff:fec4:9747/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: enp6s1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN group default qlen 1000
+    link/ether 00:04:75:fa:99:e4 brd ff:ff:ff:ff:ff:ff
+4: vmnet1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN group default qlen 1000
+    link/ether 00:50:56:c0:00:01 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.83.1/24 brd 192.168.83.255 scope global vmnet1
+       valid_lft forever preferred_lft forever
+    inet6 fe80::250:56ff:fec0:1/64 scope link 
+       valid_lft forever preferred_lft forever
+5: vmnet8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN group default qlen 1000
+    link/ether 00:50:56:c0:00:08 brd ff:ff:ff:ff:ff:ff
+    inet 172.16.144.1/24 brd 172.16.144.255 scope global vmnet8
+       valid_lft forever preferred_lft forever
+    inet6 fe80::250:56ff:fec0:8/64 scope link 
+       valid_lft forever preferred_lft forever
+7: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:60:4a:87:c6 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+root@mydebian:~# nets
+netscsid  netstat   
+root@mydebian:~# nets
+netscsid  netstat   
+root@mydebian:~# netstat -rn
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+0.0.0.0         192.168.1.1     0.0.0.0         UG        0 0          0 eth0
+172.16.144.0    0.0.0.0         255.255.255.0   U         0 0          0 vmnet8
+172.17.0.0      0.0.0.0         255.255.0.0     U         0 0          0 docker0
+192.168.1.0     0.0.0.0         255.255.255.0   U         0 0          0 eth0
+192.168.83.0    0.0.0.0         255.255.255.0   U         0 0          0 vmnet1
+root@mydebian:~# 
+root@mydebian:~# 
+root@mydebian:~# 
+root@mydebian:~# 
+root@mydebian:~# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+root@mydebian:~# telnet 192.168.1.14 32769
+Trying 192.168.1.14...
+Connected to 192.168.1.14.
+Escape character is '^]'.
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R1>en
+R1#show run
+Building configuration...
+
+Current configuration : 3024 bytes
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!         
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!
+!
+!         
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback1
+ ip address 1.1.1.2 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 172.16.0.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 10.1.3.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+          
+R1#show ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         172.16.0.1      YES TFTP   up                    up      
+GigabitEthernet0/1         10.1.2.1        YES TFTP   up                    up      
+GigabitEthernet0/2         10.1.3.1        YES TFTP   up                    up      
+GigabitEthernet0/3         10.1.4.1        YES TFTP   up                    up      
+Loopback0                  1.1.1.1         YES TFTP   up                    up      
+Loopback1                  1.1.1.2         YES TFTP   up                    up      
+R1#debug ? 
+  aaa                       AAA Authentication, Authorization and Accounting
+  access-expression         Boolean access expression
+  acircuit                  Attachment Circuit information
+  adjacency                 adjacency
+  all                       Enable all debugging
+  alps                      ALPS debug information
+  appfw                     Application Firewall events
+  application               Application routing
+  archive                   debug archive commands
+  arp                       IP ARP and HP Probe transactions
+  aspp                      ASPP information
+  async                     Async interface information
+  atm                       ATM interface packets
+  authentication            Auth Manager debugging
+  backhaul-session-manager  Backhaul SM options
+  backup                    Backup events
+  beep                      BEEP debugging
+  bfd                       Bi-directional forwarding detection
+  bgp                       BGP information
+  bing                      Bing(d) debugging
+  bridge-domain             Bridge-domain
+  bsc                       BSC information
+  bsd-client                Enable BSD Client debugging
+  bstun                     BSTUN information
+  bulkstat                  Bulsktat debugging
+  c3pl                      C3PL events
+  call                      Call Information
+  call-admission            Call admission control
+  callback                  Callback activity
+  cca                       CCA activity
+  cce                       Common Classification Engine (CCE)
+  cdp                       CDP information
+  cef                       CEF address family independent operations
+  cfgdiff                   debug cfgdiff commands
+  chat                      Chat scripts activity
+  checkpoint                Checkpoint Facility Debugging
+  clns                      CLNS information
+  cls                       CLS Information
+  cns                       CNS agents
+  compress                  COMPRESS traffic
+  condition                 Condition
+  confmodem                 Modem configuration database
+  conn                      Connection Manager information
+  control-plane             control-plane events
+  cops                      COPS
+  cpc                       CPC Pak Subblock
+  cpl                       Cisco Common Class-based Policy Language debugging
+  crm                       Carrier Resource Manager info
+  crypto                    Cryptographic subsystem
+  cts                       Cisco Trusted Security
+  ctunnel                   Generic CTunnel Interface
+  custom-queue              Custom output queueing
+  cws                       Cloud Web Security events
+  dampening                 Dampening
+  dcm                       dcm commands
+  decnet                    DECnet information
+  device-sensor             Device Sensor
+  dhcp                      DHCP client activity
+  dialer                    Dial on Demand
+  dlsw                      Data Link Switching (DLSw) events
+  dmvpn                     DMVPN protocol
+  dnsix                     Dnsix information
+  domain                    Domain debugging
+  dot1x                     Dot1x debugging support
+  drip                      DRiP debug information
+  dspu                      DSPU Information
+  dxi                       atm-dxi information
+  eap                       EAP debugging
+  ecfmpal                   ecfm debugging flags
+  eigrp                     EIGRP debug commands
+  elb-pal-pd                Elb Pal PD debugging flags
+  entry                     Incoming queue entries
+  eou                       EAPoUDP debugging support
+  epm                       Policy Enforcemnt Module
+  epmpal                    EPM platform debugging flags
+  ethernet                  Ethernet debugging commands
+  event                     Event related commands
+  event-manager             Event manager activity
+  fastethernet              Fast Ethernet interface information
+  fh_fd_rpc                 FH_FD_RPC information
+  fhrp                      Debug First Hop Router Protocol
+  filesystem                Debug filesystem during boot
+  flow                      Flow information
+  flow-sampler              Debug flow sampler
+  format                    format information
+  frame-relay               Frame Relay
+  fras                      FRAS Debug 
+  fras-host                 FRAS Host Debug 
+  funi                      FUNI interface packets
+  glbp                      Gateway Load Balancing Protocol (GLBP)
+  gssapi                    GSSAPI debugs
+  ha-infra                  HA Infra Debugging
+  hqf                       Debugging hqf
+  http                      HTTP Debugging
+  iamp                      IAMP Debug
+  ida-client                Enable IDA Client debugging
+  identity                  Identity debugging support
+  idmgr                     IDMGR interaction
+  if-mgr                    IF_MGR information
+  interface                 Interface Descriptor Block
+  ip                        IP information
+  ipam                      IP Address Manager (IPAM) information
+  ipc                       Interprocess communications debugging
+  iphc                      IPHC information
+  ipv6                      IPv6 information
+  isis                      IS-IS Information
+  kerberos                  KERBEROS authentication and authorization
+  keystore                  CTS Keystore
+  kron                      Kron subsys debugs
+  l2tp                      L2TP information
+  l4f                       L4F debugging
+  lapb                      LAPB protocol transactions
+  lapb-ta                   LAPB Terminal Adapter information
+  lat                       LAT Information
+  line                      Line debugging
+  lisp                      Locator/ID Separation Protocol
+  list                      Set interface or/and access list for the next debug
+                            command
+  llc2                      LLC2 type II Information
+  lldp                      LLDP information
+  lnx                       generic qllc/llc2 conversion activity
+  local-ack                 Local ACKnowledgement information
+  location-mgr              Location information manager
+  logging                   Add debug messages to logging
+  mab                       MAC-Authentication-Bypass debugging
+  macdb                     Debug MAC database
+  management                Management applications debugging
+  mdns                      MDNS feature
+  mediatrace                Mediatrace debugging
+  memory                    Memory related debugging
+  metadata                  Metadata debugs
+  mfib                      MFIB address family independent operations
+  mmi                       mmi process
+  modem                     Modem control/process activation
+  mop                       DECnet MOP server events
+  mpls                      MPLS debug
+  mtm                       MTM
+  mvpn                      MVPN events
+  mwi                       mwi debug information
+  nat64                     NAT64
+  nbf                       NetBIOS information
+  ncia                      Native Client Interface Architecture (NCIA) events
+  netbios-name-cache        NetBIOS name cache tracing
+  netconf                   NETCONF information
+  nhrp                      NHRP protocol
+  nmsp                      debug NMSP
+  ntp                       NTP information
+  nvram                     Debug NVRAM behavior
+  object-group              Object Group information
+  oce                       Output chain elements
+  onep                      ONE-P commands
+  ospfv3                    OSPFv3 debug commands
+  pa-wccp-proxy             PA WCCP Proxy
+  packet                    Log unknown packets
+  pad                       X25 PAD protocol
+  performance               Performance monitor debugging
+  persistent                Debug persistent
+  pfr                       Performance Routing(PfR) information
+  platform                  IOSv platform information
+  pnp                       Debug PNP behavior
+  police                    Debugging police
+  policy-firewall           Debug policy-firewall
+  policy-manager            Policy Manager
+  policy-map                Debug policy-map
+  ppp                       PPP (Point to Point Protocol) information
+  pppoe                     PPPoE information
+  printer                   LPD printer protocol
+  priority                  Priority output queueing
+  profile                   Media Services Debug 
+  protofltr                 Routing protocol filter manager
+  psp                       Packet-Service
+  qdm                       QoS Device Manager
+  qllc                      qllc debug information
+  qos                       QoS debugging
+  qos                       QoS debugging
+  radius                    RADIUS protocol
+  rbm                       Role-based Access Control Manager
+  redundancy                Redundancy Facility (RF) debug options
+  resource                  Embedded Resource Manager debug commands
+  rif                       RIF cache transactions
+  route-map                 Route-map
+  rpl                       RPL Protocol debugging
+  rpms-proc                 RPMS Process Information
+  rudpv1                    RUDP,V1 information
+  sadb                      sadb debug commands
+  sampler                   Sampler configuration and operation
+  sasl                      Simple Authentication and Security Layer
+  sdlc                      SDLC information
+  sdllc                     SDLLC media translation
+  serial                    Serial interface information
+  service-overlay           Service Overlay debug options
+  service-routing           Enable Service Routing Debug options
+  smf                       Software MAC filter
+  sna                       SNA Information
+  snapshot                  Snapshot activity
+  snmp                      SNMP information
+  sntp                      SNTP information
+  software                  Software
+  source                    Source bridging information
+  spanning-tree             Spanning tree debugging
+  srtp                      SRTP Library
+  ssl                       SSL Debug command
+  ssm                       Segment Switch Manager
+  standby                   Hot Standby Router Protocol (HSRP)
+  stun                      STUN information
+  subscriber                Subscriber Service Switch information
+  tacacs                    TACACS authentication and authorization
+  tagtemplate               Tag and Template
+  tarp                      TARP information
+  tbridge                   Transparent Bridging
+  tccs                      Transparent CCS information
+  telnet                    Incoming telnet connections
+  template                  Template activity
+  tftp                      TFTP debugging
+  tgrm                      Trunk Group Resource Manager info
+  token                     Token Ring information
+  topology                  Topology Manager
+  track                     Debug tracking
+  translate                 Protocol translation events
+  tunnel                    Generic Tunnel Interface
+  udptn                     UDPtn async data transport
+  user-group                Usergroup debugging
+  v120                      V120 information
+  video                     debug video
+  vlan                      vLAN information
+  vmi                       VMI interface debugging
+  vofm                      VO Flow Manager
+  vpdn                      VPDN information
+  vpn                       VPN information
+  vprofile                  Virtual Profile information
+  vrf                       VRF Manager
+  vrrp                      Debug Virtual Router Redundancy Protocol
+  vtemplate                 Virtual Template information
+  waas                      IOS Wide Area Application Services
+  wccp                      WCCP debugging
+  webvpn                    WebVPN packet debugs
+  wsma                      Web Services Management Agents debug
+  x25                       X.25, CMNS and XOT information
+  x28                       X28 mode
+  xcl2                      Xconnect L2TPv3 information
+  xconnect                  Xconnect debugs
+  xmpp                      Extensible Messaging and Presence Protocol debug
+  zone                      Zone security events
+
+R1#debug ip ?
+  access-list             IP access-list operations
+  address                 IP address activity
+  admission               Network admission control debug
+  auth-proxy              Authentication proxy debug
+  bgp                     BGP information
+  cache                   IP cache operations
+  cca                     IP CCA
+  cef                     IP CEF operations
+  cgmp                    CGMP protocol activity
+  ddns                    Dynamic DNS
+  device                  IP Host Cache debugging support
+  dfp                     DFP debug information
+  dhcp                    Dynamic Host Configuration Protocol
+  dns                     DNS
+  dns-cache               DNS cache debugging
+  dns-snoop-cache         DNS cache debugging
+  domain                  Domain Name System
+  drp                     Director response protocol
+  eigrp                   Debug IPv4 EIGRP 
+  error                   IP error debugging
+  flow                    IP Flow switching operations
+  ftp                     FTP dialogue
+  html                    HTML connections
+  http                    HTTP connections
+  icmp                    ICMP transactions
+  igmp                    IGMP protocol activity
+  inspect                 Stateful inspection events
+  interface               IP interface configuration changes
+  ips                     IPS events
+  mcache                  IP multicast cache operations
+  mfib                    IP Multicast forwarding information base
+  mhbeat                  IP multicast heartbeat monitoring
+  mobile                  IP Mobility
+  mpacket                 IP multicast packet debugging
+  mpacket                 IP multicast packet debugging
+  mrib                    Multicast Route DB
+  mrm                     IP Multicast Routing Monitor
+  mrouting                IP multicast routing table activity
+  msdp                    Multicast Source Discovery Protocol (MSDP)
+  mtrie                   Mtrie operations
+  multicast               IP multicast activity
+  mux                     IP Multiplexing
+  nat                     NAT events
+  nbar                    StILE - traffic classification Engine
+  ospf                    OSPF information
+  packet                  General IP debugging and IPSO security transactions
+  peer                    IP peer address activity
+  pgm                     PGM Reliable Transport Protocol
+  pim                     PIM protocol activity
+  policy                  Policy routing
+  process                 IP process creation/destruction
+  rbscp                   Access-list based RBSCP info
+  rgmp                    RGMP protocol activity
+  rip                     RIP protocol transactions
+  routing                 Routing table events
+  rsvp                    RSVP protocol activity
+  rtp                     RTP information
+  scp                     Secure Copy
+  sctp                    SCTP information
+  sd                      Session Directory (SD)
+  sdee                    SDEE ips alerts
+  security                IP security options
+  sla                     IP SLAs Debug
+  snat                    Stateful NAT events
+  socket                  Socket debugging
+  ssh                     Incoming ssh connections
+  tcp                     TCP information
+  tempacl                 IP temporary ACL
+  traffic-export          ip traffic export
+  trigger-authentication  Trigger authentication
+  udp                     UDP based transactions
+  urd                     URL RenDezvous (URD)
+  urlfilter               IOS URL filter events
+  verify                  IP RPF activity
+  virtual-reassembly      IP Virtual Fragment Reassembly (VFR) debugs
+  wccp                    WCCP IPv4 debugging
+
+R1#debug ip 
+% Incomplete command.
+
+R1#debug ip int
+R1#debug ip interface ?
+  route-cache  Route-cache changes
+
+R1#debug ip interface gi 0/1
+                      ^
+% Invalid input detected at '^' marker.
+
+R1#debug ip interface ?     
+  route-cache  Route-cache changes
+
+R1#debug ip interface rou
+R1#debug ip interface route-cache ?
+  <cr>  <cr>
+
+R1#debug ip interface route-cache gi0/1
+                                  ^
+% Invalid input detected at '^' marker.
+
+R1#debug                               
+% Type "debug ?" for a list of subcommands
+R1#debug all
+
+This may severely impact network performance. Continue? (yes/[no]): yes
+Persistent variable debugs All enabled
+
+ IP SLAs TWAMP debugging for all connection trace events is on
+ IP SLAs TWAMP debugging for all connection error events is on
+ IP SLAs TWAMP debugging for all control trace events is on
+ IP SLAs TWAMP debugging for all control error events is on
+All possible debugging has been turned on
+R1#
+*Dec 15 10:56:04.875: PRST-VBL API Set (prst-dbg=0x3FF,0x0-DEFAULT)
+*Dec 15 10:56:04.876: PRST-VBL DET Lock - ok
+*Dec 15 10:56:04.876: PRST-VBL STD Flush condition - timer starting
+*Dec 15 10:56:04.877: PRST-VBL DET Cache unlock - ok
+*Dec 15 10:56:04.878: PRST-VBL API Set - ok return 14
+*Dec 15 10:56:04.881: XOS Debug Flags Update - updating debug flags failed
+*Dec 15 10:56:04.885: XOS Debug Flags Update - updating debug flags failed
+*Dec 15 10:56:04.885: XOS Debug Flags Update - updating debug flags failed
+*Dec 15 10:56:04.887: XOS Debug Flags Update - updating debug flags failed
+*Dec 15 10:56:04.888: XOS Debug Flags Update - updating debug flags failed
+*Dec 15 10:56:04.892: special_oce_change_vectors: select debug vectors
+*Dec 15 10:56:04.893: special_oce_mpls_change_vectors: select debug vectors
+*Dec 15 10:56:04.894: fib_loadinfo_change_vectors: select debug vectors
+*Dec 15 10:56:04.895: eos_oce_change_vectors: select debug vectors
+*Dec 15 10:56:04.896: qos_oce_change_vectors: select debug vectors
+*Dec 15 10:56:04.896: OCE_frr: Select debug OCE vectors
+*Dec 15 10:56:04.897: lookup_ipv4_oce_change_vectors: select debug vectors
+*Dec 15 10:56:04.898: lookup_ipv6_oce_change_vectors: select debug vectors
+*Dec 15 10:56:04.899: lookup_mpls_oce_change_vectors: select debug vectors
+*Dec 15 10:56:04.900: push_counter_oce_change_vectors: select debug vectors
+*Dec 15 10:56:04.902: atom_imp_oce_change_vectors: select debug vectors
+*Dec 15 10:56:04.903: atom_disp_oce_change_vectors: select debug vectors
+*Dec 15 10:56:04.904: replicate_oce_change_vectors: select debug vectors
+*Dec 15 10:56:04.906: interface_oce_change_vectors: select debug vectors
+*Dec 15 10:56:04.907: gal_check_oce_change_vectors: select debug vectors
+*Dec 15 10:56:04.919: IPv6-Feat: Add "debug packet" (Input) on all
+*Dec 15 10:56:04.920: IPv6-Feat[GigabitEthernet0/0]: Add "debug packet" (Input)
+*Dec 15 10:56:04.921: IPv6-Feat[GigabitEthernet0/0]: SWSB Create
+*Dec 15 10:56:04.921: IPv6-Feat[GigabitEthernet0/0]: Change Add "debug packet" (Input)
+*Dec 15 10:56:04.922: IPv6-Feat[GigabitEthernet0/1]: Add "debug packet" (Input)
+*Dec 15 10:56:04.922: IPv6-Feat[GigabitEthernet0/1]: SWSB Create
+*Dec 15 10:56:04.923: IPv6-Feat[GigabitEthernet0/1]: Change Add "debug packet" (Input)
+*Dec 15 10:56:04.924: IPv6-Feat[GigabitEthernet0/2]: Add "debug packet" (Input)
+*Dec 15 10:56:04.924: IPv6-Feat[GigabitEthernet0/2]: SWSB Create
+*Dec 15 10:56:04.925: IPv6-Feat[GigabitEthernet0/2]: Change Add "debug packet" (Input)
+*Dec 15 10:56:04.925: IPv6-Feat[GigabitEthernet0/3]: Add "debug packet" (Input)
+*Dec 15 10:56:04.926: IPv6-Feat[GigabitEthernet0/3]: SWSB Create
+*Dec 15 10:56:04.927: IPv6-Feat[GigabitEthernet0/3]: Change Add "debug packet" (Input)
+*Dec 15 10:56:04.928: IPv6-Feat[Loopback0]: Add "debug packet" (Input)
+*Dec 15 10:56:04.928: IPv6-Feat[Loopback0]: SWSB Create
+*Dec 15 10:56:04.929: IPv6-Feat[Loopback0]: Change Add "debug packet" (Input)
+*Dec 15 10:56:04.930: IPv6-Feat[Loopback1]: Add "debug packet" (Input)
+*Dec 15 10:56:04.931: IPv6-Feat[Loopback1]: SWSB Create
+*Dec 15 10:56:04.932: IPv6-Feat[Loopback1]: Change Add "debug packet" (Input)
+*Dec 15 10:56:04.932: IPv6-Feat[RG-AR-IF-INPUT1]: Add "debug packet" (Input)
+*Dec 15 10:56:04.933: IPv6-Feat[RG-AR-IF-INPUT1]: SWSB Create
+*Dec 15 10:56:04.934: IPv6-Feat[RG-AR-IF-INPUT1]: Change Add "debug packet" (Input)
+*Dec 15 10:56:04.934: IPv6-Feat[Null0]: Add "debug packet" (Input)
+*Dec 15 10:56:04.936: IPv6-Feat[Null0]: SWSB Create
+*Dec 15 10:56:04.936: IPv6-Feat[Null0]: Change Add "debug packet" (Input)
+*Dec 15 10:56:04.937: IPv6-Feat: Add "debug packet" (Output) on all
+*Dec 15 10:56:04.937: IPv6-Feat[GigabitEthernet0/0]: Add "debug packet" (Output)
+*Dec 15 10:56:04.938: IPv6-Feat[GigabitEthernet0/0]: Change Add "debug packet" (Output)
+*Dec 15 10:56:04.938: IPv6-Feat[GigabitEthernet0/1]: Add "debug packet" (Output)
+*Dec 15 10:56:04.939: IPv6-Feat[GigabitEthernet0/1]: Change Add "debug packet" (Output)
+*Dec 15 10:56:04.940: IPv6-Feat[GigabitEthernet0/2]: Add "debug packet" (Output)
+*Dec 15 10:56:04.940: IPv6-Feat[GigabitEthernet0/2]: Change Add "debug packet" (Output)
+*Dec 15 10:56:04.941: IPv6-Feat[GigabitEthernet0/3]: Add "debug packet" (Output)
+*Dec 15 10:56:04.941: IPv6-Feat[GigabitEthernet0/3]: Change Add "debug packet" (Output)
+*Dec 15 10:56:04.942: IPv6-Feat[Loopback0]: Add "debug packet" (Output)
+*Dec 15 10:56:04.942: IPv6-Feat[Loopback0]: Change Add "debug packet" (Output)
+*Dec 15 10:56:04.943: IPv6-Feat[Loopback1]: Add "debug packet" (Output)
+*Dec 15 10:56:04.944: IPv6-Feat[Loopback1]: Change Add "debug packet" (Output)
+*Dec 15 10:56:04.944: IPv6-Feat[RG-AR-IF-INPUT1]: Add "debug packet" (Output)
+*Dec 15 10:56:04.946: IPv6-Feat[RG-AR-IF-INPUT1]: Change Add "debug packet" (Output)
+*Dec 15 10:56:04.946: IPv6-Feat[Null0]: Add "debug packet" (Output)
+*Dec 15 10:56:04.948: IPv6-Feat[Null0]: Change Add "debug packet" (Output)
+*Dec 15 10:56:04.948: IPv6-Feat[global]: Add "debug packet" (For us)
+*Dec 15 10:56:04.949: IPv6-Feat[global]: Change Add "debug packet" (For us)
+*Dec 15 10:56:04.956: ADJ-walk: nothing to walk for GigabitEthernet0/0
+*Dec 15 10:56:04.957: ADJ-walk: nothing to walk for GigabitEthernet0/1
+*Dec 15 10:56:04.957: ADJ-walk: nothing to walk for GigabitEthernet0/2
+*Dec 15 10:56:04.958: ADJ-walk: nothing to walk for GigabitEthernet0/3
+*Dec 15 10:56:04.959: ADJ-walk: nothing to walk for Loopback0
+*Dec 15 10:56:04.960: ADJ-walk: nothing to walk for Loopback1
+*Dec 15 10:56:04.962: ADJ-walk: nothing to walk for RG-AR-IF-INPUT1
+*Dec 15 10:56:05.041: TTY0: resume timer type 1 (OK)
+*Dec 15 10:56:05.055: MSIF Master Msg Handler - 2-RF_MSIF_MASTER_SYNC
+*Dec 15 10:56:05.056: DB sync - my_state=13 peer_state=1 prog_state=1 active_from_boot=1 sync#=22
+*Dec 15 10:56:06.250: IOSv Gi0/0 PunAK-ERROR: send @0xE4C5710 sz 60 encap 14
+*Dec 15 10:56:06.253: IOSv Gi0/1 PAK-ERROR: send @0xE4C5C10 sz 60 encap 14
+*Dec 15 10:56:06.255: IOSv Gi0/2 PAK-ERROR: send @0xE4C6110 sz 60 encap 14
+*Dec 15 10:56:06.257: IOSv Gi0/3 PAK-ERROR: send @0xE4C6610 sz 60 encap 14
+*Dec 15 10:56:06.879: FIREWALL: fw_dp_insp_handle_timer_event
+*Dec 15 10:56:06.880: FIREWALL: fw_dp_insp_sample_session_rate
+*Dec 15 10:56:07.224: FIBbg: Timer 'fibidb queue' expired, calling 0x0170D4C0, context 0x00000000)
+*Dec 15 10:56:07.225: FIBif: Processing queued interface events
+*Dec 15 10:56:07.226: FIBif: [sw:RG1(7) 1040FDA0] Coming up
+*Dec 15 10:56:07.227: FIBif: [sw:RG1(7) 1040FDA0] Failed: Interface not really up
+*Dec 15 10:56:07.228: FIBif: [sw:<unknown>(8) 1136D160] Coming up
+*Dec 15 10:56:07.229: FIBif: [sw:<unknown>(8) 1136D160] Failed: Interface not really up
+*Dec 15 10:56:07.230: FIBif: Restarting queued interface events
+*Dec 15 10:56:07.231: FIBbg: Restarting timer 'fibidb queue' with delay 15000
+*Dec 15 10:56:08.189: iOAM6 EVENT: ipv6_ioam_process_fnf_export_timer_expiry: Exporter not initialized - traffic matrix
+*Dec 15 10:56:08.858: IOSv Gi0/2 PAK-ERROR: receive @0xF71E6C8 sz 410 encap 22
+*Dec 15 10:56:08.858: IOSv Gi0/2 PAK-ERROR: process receive @0xF71E6C8 sz 410 encap 22 Control Plane:marking in pak exception [non cef linktype CDP]
+
+*Dec 15 10:56:08.863: CDP-PA: Packet received from R3 on interface GigabitEthernet0/2
+*Dec 15 10:56:08.865: **Entry  found in cache**
+*Dec 15 10:56:08.865: DSENSOR: dsensor_main_handle_pkt Received cdp for processing
+*Dec 15 10:56:08.866: DSENSOR: cdp packet Received on 
+	interface = GigabitEthernet0/2 
+	idbtype = 2162752
+	hwidbtype= 27 
+*Dec 15 10:56:08.866: DSENSOR: cdp protocol originated from mac = 5000.0003.0000
+*Dec 15 10:56:08.867: DSENSOR: cdp: T = 1, L = 6
+*Dec 15 10:56:08.868: DSENSOR: cdp: T = 5, L = 250
+*Dec 15 10:56:08.868: DSENSOR: cdp: T = 6, L = 10
+*Dec 15 10:56:08.869: DSENSOR: cdp: T = 2, L = 17
+*Dec 15 10:56:08.869: DSENSOR: cdp: T = 3, L = 22
+*Dec 15 10:56:08.870: DSENSOR: cdp: T = 4, L = 8
+*Dec 15 10:56:08.871: DSENSOR: cdp: T = 7, L = 9
+*Dec 15 10:56:08.871: DSENSOR: cdp: T = 22, L = 17
+*Dec 15 10:56:08.872: DSENSOR: cdp: T = 4105, L = 45
+*Dec 15 10:56:08.872: CDP-EV: Lookup for ip phone with idb= GigabitEthernet0/2 ip= 10.1.3.3 mac= 5000.0003.0000 platform= Cisco 
+*Dec 15 10:56:08.873: CDP-IP: IP TLV length (5) invalid for default route.
+		      Expecting default route from hub router
+*Dec 15 10:56:08.874:  APP Tlv client not configured tlvtype=4105
+*Dec 15 10:56:08.875: CDP-EV: Unrecognized/Unregistered type(0x1009),  len:(41), Value:(PID:IOSv,VID:1.0,SN:9MZ1LYH9BRRKP0TY4CEU8) seen in TLV
+*Dec 15 10:56:08.875: CDP-EV: Packet Received from R3 with capability = 5 and Platform string = Cisco  on interface GigabitEthernet0/2
+*Dec 15 10:56:08.876: ND Update CDP Notification Event for R3 on Gi0/2
+*Dec 15 10:56:08.884: fh_fd_nd_event_match: num_matches = 0
+*Dec 15 10:56:09.868: SPOLICY: [pid=236(QoS stats process)]: 10: Start stats polling
+*Dec 15 10:56:09.870: -Traceback= 35A055Dz 35765A5z 357653Cz
+*Dec 15 10:56:09.871: SPOLICY: [pid=236(QoS stats process)]: Update show totals (periodic).
+*Dec 15 10:56:09.873: -Traceback= 35A055Dz 357673Dz 35765AFz 357653Cz
+*Dec 15 10:56:09.873: PPCP_LOCK: [pid=236(QoS stats process)]: Try to get write lock
+*Dec 15 10:56:09.875: -Traceback= 35BB22Az 35BAFA0z 3576787z 35765AFz 357653Cz
+*Dec 15 10:56:09.876: PPCP_LOCK: [pid=236(QoS stats process)]: Got lock.
+*Dec 15 10:56:09.878: -Traceback= 35BB22Az 35BB0F6z 3576787z 35765AFz 357653Cz
+*Dec 15 10:56:09.878: SPOLICY: [pid=236(QoS stats process)]: 
+*Dec 15 10:56:09.879: Created new iterator, with 1 iterators in the queue
+*Dec 15 10:56:09.880: -Traceback= 35A055Dz 359FE94z 35A058Bz 3576A35z 35765AFz 357653Cz
+*Dec 15 10:56:09.881: SPOLICY: [pid=236(QoS stats process)]: Created all-policy iterator 0xDFF1220 with no policies.
+*Dec 15 10:56:09.882: -Traceback= 35A055Dz 35A05DDz 3576A35z 35765AFz 357653Cz
+*Dec 15 10:56:09.883: SPOLICY: [pid=236(QoS stats process)]: Returned end-of-list from spolicy iter 0xDFF1220
+*Dec 15 10:56:09.884: -Traceback= 35A055Dz 35A035Az 35767A3z 35765AFz 357653Cz
+*Dec 15 10:56:09.885: PPCP_LOCK: [pid=236(QoS stats process)]: Released lock.
+*Dec 15 10:56:09.887: -Traceback= 35BB22Az 35BB486z 3576A0Fz 35765AFz 357653Cz
+*Dec 15 10:56:09.887: SPOLICY: [pid=236(QoS stats process)]: Freed spolicy iterator 0xDFF1220
+*Dec 15 10:56:09.889: -Traceback= 35A055Dz 35A049Bz 3576A23z 35765AFz 357653Cz
+*Dec 15 10:56:09.889: SPOLICY: [pid=236(QoS stats process)]: 10: Done update show totals
+*Dec 15 10:56:09.890: -Traceback= 35A055Dz 35765C9z 357653Cz
+*Dec 15 10:56:09.891: SPOLICY: [pid=236(QoS stats process)]: 10: Done update platform_counters
+*Dec 15 10:56:09.893: -Traceback= 35A055Dz 3576642z 357653Cz
+*Dec 15 10:56:09.893: SPOLICY: [pid=236(QoS stats process)]: 10: Done stats polling
+*Dec 15 10:56:09.895: -Traceback= 35A055Dz 35766C3z 357653Cz
+*Dec 15 10:56:09.903: PRST-VBL STD Process - flushing
+*Dec 15 10:56:09.903: PRST-VBL DET Lock - ok
+*Dec 15 10:56:09.904: PRST-VBL DET - Util Set - nameval=prst-fls=2 and node->nameval=prst-fls=1.
+*Dec 15 10:56:09.904: PRST-VBL STD Util Set - straight copy of prst-fls=2
+*Dec 15 10:56:09.905: PRST-VBL MED Open Write  - opening nvram:persistent-data
+*Dec 15 10:56:09.905: PRST-VBL MED Open Write - got buf of size 2048 in 0 ms
+*Dec 15 10:56:09.906: PRST-VBL MDET Write - prst-dbg=0x3FF
+*Dec 15 10:56:09.906: PRST-VBL DET Write Nameval - ok put of prst-dbg=0x3FF
+*Dec 15 10:56:09.907: PRST-VBL MDET Write - prst-fls=2
+*Dec 15 10:56:09.907: PRST-VBL DET Write Nameval - ok put of prst-fls=2
+*Dec 15 10:56:09.908: PRST-VBL MDET Write - prst-ver=1
+*Dec 15 10:56:09.908: PRST-VBL DET Write Nameval - ok put of prst-ver=1
+*Dec 15 10:56:09.909: PRST-VBL DET Cache unlock - ok
+*Dec 15 10:56:09.909: PRST-VBL MED Close Write
+*Dec 15 10:56:09.910: IFS: Opening: file nvram:persistent-data, flags 0x230A, mode 02000
+*Dec 15 10:56:09.910: NV: Opening: file /persistent-dataNV: nvram lock acquired by local application pid:35
+*Dec 15 10:56:09.913: nvram: open_file: opening file /persistent-data
+*Dec 15 10:56:09.913: nvram: find_file_by_name: filename = persistent-data
+*Dec 15 10:56:09.914: nvram: read_from_nv: reading from nv from block 3, offset 0, len 32
+*Dec 15 10:56:09.914: nvram: find_file_by_name: filename = persistent-data
+*Dec 15 10:56:09.915: nvram: read_from_nv: reading from nv from block 3, offset 0, len 32
+*Dec 15 10:56:09.916: nvram: create_file_attr: filesize = 23 attr.inode = 3
+*Dec 15 10:56:09.916: nvram: open_file: opened file persistent-data for writing, handle->attr.inode = 3, handle->attr.nbytes = 23, handle->attr.mode = 34406
+*Dec 15 10:56:09.917: IFS: Fioctl: fd 0, fn 37, arg 0
+*Dec 15 10:56:09.917: nvram: read_from_nv: reading from nv from block 3, offset 0, len 32
+*Dec 15 10:56:09.918: nvram: erase_file: first_block = 3, curr_block = 3, offset_in_curr_block = 0, flags = 1, filename = persistent-data
+*Dec 15 10:56:09.918: nvram: read_from_nv: reading from nv from block 3, offset 0, len 32
+*Dec 15 10:56:09.919: nvram: write_to_nv: writing to nv at block 3, offset 0, len 1024
+*Dec 15 10:56:09.919: nvram: create_file: filename = persistent-data
+*Dec 15 10:56:09.920: nvram: read_from_nv: reading from nv from block 3, offset 0, len 32
+*Dec 15 10:56:09.920: nvram: write_to_nv: writing to nv at block 3, offset 0, len 32
+*Dec 15 10:56:09.921: nvram: find_file_by_name: filename = persistent-data
+*Dec 15 10:56:09.922: nvram: read_from_nv: reading from nv from block 3, offset 0, len 32
+*Dec 15 10:56:09.922: IFS: Fioctl: fd 0, fn 37, arg 0, errno 0, rc 0
+*Dec 15 10:56:09.923: NV: Opened: file /persistent-data, fd 0
+*Dec 15 10:56:09.923: IFS: Opened: file nvram:persistent-data as fd 0, errno 0
+*Dec 15 10:56:09.924: IFS: Write: fd 0, bytes 38
+*Dec 15 10:56:09.925: nvram: nvram_blockio_write_handle: first_block = 3, curr_block = 3, offset_in_curr_block = 0, flags = 1, filename = persistent-data, nbytes = 38
+*Dec 15 10:56:09.925: nvram: read_from_nv: reading from nv from block 3, offset 0, len 32
+*Dec 15 10:56:09.926: nvram: read_from_nv: reading from nv from block 3, offset 0, len 32
+*Dec 15 10:56:09.926: nvram: read_from_nv: reading from nv from block 3, offset 0, len 32
+*Dec 15 10:56:09.927: nvram: write_to_nv: writing to nv at block 3, offset 32, len 38
+*Dec 15 10:56:09.928: nvram: write_to_nv: writing to nv at block 3, offset 0, len 32
+*Dec 15 10:56:09.928: IFS: Write: fd 0, bytes written 38, errno 22, fsid 38
+*Dec 15 10:56:09.929: IFS: Close: fd 0
+*Dec 15 10:56:09.929: NV: Closing fd 0
+*Dec 15 10:56:09.930: NVRAM: nvram_blockio_close: first_block = 3, curr_block = 3, offset_in_curr_block = 38, flags = 1, filename = persistent-data
+*Dec 15 10:56:09.930: nvram: close_file: first_block = 3, curr_block = 3, offset_in_curr_block = 38, flags = 1, filename = persistent-data
+*Dec 15 10:56:09.931: nvram: read_from_nv: reading from nv from block 3, offset 0, len 32
+*Dec 15 10:56:09.931: nvram: write_to_nv: writing to nv at block 3, offset 0, len 32
+*Dec 15 10:56:09.933:  dfs_openfile: Opening file....
+*Dec 15 10:56:09.934:  dfs_openfile: Opened file / with fib = F0E979C
+*Dec 15 10:56:09.935:  dfs_closefile: Closing file.... F0E979C
+*Dec 15 10:56:09.936:  dfs_closehandle: Closed file.... F0E979C
+*Dec 15 10:56:09.937: IFS: Opening: file flash:/nvram, flags 0x103, mode 0
+*Dec 15 10:56:09.940:  dfs_closefile: Closing file.... F0E979C
+*Dec 15 10:56:09.941:  dfs_closehandle: Closed file.... F0E979C
+*Dec 15 10:56:09.942:  dfs_openfile: Opening file..../nvram
+*Dec 15 10:56:09.944:  dfs_closefile: Closing file.... F0E979C
+*Dec 15 10:56:09.945:  dfs_closehandle: Closed file.... F0E979C
+*Dec 15 10:56:09.946:  dfs_openfile: Opened file /nvram with fib = F0E979C
+*Dec 15 10:56:09.947:  dfs_closefile: Closing file.... F0E979C
+*Dec 15 10:56:09.948:  dfs_closehandle: Closed file.... F0E979C
+*Dec 15 10:56:09.949:  dfs_openfile: Opening file..../nvram
+*Dec 15 10:56:09.950:  dfs_closefile: Closing file.... F0E979C
+*Dec 15 10:56:09.952:  dfs_closehandle: Closed file.... F0E979C
+*Dec 15 10:56:09.953:  dfs_openfile: Opened file /nvram with fib = F0E979C
+*Dec 15 10:56:09.954: IFS: Opened: file flash:/nvram as fd 1, errno 0
+*Dec 15 10:56:09.955: IFS: Write: fd 1, bytes 524288
+*Dec 15 10:56:09.963: Writing cluster = 37712, offset = 0, nsecs = 8
+*Dec 15 10:56:09.977: Writing cluster = 37713, offset = 0, nsecs = 8
+*Dec 15 10:56:10.000: Writing cluster = 37714, offset = 0, nsecs = 8
+*Dec 15 10:56:10.016: Writing cluster = 37715, offset = 0, nsecs = 8
+*Dec 15 10:56:10.033: Writing cluster = 37716, offset = 0, nsecs = 8
+*Dec 15 10:56:10.045: Writing cluster = 37717, offset = 0, nsecs = 8
+*Dec 15 10:56:10.052: Writing cluster = 37718, offset = 0, nsecs = 8
+*Dec 15 10:56:10.062: Writing cluster = 37719, offset = 0, nsecs = 8
+*Dec 15 10:56:10.069: Writing cluster = 37720, offset = 0, nsecs = 8
+*Dec 15 10:56:10.075: Writing cluster = 37721, offset = 0, nsecs = 8
+*Dec 15 10:56:10.085: Writing cluster = 37722, offset = 0, nsecs = 8
+*Dec 15 10:56:10.091: Writing cluster = 37723, offset = 0, nsecs = 8
+*Dec 15 10:56:10.097: Writing cluster = 37724, offset = 0, nsecs = 8
+*Dec 15 10:56:10.105: Writing cluster = 37725, offset = 0, nsecs = 8
+*Dec 15 10:56:10.110: Writing cluster = 37726, offset = 0, nsecs = 8
+*Dec 15 10:56:10.117: Writing cluster = 37727, offset = 0, nsecs = 8
+*Dec 15 10:56:10.127: Writing cluster = 37728, offset = 0, nsecs = 8
+*Dec 15 10:56:10.132: Writing cluster = 37729, offset = 0, nsecs = 8
+*Dec 15 10:56:10.138: Writing cluster = 37730, offset = 0, nsecs = 8
+*Dec 15 10:56:10.291: Writing cluster = 37731, offset = 0, nsecs = 8
+*Dec 15 10:56:10.296: Writing cluster = 37732, offset = 0, nsecs = 8
+*Dec 15 10:56:10.302: Writing cluster = 37733, offset = 0, nsecs = 8
+*Dec 15 10:56:10.312: Writing cluster = 37734, offset = 0, nsecs = 8
+*Dec 15 10:56:10.317: Writing cluster = 37735, offset = 0, nsecs = 8
+*Dec 15 10:56:10.324: Writing cluster = 37736, offset = 0, nsecs = 8
+*Dec 15 10:56:10.332: Writing cluster = 37737, offset = 0, nsecs = 8
+*Dec 15 10:56:10.337: Writing cluster = 37738, offset = 0, nsecs = 8
+*Dec 15 10:56:10.343: Writing cluster = 37739, offset = 0, nsecs = 8
+*Dec 15 10:56:10.348: Writing cluster = 37740, offset = 0, nsecs = 8
+*Dec 15 10:56:10.359: Writing cluster = 37741, offset = 0, nsecs = 8
+*Dec 15 10:56:10.364: Writing cluster = 37742, offset = 0, nsecs = 8
+*Dec 15 10:56:10.369: Writing cluster = 37743, offset = 0, nsecs = 8
+*Dec 15 10:56:10.378: Writing cluster = 37744, offset = 0, nsecs = 8
+*Dec 15 10:56:10.383: Writing cluster = 37745, offset = 0, nsecs = 8
+*Dec 15 10:56:10.388: Writing cluster = 37746, offset = 0, nsecs = 8
+*Dec 15 10:56:10.394: Writing cluster = 37747, offset = 0, nsecs = 8
+*Dec 15 10:56:10.402: Writing cluster = 37748, offset = 0, nsecs = 8
+*Dec 15 10:56:10.407: Writing cluster = 37749, offset = 0, nsecs = 8
+*Dec 15 10:56:10.412: Writing cluster = 37750, offset = 0, nsecs = 8
+*Dec 15 10:56:10.424: Writing cluster = 37751, offset = 0, nsecs = 8
+*Dec 15 10:56:10.429: Writing cluster = 37752, offset = 0, nsecs = 8
+*Dec 15 10:56:10.435: Writing cluster = 37753, offset = 0, nsecs = 8
+*Dec 15 10:56:10.443: Writing cluster = 37754, offset = 0, nsecs = 8
+*Dec 15 10:56:10.448: Writing cluster = 37755, offset = 0, nsecs = 8
+*Dec 15 10:56:10.455: Writing cluster = 37756, offset = 0, nsecs = 8
+*Dec 15 10:56:10.460: Writing cluster = 37757, offset = 0, nsecs = 8
+*Dec 15 10:56:10.468: Writing cluster = 37758, offset = 0, nsecs = 8
+*Dec 15 10:56:10.474: Writing cluster = 37759, offset = 0, nsecs = 8
+*Dec 15 10:56:10.479: Writing cluster = 37760, offset = 0, nsecs = 8
+*Dec 15 10:56:10.484: Writing cluster = 37761, offset = 0, nsecs = 8
+*Dec 15 10:56:10.494: //-1/xxxxxxxxxxxx/CRM/crm_send_periodic_update: 
+*Dec 15 10:56:10.497: Writing cluster = 37762, offset = 0, nsecs = 8
+*Dec 15 10:56:10.502: Writing cluster = 37763, offset = 0, nsecs = 8
+*Dec 15 10:56:10.508: Writing cluster = 37764, offset = 0, nsecs = 8
+*Dec 15 10:56:10.516: Writing cluster = 37765, offset = 0, nsecs = 8
+*Dec 15 10:56:10.521: Writing cluster = 37766, offset = 0, nsecs = 8
+*Dec 15 10:56:10.526: Writing cluster = 37767, offset = 0, nsecs = 8
+*Dec 15 10:56:10.535: Writing cluster = 37768, offset = 0, nsecs = 8
+*Dec 15 10:56:10.541: Writing cluster = 37769, offset = 0, nsecs = 8
+*Dec 15 10:56:10.546: Writing cluster = 37770, offset = 0, nsecs = 8
+*Dec 15 10:56:10.553: Writing cluster = 37771, offset = 0, nsecs = 8
+*Dec 15 10:56:10.562: Writing cluster = 37772, offset = 0, nsecs = 8
+*Dec 15 10:56:10.569: Writing cluster = 37773, offset = 0, nsecs = 8
+*Dec 15 10:56:10.575: Writing cluster = 37774, offset = 0, nsecs = 8
+*Dec 15 10:56:10.586: Writing cluster = 37775, offset = 0, nsecs = 8
+*Dec 15 10:56:10.593: Writing cluster = 37776, offset = 0, nsecs = 8
+*Dec 15 10:56:10.599: Writing cluster = 37777, offset = 0, nsecs = 8
+*Dec 15 10:56:10.609: Writing cluster = 37778, offset = 0, nsecs = 8
+*Dec 15 10:56:10.617: Writing cluster = 37779, offset = 0, nsecs = 8
+*Dec 15 10:56:10.623: Writing cluster = 37780, offset = 0, nsecs = 8
+*Dec 15 10:56:10.633: Writing cluster = 37781, offset = 0, nsecs = 8
+*Dec 15 10:56:10.639: Writing cluster = 37782, offset = 0, nsecs = 8
+*Dec 15 10:56:10.646: Writing cluster = 37783, offset = 0, nsecs = 8
+*Dec 15 10:56:10.656: Writing cluster = 37784, offset = 0, nsecs = 8
+*Dec 15 10:56:10.662: Writing cluster = 37785, offset = 0, nsecs = 8
+*Dec 15 10:56:10.668: Writing cluster = 37786, offset = 0, nsecs = 8
+*Dec 15 10:56:10.682: Writing cluster = 37787, offset = 0, nsecs = 8
+*Dec 15 10:56:10.689: Writing cluster = 37788, offset = 0, nsecs = 8
+*Dec 15 10:56:10.695: Writing cluster = 37789, offset = 0, nsecs = 8
+*Dec 15 10:56:10.703: Writing cluster = 37790, offset = 0, nsecs = 8
+*Dec 15 10:56:10.709: Writing cluster = 37791, offset = 0, nsecs = 8
+*Dec 15 10:56:10.714: Writing cluster = 37792, offset = 0, nsecs = 8
+*Dec 15 10:56:10.723: Writing cluster = 37793, offset = 0, nsecs = 8
+*Dec 15 10:56:10.729: Writing cluster = 37794, offset = 0, nsecs = 8
+*Dec 15 10:56:10.734: Writing cluster = 37795, offset = 0, nsecs = 8
+*Dec 15 10:56:10.740: Writing cluster = 37796, offset = 0, nsecs = 8
+*Dec 15 10:56:10.751: Writing cluster = 37797, offset = 0, nsecs = 8
+*Dec 15 10:56:10.756: Writing cluster = 37798, offset = 0, nsecs = 8
+*Dec 15 10:56:10.760: Writing cluster = 37799, offset = 0, nsecs = 8
+*Dec 15 10:56:10.768: Writing cluster = 37800, offset = 0, nsecs = 8
+*Dec 15 10:56:10.774: Writing cluster = 37801, offset = 0, nsecs = 8
+*Dec 15 10:56:10.780: Writing cluster = 37802, offset = 0, nsecs = 8
+*Dec 15 10:56:10.786: Writing cluster = 37803, offset = 0, nsecs = 8
+*Dec 15 10:56:10.795: Writing cluster = 37804, offset = 0, nsecs = 8
+*Dec 15 10:56:10.802: Writing cluster = 37805, offset = 0, nsecs = 8
+*Dec 15 10:56:10.809: Writing cluster = 37806, offset = 0, nsecs = 8
+*Dec 15 10:56:10.818: Writing cluster = 37807, offset = 0, nsecs = 8
+*Dec 15 10:56:10.823: Writing cluster = 37808, offset = 0, nsecs = 8
+*Dec 15 10:56:10.831: Writing cluster = 37809, offset = 0, nsecs = 8
+*Dec 15 10:56:10.846: Writing cluster = 37810, offset = 0, nsecs = 8
+*Dec 15 10:56:10.852: Writing cluster = 37811, offset = 0, nsecs = 8
+*Dec 15 10:56:10.858: Writing cluster = 37812, offset = 0, nsecs = 8
+*Dec 15 10:56:10.865: Writing cluster = 37813, offset = 0, nsecs = 8
+*Dec 15 10:56:10.871: Writing cluster = 37814, offset = 0, nsecs = 8
+*Dec 15 10:56:10.880: Writing cluster = 37815, offset = 0, nsecs = 8
+*Dec 15 10:56:10.890: Writing cluster = 37816, offset = 0, nsecs = 8
+*Dec 15 10:56:10.896: Writing cluster = 37817, offset = 0, nsecs = 8
+*Dec 15 10:56:10.902: Writing cluster = 37818, offset = 0, nsecs = 8
+*Dec 15 10:56:10.910: Writing cluster = 37819, offset = 0, nsecs = 8
+*Dec 15 10:56:10.916: Writing cluster = 37820, offset = 0, nsecs = 8
+*Dec 15 10:56:10.922: Writing cluster = 37821, offset = 0, nsecs = 8
+*Dec 15 10:56:10.932: Writing cluster = 37822, offset = 0, nsecs = 8
+*Dec 15 10:56:10.940: Writing cluster = 37823, offset = 0, nsecs = 8
+*Dec 15 10:56:10.947: Writing cluster = 37824, offset = 0, nsecs = 8
+*Dec 15 10:56:10.957: Writing cluster = 37825, offset = 0, nsecs = 8
+*Dec 15 10:56:10.963: Writing cluster = 37826, offset = 0, nsecs = 8
+*Dec 15 10:56:10.970: Writing cluster = 37827, offset = 0, nsecs = 8
+*Dec 15 10:56:10.982: Writing cluster = 37828, offset = 0, nsecs = 8
+*Dec 15 10:56:10.988: Writing cluster = 37829, offset = 0, nsecs = 8
+*Dec 15 10:56:10.991: IFS: Write: fd 1, bytes written 524288, errno 0, fsid 524288
+*Dec 15 10:56:10.992: IOSv: Wrote configuration file: flash:/nvram (3024 bytes)
+*Dec 15 10:56:10.998: IFS: Close: fd 1
+*Dec 15 10:56:10.999:  dfs_closefile: Closing file.... F0E979C
+*Dec 15 10:56:11.005: Writing cluster = 37830, offset = 0, nsecs = 8
+*Dec 15 10:56:11.009: Writing cluster = 37831, offset = 0, nsecs = 8
+*Dec 15 10:56:11.012: Writing cluster = 37832, offset = 0, nsecs = 8
+*Dec 15 10:56:11.014: Writing cluster = 37833, offset = 0, nsecs = 8
+*Dec 15 10:56:11.017: Writing cluster = 37834, offset = 0, nsecs = 8
+*Dec 15 10:56:11.020: Writing cluster = 37835, offset = 0, nsecs = 8
+*Dec 15 10:56:11.026: Writing cluster = 37836, offset = 0, nsecs = 8
+*Dec 15 10:56:11.029: Writing cluster = 37837, offset = 0, nsecs = 8
+*Dec 15 10:56:11.031: Writing cluster = 37838, offset = 0, nsecs = 8
+*Dec 15 10:56:11.099: Writing cluster = 37839, offset = 0, nsecs = 8
+*Dec 15 10:56:11.201: Writing cluster = 2, offset = 0, nsecs = 8
+*Dec 15 10:56:11.206: Buffer flush done for 0 0
+*Dec 15 10:56:11.208:  dfs_closehandle: Closed file.... F0E979C
+*Dec 15 10:56:11.209: IFS: Close: fd 1, errno 0, rc 0
+*Dec 15 10:56:11.210: NV: Closed fd 0
+*Dec 15 10:56:11.211: NV: nvram local lock released by pid:35
+*Dec 15 10:56:11.212: IFS: Close: fd 0, errno 0, rc 0
+*Dec 15 10:56:11.212: PRST-VBL MED Close Write - wrote table size 38 in 1302 ms
+*Dec 15 10:56:11.213: PRST-VBL STD Flush to media - ok
+*Dec 15 10:56:11.920: mDNS: In function mdns_timer_handle_event
+*Dec 15 10:56:11.921: mDNS: Timer expired: deleting cache
+*Dec 15 10:56:11.922: mDNS: Entered mdns_cache_delete_expired
+*Dec 15 10:56:11.923: mDNS DB: mdns_sqlite_delete_expired:No of deleted resource_record_rowid:0
+*Dec 15 10:56:11.924: mDNS: Leaving mdns_cache_delete_expired
+*Dec 15 10:56:12.070: CDP-IP: Aging routes on the Stub
+*Dec 15 10:56:12.576: 
+*Dec 15 10:56:12.576: Rudpv1 Sent: Pkts 0,  Data Bytes 0,  Data Pkts 0
+*Dec 15 10:56:12.577: Rudpv1 Rcvd: Pkts 0,  Data Bytes 0,  Data Pkts 0
+*Dec 15 10:56:12.578: Rudpv1 Discarded: 0,  Retransmitted 0
+*Dec 15 10:56:12.579: 
+*Dec 15 10:56:12.794: 334: Bulkstat: bs_resource_usage_check: 240: 0: Resource usage percentage for local[0] is 7.
+*Dec 15 10:56:12.795: 334: Bulkstat: bs_resource_usage_check_and_handle: 325: 0: Memory resource check is within limits.
+*Dec 15 10:56:12.796: 334: Bulkstat: bs_resource_timer_start: 440: 0: Resource timer successfully started
+*Dec 15 10:56:13.191: iOAM6 EVENT: ipv6_ioam_process_fnf_export_timer_expiry: Exporter not initialized - traffic matrix
+*Dec 15 10:56:16.257: IOSv Gi0/0 PAK-ERROR: send @0xE4C7010 sz 60 encap 14
+*Dec 15 10:56:16.260: IOSv Gi0/1 PAK-ERROR: send @0xE4C7510 sz 60 encap 14
+*Dec 15 10:56:16.260: IOSv Gi0/2 PAK-ERROR: send @0xE4C7A10 sz 60 encap 14
+*Dec 15 10:56:16.262: IOSv Gi0/3 PAK-ERROR: send @0xE4C7F10 sz 60 encap 14
+*Dec 15 10:56:17.166: IP ARP STATIC: periodic adj update #4, attempt to update 0 entries
+*Dec 15 10:56:18.295: iOAM6 EVENT: ipv6_ioam_process_fnf_export_timer_expiry: Exporter not initialized - traffic matrix
+*Dec 15 10:56:18.710: Buffer flush done for 2 0
+*Dec 15 10:56:19.869: SPOLICY: [pid=236(QoS stats process)]: 10: Start stats polling
+*Dec 15 10:56:19.871: -Traceback= 35A055Dz 35765A5z 357653Cz
+*Dec 15 10:56:19.871: SPOLICY: [pid=236(QoS stats process)]: Update show totals (periodic).
+*Dec 15 10:56:19.873: -Traceback= 35A055Dz 357673Dz 35765AFz 357653Cz
+*Dec 15 10:56:19.874: PPCP_LOCK: [pid=236(QoS stats process)]: Try to get write lock
+*Dec 15 10:56:19.875: -Traceback= 35BB22Az 35BAFA0z 3576787z 35765AFz 357653Cz
+*Dec 15 10:56:19.877: PPCP_LOCK: [pid=236(QoS stats process)]: Got lock.
+*Dec 15 10:56:19.878: -Traceback= 35BB22Az 35BB0F6z 3576787z 35765AFz 357653Cz
+*Dec 15 10:56:19.879: SPOLICY: [pid=236(QoS stats process)]: 
+*Dec 15 10:56:19.879: Created new iterator, with 1 iterators in the queue
+*Dec 15 10:56:19.881: -Traceback= 35A055Dz 359FE94z 35A058Bz 3576A35z 35765AFz 357653Cz
+*Dec 15 10:56:19.881: SPOLICY: [pid=236(QoS stats process)]: Created all-policy iterator 0xDFF1220 with no policies.
+*Dec 15 10:56:19.883: -Traceback= 35A055Dz 35A05DDz 3576A35z 35765AFz 357653Cz
+*Dec 15 10:56:19.883: SPOLICY: [pid=236(QoS stats process)]: Returned end-of-list from spolicy iter 0xDFF1220
+*Dec 15 10:56:19.884: -Traceback= 35A055Dz 35A035Az 35767A3z 35765AFz 357653Cz
+*Dec 15 10:56:19.884: PPCP_LOCK: [pid=236(QoS stats process)]: Released lock.
+*Dec 15 10:56:19.884: -Traceback= 35BB22Az 35BB486z 3576A0Fz 35765AFz 357653Cz
+*Dec 15 10:56:19.884: SPOLICY: [pid=236(QoS stats process)]: Freed spolicy iterator 0xDFF1220
+*Dec 15 10:56:19.887: -Traceback= 35A055Dz 35A049Bz 3576A23z 35765AFz 357653Cz
+*Dec 15 10:56:19.887: SPOLICY: [pid=236(QoS stats process)]: 10: Done update show totals
+*Dec 15 10:56:19.889: -Traceback= 35A055Dz 35765C9z 357653Cz
+*Dec 15 10:56:19.889: SPOLICY: [pid=236(QoS stats process)]: 10: Done update platform_counters
+*Dec 15 10:56:19.892: -Traceback= 35A055Dz 3576642z 357653Cz
+*Dec 15 10:56:19.893: SPOLICY: [pid=236(QoS stats process)]: 10: Done stats polling
+*Dec 15 10:56:19.895: -Traceback= 35A055Dz 35766C3z 357653Cz
+*Dec 15 10:56:20.625: FIBbg: Timer 'FIB checkers: IPv6 scan-ios-rib scanner' expired, calling 0x015FE390, context 0x00020004)
+*Dec 15 10:56:20.626: FIBchck: [scan-ios-rib:v6] Invoking timer callback
+*Dec 15 10:56:20.626: FIBbg: Restarting timer 'FIB checkers: IPv6 scan-ios-rib scanner' with delay 60000
+*Dec 15 10:56:20.627: FIBbg: Timer 'FIB checkers: IPv4 scan-ios-rib scanner' expired, calling 0x015FE390, context 0x00010004)
+*Dec 15 10:56:20.628: FIBchck: [scan-ios-rib:v4] Invoking timer callback
+*Dec 15 10:56:20.628: FIBbg: Restarting timer 'FIB checkers: IPv4 scan-ios-rib scanner' with delay 60000
+*Dec 15 10:56:20.629: FIBbg: Timer 'FIB checkers: IPv4 scan-rib-ios scanner' expired, calling 0x015FE390, context 0x00010003)
+*Dec 15 10:56:20.630: FIBchck: [scan-rib-ios:v4] Invoking timer callback
+*Dec 15 10:56:20.631: FIBbg: Restarting timer 'FIB checkers: IPv4 scan-rib-ios scanner' with delay 60000
+*Dec 15 10:56:22.071: CDP-IP: Aging routes on the Stub
+*Dec 15 10:56:22.234: FIBbg: Timer 'fibidb queue' expired, calling 0x0170D4C0, context 0x00000000)
+*Dec 15 10:56:22.235: FIBif: Processing queued interface events
+*Dec 15 10:56:22.236: FIBif: [sw:RG1(7) 1040FDA0] Coming up
+*Dec 15 10:56:22.237: FIBif: [sw:RG1(7) 1040FDA0] Failed: Interface not really up
+*Dec 15 10:56:22.238: FIBif: [sw:<unknown>(8) 1136D160] Coming up
+*Dec 15 10:56:22.238: FIBif: [sw:<unknown>(8) 1136D160] Failed: Interface not really up
+*Dec 15 10:56:22.239: FIBif: Restarting queued interface events
+*Dec 15 10:56:22.240: FIBbg: Restarting timer 'fibidb queue' with delay 15000
+*Dec 15 10:56:22.290: FIREWALL: fw_dp_insp_handle_timer_event
+*Dec 15 10:56:22.294: FIREWALL: fw_dp_insp_sample_session_rate
+*Dec 15 10:56:22.923: 334: Bulkstat: bs_resource_usage_check: 240: 0: Resource usage percentage for local[0] is 7.
+*Dec 15 10:56:22.924: 334: Bulkstat: bs_resource_usage_check_and_handle: 325: 0: Memory resource check is within limits.
+*Dec 15 10:56:22.925: 334: Bulkstat: bs_resource_timer_start: 440: 0: Resource timer successfully started
+*Dec 15 10:56:23.296: iOAM6 EVENT: ipv6_ioam_process_fnf_export_timer_expiry: Exporter not initialized - traffic matrix
+*Dec 15 10:56:24.080: 
+*Dec 15 10:56:24.080: Rudpv1 Sent: Pkts 0,  Data Bytes 0,  Data Pkts 0
+*Dec 15 10:56:24.081: Rudpv1 Rcvd: Pkts 0,  Data Bytes 0,  Data Pkts 0
+*Dec 15 10:56:24.082: Rudpv1 Discarded: 0,  Retransmitted 0
+*Dec 15 10:56:24.083: 
+*Dec 15 10:56:26.323: IOSv Gi0/0 PAK-ERROR: send @0xE4C8410 sz 60 encap 14
+*Dec 15 10:56:26.326: IOSv Gi0/1 PAK-ERROR: send @0xE4C8910 sz 60 encap 14
+*Dec 15 10:56:26.329: IOSv Gi0/2 PAK-ERROR: send @0xE4C8E10 sz 60 encap 14
+*Dec 15 10:56:26.332: IOSv Gi0/3 PAK-ERROR: send @0xE4C9310 sz 60 encap 14
+*Dec 15 10:56:28.298: iOAM6 EVENT: ipv6_ioam_process_fnf_export_timer_expiry: Exporter not initialized - traffic matrix
+*Dec 15 10:56:29.868: SPOLICY: [pid=236(QoS stats process)]: 10: Start stats polling
+*Dec 15 10:56:29.870: -Traceback= 35A055Dz 35765A5z 357653Cz
+*Dec 15 10:56:29.871: SPOLICY: [pid=236(QoS stats process)]: Update show totals (periodic).
+*Dec 15 10:56:29.872: -Traceback= 35A055Dz 357673Dz 35765AFz 357653Cz
+*Dec 15 10:56:29.873: PPCP_LOCK: [pid=236(QoS stats process)]: Try to get write lock
+*Dec 15 10:56:29.875: -Traceback= 35BB22Az 35BAFA0z 3576787z 35765AFz 357653Cz
+*Dec 15 10:56:29.875: PPCP_LOCK: [pid=236(QoS stats process)]: Got lock.
+*Dec 15 10:56:29.877: -Traceback= 35BB22Az 35BB0F6z 3576787z 35765AFz 357653Cz
+*Dec 15 10:56:29.877: SPOLICY: [pid=236(QoS stats process)]: 
+*Dec 15 10:56:29.878: Created new iterator, with 1 iterators in the queue
+*Dec 15 10:56:29.879: -Traceback= 35A055Dz 359FE94z 35A058Bz 3576A35z 35765AFz 357653Cz
+*Dec 15 10:56:29.880: SPOLICY: [pid=236(QoS stats process)]: Created all-policy iterator 0xDFF1220 with no policies.
+*Dec 15 10:56:29.881: -Traceback= 35A055Dz 35A05DDz 3576A35z 35765AFz 357653Cz
+*Dec 15 10:56:29.882: SPOLICY: [pid=236(QoS stats process)]: Returned end-of-list from spolicy iter 0xDFF1220
+*Dec 15 10:56:29.883: -Traceback= 35A055Dz 35A035Az 35767A3z 35765AFz 357653Cz
+*Dec 15 10:56:29.884: PPCP_LOCK: [pid=236(QoS stats process)]: Released lock.
+*Dec 15 10:56:29.885: -Traceback= 35BB22Az 35BB486z 3576A0Fz 35765AFz 357653Cz
+*Dec 15 10:56:29.886: SPOLICY: [pid=236(QoS stats process)]: Freed spolicy iterator 0xDFF1220
+*Dec 15 10:56:29.887: -Traceback= 35A055Dz 35A049Bz 3576A23z 35765AFz 357653Cz
+*Dec 15 10:56:29.888: SPOLICY: [pid=236(QoS stats process)]: 10: Done update show totals
+*Dec 15 10:56:29.889: -Traceback= 35A055Dz 35765C9z 357653Cz
+*Dec 15 10:56:29.890: SPOLICY: [pid=236(QoS stats process)]: 10: Done update platform_counters
+*Dec 15 10:56:29.891: -Traceback= 35A055Dz 3576642z 357653Cz
+*Dec 15 10:56:29.892: SPOLICY: [pid=236(QoS stats process)]: 10: Done stats polling
+*Dec 15 10:56:29.894: -Traceback= 35A055Dz 35766C3z 357653Cz
+*Dec 15 10:56:32.071: CDP-IP: Aging routes on the Stub
+*Dec 15 10:56:32.167: IP ARP STATIC: periodic adj update #1, attempt to update 0 entries
+*Dec 15 10:56:32.930: 334: Bulkstat: bs_resource_usage_check: 240: 0: Resource usage percentage for local[0] is 7.
+*Dec 15 10:56:32.930: 334: Bulkstat: bs_resource_usage_check_and_handle: 325: 0: Memory resource check is within limits.
+*Dec 15 10:56:32.932: 334: Bulkstat: bs_resource_timer_start: 440: 0: Resource timer successfully started
+*Dec 15 10:56:33.299: iOAM6 EVENT: ipv6_ioam_process_fnf_export_timer_expiry: Exporter not initialized - traffic matrix
+*Dec 15 10:56:35.439: 
+*Dec 15 10:56:35.440: Rudpv1 Sent: Pkts 0,  Data Bytes 0,  Data Pkts 0
+*Dec 15 10:56:35.441: Rudpv1 Rcvd: Pkts 0,  Data Bytes 0,  Data Pkts 0
+*Dec 15 10:56:35.442: Rudpv1 Discarded: 0,  Retransmitted 0
+*Dec 15 10:56:35.442: 
+*Dec 15 10:56:35.489: //-1/xxxxxxxxxxxx/CRM/crm_send_periodic_update: 
+*Dec 15 10:56:36.324: IOSv Gi0/0 PAK-ERROR: send @0xE4C9810 sz 60 encap 14
+*Dec 15 10:56:36.327: IOSv Gi0/1 PAK-ERROR: send @0xE4C9D10 sz 60 encap 14
+*Dec 15 10:56:36.330: IOSv Gi0/2 PAK-ERROR: send @0xE4CA210 sz 60 encap 14
+*Dec 15 10:56:36.333: IOSv Gi0/3 PAK-ERROR: send @0xE4CA710 sz 60 encap 14
+*Dec 15 10:56:37.244: FIBbg: Timer 'fibidb queue' expired, calling 0x0170D4C0, context 0x00000000)
+*Dec 15 10:56:37.245: FIBif: Processing queued interface events
+*Dec 15 10:56:37.245: FIBif: [sw:RG1(7) 1040FDA0] Coming up
+*Dec 15 10:56:37.246: FIBif: [sw:RG1(7) 1040FDA0] Failed: Interface not really up
+*Dec 15 10:56:37.246: FIBif: [sw:<unknown>(8) 1136D160] Coming up
+*Dec 15 10:56:37.247: FIBif: [sw:<unknown>(8) 1136D160] Failed: Interface not really up
+*Dec 15 10:56:37.248: FIBif: Restarting queued interface events
+*Dec 15 10:56:37.248: FIBbg: Restarting timer 'fibidb queue' with delay 15000
+*Dec 15 10:56:37.709: FIREWALL: fw_dp_insp_handle_timer_event
+*Dec 15 10:56:37.710: FIREWALL: fw_dp_insp_sample_session_rate
+*Dec 15 10:56:38.306: iOAM6 EVENT: ipv6_ioam_process_fnf_export_timer_expiry: Exporter not initialized - traffic matrix
+*Dec 15 10:56:40.037: SPOLICY: [pid=236(QoS stats process)]: 10: Start stats polling
+*Dec 15 10:56:40.039: -Traceback= 35A055Dz 35765A5z 357653Cz
+*Dec 15 10:56:40.039: SPOLICY: [pid=236(QoS stats process)]: Update show totals (periodic).
+*Dec 15 10:56:40.041: -Traceback= 35A055Dz 357673Dz 35765AFz 357653Cz
+*Dec 15 10:56:40.041: PPCP_LOCK: [pid=236(QoS stats process)]: Try to get write lock
+*Dec 15 10:56:40.043: -Traceback= 35BB22Az 35BAFA0z 3576787z 35765AFz 357653Cz
+*Dec 15 10:56:40.043: PPCP_LOCK: [pid=236(QoS stats process)]: Got lock.
+*Dec 15 10:56:40.045: -Traceback= 35BB22Az 35BB0F6z 3576787z 35765AFz 357653Cz
+*Dec 15 10:56:40.045: SPOLICY: [pid=236(QoS stats process)]: 
+*Dec 15 10:56:40.046: Created new iterator, with 1 iterators in the queue
+*Dec 15 10:56:40.047: -Traceback= 35A055Dz 359FE94z 35A058Bz 3576A35z 35765AFz 357653Cz
+*Dec 15 10:56:40.048: SPOLICY: [pid=236(QoS stats process)]: Created all-policy iterator 0xDFF1220 with no policies.
+*Dec 15 10:56:40.049: -Traceback= 35A055Dz 35A05DDz 3576A35z 35765AFz 357653Cz
+*Dec 15 10:56:40.050: SPOLICY: [pid=236(QoS stats process)]: Returned end-of-list from spolicy iter 0xDFF1220
+*Dec 15 10:56:40.051: -Traceback= 35A055Dz 35A035Az 35767A3z 35765AFz 357653Cz
+*Dec 15 10:56:40.052: PPCP_LOCK: [pid=236(QoS stats process)]: Released lock.
+*Dec 15 10:56:40.053: -Traceback= 35BB22Az 35BB486z 3576A0Fz 35765AFz 357653Cz
+*Dec 15 10:56:40.054: SPOLICY: [pid=236(QoS stats process)]: Freed spolicy iterator 0xDFF1220
+*Dec 15 10:56:40.055: -Traceback= 35A055Dz 35A049Bz 3576A23z 35765AFz 357653Cz
+*Dec 15 10:56:40.056: SPOLICY: [pid=236(QoS stats process)]: 10: Done update show totals
+*Dec 15 10:56:40.057: -Traceback= 35A055Dz 35765C9z 357653Cz
+*Dec 15 10:56:40.058: SPOLICY: [pid=236(QoS stats process)]: 10: Done update platform_counters
+*Dec 15 10:56:40.059: -Traceback= 35A055Dz 3576642z 357653Cz
+*Dec 15 10:56:40.060: SPOLICY: [pid=236(QoS stats process)]: 10: Done stats polling
+*Dec 15 10:56:40.061: -Traceback= 35A055Dz 35766C3z 357653Cz
+*Dec 15 10:56:42.071: CDP-IP: Aging routes on the Stub
+*Dec 15 10:56:42.932: IOSv Gi0/3 PAK-ERROR: receive @0xF22A8F0 sz 410 encap 22
+*Dec 15 10:56:42.932: IOSv Gi0/3 PAK-ERROR: process receive @0xF22A8F0 sz 410 encap 22 Control Plane:marking in pak exception [non cef linktype CDP]
+
+*Dec 15 10:56:42.935: 334: Bulkstat: bs_resource_usage_check: 240: 0: Resource usage percentage for local[0] is 7.
+*Dec 15 10:56:42.936: 334: Bulkstat: bs_resource_usage_check_and_handle: 325: 0: Memory resource check is within limits.
+*Dec 15 10:56:42.937: 334: Bulkstat: bs_resource_timer_start: 440: 0: Resource timer successfully started
+*Dec 15 10:56:42.940: CDP-PA: Packet received from R4 on interface GigabitEthernet0/3
+*Dec 15 10:56:42.942: **Entry  found in cache**
+*Dec 15 10:56:42.943: DSENSOR: dsensor_main_handle_pkt Received cdp for processing
+*Dec 15 10:56:42.943: DSENSOR: cdp packet Received on 
+	interface = GigabitEthernet0/3 
+	idbtype = 2162752
+	hwidbtype= 27 
+*Dec 15 10:56:42.944: DSENSOR: cdp protocol originated from mac = 5000.0004.0000
+*Dec 15 10:56:42.944: DSENSOR: cdp: T = 1, L = 6
+*Dec 15 10:56:42.945: DSENSOR: cdp: T = 5, L = 250
+*Dec 15 10:56:42.945: DSENSOR: cdp: T = 6, L = 10
+*Dec 15 10:56:42.946: DSENSOR: cdp: T = 2, L = 17
+*Dec 15 10:56:42.946: DSENSOR: cdp: T = 3, L = 22
+*Dec 15 10:56:42.947: DSENSOR: cdp: T = 4, L = 8
+*Dec 15 10:56:42.947: DSENSOR: cdp: T = 7, L = 9
+*Dec 15 10:56:42.948: DSENSOR: cdp: T = 22, L = 17
+*Dec 15 10:56:42.948: DSENSOR: cdp: T = 4105, L = 45
+*Dec 15 10:56:42.949: CDP-EV: Lookup for ip phone with idb= GigabitEthernet0/3 ip= 10.1.4.4 mac= 5000.0004.0000 platform= Cisco 
+*Dec 15 10:56:42.950: CDP-IP: IP TLV length (5) invalid for default route.
+		      Expecting default route from hub router
+*Dec 15 10:56:42.950:  APP Tlv client not configured tlvtype=4105
+*Dec 15 10:56:42.951: CDP-EV: Unrecognized/Unregistered type(0x1009),  len:(41), Value:(PID:IOSv,VID:1.0,SN:9KL5ATNHUFLATJZS7UW9Q) seen in TLV
+*Dec 15 10:56:42.951: CDP-EV: Packet Received from R4 with capability = 5 and Platform string = Cisco  on interface GigabitEthernet0/3
+*Dec 15 10:56:42.952: ND Update CDP Notification Event for R4 on Gi0/3
+*Dec 15 10:56:42.961: fh_fd_nd_event_match: num_matches = 0
+*Dec 15 10:56:43.441: iOAM6 EVENT: ipv6_ioam_process_fnf_export_timer_expiry: Exporter not initialized - traffic matrix
+*Dec 15 10:56:44.687: mDNS: In function mdns_timer_handle_event
+*Dec 15 10:56:44.688: mDNS: Timer expired: deleting cache
+*Dec 15 10:56:44.688: mDNS: Entered mdns_cache_delete_expired
+*Dec 15 10:56:44.689: mDNS DB: mdns_sqlite_delete_expired:No of deleted resource_record_rowid:0
+*Dec 15 10:56:44.690: mDNS: Leaving mdns_cache_delete_expired
+*Dec 15 10:56:46.325: IOSv Gi0/0 PAK-ERROR: send @0xE4CBB10 sz 60 encap 14
+*Dec 15 10:56:46.329: IOSv Gi0/1 PAK-ERROR: send @0xE42C010 sz 60 encap 14
+*Dec 15 10:56:46.332: IOSv Gi0/2 PAK-ERROR: send @0xE42C510 sz 60 encap 14
+*Dec 15 10:56:46.335: IOSv Gi0/3 PAK-ERROR: send @0xE42CA10 sz 60 encap 14
+*Dec 15 10:56:46.866: 
+*Dec 15 10:56:46.867: Rudpv1 Sent: Pkts 0,  Data Bytes 0,  Data Pkts 0
+*Dec 15 10:56:46.868: Rudpv1 Rcvd: Pkts 0,  Data Bytes 0,  Data Pkts 0
+*Dec 15 10:56:46.869: Rudpv1 Discarded: 0,  Retransmitted 0
+*Dec 15 10:56:46.870: 
+*Dec 15 10:56:47.167: IP ARP STATIC: periodic adj update #2, attempt to update 0 entries
+*Dec 15 10:56:47.681: CDP-IP: Aging routes on the Stub
+*Dec 15 10:56:47.683:  In cdp_check_test_cli_configured()
+*Dec 15 10:56:47.684: Sending  TLV for testing 
+*Dec 15 10:56:47.685: CDP-IP: Writing prefix 1.1.1.1/32
+*Dec 15 10:56:47.686: CDP-IP: Writing prefix 1.1.1.2/32
+*Dec 15 10:56:47.686: CDP-IP: Writing prefix 10.1.2.0/24
+*Dec 15 10:56:47.687: CDP-IP: Writing prefix 10.1.3.0/24
+*Dec 15 10:56:47.687: CDP-IP: Writing prefix 10.1.4.0/24
+*Dec 15 10:56:47.688:  cdp_check_test_cli_configured() from insert_native
+*Dec 15 10:56:47.689: CDP-PA: version 2 packet sent out on GigabitEthernet0/0
+*Dec 15 10:56:47.690: IOSv Gi0/0 PAK-ERROR: send @0xE5E8610 sz 430 encap 22
+*Dec 15 10:56:48.444: iOAM6 EVENT: ipv6_ioam_process_fnf_export_timer_expiry: Exporter not initialized - traffic matrix
+*Dec 15 10:56:50.037: SPOLICY: [pid=236(QoS stats process)]: 10: Start stats polling
+*Dec 15 10:56:50.039: -Traceback= 35A055Dz 35765A5z 357653Cz
+*Dec 15 10:56:50.039: SPOLICY: [pid=236(QoS stats process)]: Update show totals (periodic).
+*Dec 15 10:56:50.041: -Traceback= 35A055Dz 357673Dz 35765AFz 357653Cz
+*Dec 15 10:56:50.042: PPCP_LOCK: [pid=236(QoS stats process)]: Try to get write lock
+*Dec 15 10:56:50.043: -Traceback= 35BB22Az 35BAFA0z 3576787z 35765AFz 357653Cz
+*Dec 15 10:56:50.044: PPCP_LOCK: [pid=236(QoS stats process)]: Got lock.
+*Dec 15 10:56:50.046: -Traceback= 35BB22Az 35BB0F6z 3576787z 35765AFz 357653Cz
+*Dec 15 10:56:50.046: SPOLICY: [pid=236(QoS stats process)]: 
+*Dec 15 10:56:50.047: Created new iterator, with 1 iterators in the queue
+*Dec 15 10:56:50.048: -Traceback= 35A055Dz 359FE94z 35A058Bz 3576A35z 35765AFz 357653Cz
+*Dec 15 10:56:50.048: SPOLICY: [pid=236(QoS stats process)]: Created all-policy iterator 0xDFF1220 with no policies.
+*Dec 15 10:56:50.050: -Traceback= 35A055Dz 35A05DDz 3576A35z 35765AFz 357653Cz
+*Dec 15 10:56:50.050: SPOLICY: [pid=236(QoS stats process)]: Returned end-of-list from spolicy iter 0xDFF1220
+*Dec 15 10:56:50.051: -Traceback= 35A055Dz 35A035Az 35767A3z 35765AFz 357653Cz
+*Dec 15 10:56:50.052: PPCP_LOCK: [pid=236(QoS stats process)]: Released lock.
+*Dec 15 10:56:50.053: -Traceback= 35BB22Az 35BB486z 3576A0Fz 35765AFz 357653Cz
+*Dec 15 10:56:50.054: SPOLICY: [pid=236(QoS stats process)]: Freed spolicy iterator 0xDFF1220
+*Dec 15 10:56:50.055: -Traceback= 35A055Dz 35A049Bz 3576A23z 35765AFz 357653Cz
+*Dec 15 10:56:50.056: SPOLICY: [pid=236(QoS stats process)]: 10: Done update show totals
+*Dec 15 10:56:50.057: -Traceback= 35A055Dz 35765C9z 357653Cz
+*Dec 15 10:56:50.058: SPOLICY: [pid=236(QoS stats process)]: 10: Done update platform_counters
+*Dec 15 10:56:50.059: -Traceback= 35A055Dz 3576642z 357653Cz
+*Dec 15 10:56:50.060: SPOLICY: [pid=236(QoS stats process)]: 10: Done stats polling
+*Dec 15 10:56:50.061: -Traceback= 35A055Dz 35766C3z 357653Cz
+*Dec 15 10:56:50.461: Buffer flush done for 0 0
+*Dec 15 10:56:50.904: IOSv Gi0/1 PAK-ERROR: receive @0xF22A3F0 sz 410 encap 22
+*Dec 15 10:56:50.904: IOSv Gi0/1 PAK-ERROR: process receive @0xF22A3F0 sz 410 encap 22 Control Plane:marking in pak exception [non cef linktype CDP]
+
+*Dec 15 10:56:50.908: CDP-PA: Packet received from R2 on interface GigabitEthernet0/1
+*Dec 15 10:56:50.909: **Entry  found in cache**
+*Dec 15 10:56:50.910: DSENSOR: dsensor_main_handle_pkt Received cdp for processing
+*Dec 15 10:56:50.910: DSENSOR: cdp packet Received on 
+	interface = GigabitEthernet0/1 
+	idbtype = 2162752
+	hwidbtype= 27 
+*Dec 15 10:56:50.911: DSENSOR: cdp protocol originated from mac = 5000.0002.0000
+*Dec 15 10:56:50.911: DSENSOR: cdp: T = 1, L = 6
+*Dec 15 10:56:50.912: DSENSOR: cdp: T = 5, L = 250
+*Dec 15 10:56:50.912: DSENSOR: cdp: T = 6, L = 10
+*Dec 15 10:56:50.913: DSENSOR: cdp: T = 2, L = 17
+*Dec 15 10:56:50.913: DSENSOR: cdp: T = 3, L = 22
+*Dec 15 10:56:50.914: DSENSOR: cdp: T = 4, L = 8
+*Dec 15 10:56:50.914: DSENSOR: cdp: T = 7, L = 9
+*Dec 15 10:56:50.915: DSENSOR: cdp: T = 22, L = 17
+*Dec 15 10:56:50.915: DSENSOR: cdp: T = 4105, L = 45
+*Dec 15 10:56:50.916: CDP-EV: Lookup for ip phone with idb= GigabitEthernet0/1 ip= 10.1.2.2 mac= 5000.0002.0000 platform= Cisco 
+*Dec 15 10:56:50.917: CDP-IP: IP TLV length (5) invalid for default route.
+		      Expecting default route from hub router
+*Dec 15 10:56:50.917:  APP Tlv client not configured tlvtype=4105
+*Dec 15 10:56:50.918: CDP-EV: Unrecognized/Unregistered type(0x1009),  len:(41), Value:(PID:IOSv,VID:1.0,SN:9F5PQ33MNUHSW8IJMANN2) seen in TLV
+*Dec 15 10:56:50.918: CDP-EV: Packet Received from R2 with capability = 5 and Platform string = Cisco  on interface GigabitEthernet0/1
+*Dec 15 10:56:50.919: ND Update CDP Notification Event for R2 on Gi0/1
+*Dec 15 10:56:50.930: fh_fd_nd_event_match: num_matches = 0
+*Dec 15 10:56:51.826: CDP-IP: Aging routes on the Stub
+*Dec 15 10:56:51.827:  In cdp_check_test_cli_configured()
+*Dec 15 10:56:51.828: Sending  TLV for testing 
+*Dec 15 10:56:51.829: CDP-IP: Writing prefix 1.1.1.1/32
+*Dec 15 10:56:51.829: CDP-IP: Writing prefix 1.1.1.2/32
+*Dec 15 10:56:51.830: CDP-IP: Writing prefix 10.1.3.0/24
+*Dec 15 10:56:51.831: CDP-IP: Writing prefix 10.1.4.0/24
+*Dec 15 10:56:51.832: CDP-IP: Writing prefix 172.16.0.0/24
+*Dec 15 10:56:51.832:  cdp_check_test_cli_configured() from insert_native
+*Dec 15 10:56:51.833: CDP-PA: version 2 packet sent out on GigabitEthernet0/1
+*Dec 15 10:56:51.834: IOSv Gi0/1 PAK-ERROR: send @0xE5E9510 sz 430 encap 22
+*Dec 15 10:56:51.952: CDP-IP: Aging routes on the Stub
+*Dec 15 10:56:51.954:  In cdp_check_test_cli_configured()
+*Dec 15 10:56:51.956: Sending  TLV for testing 
+*Dec 15 10:56:51.957: CDP-IP: Writing prefix 1.1.1.1/32
+*Dec 15 10:56:51.958: CDP-IP: Writing prefix 1.1.1.2/32
+*Dec 15 10:56:51.959: CDP-IP: Writing prefix 10.1.2.0/24
+*Dec 15 10:56:51.961: CDP-IP: Writing prefix 10.1.4.0/24
+*Dec 15 10:56:51.961: CDP-IP: Writing prefix 172.16.0.0/24
+*Dec 15 10:56:51.962:  cdp_check_test_cli_configured() from insert_native
+*Dec 15 10:56:51.962: CDP-PA: version 2 packet sent out on GigabitEthernet0/2
+*Dec 15 10:56:51.963: IOSv Gi0/2 PAK-ERROR: send @0xE5E9A10 sz 430 encap 22
+*Dec 15 10:56:52.251: FIBbg: Timer 'fibidb queue' expired, calling 0x0170D4C0, context 0x00000000)
+*Dec 15 10:56:52.252: FIBif: Processing queued interface events
+*Dec 15 10:56:52.253: FIBif: [sw:RG1(7) 1040FDA0] Coming up
+*Dec 15 10:56:52.254: FIBif: [sw:RG1(7) 1040FDA0] Failed: Interface not really up
+*Dec 15 10:56:52.254: FIBif: [sw:<unknown>(8) 1136D160] Coming up
+*Dec 15 10:56:52.255: FIBif: [sw:<unknown>(8) 1136D160] Failed: Interface not really up
+*Dec 15 10:56:52.255: FIBif: Restarting queued interface events
+*Dec 15 10:56:52.256: FIBbg: Restarting timer 'fibidb queue' with delay 15000
+*Dec 15 10:56:52.943: 334: Bulkstat: bs_resource_usage_check: 240: 0: Resource usage percentage for local[0] is 7.
+*Dec 15 10:56:52.944: 334: Bulkstat: bs_resource_usage_check_and_handle: 325: 0: Memory resource check is within limits.
+*Dec 15 10:56:52.945: 334: Bulkstat: bs_resource_timer_start: 440: 0: Resource timer successfully started
+*Dec 15 10:56:53.082: FIREWALL: fw_dp_insp_handle_timer_event
+*Dec 15 10:56:53.083: FIREWALL: fw_dp_insp_sample_session_rate
+*Dec 15 10:56:53.274: Local MobileIP: aging arp mobility cache entries
+*Dec 15 10:56:53.446: iOAM6 EVENT: ipv6_ioam_process_fnf_export_timer_expiry: Exporter not initialized - traffic matrix
+*Dec 15 10:56:55.118: CDP-IP: Aging routes on the Stub
+*Dec 15 10:56:55.120:  In cdp_check_test_cli_configured()
+*Dec 15 10:56:55.120: Sending  TLV for testing 
+*Dec 15 10:56:55.122: CDP-IP: Writing prefix 1.1.1.1/32
+*Dec 15 10:56:55.122: CDP-IP: Writing prefix 1.1.1.2/32
+*Dec 15 10:56:55.124: CDP-IP: Writing prefix 10.1.2.0/24
+*Dec 15 10:56:55.125: CDP-IP: Writing prefix 10.1.3.0/24
+*Dec 15 10:56:55.125: CDP-IP: Writing prefix 172.16.0.0/24
+*Dec 15 10:56:55.126:  cdp_check_test_cli_configured() from insert_native
+*Dec 15 10:56:55.128: CDP-PA: version 2 packet sent out on GigabitEthernet0/3
+*Dec 15 10:56:55.129: IOSv Gi0/3 PAK-ERROR: send @0xE5E9F10 sz 430 encap 22
+*Dec 15 10:56:56.331: IOSv Gi0/0 PAK-ERROR: send @0xE42FC10 sz 60 encap 14
+*Dec 15 10:56:56.333: IOSv Gi0/1 PAK-ERROR: send @0xE42D910 sz 60 encap 14
+*Dec 15 10:56:56.337: IOSv Gi0/2 PAK-ERROR: send @0xE42E810 sz 60 encap 14
+*Dec 15 10:56:56.340: IOSv Gi0/3 PAK-ERROR: send @0xE42DE10 sz 60 encap 14
+*Dec 15 10:56:58.291: 
+*Dec 15 10:56:58.292: Rudpv1 Sent: Pkts 0,  Data Bytes 0,  Data Pkts 0
+*Dec 15 10:56:58.294: Rudpv1 Rcvd: Pkts 0,  Data Bytes 0,  Data Pkts 0
+*Dec 15 10:56:58.295: Rudpv1 Discarded: 0,  Retransmitted 0
+*Dec 15 10:56:58.295: 
+*Dec 15 10:56:58.448: iOAM6 EVENT: ipv6_ioam_process_fnf_export_timer_expiry: Exporter not initialized - traffic matrix
+*Dec 15 10:57:00.000: fh_fd_timer_process_async
+*Dec 15 10:57:00.038: SPOLICY: [pid=236(QoS stats process)]: 10: Start stats polling
+*Dec 15 10:57:00.040: -Traceback= 35A055Dz 35765A5z 357653Cz
+*Dec 15 10:57:00.040: SPOLICY: [pid=236(QoS stats process)]: Update show totals (periodic).
+*Dec 15 10:57:00.043: -Traceback= 35A055Dz 357673Dz 35765AFz 357653Cz
+*Dec 15 10:57:00.043: PPCP_LOCK: [pid=236(QoS stats process)]: Try to get write lock
+*Dec 15 10:57:00.046: -Traceback= 35BB22Az 35BAFA0z 3576787z 35765AFz 357653Cz
+*Dec 15 10:57:00.047: PPCP_LOCK: [pid=236(QoS stats process)]: Got lock.
+*Dec 15 10:57:00.050: -Traceback= 35BB22Az 35BB0F6z 3576787z 35765AFz 357653Cz
+*Dec 15 10:57:00.051: SPOLICY: [pid=236(QoS stats process)]: 
+*Dec 15 10:57:00.051: Created new iterator, with 1 iterators in the queue
+*Dec 15 10:57:00.055: -Traceback= 35A055Dz 359FE94z 35A058Bz 3576A35z 35765AFz 357653Cz
+*Dec 15 10:57:00.055: SPOLICY: [pid=236(QoS stats process)]: Created all-policy iterator 0xDFF1220 with no policies.
+*Dec 15 10:57:00.057: -Traceback= 35A055Dz 35A05DDz 3576A35z 35765AFz 357653Cz
+*Dec 15 10:57:00.058: SPOLICY: [pid=236(QoS stats process)]: Returned end-of-list from spolicy iter 0xDFF1220
+*Dec 15 10:57:00.060: -Traceback= 35A055Dz 35A035Az 35767A3z 35765AFz 357653Cz
+*Dec 15 10:57:00.060: PPCP_LOCK: [pid=236(QoS stats process)]: Released lock.
+*Dec 15 10:57:00.062: -Traceback= 35BB22Az 35BB486z 3576A0Fz 35765AFz 357653Cz
+*Dec 15 10:57:00.062: SPOLICY: [pid=236(QoS stats process)]: Freed spolicy iterator 0xDFF1220
+*Dec 15 10:57:00.064: -Traceback= 35A055Dz 35A049Bz 3576A23z 35765AFz 357653Cz
+*Dec 15 10:57:00.064: SPOLICY: [pid=236(QoS stats process)]: 10: Done update show totals
+*Dec 15 10:57:00.066: -Traceback= 35A055Dz 35765C9z 357653Cz
+*Dec 15 10:57:00.067: SPOLICY: [pid=236(QoS stats process)]: 10: Done update platform_counters
+*Dec 15 10:57:00.068: -Traceback= 35A055Dz 3576642z 357653Cz
+*Dec 15 10:57:00.069: SPOLICY: [pid=236(QoS stats process)]: 10: Done stats polling
+*Dec 15 10:57:00.070: -Traceback= 35A055Dz 35766C3z 357653Cz
+*Dec 15 10:57:00.600: //-1/xxxxxxxxxxxx/CRM/crm_send_periodic_update: 
+*Dec 15 10:57:02.167: IP ARP STATIC: periodic adj update #3, attempt to update 0 entries
+*Dec 15 10:57:02.945: 334: Bulkstat: bs_resource_usage_check: 240: 0: Resource usage percentage for local[0] is 7.
+*Dec 15 10:57:02.946: 334: Bulkstat: bs_resource_usage_check_and_handle: 325: 0: Memory resource check is within limits.
+*Dec 15 10:57:02.947: 334: Bulkstat: bs_resource_timer_start: 440: 0: Resource timer successfully started
+*Dec 15 10:57:03.449: iOAM6 EVENT: ipv6_ioam_process_fnf_export_timer_expiry: Exporter not initialized - traffic matrix
+*Dec 15 10:57:04.752: IOSv Gi0/2 PAK-ERROR: receive @0xF71E6C8 sz 410 encap 22
+*Dec 15 10:57:04.752: IOSv Gi0/2 PAK-ERROR: process receive @0xF71E6C8 sz 410 encap 22 Control Plane:marking in pak exception [non cef linktype CDP]
+
+*Dec 15 10:57:04.760: CDP-PA: Packet received from R3 on interface GigabitEthernet0/2
+*Dec 15 10:57:04.762: **Entry  found in cache**
+*Dec 15 10:57:04.763: DSENSOR: dsensor_main_handle_pkt Received cdp for processing
+*Dec 15 10:57:04.763: DSENSOR: cdp packet Received on 
+	interface = GigabitEthernet0/2 
+	idbtype = 2162752
+	hwidbtype= 27 
+*Dec 15 10:57:04.764: DSENSOR: cdp protocol originated from mac = 5000.0003.0000
+*Dec 15 10:57:04.764: DSENSOR: cdp: T = 1, L = 6
+*Dec 15 10:57:04.765: DSENSOR: cdp: T = 5, L = 250
+*Dec 15 10:57:04.765: DSENSOR: cdp: T = 6, L = 10
+*Dec 15 10:57:04.766: DSENSOR: cdp: T = 2, L = 17
+*Dec 15 10:57:04.766: DSENSOR: cdp: T = 3, L = 22
+*Dec 15 10:57:04.767: DSENSOR: cdp: T = 4, L = 8
+*Dec 15 10:57:04.767: DSENSOR: cdp: T = 7, L = 9
+*Dec 15 10:57:04.768: DSENSOR: cdp: T = 22, L = 17
+*Dec 15 10:57:04.768: DSENSOR: cdp: T = 4105, L = 45
+*Dec 15 10:57:04.769: CDP-EV: Lookup for ip phone with idb= GigabitEthernet0/2 ip= 10.1.3.3 mac= 5000.0003.0000 platform= Cisco 
+*Dec 15 10:57:04.770: CDP-IP: IP TLV length (5) invalid for default route.
+		      Expecting default route from hub router
+*Dec 15 10:57:04.771:  APP Tlv client not configured tlvtype=4105
+*Dec 15 10:57:04.771: CDP-EV: Unrecognized/Unregistered type(0x1009),  len:(41), Value:(PID:IOSv,VID:1.0,SN:9MZ1LYH9BRRKP0TY4CEU8) seen in TLV
+*Dec 15 10:57:04.772: CDP-EV: Packet Received from R3 with capability = 5 and Platform string = Cisco  on interface GigabitEthernet0/2
+*Dec 15 10:57:04.772: ND Update CDP Notification Event for R3 on Gi0/2
+*Dec 15 10:57:04.779: fh_fd_nd_event_match: num_matches = 0
+*Dec 15 10:57:05.188: CDP-IP: Aging routes on the Stub
+*Dec 15 10:57:06.333: IOSv Gi0/0 PAK-ERROR: send @0xE42E310 sz 60 encap 14
+*Dec 15 10:57:06.336: IOSv Gi0/1 PAK-ERROR: send @0xE42F210 sz 60 encap 14
+*Dec 15 10:57:06.339: IOSv Gi0/2 PAK-ERROR: send @0xE42CF10 sz 60 encap 14
+*Dec 15 10:57:06.342: IOSv Gi0/3 PAK-ERROR: send @0xE42D410 sz 60 encap 14
+*Dec 15 10:57:07.258: FIBbg: Timer 'fibidb queue' expired, calling 0x0170D4C0, context 0x00000000)
+*Dec 15 10:57:07.259: FIBif: Processing queued interface events
+*Dec 15 10:57:07.260: FIBif: [sw:RG1(7) 1040FDA0] Coming up
+*Dec 15 10:57:07.260: FIBif: [sw:RG1(7) 1040FDA0] Failed: Interface not really up
+*Dec 15 10:57:07.261: FIBif: [sw:<unknown>(8) 1136D160] Coming up
+*Dec 15 10:57:07.261: FIBif: [sw:<unknown>(8) 1136D160] Failed: Interface not really up
+*Dec 15 10:57:07.262: FIBif: Restarting queued interface events
+*Dec 15 10:57:07.263: FIBbg: Restarting timer 'fibidb queue' with delay 15000
+*Dec 15 10:57:08.450: iOAM6 EVENT: ipv6_ioam_process_fnf_export_timer_expiry: Exporter not initialized - traffic matrix
+*Dec 15 10:57:08.612: FIREWALL: fw_dp_insp_handle_timer_event
+*Dec 15 10:57:08.613: FIREWALL: fw_dp_insp_sample_session_rate
+*Dec 15 10:57:09.781: 
+*Dec 15 10:57:09.781: Rudpv1 Sent: Pkts 0,  Data Bytes 0,  Data Pkts 0
+*Dec 15 10:57:09.782: Rudpv1 Rcvd: Pkts 0,  Data Bytes 0,  Data Pkts 0
+*Dec 15 10:57:09.783: Rudpv1 Discarded: 0,  Retransmitted 0
+*Dec 15 10:57:09.783: 
+*Dec 15 10:57:10.038: SPOLICY: [pid=236(QoS stats process)]: 10: Start stats polling
+*Dec 15 10:57:10.040: -Traceback= 35A055Dz 35765A5z 357653Cz
+*Dec 15 10:57:10.041: SPOLICY: [pid=236(QoS stats process)]: Update show totals (periodic).
+*Dec 15 10:57:10.043: -Traceback= 35A055Dz 357673Dz 35765AFz 357653Cz
+*Dec 15 10:57:10.044: PPCP_LOCK: [pid=236(QoS stats process)]: Try to get write lock
+*Dec 15 10:57:10.046: -Traceback= 35BB22Az 35BAFA0z 3576787z 35765AFz 357653Cz
+*Dec 15 10:57:10.047: PPCP_LOCK: [pid=236(QoS stats process)]: Got lock.
+*Dec 15 10:57:10.049: -Traceback= 35BB22Az 35BB0F6z 3576787z 35765AFz 357653Cz
+*Dec 15 10:57:10.051: SPOLICY: [pid=236(QoS stats process)]: 
+*Dec 15 10:57:10.051: Created new iterator, with 1 iterators in the queue
+*Dec 15 10:57:10.053: -Traceback= 35A055Dz 359FE94z 35A058Bz 3576A35z 35765AFz 357653Cz
+*Dec 15 10:57:10.053: SPOLICY: [pid=236(QoS stats process)]: Created all-policy iterator 0xDFF1220 with no policies.
+*Dec 15 10:57:10.055: -Traceback= 35A055Dz 35A05DDz 3576A35z 35765AFz 357653Cz
+*Dec 15 10:57:10.056: SPOLICY: [pid=236(QoS stats process)]: Returned end-of-list from spolicy iter 0xDFF1220
+*Dec 15 10:57:10.058: -Traceback= 35A055Dz 35A035Az 35767A3z 35765AFz 357653Cz
+*Dec 15 10:57:10.058: PPCP_LOCK: [pid=236(QoS stats process)]: Released lock.
+*Dec 15 10:57:10.060: -Traceback= 35BB22Az 35BB486z 3576A0Fz 35765AFz 357653Cz
+*Dec 15 10:57:10.061: SPOLICY: [pid=236(QoS stats process)]: Freed spolicy iterator 0xDFF1220
+*Dec 15 10:57:10.063: -Traceback= 35A055Dz 35A049Bz 3576A23z 35765AFz 357653Cz
+*Dec 15 10:57:10.063: SPOLICY: [pid=236(QoS stats process)]: 10: Done update show totals
+*Dec 15 10:57:10.065: -Traceback= 35A055Dz 35765C9z 357653Cz
+*Dec 15 10:57:10.065: SPOLICY: [pid=236(QoS stats process)]: 10: Done update platform_counters
+*Dec 15 10:57:10.067: -Traceback= 35A055Dz 3576642z 357653Cz
+*Dec 15 10:57:10.068: SPOLICY: [pid=236(QoS stats process)]: 10: Done stats polling
+*Dec 15 10:57:10.069: -Traceback= 35A055Dz 35766C3z 357653Cz
+*Dec 15 10:57:12.948: 334: Bulkstat: bs_resource_usage_check: 240: 0: Resource usage percentage for local[0] is 7.
+*Dec 15 10:57:12.949: 334: Bulkstat: bs_resource_usage_check_and_handle: 325: 0: Memory resource check is within limits.
+*Dec 15 10:57:12.949: 334: Bulkstat: bs_resource_timer_start: 440: 0: Resource timer successfully started
+*Dec 15 10:57:13.451: iOAM6 EVENT: ipv6_ioam_process_fnf_export_timer_expiry: Exporter not initialized - traffic matrix
+*Dec 15 10:57:15.187: CDP-IP: Aging routes on the Stub
+*Dec 15 10:57:16.337: IOSv Gi0/0 PAK-ERROR: send @0xE431010 sz 60 encap 14
+*Dec 15 10:57:16.340: IOSv Gi0/1 PAK-ERROR: send @0xE431510 sz 60 encap 14
+*Dec 15 10:57:16.342: IOSv Gi0/2 PAK-ERROR: send @0xE431A10 sz 60 encap 14
+*Dec 15 10:57:16.345: IOSv Gi0/3 PAK-ERROR: send @0xE431F10 sz 60 encap 14
+*Dec 15 10:57:17.167: IP ARP STATIC: periodic adj update #4, attempt to update 0 entries
+*Dec 15 10:57:17.455: mDNS: In function mdns_timer_handle_event
+*Dec 15 10:57:17.456: mDNS: Timer expired: deleting cache
+*Dec 15 10:57:17.457: mDNS: Entered mdns_cache_delete_expired
+*Dec 15 10:57:17.457: mDNS DB: mdns_sqlite_delete_expired:No of deleted resource_record_rowid:0
+*Dec 15 10:57:17.458: mDNS: Leaving mdns_cache_delete_expired
+*Dec 15 10:57:18.452: iOAM6 EVENT: ipv6_ioam_process_fnf_export_timer_expiry: Exporter not initialized - traffic matrix
+*Dec 15 10:57:18.711: Buffer flush done for 2 0
+*Dec 15 10:57:20.130: SPOLICY: [pid=236(QoS stats process)]: 10: Start stats polling
+*Dec 15 10:57:20.132: -Traceback= 35A055Dz 35765A5z 357653Cz
+*Dec 15 10:57:20.132: SPOLICY: [pid=236(QoS stats process)]: Update show totals (periodic).
+*Dec 15 10:57:20.134: -Traceback= 35A055Dz 357673Dz 35765AFz 357653Cz
+*Dec 15 10:57:20.134: PPCP_LOCK: [pid=236(QoS stats process)]: Try to get write lock
+*Dec 15 10:57:20.136: -Traceback= 35BB22Az 35BAFA0z 3576787z 35765AFz 357653Cz
+*Dec 15 10:57:20.137: PPCP_LOCK: [pid=236(QoS stats process)]: Got lock.
+*Dec 15 10:57:20.139: -Traceback= 35BB22Az 35BB0F6z 3576787z 35765AFz 357653Cz
+*Dec 15 10:57:20.139: SPOLICY: [pid=236(QoS stats process)]: 
+*Dec 15 10:57:20.140: Created new iterator, with 1 iterators in the queue
+*Dec 15 10:57:20.142: -Traceback= 35A055Dz 359FE94z 35A058Bz 3576A35z 35765AFz 357653Cz
+*Dec 15 10:57:20.142: SPOLICY: [pid=236(QoS stats process)]: Created all-policy iterator 0xDFF1220 with no policies.
+*Dec 15 10:57:20.144: -Traceback= 35A055Dz 35A05DDz 3576A35z 35765AFz 357653Cz
+*Dec 15 10:57:20.145: SPOLICY: [pid=236(QoS stats process)]: Returned end-of-list from spolicy iter 0xDFF1220
+*Dec 15 10:57:20.146: -Traceback= 35A055Dz 35A035Az 35767A3z 35765AFz 357653Cz
+*Dec 15 10:57:20.147: PPCP_LOCK: [pid=236(QoS stats process)]: Released lock.
+*Dec 15 10:57:20.149: -Traceback= 35BB22Az 35BB486z 3576A0Fz 35765AFz 357653Cz
+*Dec 15 10:57:20.149: SPOLICY: [pid=236(QoS stats process)]: Freed spolicy iterator 0xDFF1220
+*Dec 15 10:57:20.151: -Traceback= 35A055Dz 35A049Bz 3576A23z 35765AFz 357653Cz
+*Dec 15 10:57:20.151: SPOLICY: [pid=236(QoS stats process)]: 10: Done update show totals
+*Dec 15 10:57:20.152: -Traceback= 35A055Dz 35765C9z 357653Cz
+*Dec 15 10:57:20.153: SPOLICY: [pid=236(QoS stats process)]: 10: Done update platform_counters
+*Dec 15 10:57:20.154: -Traceback= 35A055Dz 3576642z 357653Cz
+*Dec 15 10:57:20.154: SPOLICY: [pid=236(QoS stats process)]: 10: Done stats polling
+*Dec 15 10:57:20.156: -Traceback= 35A055Dz 35766C3z 357653Cz
+*Dec 15 10:57:20.629: FIBbg: Timer 'FIB checkers: IPv6 scan-ios-rib scanner' expired, calling 0x015FE390, context 0x00020004)
+*Dec 15 10:57:20.630: FIBchck: [scan-ios-rib:v6] Invoking timer callback
+*Dec 15 10:57:20.631: FIBbg: Restarting timer 'FIB checkers: IPv6 scan-ios-rib scanner' with delay 60000
+*Dec 15 10:57:20.632: FIBbg: Timer 'FIB checkers: IPv4 scan-ios-rib scanner' expired, calling 0x015FE390, context 0x00010004)
+*Dec 15 10:57:20.633: FIBchck: [scan-ios-rib:v4] Invoking timer callback
+*Dec 15 10:57:20.633: FIBbg: Restarting timer 'FIB checkers: IPv4 scan-ios-rib scanner' with delay 60000
+*Dec 15 10:57:20.635: FIBbg: Timer 'FIB checkers: IPv4 scan-rib-ios scanner' expired, calling 0x015FE390, context 0x00010003)
+*Dec 15 10:57:20.636: FIBchck: [scan-rib-ios:v4] Invoking timer callback
+*Dec 15 10:57:20.636: FIBbg: Restarting timer 'FIB checkers: IPv4 scan-rib-ios scanner' with delay 60000
+*Dec 15 10:57:21.306: 
+*Dec 15 10:57:21.307: Rudpv1 Sent: Pkts 0,  Data Bytes 0,  Data Pkts 0
+*Dec 15 10:57:21.309: Rudpv1 Rcvd: Pkts 0,  Data Bytes 0,  Data Pkts 0
+*Dec 15 10:57:21.310: Rudpv1 Discarded: 0,  Retransmitted 0
+*Dec 15 10:57:21.311: 
+*Dec 15 10:57:22.269: FIBbg: Timer 'fibidb queue' expired, calling 0x0170D4C0, context 0x00000000)
+*Dec 15 10:57:22.269: FIBif: Processing queued interface events
+*Dec 15 10:57:22.270: FIBif: [sw:RG1(7) 1040FDA0] Coming up
+*Dec 15 10:57:22.271: FIBif: [sw:RG1(7) 1040FDA0] Failed: Interface not really up
+*Dec 15 10:57:22.271: FIBif: [sw:<unknown>(8) 1136D160] Coming up
+*Dec 15 10:57:22.272: FIBif: [sw:<unknown>(8) 1136D160] Failed: Interface not really up
+*Dec 15 10:57:22.274: FIBif: Restarting queued interface events
+*Dec 15 10:57:22.275: FIBbg: Restarting timer 'fibidb queue' with delay 15000
+*Dec 15 10:57:22.950: 334: Bulkstat: bs_resource_usage_check: 240: 0: Resource usage percentage for local[0] is 7.
+*Dec 15 10:57:22.950: 334: Bulkstat: bs_resource_usage_check_and_handle: 325: 0: Memory resource check is within limits.
+*Dec 15 10:57:22.951: 334: Bulkstat: bs_resource_timer_start: 440: 0: Resource timer successfully started
+*Dec 15 10:57:23.454: iOAM6 EVENT: ipv6_ioam_process_fnf_export_timer_expiry: Exporter not initialized - traffic matrix
+*Dec 15 10:57:24.128: FIREWALL: fw_dp_insp_handle_timer_event
+*Dec 15 10:57:24.130: FIREWALL: fw_dp_insp_sample_session_rate
+*Dec 15 10:57:25.188: CDP-IP: Aging routes on the Stub
+*Dec 15 10:57:25.488: //-1/xxxxxxxxxxxx/CRM/crm_send_periodic_update: 
+*Dec 15 10:57:26.336: IOSv Gi0/0 PAK-ERROR: send @0xE430B10 sz 60 encap 14
+*Dec 15 10:57:26.340: IOSv Gi0/1 PAK-ERROR: send @0xE432410 sz 60 encap 14
+*Dec 15 10:57:26.343: IOSv Gi0/2 PAK-ERROR: send @0xE432910 sz 60 encap 14
+*Dec 15 10:57:26.346: IOSv Gi0/3 PAK-ERROR: send @0xE432E10 sz 60 encap 14
+*Dec 15 10:57:28.455: iOAM6 EVENT: ipv6_ioam_process_fnf_export_timer_expiry: Exporter not initialized - traffic matrix
+*Dec 15 10:57:30.133: SPOLICY: [pid=236(QoS stats process)]: 10: Start stats polling
+*Dec 15 10:57:30.136: -Traceback= 35A055Dz 35765A5z 357653Cz
+*Dec 15 10:57:30.137: SPOLICY: [pid=236(QoS stats process)]: Update show totals (periodic).
+*Dec 15 10:57:30.138: -Traceback= 35A055Dz 357673Dz 35765AFz 357653Cz
+*Dec 15 10:57:30.139: PPCP_LOCK: [pid=236(QoS stats process)]: Try to get write lock
+*Dec 15 10:57:30.141: -Traceback= 35BB22Az 35BAFA0z 3576787z 35765AFz 357653Cz
+*Dec 15 10:57:30.142: PPCP_LOCK: [pid=236(QoS stats process)]: Got lock.
+*Dec 15 10:57:30.144: -Traceback= 35BB22Az 35BB0F6z 3576787z 35765AFz 357653Cz
+*Dec 15 10:57:30.144: SPOLICY: [pid=236(QoS stats process)]: 
+*Dec 15 10:57:30.145: Created new iterator, with 1 iterators in the queue
+*Dec 15 10:57:30.146: -Traceback= 35A055Dz 359FE94z 35A058Bz 3576A35z 35765AFz 357653Cz
+*Dec 15 10:57:30.147: SPOLICY: [pid=236(QoS stats process)]: Created all-policy iterator 0xDFF1220 with no policies.
+*Dec 15 10:57:30.151: -Traceback= 35A055Dz 35A05DDz 3576A35z 35765AFz 357653Cz
+*Dec 15 10:57:30.151: SPOLICY: [pid=236(QoS stats process)]: Returned end-of-list from spolicy iter 0xDFF1220
+*Dec 15 10:57:30.153: -Traceback= 35A055Dz 35A035Az 35767A3z 35765AFz 357653Cz
+*Dec 15 10:57:30.154: PPCP_LOCK: [pid=236(QoS stats process)]: Released lock.
+*Dec 15 10:57:30.156: -Traceback= 35BB22Az 35BB486z 3576A0Fz 35765AFz 357653Cz
+*Dec 15 10:57:30.156: SPOLICY: [pid=236(QoS stats process)]: Freed spolicy iterator 0xDFF1220
+*Dec 15 10:57:30.158: -Traceback= 35A055Dz 35A049Bz 3576A23z 35765AFz 357653Cz
+*Dec 15 10:57:30.158: SPOLICY: [pid=236(QoS stats process)]: 10: Done update show totals
+*Dec 15 10:57:30.160: -Traceback= 35A055Dz 35765C9z 357653Cz
+*Dec 15 10:57:30.160: SPOLICY: [pid=236(QoS stats process)]: 10: Done update platform_counters
+*Dec 15 10:57:30.162: -Traceback= 35A055Dz 3576642z 357653Cz
+*Dec 15 10:57:30.162: SPOLICY: [pid=236(QoS stats process)]: 10: Done stats polling
+*Dec 15 10:57:30.164: -Traceback= 35A055Dz 35766C3z 357653Cz
+*Dec 15 10:57:32.168: IP ARP STATIC: periodic adj update #1, attempt to update 0 entries
+*Dec 15 10:57:32.735: 
+*Dec 15 10:57:32.735: Rudpv1 Sent: Pkts 0,  Data Bytes 0,  Data Pkts 0
+*Dec 15 10:57:32.736: Rudpv1 Rcvd: Pkts 0,  Data Bytes 0,  Data Pkts 0
+*Dec 15 10:57:32.737: Rudpv1 Discarded: 0,  Retransmitted 0
+*Dec 15 10:57:32.738: 
+*Dec 15 10:57:32.952: 334: Bulkstat: bs_resource_usage_check: 240: 0: Resource usage percentage for local[0] is 7.
+*Dec 15 10:57:32.953: 334: Bulkstat: bs_resource_usage_check_and_handle: 325: 0: Memory resource check is within limits.
+*Dec 15 10:57:32.954: 334: Bulkstat: bs_resource_timer_start: 440: 0: Resource timer successfully started
+*Dec 15 10:57:33.459: iOAM6 EVENT: ipv6_ioam_process_fnf_export_timer_expiry: Exporter not initialized - traffic matrix
+*Dec 15 10:57:35.188: CDP-IP: Aging routes on the Stub
+*Dec 15 10:57:36.338: IOSv Gi0/0 PAK-ERROR: send @0xE433810 sz 60 encap 14
+*Dec 15 10:57:36.343: IOSv Gi0/1 PAK-ERROR: send @0xE433D10 sz 60 encap 14
+*Dec 15 10:57:36.347: IOSv Gi0/2 PAK-ERROR: send @0xE434210 sz 60 encap 14
+*Dec 15 10:57:36.350: IOSv Gi0/3 PAK-ERROR: send @0xE434710 sz 60 encap 14
+*Dec 15 10:57:37.203: IOSv Gi0/3 PAK-ERROR: receive @0xF22A8F0 sz 410 encap 22
+*Dec 15 10:57:37.203: IOSv Gi0/3 PAK-ERROR: process receive @0xF22A8F0 sz 410 encap 22 Control Plane:marking in pak exception [non cef linktype CDP]
+
+*Dec 15 10:57:37.276: CDP-PA: Packet received from R4 on interface GigabitEthernet0/3
+*Dec 15 10:57:37.278: **Entry  found in cache**
+*Dec 15 10:57:37.278: DSENSOR: dsensor_main_handle_pkt Received cdp for processing
+*Dec 15 10:57:37.279: DSENSOR: cdp packet Received on 
+	interface = GigabitEthernet0/3 
+	idbtype = 2162752
+	hwidbtype= 27 
+*Dec 15 10:57:37.279: DSENSOR: cdp protocol originated from mac = 5000.0004.0000
+*Dec 15 10:57:37.280: DSENSOR: cdp: T = 1, L = 6
+*Dec 15 10:57:37.280: DSENSOR: cdp: T = 5, L = 250
+*Dec 15 10:57:37.281: DSENSOR: cdp: T = 6, L = 10
+*Dec 15 10:57:37.281: DSENSOR: cdp: T = 2, L = 17
+  Booting `IOSv: flash0:vios-adventerprisek9-m (hd0,msdos1)'
+
+error: Can't get controller info..
+Booted IOSv. Boot args: [/vios-adventerprisek9-m]
+
+Smart Init is enabled
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, IOSv Software (VIOS-ADVENTERPRISEK9-M), Version 15.9(3)M2, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2020 by Cisco Systems, Inc.
+Compiled Tue 28-Jul-20 07:09 by prod_rel_team
+
+
+
+PRST-VBL Debug set from cache (0x3FF,3FF) to All
+PRST-VBL API Get (,738E320,280,0xC-NMVL-?)
+PRST-VBL DET Lock - ok
+PRST-VBL DET Compare Next - YES  > prst-dbg=0x3FF
+PRST-VBL DET Cache unlock - ok
+PRST-VBL API Get - ok returning "prst-dbg=0x3FF" of size 15
+PRST-VBL API Get (prst-dbg=0x3FF,738E320,280,0xC-NMVL-?)
+PRST-VBL DET Lock - ok
+PRST-VBL DET Compare Next - NO prst-dbg=0x3FF <= prst-dbg=0x3FF
+PRST-VBL DET Compare Next - YES prst-dbg=0x3FF > prst-fls=2
+PRST-VBL DET Cache unlock - ok
+PRST-VBL API Get - ok returning "prst-fls=2" of size 11
+PRST-VBL API Get (prst-fls=2,738E320,280,0xC-NMVL-?)
+PRST-VBL DET Lock - ok
+PRST-VBL DET Compare Next - NO prst-fls=2 <= prst-dbg=0x3FF
+PRST-VBL DET Compare Next - NO prst-fls=2 <= prst-fls=2
+PRST-VBL DET Compare Next - YES prst-fls=2 > prst-ver=1
+PRST-VBL DET Cache unlock - ok
+PRST-VBL API Get - ok returning "prst-ver=1" of size 11
+PRST-VBL API Get (prst-ver=1,738E320,280,0xC-NMVL-?)
+PRST-VBL DET Lock - ok
+PRST-VBL DET Compare Next - NO prst-ver=1 <= prst-dbg=0x3FF
+PRST-VBL DET Compare Next - NO prst-ver=1 <= prst-fls=2
+PRST-VBL DET Compare Next - NO prst-ver=1 <= prst-ver=1
+PRST-VBL DET Cache unlock - ok
+PRST-VBL API Get - prst-ver=1 missing in the prst cache
+PRST-VBL API Get (rf-debug,E0300AC,64,0x0-DEFAULT)
+PRST-VBL DET Lock - ok
+PRST-VBL DET Cache unlock - ok
+PRST-VBL API Get - rf-debug missing in the prst cache
+PRST-VBL STD Init cache - ok
+PRST-VBL MED Init complete - filesys added: buffer_named
+PRST-VBL MED Init complete - filesys added: tmpsys
+PRST-VBL STD Process - waiting on system init
+PRST-VBL MED Init complete - filesys added: snmp
+PRST-VBL MED Init complete - filesys added: null
+PRST-VBL MED Init complete - filesys added: tftp
+PRST-VBL MED Init complete - filesys added: xmodem
+PRST-VBL MED Init complete - filesys added: ymodem
+PRST-VBL MED Init complete - filesys added: syslog
+PRST-VBL MED Init complete - filesys added: rcp
+PRST-VBL MED Init complete - filesys added: pram
+PRST-VBL API Get (snmpboots,E030134,11,0x0-DEFAULT)
+PRST-VBL DET Lock - ok
+PRST-VBL DET Cache unlock - ok
+PRST-VBL API Get - snmpboots missing in the prst cache
+PRST-VBL MED Init complete - filesys added: ftp
+PRST-VBL MED Init complete - filesys added: http
+PRST-VBL MED Init complete - filesys added: scp
+PRST-VBL MED Init complete - filesys added: tar
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+PRST-VBL MED Init complete - filesys added: https
+PRST-VBL MED Init complete - filesys added: cns
+PRST-VBL MED Init complete - filesys added: security
+PRST-VBL API Get (CTS_STARTUP_DEBUG_FILENAME,E02FBFC,693,0x0-DEFAULT)
+PRST-VBL DET Lock - ok
+PRST-VBL DET Cache unlock - ok
+PRST-VBL API Get - CTS_STARTUP_DEBUG_FILENAME missing in the prst cache
+PRST-VBL API Get (CTS_STARTUP_TEST_FILENAME,E02FEB1,693,0x0-DEFAULT)
+PRST-VBL DET Lock - ok
+PRST-VBL DET Cache unlock - ok
+PRST-VBL API Get - CTS_STARTUP_TEST_FILENAME missing in the prst cache
+Cisco IOSv (revision 1.0) with  with 984441K/62464K bytes of memory.Installed image archive
+
+Processor board ID 9VF8L76B156OIFZ7JEZJR
+4 Gigabit Ethernet interfaces
+DRAM configuration is 72 bits wide with parity disabled.
+256K bytes of non-volatile configuration memory.
+2097152K bytes of ATA System CompactFlash 0 (Read/Write)
+0K bytes of ATA CompactFlash 1 (Read/Write)
+0K bytes of ATA CompactFlash 2 (Read/Write)
+0K bytes of ATA CompactFlash 3 (Read/Write)
+
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:03.541: %ATA-6-DEV_FOUND: device 0x1F0
+*Mar  1 00:00:14.414: %NVRAM-5-CONFIG_NVRAM_READ_OK: NVRAM configuration 'flash:/nvram' was read from disk.
+*Dec 15 10:59:07.036: PRST-VBL Debug set from cache (0x3FF,3FF) to All
+*Dec 15 10:59:07.047: PRST-VBL API Get (,738E320,280,0xC-NMVL-?)
+*Dec 15 10:59:07.054: PRST-VBL DET Lock - ok
+*Dec 15 10:59:07.067: PRST-VBL DET Compare Next - YES  > prst-dbg=0x3FF
+*Dec 15 10:59:07.076: PRST-VBL DET Cache unlock - ok
+*Dec 15 10:59:07.092: PRST-VB
+-Traceback= 13148Bz 16079Ez 1604DBz 1602B8z 15A275z 15AE3Fz 41A07A7z 418AB1Ez 418E593z 572397Fz 51D8A44z 519D977z 519B060z 518AD98z 518ACF9z 518AF72z - Process "Crypto CA", CPU hog, PC 0x00155F4C
+L API Get - ok returning "prst-dbg=0x3FF" of size 15
+*Dec 15 10:59:07.107: PRST-VBL API Get (prst-dbg=0x3FF,738E320,280,0xC-NMVL-?)
+*Dec 15 10:59:07.115: PRST-VBL DET Lock - ok
+*Dec 15 10:59:07.132: PRST-VBL DET Compare Next - NO prst-dbg=0x3FF <= prst-dbg=0x3FF
+*Dec 15 10:59:07.148: PRST-VBL DET Compare Next - YES prst-dbg=0x3FF > prst-fls=2
+*Dec 15 10:59:07.157: PRST-VBL DET Cache unlock - ok
+*Dec 15 10:59:07.172: PRST-VBL API Get - ok returning "prst-fls=2" of size 11
+*Dec 15 10:59:07.187: PRST-VBL API Get (prst-fls=2,738E320,280,0xC-NMVL-?)
+*Dec 15 10:59:07.194: PRST-VBL DET Lock - ok
+*Dec 15 10:59:07.210: PRST-VBL DET Compare Next - NO prst-fls=2 <= prst-dbg=0x3FF
+*Dec 15 10:59:07.225: PRST-VBL DET Compare Next - NO prst-fls=2 <= prst-fls=2
+*Dec 15 10:59:07.240: PRST-VBL DET Compare Next - YES prst-fls=2 > prst-ver=1
+*Dec 15 10:59:07.248: PRST-VBL DET Cache unlock - ok
+*Dec 15 10:59:07.264: PRST-VBL API Get - ok returning "prst-ver=1" of size 11
+*Dec 15 10:59:07.278: PRST-VBL API Get (prst-ver=1,738E320,280,0xC-NMVL-?)
+*Dec 15 10:59:07.286: PRST-VBL DET Lock - ok
+*Dec 15 10:59:07.303: PRST-VBL DET Compare Next - NO prst-ver=1 <= prst-dbg=0x3FF
+*Dec 15 10:59:07.319: PRST-VBL DET Compare Next - NO prst-ver=1 <= prst-fls=2
+*Dec 15 10:59:07.334: PRST-VBL DET Compare Next - NO prst-ver=1 <= prst-ver=1
+*Dec 15 10:59:07.342: PRST-VBL DET Cache unlock - ok
+*Dec 15 10:59:07.357: PRST-VBL API Get - prst-ver=1 missingC
+************* in the prst cache
+*Dec 15 10:59:07.370: PRST-VBL API Get (rf-debug,E0300AC,64,0x0-DEFAULT)
+*Dec 15 10:59:07.377: PRST-VBL DET Lock - ok
+*Dec 15 10:59:07.388: PRST-VBL DET Cache unlock - ok
+*Dec 15 10:59:07.404: PRST-VBL API Get - rf-debug missing in the prst cache
+*Dec 15 10:59:07.414: PRST-VBL STD Init cache - ok
+*Dec 15 10:59:07.438: PRST-VBL MED Init complete - filesys added: buffer_named
+*Dec 15 10:59:07.454: PRST-VBL MED Init complete - filesys added: tmpsys
+*Dec 15 10:59:07.716: PRST-VBL STD Process - waiting on system init
+*Dec 15 10:59:10.811: PRST-VBL MED Init complete - filesys added: snmp
+*Dec 15 10:59:10.846: PRST-VBL MED Init complete - filesys added: null
+*Dec 15 10:59:10.866: PRST-VBL MED Init complete - filesys added: tftp
+*Dec 15 10:59:10.904: PRST-VBL MED Init complete - filesys added: xmodem
+*Dec 15 10:59:10.921: PRST-VBL MED Init complete - filesys added: ymodem
+*Dec 15 10:59:11.232: PRST-VBL MED Init complete - filesys added: syslog
+*Dec 15 10:59:11.367: %C3600-3-NOMAC: Can't allocate MAC address for interface 0/0
+*Dec 15 10:59:11.560: %C3600-3-NOMAC: Can't allocate MAC address for interface 0/0
+*Dec 15 10:59:12.137: PRST-VBL MED Init complete - filesys added: rcp
+*Dec 15 10:59:12.363: PRST-VBL MED Init complete - filesys added: pram
+*Dec 15 10:59:13.418: %C3600-3-NOMAC: Can't allocate MAC address for interface 0/0
+*Dec 15 10:59:13.471: PRST-VBL API Get (snmpboots,E030134,11,0x0-DEFAULT)
+*Dec 15 10:59:13.481: PRST-VBL DET Lock - ok
+*Dec 15 10:59:13.492: PRST-VBL DET Cache unlock - ok
+*Dec 15 10:59:13.511: PRST-VBL API Get - snmpboots missing in the prst cache
+*Dec 15 10:59:16.591: PRST-VBL MED Init complete - filesys added: ftp
+*Dec 15 10:59:16.619: PRST-VBL MED Init complete - filesys added: http
+*Dec 15 10:59:19.470: PRST-VBL MED Init complete - filesys added: scp
+*Dec 15 10:59:19.567: PRST-VBL MED Init complete - filesys added: tar
+*Dec 15 10:59:20.646: %PA-3-PA_INIT_FAILED: Performance Agent failed to initialize (Missing Data License)
+*Dec 15 10:59:24.012: PRST-VBL MED Init complete - filesys added: https
+*Dec 15 10:59:25.117: PRST-VBL MED Init complete - filesys added: cns
+*Dec 15 10:59:25.792: PRST-VBL MED Init complete - filesys added: security
+*Dec 15 10:59:25.815: PRST-VBL API Get (CTS_STARTUP_DEBUG_FILENAME,E02FBFC,693,0x0-DEFAULT)
+*Dec 15 10:59:25.823: PRST-VBL DET Lock - ok
+*Dec 15 10:59:25.833: PRST-VBL DET Cache unlock - ok
+*Dec 15 10:59:25.856: PRST-VBL API Get - CTS_STARTUP_DEBUG_FILENAME missing in the prst cache
+*Dec 15 10:59:25.879: PRST-VBL API Get (CTS_STARTUP_TEST_FILENAME,E02FEB1,693,0x0-DEFAULT)
+*Dec 15 10:59:25.887: PRST-VBL DET Lock - ok
+*Dec 15 10:59:25.897: PRST-VBL DET Cache unlock - ok
+*Dec 15 10:59:25.919: PRST-VBL API Get - CTS_STARTUP_TEST_FILENAME missing in the prst cache
+*Dec 15 10:59:26.269: %PNP-6-PNP_DISCOVERY_STARTED: PnP Discovery started
+*Dec 15 10:59:26.394: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+*Dec 15 10:59:26.399: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+*Dec 15 10:59:26.402: %LINK-3-UPDOWN: Interface GigabitEthernet0/2, changed state to up
+*Dec 15 10:59:26.404: %LINK-3-UPDOWN: Interface GigabitEthernet0/3, changed state to up
+*Dec 15 10:59:28.270: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+*Dec 15 10:59:28.272: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+*Dec 15 10:59:28.273: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/2, changed state to up
+*Dec 15 10:59:28.274: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/3, changed state to up
+*Dec 15 10:59:28.790: %SYS-5-CONFIG_I: Configured from memory by console
+*Dec 15 10:59:29.529: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback0, changed state to up
+*Dec 15 10:59:29.531: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback1, changed state to up
+*Dec 15 10:59:29.616: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, IOSv Software (VIOS-ADVENTERPRISEK9-M), Version 15.9(3)M2, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2020 by Cisco Systems, Inc.
+Compiled Tue 28-Jul-20 07:09 by prod_rel_team
+*Dec 15 10:59:29.626: %CVAC-4-FILE_IGNORED: Configuration file flash0:/ios_config.txt is ignored : empty file
+*Dec 15 10:59:29.676: PRST-VBL STD Process - running but no timer started
+*Dec 15 10:59:29.856: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Dec 15 10:59:29.857: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Dec 15 10:59:35.729: %PNP-6-PNP_BEST_UDI_UPDATE: Best UDI [PID:IOSv,VID:1.0,SN:9VF8L76B156OIFZ7JEZJR] identified via (entity-mibs)
+*Dec 15 10:59:35.730: %PNP-6-PNP_CDP_UPDATE: Device UDI [PID:IOSv,VID:1.0,SN:9VF8L76B156OIFZ7JEZJR] identified for CDP
+*Dec 15 10:59:35.735: %PNP-6-PNP_DISCOVERY_STOPPED: PnP Discovery stopped (Startup Config Present)
+*Dec 15 10:59:43.068: %SYS-3-CPUHOG: Task is running for (2000)msecs, more than (2000)msecs (0/0),process = Crypto CA.
+*Dec 15 11:00:26.452: %PLATFORM-5-SIGNATURE_VERIFIED: Image 'flash0:/vios-adventerprisek9-m' passed code signing verification*************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R1>
+R1>\
+% Bad IP address or host name
+% Unknown command or computer name, or unable to find computer address
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>en 
+R1#show run
+Building configuration...
+
+Current configuration : 3024 bytes
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!         
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!
+!
+!         
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback1
+ ip address 1.1.1.2 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 172.16.0.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 10.1.3.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+          
+R1#debu
+R1#debug ip
+R1#debug ip ?
+  access-list             IP access-list operations
+  address                 IP address activity
+  admission               Network admission control debug
+  auth-proxy              Authentication proxy debug
+  bgp                     BGP information
+  cache                   IP cache operations
+  cca                     IP CCA
+  cef                     IP CEF operations
+  cgmp                    CGMP protocol activity
+  ddns                    Dynamic DNS
+  device                  IP Host Cache debugging support
+  dfp                     DFP debug information
+  dhcp                    Dynamic Host Configuration Protocol
+  dns                     DNS
+  dns-cache               DNS cache debugging
+  dns-snoop-cache         DNS cache debugging
+  domain                  Domain Name System
+  drp                     Director response protocol
+  eigrp                   Debug IPv4 EIGRP 
+  error                   IP error debugging
+  flow                    IP Flow switching operations
+  ftp                     FTP dialogue
+  html                    HTML connections
+  http                    HTTP connections
+  icmp                    ICMP transactions
+  igmp                    IGMP protocol activity
+  inspect                 Stateful inspection events
+  interface               IP interface configuration changes
+  ips                     IPS events
+  mcache                  IP multicast cache operations
+  mfib                    IP Multicast forwarding information base
+  mhbeat                  IP multicast heartbeat monitoring
+  mobile                  IP Mobility
+  mpacket                 IP multicast packet debugging
+  mpacket                 IP multicast packet debugging
+  mrib                    Multicast Route DB
+  mrm                     IP Multicast Routing Monitor
+  mrouting                IP multicast routing table activity
+  msdp                    Multicast Source Discovery Protocol (MSDP)
+  mtrie                   Mtrie operations
+  multicast               IP multicast activity
+  mux                     IP Multiplexing
+  nat                     NAT events
+  nbar                    StILE - traffic classification Engine
+  ospf                    OSPF information
+  packet                  General IP debugging and IPSO security transactions
+  peer                    IP peer address activity
+  pgm                     PGM Reliable Transport Protocol
+  pim                     PIM protocol activity
+  policy                  Policy routing
+  process                 IP process creation/destruction
+  rbscp                   Access-list based RBSCP info
+  rgmp                    RGMP protocol activity
+  rip                     RIP protocol transactions
+  routing                 Routing table events
+  rsvp                    RSVP protocol activity
+  rtp                     RTP information
+  scp                     Secure Copy
+  sctp                    SCTP information
+  sd                      Session Directory (SD)
+  sdee                    SDEE ips alerts
+  security                IP security options
+  sla                     IP SLAs Debug
+  snat                    Stateful NAT events
+  socket                  Socket debugging
+  ssh                     Incoming ssh connections
+  tcp                     TCP information
+  tempacl                 IP temporary ACL
+  traffic-export          ip traffic export
+  trigger-authentication  Trigger authentication
+  udp                     UDP based transactions
+  urd                     URL RenDezvous (URD)
+  urlfilter               IOS URL filter events
+  verify                  IP RPF activity
+  virtual-reassembly      IP Virtual Fragment Reassembly (VFR) debugs
+  wccp                    WCCP IPv4 debugging
+
+R1#debug ip packet
+IP packet debugging is on
+R1#ping 10.1.2.1
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.1.2.1, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 12/16/26 ms
+R1#
+*Dec 15 11:01:29.845: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.845: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:01:29.856: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:01:29.858: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.859: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:01:29.860: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:01:29.862: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.862: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:01:29.865: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:01:29.867: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.868: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:01:29.869: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:01:29.877: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.878: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:01:29.880: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:01:29.882: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.882: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:01:29.883: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:01:29.884: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.885: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:01:29.887: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:01:29.889: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.889: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:01:29.891: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:01:29.905: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.905: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:01:29.908: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:01:29.909: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.910: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:01:29.911: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:01:29.912: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.912: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:01:29.914: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:01:29.915: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.916: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:01:29.917: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:01:29.921: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.922: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:01:29.928: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:01:29.929: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.930: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:01:29.931: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:01:29.932: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.932: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:01:29.934: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:01:29.936: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.936: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:01:29.937: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:01:29.943: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.944: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:01:29.946: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:01:29.947: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.947: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:01:29.948: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:01:29.949: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.950: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:01:29.952: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:01:29.953: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:01:29.954: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:01:29.955: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+R1#ebug ip packet deta
+R1#debug ip packet detail
+IP packet debugging is on (detailed)
+R1#ping 10.1.2.1         
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.1.2.1, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 17/20/26 ms
+R1#
+*Dec 15 11:02:33.421: FIBipv4-packet-proc: route packet from (local) src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.422: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.422: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.422: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.423: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:02:33.424:     ICMP type=8, code=0
+*Dec 15 11:02:33.431: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature
+*Dec 15 11:02:33.432:     ICMP type=8, code=0, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:02:33.433: FIBipv4-packet-proc: route packet from GigabitEthernet0/1 src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.433: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.433: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.434: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.434: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:02:33.435:     ICMP type=8, code=0
+*Dec 15 11:02:33.436: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:02:33.437:     ICMP type=8, code=0
+*Dec 15 11:02:33.437: FIBipv4-packet-proc: route packet from (local) src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.438: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.438: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.439: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.439: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:02:33.440:     ICMP type=0, code=0
+*Dec 15 11:02:33.442: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature
+*Dec 15 11:02:33.442:     ICMP type=0, code=0, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:02:33.443: FIBipv4-packet-proc: route packet from GigabitEthernet0/1 src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.444: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.444: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.444: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.445: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:02:33.446:     ICMP type=0, code=0
+*Dec 15 11:02:33.446: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:02:33.447:     ICMP type=0, code=0
+*Dec 15 11:02:33.458: FIBipv4-packet-proc: route packet from (local) src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.459: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.459: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.459: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.460: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:02:33.461:     ICMP type=8, code=0
+*Dec 15 11:02:33.463: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature
+*Dec 15 11:02:33.463:     ICMP type=8, code=0, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:02:33.464: FIBipv4-packet-proc: route packet from GigabitEthernet0/1 src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.465: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.465: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.465: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.466: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:02:33.467:     ICMP type=8, code=0
+*Dec 15 11:02:33.467: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:02:33.468:     ICMP type=8, code=0
+*Dec 15 11:02:33.469: FIBipv4-packet-proc: route packet from (local) src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.469: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.469: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.470: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.470: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:02:33.471:     ICMP type=0, code=0
+*Dec 15 11:02:33.473: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature
+*Dec 15 11:02:33.474:     ICMP type=0, code=0, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:02:33.475: FIBipv4-packet-proc: route packet from GigabitEthernet0/1 src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.475: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.476: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.476: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.476: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:02:33.478:     ICMP type=0, code=0
+*Dec 15 11:02:33.478: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:02:33.479:     ICMP type=0, code=0
+*Dec 15 11:02:33.486: FIBipv4-packet-proc: route packet from (local) src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.486: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.486: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.487: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.487: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:02:33.488:     ICMP type=8, code=0
+*Dec 15 11:02:33.490: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature
+*Dec 15 11:02:33.491:     ICMP type=8, code=0, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:02:33.492: FIBipv4-packet-proc: route packet from GigabitEthernet0/1 src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.492: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.492: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.493: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.493: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:02:33.494:     ICMP type=8, code=0
+*Dec 15 11:02:33.495: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:02:33.496:     ICMP type=8, code=0
+*Dec 15 11:02:33.496: FIBipv4-packet-proc: route packet from (local) src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.497: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.497: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.497: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.498: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:02:33.499:     ICMP type=0, code=0
+*Dec 15 11:02:33.500: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature
+*Dec 15 11:02:33.501:     ICMP type=0, code=0, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:02:33.502: FIBipv4-packet-proc: route packet from GigabitEthernet0/1 src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.502: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.502: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.503: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.503: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:02:33.504:     ICMP type=0, code=0
+*Dec 15 11:02:33.504: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:02:33.505:     ICMP type=0, code=0
+*Dec 15 11:02:33.516: FIBipv4-packet-proc: route packet from (local) src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.517: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.517: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.518: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.518: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:02:33.519:     ICMP type=8, code=0
+*Dec 15 11:02:33.521: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature
+*Dec 15 11:02:33.522:     ICMP type=8, code=0, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:02:33.523: FIBipv4-packet-proc: route packet from GigabitEthernet0/1 src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.523: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.523: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.524: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.524: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:02:33.525:     ICMP type=8, code=0
+*Dec 15 11:02:33.526: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:02:33.526:     ICMP type=8, code=0
+*Dec 15 11:02:33.527: FIBipv4-packet-proc: route packet from (local) src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.527: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.528: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.528: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.528: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:02:33.529:     ICMP type=0, code=0
+*Dec 15 11:02:33.531: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature
+*Dec 15 11:02:33.531:     ICMP type=0, code=0, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:02:33.532: FIBipv4-packet-proc: route packet from GigabitEthernet0/1 src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.532: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.532: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.533: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.533: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:02:33.534:     ICMP type=0, code=0
+*Dec 15 11:02:33.534: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:02:33.535:     ICMP type=0, code=0
+*Dec 15 11:02:33.540: FIBipv4-packet-proc: route packet from (local) src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.541: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.541: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.541: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.542: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:02:33.543:     ICMP type=8, code=0
+*Dec 15 11:02:33.544: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature
+*Dec 15 11:02:33.545:     ICMP type=8, code=0, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:02:33.546: FIBipv4-packet-proc: route packet from GigabitEthernet0/1 src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.546: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.546: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.547: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.547: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:02:33.548:     ICMP type=8, code=0
+*Dec 15 11:02:33.548: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:02:33.549:     ICMP type=8, code=0
+*Dec 15 11:02:33.549: FIBipv4-packet-proc: route packet from (local) src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.549: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.550: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.550: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.550: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:02:33.551:     ICMP type=0, code=0
+*Dec 15 11:02:33.552: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature
+*Dec 15 11:02:33.553:     ICMP type=0, code=0, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:02:33.554: FIBipv4-packet-proc: route packet from GigabitEthernet0/1 src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:02:33.554: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:02:33.554: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:02:33.555: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:02:33.555: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:02:33.556:     ICMP type=0, code=0
+*Dec 15 11:02:33.556: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:02:33.557:     ICMP type=0, code=0
+R1#ping 10.1.2.1 -c 1 
+                 ^
+% Invalid input detected at '^' marker.
+
+R1#ping 10.1.2.1 repe 
+R1#ping 10.1.2.1 repeat 1
+Type escape sequence to abort.
+Sending 1, 100-byte ICMP Echos to 10.1.2.1, timeout is 2 seconds:
+!
+Success rate is 100 percent (1/1), round-trip min/avg/max = 32/32/32 ms
+R1#
+*Dec 15 11:03:49.123: FIBipv4-packet-proc: route packet from (local) src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:03:49.124: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:03:49.124: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:03:49.124: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:03:49.125: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:03:49.126:     ICMP type=8, code=0
+*Dec 15 11:03:49.136: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature
+*Dec 15 11:03:49.137:     ICMP type=8, code=0, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:03:49.138: FIBipv4-packet-proc: route packet from GigabitEthernet0/1 src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:03:49.139: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:03:49.139: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:03:49.140: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:03:49.140: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:03:49.142:     ICMP type=8, code=0
+*Dec 15 11:03:49.142: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:03:49.143:     ICMP type=8, code=0
+*Dec 15 11:03:49.144: FIBipv4-packet-proc: route packet from (local) src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:03:49.144: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:03:49.145: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:03:49.145: IP: tableid=0, s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:03:49.146: IP: s=10.1.2.1 (local), d=10.1.2.1 (GigabitEthernet0/1), len 100, sending
+*Dec 15 11:03:49.147:     ICMP type=0, code=0
+*Dec 15 11:03:49.149: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, input feature
+*Dec 15 11:03:49.149:     ICMP type=0, code=0, MCI Check(109), rtype 0, forus FALSE, sendself FALSE, mtu 0, fwdchk FALSE
+*Dec 15 11:03:49.150: FIBipv4-packet-proc: route packet from GigabitEthernet0/1 src 10.1.2.1 dst 10.1.2.1
+*Dec 15 11:03:49.151: FIBfwd-proc: Default:10.1.2.1/32 receive entry
+*Dec 15 11:03:49.151: FIBipv4-packet-proc: packet routing failed
+*Dec 15 11:03:49.151: IP: tableid=0, s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), routed via RIB
+*Dec 15 11:03:49.152: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1 (GigabitEthernet0/1), len 100, rcvd 3
+*Dec 15 11:03:49.153:     ICMP type=0, code=0
+*Dec 15 11:03:49.154: IP: s=10.1.2.1 (GigabitEthernet0/1), d=10.1.2.1, len 100, stop process pak for forus packet
+*Dec 15 11:03:49.154:     ICMP type=0, code=0
+R1#undebu
+R1#undebug all
+Persistent variable debugs All disabled
+
+All possible debugging has been turned off
+R1#show run
+R1#show running-config 
+Building configuration...
+
+Current configuration : 3024 bytes
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!         
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!
+!
+!         
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback1
+ ip address 1.1.1.2 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 172.16.0.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 10.1.3.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!         
+ipv6 ioam timestamp
+!         
+!         
+!         
+control-plane
+!         
+banner exec ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!         
+end
+
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#router rip
+R1(config-router)#version 2
+R1(config-router)#no aut
+R1(config-router)#no auto-summary 
+R1(config-router)#netwo
+R1(config-router)#?       
+Router configuration commands:
+  address-family          Enter Address Family command mode
+  auto-summary            Enable automatic network number summarization
+  bfd                     BFD configuration commands
+  default                 Set a command to its defaults
+  default-information     Control distribution of default information
+  default-metric          Set metric of redistributed routes
+  distance                Define an administrative distance
+  distribute-list         Filter networks in routing updates
+  exit                    Exit from routing protocol configuration mode
+  flash-update-threshold  Specify flash update threshold in second
+  help                    Description of the interactive help system
+  input-queue             Specify input queue depth
+  maximum-paths           Forward packets over multiple paths
+  neighbor                Specify a neighbor router
+  network                 Enable routing on an IP network
+  no                      Negate a command or set its defaults
+  offset-list             Add or subtract offset from RIP metrics
+  output-delay            Interpacket delay for RIP updates
+  passive-interface       Suppress routing updates on an interface
+  redistribute            Redistribute information from another routing
+                          protocol
+  timers                  Adjust routing timers
+  traffic-share           How to compute traffic share over alternate paths
+  validate-update-source  Perform sanity checks against source address of
+                          routing updates
+  version                 Set routing protocol version
+
+R1(config-router)#netwo
+R1(config-router)#network ?
+  A.B.C.D  Network number
+
+R1(config-router)#network 10.1.2.0
+R1(config-router)#network 10.1.3.0
+R1(config-router)#network 10.1.4.0
+R1(config-router)#exit
+R1(config)#exit
+R1#show 
+*Dec 15 11:18:35.914: %SYS-5-CONFIG_I: Configured from console by consolei 
+% Ambiguous command:  "show i"
+R1#show ip protocols
+*** IP Routing is NSF aware ***
+
+Routing Protocol is "application"
+  Sending updates every 0 seconds
+  Invalid after 0 seconds, hold down 0, flushed after 0
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Maximum path: 32
+  Routing for Networks:
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+  Distance: (default is 4)
+
+Routing Protocol is "rip"
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Sending updates every 30 seconds, next due in 27 seconds
+  Invalid after 180 seconds, hold down 180, flushed after 240
+  Redistributing: rip
+  Default version control: send version 2, receive version 2
+    Interface                           Send  Recv  Triggered RIP  Key-chain
+    GigabitEthernet0/1                  2     2          No        none            
+    GigabitEthernet0/2                  2     2          No        none            
+    GigabitEthernet0/3                  2     2          No        none            
+  Automatic network summarization is not in effect
+  Maximum path: 4
+  Routing for Networks:
+    10.0.0.0
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+    10.1.2.2             120      00:00:08
+  Distance: (default is 120)
+
+R1#show ip protocols
+*** IP Routing is NSF aware ***
+
+Routing Protocol is "application"
+  Sending updates every 0 seconds
+  Invalid after 0 seconds, hold down 0, flushed after 0
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Maximum path: 32
+  Routing for Networks:
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+  Distance: (default is 4)
+
+Routing Protocol is "rip"
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Sending updates every 30 seconds, next due in 17 seconds
+  Invalid after 180 seconds, hold down 180, flushed after 240
+  Redistributing: rip
+  Default version control: send version 2, receive version 2
+    Interface                           Send  Recv  Triggered RIP  Key-chain
+    GigabitEthernet0/1                  2     2          No        none            
+    Interface                           Send  Recv  Triggered RIP  Key-chain
+    GigabitEthernet0/2                  2     2          No        none            
+    GigabitEthernet0/3                  2     2          No        none            
+  Automatic network summarization is not in effect
+  Maximum path: 4
+  Routing for Networks:
+    10.0.0.0
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+    10.1.2.2             120      00:00:16
+  Distance: (default is 120)
+
+R1#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R1>en 
+R1#ip arp
+      ^
+% Invalid input detected at '^' marker.
+
+R1#show ip arp
+Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  10.1.2.1                -   5000.0001.0001  ARPA   GigabitEthernet0/1
+Internet  10.1.2.2               50   5000.0002.0000  ARPA   GigabitEthernet0/1
+Internet  10.1.3.1                -   5000.0001.0002  ARPA   GigabitEthernet0/2
+Internet  10.1.3.3               36   5000.0003.0000  ARPA   GigabitEthernet0/2
+Internet  10.1.4.1                -   5000.0001.0003  ARPA   GigabitEthernet0/3
+Internet  10.1.4.4               33   5000.0004.0000  ARPA   GigabitEthernet0/3
+Internet  172.16.0.1              -   5000.0001.0000  ARPA   GigabitEthernet0/0
+Internet  172.16.0.6             19   0050.7966.6806  ARPA   GigabitEthernet0/0
+R1#ping 10.3.5.1
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.3.5.1, timeout is 2 seconds:
+.....
+Success rate is 0 percent (0/5)
+R1#ping 10.3.5.3
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.3.5.3, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 3/5/7 ms
+R1#show ip arp  
+Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  10.1.2.1                -   5000.0001.0001  ARPA   GigabitEthernet0/1
+Internet  10.1.2.2               51   5000.0002.0000  ARPA   GigabitEthernet0/1
+Internet  10.1.3.1                -   5000.0001.0002  ARPA   GigabitEthernet0/2
+Internet  10.1.3.3               38   5000.0003.0000  ARPA   GigabitEthernet0/2
+Internet  10.1.4.1                -   5000.0001.0003  ARPA   GigabitEthernet0/3
+Internet  10.1.4.4               34   5000.0004.0000  ARPA   GigabitEthernet0/3
+Internet  172.16.0.1              -   5000.0001.0000  ARPA   GigabitEthernet0/0
+Internet  172.16.0.6             20   0050.7966.6806  ARPA   GigabitEthernet0/0
+R1#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      1.0.0.0/32 is subnetted, 2 subnets
+C        1.1.1.1 is directly connected, Loopback0
+C        1.1.1.2 is directly connected, Loopback1
+      10.0.0.0/8 is variably subnetted, 9 subnets, 2 masks
+C        10.1.2.0/24 is directly connected, GigabitEthernet0/1
+L        10.1.2.1/32 is directly connected, GigabitEthernet0/1
+C        10.1.3.0/24 is directly connected, GigabitEthernet0/2
+L        10.1.3.1/32 is directly connected, GigabitEthernet0/2
+C        10.1.4.0/24 is directly connected, GigabitEthernet0/3
+L        10.1.4.1/32 is directly connected, GigabitEthernet0/3
+R        10.2.5.0/24 [120/1] via 10.1.2.2, 00:00:07, GigabitEthernet0/1
+R        10.3.5.0/24 [120/1] via 10.1.3.3, 00:00:16, GigabitEthernet0/2
+R        10.4.5.0/24 [120/1] via 10.1.4.4, 00:00:22, GigabitEthernet0/3
+      172.16.0.0/16 is variably subnetted, 2 subnets, 2 masks
+C        172.16.0.0/24 is directly connected, GigabitEthernet0/0
+L        172.16.0.1/32 is directly connected, GigabitEthernet0/0
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#router rip
+R1(config-router)#network 172.16.0.0   
+R1(config-router)#exit
+R1(config)#exit
+R1#
+*Dec 15 12:06:50.644: %SYS-5-CONFIG_I: Configured from console by console
+R1#
+R1#show ip protocols
+*** IP Routing is NSF aware ***
+
+Routing Protocol is "application"
+  Sending updates every 0 seconds
+  Invalid after 0 seconds, hold down 0, flushed after 0
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Maximum path: 32
+  Routing for Networks:
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+  Distance: (default is 4)
+
+Routing Protocol is "rip"
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Sending updates every 30 seconds, next due in 23 seconds
+  Invalid after 180 seconds, hold down 180, flushed after 240
+  Redistributing: rip
+  Default version control: send version 2, receive version 2
+    Interface                           Send  Recv  Triggered RIP  Key-chain
+    GigabitEthernet0/0                  2     2          No        none            
+    Interface                           Send  Recv  Triggered RIP  Key-chain
+    GigabitEthernet0/1                  2     2          No        none            
+    GigabitEthernet0/2                  2     2          No        none            
+    GigabitEthernet0/3                  2     2          No        none            
+  Automatic network summarization is not in effect
+  Maximum path: 4
+  Routing for Networks:
+    10.0.0.0
+    172.16.0.0
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+    10.1.4.4             120      00:00:02
+    10.1.3.3             120      00:00:23
+    10.1.2.2             120      00:00:09
+  Distance: (default is 120)
+
+R1#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R1>
+R1>en
+R1#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      1.0.0.0/32 is subnetted, 2 subnets
+C        1.1.1.1 is directly connected, Loopback0
+C        1.1.1.2 is directly connected, Loopback1
+      10.0.0.0/8 is variably subnetted, 9 subnets, 2 masks
+C        10.1.2.0/24 is directly connected, GigabitEthernet0/1
+L        10.1.2.1/32 is directly connected, GigabitEthernet0/1
+C        10.1.3.0/24 is directly connected, GigabitEthernet0/2
+L        10.1.3.1/32 is directly connected, GigabitEthernet0/2
+C        10.1.4.0/24 is directly connected, GigabitEthernet0/3
+L        10.1.4.1/32 is directly connected, GigabitEthernet0/3
+R        10.2.5.0/24 [120/1] via 10.1.2.2, 00:00:12, GigabitEthernet0/1
+R        10.3.5.0/24 [120/1] via 10.1.3.3, 00:00:05, GigabitEthernet0/2
+R        10.4.5.0/24 [120/1] via 10.1.4.4, 00:00:05, GigabitEthernet0/3
+      172.16.0.0/16 is variably subnetted, 2 subnets, 2 masks
+C        172.16.0.0/24 is directly connected, GigabitEthernet0/0
+L        172.16.0.1/32 is directly connected, GigabitEthernet0/0
+R     192.168.0.0/24 [120/2] via 10.1.4.4, 00:00:05, GigabitEthernet0/3
+                     [120/2] via 10.1.3.3, 00:00:05, GigabitEthernet0/2
+                     [120/2] via 10.1.2.2, 00:00:12, GigabitEthernet0/1
+R1#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R1>
+R1>
+R1>en
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#route
+R1(config)#router rip
+R1(config-router)#?
+Router configuration commands:
+  address-family          Enter Address Family command mode
+  auto-summary            Enable automatic network number summarization
+  bfd                     BFD configuration commands
+  default                 Set a command to its defaults
+  default-information     Control distribution of default information
+  default-metric          Set metric of redistributed routes
+  distance                Define an administrative distance
+  distribute-list         Filter networks in routing updates
+  exit                    Exit from routing protocol configuration mode
+  flash-update-threshold  Specify flash update threshold in second
+  help                    Description of the interactive help system
+  input-queue             Specify input queue depth
+  maximum-paths           Forward packets over multiple paths
+  neighbor                Specify a neighbor router
+  network                 Enable routing on an IP network
+  no                      Negate a command or set its defaults
+  offset-list             Add or subtract offset from RIP metrics
+  output-delay            Interpacket delay for RIP updates
+  passive-interface       Suppress routing updates on an interface
+  redistribute            Redistribute information from another routing
+                          protocol
+  timers                  Adjust routing timers
+  traffic-share           How to compute traffic share over alternate paths
+  validate-update-source  Perform sanity checks against source address of
+                          routing updates
+  version                 Set routing protocol version
+
+R1(config-router)#off
+R1(config-router)#offset-list ?
+  <0-99>       Access list of networks to apply offset (0 selects all networks)
+  <1300-1999>  Access list of networks to apply offset (expanded range)
+  WORD         Access-list name
+
+R1(config-router)#exit        
+R1(config)#exit
+R1#
+*Dec 15 12:30:25.218: %SYS-5-CONFIG_I: Configured from console by console
+R1#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R1>
+R1>en
+R1#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      1.0.0.0/32 is subnetted, 2 subnets
+C        1.1.1.1 is directly connected, Loopback0
+C        1.1.1.2 is directly connected, Loopback1
+      10.0.0.0/8 is variably subnetted, 9 subnets, 2 masks
+C        10.1.2.0/24 is directly connected, GigabitEthernet0/1
+L        10.1.2.1/32 is directly connected, GigabitEthernet0/1
+C        10.1.3.0/24 is directly connected, GigabitEthernet0/2
+L        10.1.3.1/32 is directly connected, GigabitEthernet0/2
+C        10.1.4.0/24 is directly connected, GigabitEthernet0/3
+L        10.1.4.1/32 is directly connected, GigabitEthernet0/3
+R        10.2.5.0/24 [120/1] via 10.1.2.2, 00:00:01, GigabitEthernet0/1
+R        10.3.5.0/24 [120/1] via 10.1.3.3, 00:00:12, GigabitEthernet0/2
+R        10.4.5.0/24 [120/1] via 10.1.4.4, 00:00:30, GigabitEthernet0/3
+      172.16.0.0/16 is variably subnetted, 2 subnets, 2 masks
+C        172.16.0.0/24 is directly connected, GigabitEthernet0/0
+L        172.16.0.1/32 is directly connected, GigabitEthernet0/0
+R     192.168.0.0/24 [120/2] via 10.1.4.4, 00:00:30, GigabitEthernet0/3
+                     [120/2] via 10.1.2.2, 00:00:01, GigabitEthernet0/1
+R1#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R1>
+R1>
+R1>
+R1>
+R1>en
+R1#show run
+Building configuration...
+
+Current configuration : 3165 bytes
+!
+! Last configuration change at 12:30:25 UTC Tue Dec 15 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback1
+ ip address 1.1.1.2 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 172.16.0.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 10.1.3.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router rip
+ version 2
+ network 10.0.0.0
+ network 172.16.0.0
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#rout
+R1(config)#route 
+R1(config)#router
+R1(config)#router ?
+  bgp       Border Gateway Protocol (BGP)
+  eigrp     Enhanced Interior Gateway Routing Protocol (EIGRP)
+  isis      ISO IS-IS
+  iso-igrp  IGRP for OSI networks
+  lisp      Locator/ID Separation Protocol
+  mobile    Mobile routes
+  odr       On Demand stub Routes
+  ospf      Open Shortest Path First (OSPF)
+  ospfv3    OSPFv3
+  rip       Routing Information Protocol (RIP)
+
+R1(config)#int    
+R1(config)#interface Loopback0
+R1(config-if)#?
+Interface configuration commands:
+  aaa                 Authentication, Authorization and Accounting.
+  access-expression   Build a bridge boolean access expression
+  arp                 Set arp type (arpa, probe, snap), timeout, log options or
+                      packet priority
+  backup              Modify backup parameters
+  bandwidth           Set bandwidth informational parameter
+  bgp-policy          Apply policy propagated by bgp community string
+  bridge-group        Transparent bridging interface parameters
+  carrier-delay       Specify delay for interface transitions
+  cdp                 CDP interface subcommands
+  clns                CLNS interface subcommands
+  crypto              Encryption/Decryption commands
+  cws                 Configure Cloud Web Security
+  dampening           Enable event dampening
+  decnet              Interface DECnet config commands
+  default             Set a command to its defaults
+  delay               Specify interface throughput delay
+  description         Interface specific description
+  domain              Specify a domain
+  dot1q               dot1q interface configuration commands
+  dspu                Down Stream PU
+  eou                 EAPoUDP Interface Configuration Commands
+  exit                Exit from interface configuration mode
+  flow-sampler        Attach flow sampler to the interface
+  fras                DLC Switch Interface Command
+  help                Description of the interactive help system
+  history             Interface history histograms - 60 second, 60 minute and
+                      72 hour
+  hold-queue          Set hold queue depth
+  ip                  Interface Internet Protocol config commands
+  iphc-profile        Configure IPHC profile
+  ipv6                IPv6 interface subcommands
+  isis                IS-IS commands
+  iso-igrp            ISO-IGRP interface subcommands
+  keepalive           Enable keepalive
+  lan-name            LAN Name command
+  lat                 LAT commands
+  lisp                Locator/ID Separation Protocol
+  llc2                LLC2 Interface Subcommands
+  load-interval       Specify interval for load calculation for an interface
+  locaddr-priority    Assign a priority group
+  logging             Configure logging for interface
+  media-proxy         Enable media proxy services
+  metadata            Metadata Application
+  mpls                Configure MPLS interface parameters
+  nat64               NAT64 interface commands
+  netbios             Use a defined NETBIOS access list or enable name-caching
+  no                  Negate a command or set its defaults
+  ntp                 Configure NTP
+  onep                Configure onep settings
+  ospfv3              OSPFv3 interface commands
+  performance         Global performance monitor configuration
+  rate-limit          Rate Limit
+  redundancy          RG redundancy interface config
+  routing             Per-interface routing configuration
+  sap-priority        Assign a priority group
+  service-policy      Configure CPL Service Policy
+  service-routing     Service Routing in Interface Mode
+  shutdown            Shutdown the selected interface
+  sna                 SNA pu configuration
+  snapshot            Configure snapshot support on the interface
+  snmp                Modify SNMP interface parameters
+  source              Get config from another source
+  srlg                Interface Shared Risk Link Group config commands
+  tarp                TARP interface subcommands
+  timeout             Define timeout values for this interface
+  topology            Configure routing topology on the interface
+  transmit-interface  Assign a transmit interface to a receive-only interface
+  tx-ring-limit       Configure PA level transmit ring limit
+  user-group          Interface-User-group Association
+  utd                 UTD support on this interface
+  vrf                 VPN Routing/Forwarding parameters on the interface
+  waas                WAN Optimization
+  zone-member         Apply zone name
+
+R1(config-if)#rout
+R1(config-if)#routing ?
+  dynamic  participates in routing protocols
+
+R1(config-if)#routing rip
+                      ^
+% Invalid input detected at '^' marker.
+
+R1(config-if)#ip ?
+Interface IP configuration subcommands:
+  access-group        Specify access control for packets
+  accounting          Enable IP accounting on this interface
+  address             Set the IP address of an interface
+  admission           Apply Network Admission Control
+  auth-proxy          Apply authentication proxy
+  authentication      authentication subcommands
+  bandwidth-percent   Set EIGRP bandwidth limit
+  bgp                 BGP interface commands
+  broadcast-address   Set the broadcast address of an interface
+  cef                 Cisco Express Forwarding interface commands
+  cgmp                Enable/disable CGMP
+  dampening-change    Percent interface metric must change to cause update
+  dampening-interval  Time in seconds to check interface metrics
+  ddns                Configure dynamic DNS
+  dhcp                Configure DHCP parameters for this interface
+  directed-broadcast  Enable forwarding of directed broadcasts
+  dns                 Configure DNS server
+  flow                NetFlow related commands
+  hello-interval      Configures EIGRP-IPv4 hello interval
+  helper-address      Specify a destination address for UDP broadcasts
+  hold-time           Configures EIGRP-IPv4 hold time
+  idle-group          Specify interesting packets for idle-timer
+  igmp                IGMP interface commands
+  information-reply   Enable sending ICMP Information Reply messages
+  inspect             Apply inspect name
+  ips                 Create IPS rule
+  irdp                ICMP Router Discovery Protocol
+  lisp                Locator/ID Separation Protocol
+  load-sharing        Style of load sharing
+  local-proxy-arp     Enable local-proxy ARP
+  mask-reply          Enable sending ICMP Mask Reply messages
+  mfib                Interface Specific MFIB Control
+  mobile              Mobile IP support
+  mrm                 Configure IP Multicast Routing Monitor tester
+  mroute-cache        Enable switching cache for incoming multicast packets
+  mtu                 Set IP Maximum Transmission Unit
+  multicast           IP multicast interface commands
+  nat                 NAT interface commands
+  nbar                Network-Based Application Recognition
+  next-hop-self       Configures EIGRP-IPv4 next-hop-self
+  ospf                OSPF interface commands
+  pgm                 PGM Reliable Transport Protocol
+  pim                 PIM interface commands
+  policy              Enable policy routing
+  proxy-arp           Enable proxy ARP
+  rarp-server         Enable RARP server for static arp entries
+  rbscp               RBSCP subfeatures for this interface
+  redirects           Enable sending ICMP Redirect messages
+  rgmp                Enable/disable RGMP
+  rip                 Router Information Protocol
+  route-cache         Enable fast-switching cache for outgoing packets
+  router              IP router interface commands
+  rsvp                RSVP Interface Commands
+  sap                 Session Advertisement Protocol interface commands
+  security            DDN IP Security Option
+  service             IP service
+  split-horizon       Perform split horizon
+  summary-address     Perform address summarization
+  tcp                 TCP interface commands
+  traffic-export      Configure this interface for exporting ip traffic
+  unnumbered          Enable IP processing without an explicit address
+  unreachables        Enable sending ICMP Unreachable messages
+  urd                 Configure URL Rendezvousing
+  verify              Enable per packet validation
+  virtual-reassembly  Enable Virtual Fragment Reassembly
+  vrf                 VPN Routing/Forwarding parameters on the interface
+  wccp                WCCP IPv4 interface commands
+          
+R1(config-if)#ip rip ?
+  advertise       Specify update interval
+  authentication  Authentication control
+  initial-delay   Specify initial delay interval
+  receive         advertisement reception
+  send            advertisement transmission
+  v2-broadcast    send ip broadcast v2 update
+
+R1(config-if)#ip rip 
+% Incomplete command.
+
+R1(config-if)#exit
+R1(config)#router rip
+R1(config-router)#inter
+R1(config-router)#?    
+Router configuration commands:
+  address-family          Enter Address Family command mode
+  auto-summary            Enable automatic network number summarization
+  bfd                     BFD configuration commands
+  default                 Set a command to its defaults
+  default-information     Control distribution of default information
+  default-metric          Set metric of redistributed routes
+  distance                Define an administrative distance
+  distribute-list         Filter networks in routing updates
+  exit                    Exit from routing protocol configuration mode
+  flash-update-threshold  Specify flash update threshold in second
+  help                    Description of the interactive help system
+  input-queue             Specify input queue depth
+  maximum-paths           Forward packets over multiple paths
+  neighbor                Specify a neighbor router
+  network                 Enable routing on an IP network
+  no                      Negate a command or set its defaults
+  offset-list             Add or subtract offset from RIP metrics
+  output-delay            Interpacket delay for RIP updates
+  passive-interface       Suppress routing updates on an interface
+  redistribute            Redistribute information from another routing
+                          protocol
+  timers                  Adjust routing timers
+  traffic-share           How to compute traffic share over alternate paths
+  validate-update-source  Perform sanity checks against source address of
+                          routing updates
+  version                 Set routing protocol version
+
+R1(config-router)#netw
+R1(config-router)#network 1.1.1.1
+R1(config-router)#network 1.1.1.2
+R1(config-router)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+*Dec 15 13:27:57.978: %SYS-5-CONFIG_I: Configured from console by consoleC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R1>en
+R1#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      1.0.0.0/32 is subnetted, 2 subnets
+C        1.1.1.1 is directly connected, Loopback0
+C        1.1.1.2 is directly connected, Loopback1
+      10.0.0.0/8 is variably subnetted, 9 subnets, 2 masks
+C        10.1.2.0/24 is directly connected, GigabitEthernet0/1
+L        10.1.2.1/32 is directly connected, GigabitEthernet0/1
+C        10.1.3.0/24 is directly connected, GigabitEthernet0/2
+L        10.1.3.1/32 is directly connected, GigabitEthernet0/2
+C        10.1.4.0/24 is directly connected, GigabitEthernet0/3
+L        10.1.4.1/32 is directly connected, GigabitEthernet0/3
+R        10.2.5.0/24 [120/1] via 10.1.2.2, 00:00:01, GigabitEthernet0/1
+R        10.3.5.0/24 [120/1] via 10.1.3.3, 00:00:21, GigabitEthernet0/2
+R        10.4.5.0/24 [120/1] via 10.1.4.4, 00:00:25, GigabitEthernet0/3
+      172.16.0.0/16 is variably subnetted, 2 subnets, 2 masks
+C        172.16.0.0/24 is directly connected, GigabitEthernet0/0
+L        172.16.0.1/32 is directly connected, GigabitEthernet0/0
+R     192.168.0.0/24 [120/2] via 10.1.2.2, 00:00:01, GigabitEthernet0/1
+R1#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R1>
+R1>
+R1>en
+R1#wr
+Building configuration...
+[OK]
+R1#
+*Dec 15 19:43:52.030: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Dec 15 19:43:53.383: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+R1#
+R1#
+R1#
+R1#
+R1#terminal length 0
+R1#more system:running-config
+!
+! Last configuration change at 13:27:57 UTC Tue Dec 15 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback1
+ ip address 1.1.1.2 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 172.16.0.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 10.1.3.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router rip
+ version 2
+ network 1.0.0.0
+ network 10.0.0.0
+ network 172.16.0.0
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+R1#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+qConnection closed by foreign host.
+root@mydebian:~# 
+

@@ -1,0 +1,2627 @@
+spawn@mydebian:~/.ssh$ telnet 192.168.1.14 32771
+Trying 192.168.1.14...
+Connected to 192.168.1.14.
+Escape character is '^]'.
+
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]: no
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:02.930: %ATA-6-DEV_FOUND: device 0x1F0
+*Mar  1 00:00:13.796: %NVRAM-5-CONFIG_NVRAM_NOT_FOUND: NVRAM configuration 'flash:/nvram' could not be found on disk.
+*Dec 18 07:30:15.853: %C3600-3-NOMAC: Can't allocate MAC address for interface 0/0
+*Dec 18 07:30:16.070: %C3600-3-NOMAC: Can't allocate MAC address for interface 0/0
+*Dec 18 07:30:18.162: %C3600-3-NOMAC: Can't allocate MAC address for interface 0/0
+*Dec 18 07:30:25.943: %PA-3-PA_INIT_FAILED: Performance Agent failed to initialize (Missing Data License)
+*Dec 18 07:30:32.492: %PNP-6-PNP_DISCOVERY_STARTED: PnP Discovery started
+*Dec 18 07:30:32.500: %PNP-6-PNP_GOOD_UDI_UPDATE: Good UDI [PID:IOSv,VID:,SN:9GJDSDHRHSECAQIGZKQE3] identified via (platform-registry)
+*Dec 18 07:30:32.500: %PNP-6-PNP_CDP_UPDATE: Device UDI [PID:IOSv,VID:,SN:9GJDSDHRHSECAQIGZKQE3] identified for CDP
+*Dec 18 07:30:32.626: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+*Dec 18 07:30:32.631: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+*Dec 18 07:30:32.634: %LINK-3-UPDOWN: Interface GigabitEthernet0/2, changed state to up
+*Dec 18 07:30:32.637: %LINK-3-UPDOWN: Interface GigabitEthernet0/3, changed state to up
+*Dec 18 07:30:34.799: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+*Dec 18 07:30:34.800: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+*Dec 18 07:30:34.801: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/2, changed state to up
+*Dec 18 07:30:34.802: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/3, changed state to up
+*Dec 18 08:11:16.780: %PNP-6-PNP_SAVING_TECH_SUMMARY: Saving PnP tech summary (/pnp-tech/pn
+-Traceback= 13148Bz 16079Ez 1604DBz 1602B8z 15A275z 15AE3Fz 41A07A7z 418AB1Ez 418E593z 572397Fz 51D8A44z 51E72B4z 51EB248z 51EAC53z 51E7429z 51854E5z - Process "Crypto CA", CPU hog, PC 0x00155F4C
+p-tech-discovery-summary)... Please wait. Do not interrupt.
+*Dec 18 08:11:18.528: %LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to administratively down
+*Dec 18 08:11:18.571: %LINK-5-CHANGED: Interface GigabitEthernet0/1, changed state to administratively down
+*Dec 18 08:11:18.602: %LINK-5-CHANGED: Interface GigabitEthernet0/2, changed state to administratively down
+*Dec 18 08:11:18.635: %LINK-5-CHANGED: Interface GigabitEthernet0/3, changed state to administratively down
+*Dec 18 08:11:19.528: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to down
+*Dec 18 08:11:19.571: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
+*Dec 18 08:11:19.602: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/2, changed state to down
+*Dec 18 08:11:19.635: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/3, changed state to down
+*Dec 18 08:11:20.700: %IP-5-WEBINST_KILL: Terminating DNS process
+*Dec 18 08:11:22.657: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, IOSv Software (VIOS-ADVENTERPRISEK9-M), Version 15.9(3)M2, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2020 by Cisco Systems, Inc.
+Compiled Tue 28-Jul-20 07:09 by prod_rel_team
+*Dec 18 08:11:22.853: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Dec 18 08:11:22.854: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Dec 18 08:11:36.840: %PNP-6-PNP_BEST_UDI_UPDATE: Best UDI [PID:IOSv,VID:1.0,SN:9GJDSDHRHSECAQIGZKQE3] identified via (entity-mibs)
+*Dec 18 08:11:44.830: %SYS-3-CPUHOG: Task is running for (2000)msecs, more than (2000)msecs (0/0),process = Crypto CA.
+*Dec 18 08:11:46.940: %PNP-6-PNP_TECH_SUMMARY_SAVED_OK: PnP tech summary (/pnp-tech/pnp-tech-discovery-summary) saved successfully (elapsed time: 30 seconds).
+*Dec 18 08:11:46.942: %PNP-6-PNP_DISCOVERY_STOPPED: PnP Discovery stopped (Config Wizard)
+*Dec 18 08:12:03.310: %PLATFORM-5-SIGNATURE_VERIFIED: Image 'flash0:/vios-adventerprisek9-m' passed code signing verification
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Router>
+Router>en
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#hostn
+Router(config)#hostname R3
+R3(config)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*Dec 18 08:22:51.936: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>en
+R3#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#int l01
+R3(config-if)#
+*Dec 18 09:02:07.658: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback1, changed state to up
+R3(config-if)#exit
+R3(config)#no int l01
+R3(config)#int 
+*Dec 18 09:02:39.597: %LINK-5-CHANGED: Interface Loopback1, changed state to administratively down
+*Dec 18 09:02:40.597: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback1, changed state to downl 
+% Incomplete command.
+
+R3(config)#int lo0
+R3(config-if)#
+*Dec 18 09:02:48.182: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback0, changed state to up
+R3(config-if)#ip address 3.3.3.3 255.255.255.255
+R3(config-if)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+*Dec 18 09:13:03.443: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>
+R3>
+R3>en
+R3#sho run
+Building configuration...
+
+Current configuration : 2983 bytes
+!
+! Last configuration change at 09:13:03 UTC Fri Dec 18 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R3
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 3.3.3.3 255.255.255.255
+!
+interface GigabitEthernet0/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+R3#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#int GigabitEthernet0/0.100
+R3(config-subif)#encapsulation dot1Q 100
+R3(config-subif)#ip addre
+R3(config-subif)#ip address 192.168.10.4 255.255.255.240
+R3(config-subif)#no shut
+R3(config-subif)#exit
+R3(config)#int GigabitEthernet0/0.200
+R3(config-subif)#encapsulation dot1Q 200
+R3(config-subif)#ip address 192.168.20.5 255.255.255.252
+R3(config-subif)#exit
+R3(config)#int GigabitEthernet0/0.200             
+R3(config-subif)#no shut
+R3(config-subif)#exit
+R3(config)#int GigabitEthernet0/0
+R3(config-if)#no shut
+R3(config-if)#exit
+*Dec 18 19:34:50.530: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+R3(config)#
+*Dec 18 19:34:51.529: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+R3(config)#exit
+R3#p
+*Dec 18 19:34:58.044: %SYS-5-CONFIG_I: Configured from console by console 
+Protocol [ip]: 
+Target IP address: 
+% Bad IP address
+R3#ping 192.168.10.3
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.10.3, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5), round-trip min/avg/max = 5/9/16 ms
+R3#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>en
+R3#show ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         unassigned      YES unset  up                    up      
+GigabitEthernet0/0.100     192.168.10.4    YES manual up                    up      
+GigabitEthernet0/0.200     192.168.20.5    YES manual up                    up      
+GigabitEthernet0/1         unassigned      YES unset  administratively down down    
+GigabitEthernet0/2         unassigned      YES unset  administratively down down    
+GigabitEthernet0/3         unassigned      YES unset  administratively down down    
+Loopback0                  3.3.3.3         YES manual up                    up      
+R3#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#router osfp 1
+                    ^
+% Invalid input detected at '^' marker.
+
+R3(config)#router ospf 1
+R3(config-router)#router
+R3(config-router)#router-id 3.3.3.3
+R3(config-router)#network 192.168.10.0 0.0.0.255 area 0
+R3(config-router)#
+*Dec 18 22:03:16.538: %OSPF-5-ADJCHG: Process 1, Nbr 2.2.2.2 on GigabitEthernet0/0.100 from LOADING to FULL, Loading Done
+*Dec 18 22:03:18.537: %OSPF-5-ADJCHG: Process 1, Nbr 1.1.1.1 on GigabitEthernet0/0.100 from LOADING to FULL, Loading Done
+R3(config-router)#
+R3(config-router)#
+R3(config-router)#exit
+R3(config)#router ospf 1
+R3(config-router)#network 192.168.20.0 0.0.0.255 area 1
+R3(config-router)#
+R3(config-router)#exit
+R3(config)#exit
+R3#sh
+*Dec 18 22:17:17.791: %SYS-5-CONFIG_I: Configured from console by consoleow ip ospf inter
+R3#show ip ospf interface GigabitEthernet0/0.200
+GigabitEthernet0/0.200 is up, line protocol is up 
+  Internet Address 192.168.20.5/30, Area 1, Attached via Network Statement
+  Process ID 1, Router ID 3.3.3.3, Network Type BROADCAST, Cost: 1
+  Topology-MTID    Cost    Disabled    Shutdown      Topology Name
+        0           1         no          no            Base
+  Transmit Delay is 1 sec, State DR, Priority 1
+  Designated Router (ID) 3.3.3.3, Interface address 192.168.20.5
+  No backup designated router on this network
+  Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5
+    oob-resync timeout 40
+    Hello due in 00:00:06
+  Supports Link-local Signaling (LLS)
+  Cisco NSF helper support enabled
+  IETF NSF helper support enabled
+  Index 1/1/2, flood queue length 0
+  Next 0x0(0)/0x0(0)/0x0(0)
+  Last flood scan length is 0, maximum is 0
+  Last flood scan time is 0 msec, maximum is 0 msec
+  Neighbor Count is 0, Adjacent neighbor count is 0 
+  Suppress hello for 0 neighbor(s)
+R3#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#int GigabitEthernet0/0.200
+R3(config-subif)#ospf
+R3(config-subif)#ospfv3 ?
+  <1-65535>            Process ID
+  adjacency            Adjacency staggering
+  authentication       Enable authentication
+  bfd                  Enable BFD on this interface
+  cost                 Route cost of this interface
+  database-filter      Filter OSPF LSA during synchronization and flooding
+  dead-interval        Interval after which a neighbor is declared dead
+  demand-circuit       OSPF demand circuit
+  encryption           Enable encryption
+  flood-reduction      OSPF Flood Reduction
+  hello-interval       Time between HELLO packets
+  manet                Mobile Adhoc Networking options
+  mtu-ignore           Ignores the MTU in DBD packets
+  multi-area           Set the OSPF multi-area ID
+  neighbor             OSPF neighbor
+  network              Network type
+  prefix-suppression   OSPF prefix suppression
+  priority             Router priority
+  retransmit-interval  Time between retransmitting lost link state
+                       advertisements
+  shutdown             Shut down the interface in OSPFv3
+  transmit-delay       Link state transmit delay
+          
+R3(config-subif)#ospfv3 netw
+R3(config-subif)#ospfv3 network ?
+  broadcast            Specify OSPF broadcast multi-access network
+  manet                Specify MANET OSPF interface type
+  non-broadcast        Specify OSPF NBMA network
+  point-to-multipoint  Specify OSPF point-to-multipoint network
+  point-to-point       Specify OSPF point-to-point network
+
+R3(config-subif)#ospfv3 network point-to-point ?
+  <cr>  <cr>
+
+R3(config-subif)#ospfv3 network point-to-point 
+R3(config-subif)#exit
+R3(config)#exit
+R3#show ip ospf interface GigabitEthernet0/0.200
+*Dec 18 22:19:18.734: %SYS-5-CONFIG_I: Configured from console by console
+GigabitEthernet0/0.200 is up, line protocol is up 
+  Internet Address 192.168.20.5/30, Area 1, Attached via Network Statement
+  Process ID 1, Router ID 3.3.3.3, Network Type BROADCAST, Cost: 1
+  Topology-MTID    Cost    Disabled    Shutdown      Topology Name
+        0           1         no          no            Base
+  Transmit Delay is 1 sec, State DR, Priority 1
+  Designated Router (ID) 3.3.3.3, Interface address 192.168.20.5
+  No backup designated router on this network
+  Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5
+    oob-resync timeout 40
+    Hello due in 00:00:09
+  Supports Link-local Signaling (LLS)
+  Cisco NSF helper support enabled
+  IETF NSF helper support enabled
+  Index 1/1/2, flood queue length 0
+  Next 0x0(0)/0x0(0)/0x0(0)
+  Last flood scan length is 0, maximum is 0
+  Last flood scan time is 0 msec, maximum is 0 msec
+  Neighbor Count is 0, Adjacent neighbor count is 0 
+  Suppress hello for 0 neighbor(s)
+R3#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      3.0.0.0/32 is subnetted, 1 subnets
+C        3.3.3.3 is directly connected, Loopback0
+      192.168.10.0/24 is variably subnetted, 2 subnets, 2 masks
+C        192.168.10.0/28 is directly connected, GigabitEthernet0/0.100
+L        192.168.10.4/32 is directly connected, GigabitEthernet0/0.100
+      192.168.20.0/24 is variably subnetted, 3 subnets, 2 masks
+O IA     192.168.20.0/30 
+           [110/2] via 192.168.10.3, 00:09:39, GigabitEthernet0/0.100
+C        192.168.20.4/30 is directly connected, GigabitEthernet0/0.200
+L        192.168.20.5/32 is directly connected, GigabitEthernet0/0.200
+R3#ping 192.168.10.2
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.10.2, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 9/9/12 ms
+R3#show ip ospf interface GigabitEthernet0/0.200
+GigabitEthernet0/0.200 is up, line protocol is up 
+  Internet Address 192.168.20.5/30, Area 1, Attached via Network Statement
+  Process ID 1, Router ID 3.3.3.3, Network Type BROADCAST, Cost: 1
+  Topology-MTID    Cost    Disabled    Shutdown      Topology Name
+        0           1         no          no            Base
+  Transmit Delay is 1 sec, State DR, Priority 1
+  Designated Router (ID) 3.3.3.3, Interface address 192.168.20.5
+  No backup designated router on this network
+  Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5
+    oob-resync timeout 40
+    Hello due in 00:00:08
+  Supports Link-local Signaling (LLS)
+  Cisco NSF helper support enabled
+  IETF NSF helper support enabled
+  Index 1/1/2, flood queue length 0
+  Next 0x0(0)/0x0(0)/0x0(0)
+  Last flood scan length is 0, maximum is 0
+  Last flood scan time is 0 msec, maximum is 0 msec
+  Neighbor Count is 0, Adjacent neighbor count is 0 
+  Suppress hello for 0 neighbor(s)
+R3#show ip ospf neigh
+R3#show ip ospf neighbor ?
+  Async                Async interface
+  Auto-Template        Auto-Template interface
+  BDI                  Bridge-Domain interface
+  BVI                  Bridge-Group Virtual Interface
+  CDMA-Ix              CDMA Ix interface
+  CTunnel              CTunnel interface
+  Dialer               Dialer interface
+  GMPLS                MPLS interface
+  GigabitEthernet      GigabitEthernet IEEE 802.3z
+  Hostname or A.B.C.D  Neighbor ID
+  LISP                 Locator/ID Separation Protocol Virtual Interface
+  LongReachEthernet    Long-Reach Ethernet interface
+  Loopback             Loopback interface
+  Lspvif               LSP virtual interface
+  MFR                  Multilink Frame Relay bundle interface
+  Multilink            Multilink-group interface
+  Null                 Null interface
+  Tunnel               Tunnel interface
+  Vif                  PGM Multicast Host interface
+  Virtual-PPP          Virtual PPP interface
+  Virtual-Template     Virtual Template interface
+  Virtual-TokenRing    Virtual TokenRing
+  detail               Detailed neighbor information
+  sorted               Sorted based on interface order
+  summary              Summary of all neighbors
+  vmi                  Virtual Multipoint Interface
+  |                    Output modifiers
+  <cr>                 <cr>
+
+R3#show ip ospf neighbor 
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+1.1.1.1           1   FULL/DR         00:00:35    192.168.10.2    GigabitEthernet0/0.100
+2.2.2.2           1   FULL/BDR        00:00:37    192.168.10.3    GigabitEthernet0/0.100
+R3#show run
+Building configuration...
+
+Current configuration : 3319 bytes
+!
+! Last configuration change at 22:19:18 UTC Fri Dec 18 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R3
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 3.3.3.3 255.255.255.255
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+ media-type rj45
+!         
+interface GigabitEthernet0/0.100
+ encapsulation dot1Q 100
+ ip address 192.168.10.4 255.255.255.240
+!
+interface GigabitEthernet0/0.200
+ encapsulation dot1Q 200
+ ip address 192.168.20.5 255.255.255.252
+ ospfv3 network point-to-point
+!
+interface GigabitEthernet0/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!         
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 3.3.3.3
+ network 192.168.10.0 0.0.0.255 area 0
+ network 192.168.20.0 0.0.0.255 area 1
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+R3#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>
+R3>en
+R3#show ip ospf neighbor
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+1.1.1.1           1   FULL/DR         00:00:32    192.168.10.2    GigabitEthernet0/0.100
+2.2.2.2           1   FULL/BDR        00:00:36    192.168.10.3    GigabitEthernet0/0.100
+R3#
+*Dec 18 22:50:49.673: %OSPF-5-ADJCHG: Process 1, Nbr 2.2.2.2 on GigabitEthernet0/0.100 from FULL to DOWN, Neighbor Down: Dead timer expired
+*Dec 18 22:50:52.929: %OSPF-5-ADJCHG: Process 1, Nbr 1.1.1.1 on GigabitEthernet0/0.100 from FULL to DOWN, Neighbor Down: Dead timer expired
+R3#
+R3#
+R3#
+R3#
+*Dec 18 22:52:47.809: %OSPF-5-ADJCHG: Process 1, Nbr 1.1.1.1 on GigabitEthernet0/0.100 from LOADING to FULL, Loading Done
+*Dec 18 22:52:47.810: %OSPF-5-ADJCHG: Process 1, Nbr 2.2.2.2 on GigabitEthernet0/0.100 from LOADING to FULL, Loading Doneshow ip ospf neighbor
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+1.1.1.1           1   FULL/DROTHER    00:00:38    192.168.10.2    GigabitEthernet0/0.100
+2.2.2.2           1   FULL/BDR        00:00:36    192.168.10.3    GigabitEthernet0/0.100
+R3#show ip ospf neighbor
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+1.1.1.1           1   FULL/DROTHER    00:00:38    192.168.10.2    GigabitEthernet0/0.100
+2.2.2.2           1   FULL/BDR        00:00:38    192.168.10.3    GigabitEthernet0/0.100
+R3#ping 192.168.20.6    
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.20.6, timeout is 2 seconds:
+.....
+Success rate is 0 percent (0/5)
+R3#sho ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         unassigned      YES unset  up                    up      
+GigabitEthernet0/0.100     192.168.10.4    YES manual up                    up      
+GigabitEthernet0/0.200     192.168.20.5    YES manual up                    up      
+GigabitEthernet0/1         unassigned      YES unset  administratively down down    
+GigabitEthernet0/2         unassigned      YES unset  administratively down down    
+GigabitEthernet0/3         unassigned      YES unset  administratively down down    
+Loopback0                  3.3.3.3         YES manual up                    up      
+R3#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      3.0.0.0/32 is subnetted, 1 subnets
+C        3.3.3.3 is directly connected, Loopback0
+      192.168.10.0/24 is variably subnetted, 2 subnets, 2 masks
+C        192.168.10.0/28 is directly connected, GigabitEthernet0/0.100
+L        192.168.10.4/32 is directly connected, GigabitEthernet0/0.100
+      192.168.20.0/24 is variably subnetted, 3 subnets, 2 masks
+O IA     192.168.20.0/30 
+           [110/2] via 192.168.10.3, 00:15:44, GigabitEthernet0/0.100
+C        192.168.20.4/30 is directly connected, GigabitEthernet0/0.200
+L        192.168.20.5/32 is directly connected, GigabitEthernet0/0.200
+R3#wr
+Building configuration...
+[OK]
+R3#
+*Dec 18 23:11:49.822: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Dec 18 23:11:50.751: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>
+R3>en
+R3#sho run
+Building configuration...
+
+Current configuration : 3319 bytes
+!
+! Last configuration change at 22:19:18 UTC Fri Dec 18 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R3
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 3.3.3.3 255.255.255.255
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+ media-type rj45
+!         
+interface GigabitEthernet0/0.100
+ encapsulation dot1Q 100
+ ip address 192.168.10.4 255.255.255.240
+!
+interface GigabitEthernet0/0.200
+ encapsulation dot1Q 200
+ ip address 192.168.20.5 255.255.255.252
+ ospfv3 network point-to-point
+!
+interface GigabitEthernet0/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+ --More-- 
+*Dec 19 10:17:43.534: %OSPF-5-ADJCHG: Process 1, Nbr 2.2.2.2 on GigabitEthernet0/0.100 from FULL to DOWN, Neighbor Down: Dead timer expired
+*Dec 19 10:17:49.376: %OSPF-5-ADJCHG: Process 1, Nbr 4.4.4.4 on GigabitEthernet0/0.200 from LOADING to FULL, Loading Done
+*Dec 19 10:17:50.608: %OSPF-5-ADJCHG: Process 1, Nbr 1.1.1.1 on GigabitEthernet0/0.100 from FULL to DOWN, Neighbor Down: Dead tim!        d
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 3.3.3.3
+ network 192.168.10.0 0.0.0.255 area 0
+ network 192.168.20.0 0.0.0.255 area 1
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+R3#show ip ispf neighb
+R3#show ip ospf nei   
+R3#show ip ospf neighbor 
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+4.4.4.4           1   FULL/DR         00:00:37    192.168.20.6    GigabitEthernet0/0.200
+R3#show ip ospf neighbor
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+4.4.4.4           1   FULL/DR         00:00:33    192.168.20.6    GigabitEthernet0/0.200
+R3#show ip ospf neighbor
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+4.4.4.4           1   FULL/DR         00:00:32    192.168.20.6    GigabitEthernet0/0.200
+R3#ping 10,
+*Dec 19 10:19:29.771: %OSPF-5-ADJCHG: Process 1, Nbr 1.1.1.1 on GigabitEthernet0/0.100 from LOADING to FULL, Loading Done
+*Dec 19 10:19:29.773: %OSPF-5-ADJCHG: Process 1, Nbr 2.2.2.2 on GigabitEthernet0/0.100 from LOADING to FULL, Loading Done
+% Unrecognized host or address, or protocol not running.
+
+R3#show ip ospf neighbor
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+1.1.1.1           1   FULL/BDR        00:00:36    192.168.10.2    GigabitEthernet0/0.100
+2.2.2.2           1   FULL/DROTHER    00:00:39    192.168.10.3    GigabitEthernet0/0.100
+4.4.4.4           1   FULL/DR         00:00:36    192.168.20.6    GigabitEthernet0/0.200
+R3#ping 192.168.20.6
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.20.6, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 6/10/14 ms
+R3#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+*Dec 19 10:34:28.268: %OSPF-5-ADJCHG: Process 1, Nbr 2.2.2.2 on GigabitEthernet0/0.100 from FULL to DOWN, Neighbor Down: Dead timer expired
+*Dec 19 10:47:30.268: %OSPF-5-ADJCHG: Process 1, Nbr 1.1.1.1 on GigabitEthernet0/0.100 from FULL to DOWN, Neighbor Down: Dead timer expired
+*Dec 20 06:51:58.547: %OSPF-5-ADJCHG: Process 1, Nbr 2.2.2.2 on GigabitEthernet0/0.100 from LOADING to FULL, Loading Done
+*Dec 20 06:55:28.878: %OSPF-5-ADJCHG: Process 1, Nbr 2.2.2.2 on GigabitEthernet0/0.100 from FULL to DOWN, Neighbor Down: Dead timer expired
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>en
+R3#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#int GigabitEthernet0/0.100
+R3(config-subif)#no encapsulation dot1Q 100
+R3(config-subif)#encapsulation dot1Q 110
+R3(config-subif)#exit
+R3(config)#exit
+R3#
+*Dec 20 07:07:48.464: %SYS-5-CONFIG_I: Configured from console by consoleen    
+R3#show ip ospf neigh
+R3#show ip ospf neighbor 
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+4.4.4.4           1   FULL/DR         00:00:37    192.168.20.6    GigabitEthernet0/0.200
+R3#show ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         unassigned      YES unset  up                    up      
+GigabitEthernet0/0.100     unassigned      YES manual up                    up      
+GigabitEthernet0/0.200     192.168.20.5    YES manual up                    up      
+GigabitEthernet0/1         unassigned      YES unset  administratively down down    
+GigabitEthernet0/2         unassigned      YES unset  administratively down down    
+GigabitEthernet0/3         unassigned      YES unset  administratively down down    
+Loopback0                  3.3.3.3         YES manual up                    up      
+R3#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#int GigabitEthernet0/0.100
+R3(config-subif)#ip address 192.168.10.4 255.255.255.240
+R3(config-subif)#exit
+R3(config)#exit
+R3#
+*Dec 20 07:09:19.414: %SYS-5-CONFIG_I: Configured from console by console
+R3#show ip ospf neighbor 
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+4.4.4.4           1   FULL/DR         00:00:31    192.168.20.6    GigabitEthernet0/0.200
+R3#show ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         unassigned      YES unset  up                    up      
+GigabitEthernet0/0.100     192.168.10.4    YES manual up                    up      
+GigabitEthernet0/0.200     192.168.20.5    YES manual up                    up      
+GigabitEthernet0/1         unassigned      YES unset  administratively down down    
+GigabitEthernet0/2         unassigned      YES unset  administratively down down    
+GigabitEthernet0/3         unassigned      YES unset  administratively down down    
+Loopback0                  3.3.3.3         YES manual up                    up      
+R3#show ip ospf neighbor 
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+4.4.4.4           1   FULL/DR         00:00:31    192.168.20.6    GigabitEthernet0/0.200
+R3#show ip ospf neighbor 
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+4.4.4.4           1   FULL/DR         00:00:38    192.168.20.6    GigabitEthernet0/0.200
+R3#ping 192.168.10.3
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.10.3, timeout is 2 seconds:
+.....
+Success rate is 0 percent (0/5)
+R3#ping 192.168.10.3
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.10.3, timeout is 2 seconds:
+.....
+Success rate is 0 percent (0/5)
+R3#ping 192.168.10.2
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.10.2, timeout is 2 seconds:
+.....
+Success rate is 0 percent (0/5)
+R3#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>en 
+R3#show run
+Building configuration...
+
+Current configuration : 3319 bytes
+!
+! Last configuration change at 07:09:19 UTC Sun Dec 20 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R3
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 3.3.3.3 255.255.255.255
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+ media-type rj45
+!         
+interface GigabitEthernet0/0.100
+ encapsulation dot1Q 110
+ ip address 192.168.10.4 255.255.255.240
+!
+interface GigabitEthernet0/0.200
+ encapsulation dot1Q 200
+ ip address 192.168.20.5 255.255.255.252
+ ospfv3 network point-to-point
+!
+interface GigabitEthernet0/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!         
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 3.3.3.3
+ network 192.168.10.0 0.0.0.255 area 0
+ network 192.168.20.0 0.0.0.255 area 1
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+R3#ping 192.168.10.2
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.10.2, timeout is 2 seconds:
+.....
+Success rate is 0 percent (0/5)
+R3#
+*Dec 20 08:10:23.871: %OSPF-5-ADJCHG: Process 1, Nbr 1.1.1.1 on GigabitEthernet0/0.100 from LOADING to FULL, Loading Done
+*Dec 20 08:10:29.069: %OSPF-5-ADJCHG: Process 1, Nbr 2.2.2.2 on GigabitEthernet0/0.100 from LOADING to FULL, Loading Done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>en
+R3#sho run
+Building configuration...
+
+Current configuration : 3319 bytes
+!
+! Last configuration change at 07:09:19 UTC Sun Dec 20 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R3
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 3.3.3.3 255.255.255.255
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+ media-type rj45
+!         
+interface GigabitEthernet0/0.100
+ encapsulation dot1Q 110
+ ip address 192.168.10.4 255.255.255.240
+!
+interface GigabitEthernet0/0.200
+ encapsulation dot1Q 200
+ ip address 192.168.20.5 255.255.255.252
+ ospfv3 network point-to-point
+!
+interface GigabitEthernet0/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!         
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 3.3.3.3
+ network 192.168.10.0 0.0.0.255 area 0
+ network 192.168.20.0 0.0.0.255 area 1
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+          
+R3#sho ip osp ne
+R3#sho ip osp neighbor 
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+1.1.1.1           1   FULL/BDR        00:00:38    192.168.10.2    GigabitEthernet0/0.100
+2.2.2.2           1   FULL/DROTHER    00:00:32    192.168.10.3    GigabitEthernet0/0.100
+4.4.4.4           1   FULL/DR         00:00:32    192.168.20.6    GigabitEthernet0/0.200
+R3#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+*Dec 20 08:57:14.747: %OSPF-5-ADJCHG: Process 1, Nbr 1.1.1.1 on GigabitEthernet0/0.100 from FULL to DOWN, Neighbor Down: Dead timer expired
+*Dec 20 08:57:57.276: %OSPF-5-ADJCHG: Process 1, Nbr 1.1.1.1 on GigabitEthernet0/0.100 from LOADING to FULL, Loading Done
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>en
+R3#wr
+Building configuration...
+[OK]
+R3#
+*Dec 20 09:36:15.997: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Dec 20 09:36:16.909: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+R3#sho ip osp neighbor 
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+1.1.1.1           1   FULL/DROTHER    00:00:33    192.168.10.2    GigabitEthernet0/0.100
+2.2.2.2           1   FULL/BDR        00:00:32    192.168.10.3    GigabitEthernet0/0.100
+4.4.4.4           1   FULL/DR         00:00:30    192.168.20.6    GigabitEthernet0/0.200
+R3#sho ip osp neighbor 
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+1.1.1.1           1   FULL/DROTHER    00:00:39    192.168.10.2    GigabitEthernet0/0.100
+2.2.2.2           1   FULL/BDR        00:00:37    192.168.10.3    GigabitEthernet0/0.100
+4.4.4.4           1   FULL/DR         00:00:35    192.168.20.6    GigabitEthernet0/0.200
+R3#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>en
+R3# show ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         unassigned      YES unset  up                    up      
+GigabitEthernet0/0.100     192.168.10.4    YES manual up                    up      
+GigabitEthernet0/0.200     192.168.20.5    YES manual up                    up      
+GigabitEthernet0/1         unassigned      YES unset  administratively down down    
+GigabitEthernet0/2         unassigned      YES unset  administratively down down    
+GigabitEthernet0/3         unassigned      YES unset  administratively down down    
+Loopback0                  3.3.3.3         YES manual up                    up      
+R3#show ip ospf cost
+                ^
+% Invalid input detected at '^' marker.
+
+R3#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#ip ospf cost
+                   ^
+% Invalid input detected at '^' marker.
+
+R3(config)#router ospf 1
+R3(config-router)#?
+Router configuration commands:
+  address-family         Enter Address Family command mode
+  adjacency              Control adjacency formation
+  area                   OSPF area parameters
+  auto-cost              Calculate OSPF interface cost according to bandwidth
+  bfd                    BFD configuration commands
+  capability             Enable specific OSPF feature
+  compatible             OSPF compatibility list
+  default                Set a command to its defaults
+  default-information    Control distribution of default information
+  default-metric         Set metric of redistributed routes
+  discard-route          Enable or disable discard-route installation
+  distance               Define an administrative distance
+  distribute-list        Filter networks in routing updates
+  domain-id              OSPF domain-id 
+  domain-tag             OSPF domain-tag
+  event-log              OSPF Event Logging
+  exit                   Exit from routing protocol configuration mode
+  help                   Description of the interactive help system
+  ignore                 Do not complain about specific event
+  interface-id           Source of the interface ID
+  ispf                   Enable incremental SPF computation
+  limit                  Limit a specific OSPF feature
+  local-rib-criteria     Enable or disable usage of local RIB as route criteria
+  log-adjacency-changes  Log changes in adjacency state
+  max-lsa                maximum number of LSAs OSPF process will receive
+  max-metric             Set maximum metric
+  maximum-paths          Forward packets over multiple paths
+  mpls                   Configure MPLS routing protocol parameters
+  neighbor               Specify a neighbor router
+  network                Enable routing on an IP network
+  no                     Negate a command or set its defaults
+  nsf                    Non-stop forwarding
+  passive-interface      Suppress routing updates on an interface
+  prefix-suppression     OSPF prefix suppression
+  priority               OSPF topology priority
+  queue-depth            OSPF Hello/Router process queue depth
+  redistribute           Redistribute information from another routing protocol
+  router-id              router-id for this OSPF process
+  shutdown               Shutdown the OSPF protocol under the current instance
+  snmp                   Modify snmp parameters
+  summary-address        Configure IP address summaries
+  timers                 Adjust routing timers
+  traffic-share          How to compute traffic share over alternate paths
+  ttl-security           TTL security check
+          
+R3(config-router)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+*Dec 20 11:19:37.196: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>
+R3>en
+R3#
+R3#show ip ospf interface GigabitEthernet0/0.100
+GigabitEthernet0/0.100 is up, line protocol is up 
+  Internet Address 192.168.10.4/28, Area 0, Attached via Network Statement
+  Process ID 1, Router ID 3.3.3.3, Network Type BROADCAST, Cost: 1
+  Topology-MTID    Cost    Disabled    Shutdown      Topology Name
+        0           1         no          no            Base
+  Transmit Delay is 1 sec, State DR, Priority 1
+  Designated Router (ID) 3.3.3.3, Interface address 192.168.10.4
+  Backup Designated router (ID) 2.2.2.2, Interface address 192.168.10.3
+  Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5
+    oob-resync timeout 40
+    Hello due in 00:00:06
+  Supports Link-local Signaling (LLS)
+  Cisco NSF helper support enabled
+  IETF NSF helper support enabled
+  Index 1/1/1, flood queue length 0
+  Next 0x0(0)/0x0(0)/0x0(0)
+  Last flood scan length is 3, maximum is 3
+  Last flood scan time is 1 msec, maximum is 1 msec
+  Neighbor Count is 2, Adjacent neighbor count is 2 
+    Adjacent with neighbor 1.1.1.1
+    Adjacent with neighbor 2.2.2.2  (Backup Designated Router)
+  Suppress hello for 0 neighbor(s)
+R3#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#int GigabitEthernet0/0.100
+R3(config-subif)#ip ospf ?
+  <1-65535>            Process ID
+  adjacency            Adjacency staggering
+  authentication       Enable authentication
+  authentication-key   Authentication password (key)
+  bfd                  Enable BFD on this interface
+  cost                 Interface cost
+  database-filter      Filter OSPF LSA during synchronization and flooding
+  dead-interval        Interval after which a neighbor is declared dead
+  demand-circuit       OSPF Demand Circuit
+  flood-reduction      OSPF Flood Reduction
+  hello-interval       Time between HELLO packets
+  lls                  Link-local Signaling (LLS) support
+  message-digest-key   Message digest authentication password (key)
+  mtu-ignore           Ignores the MTU in DBD packets
+  multi-area           Set the OSPF multi-area ID
+  network              Network type
+  prefix-suppression   OSPF prefix suppression
+  priority             Router priority
+  resync-timeout       Interval after which adjacency is reset if oob-resync is
+                       not started
+  retransmit-interval  Time between retransmitting lost link state
+                       advertisements
+  shutdown             Set OSPF protocol's state to disable under current
+                       interface
+  transmit-delay       Link state transmit delay
+  ttl-security         TTL security check
+
+R3(config-subif)#ip ospf cost 888
+R3(config-subif)#exit
+R3(config)#exit
+R3#
+*Dec 20 11:41:21.536: %SYS-5-CONFIG_I: Configured from console by console
+R3#sho ip ospf int
+GigabitEthernet0/0.100 is up, line protocol is up 
+  Internet Address 192.168.10.4/28, Area 0, Attached via Network Statement
+  Process ID 1, Router ID 3.3.3.3, Network Type BROADCAST, Cost: 888
+  Topology-MTID    Cost    Disabled    Shutdown      Topology Name
+        0           888       no          no            Base
+  Transmit Delay is 1 sec, State DR, Priority 1
+  Designated Router (ID) 3.3.3.3, Interface address 192.168.10.4
+  Backup Designated router (ID) 2.2.2.2, Interface address 192.168.10.3
+  Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5
+    oob-resync timeout 40
+    Hello due in 00:00:05
+  Supports Link-local Signaling (LLS)
+  Cisco NSF helper support enabled
+  IETF NSF helper support enabled
+  Index 1/1/1, flood queue length 0
+  Next 0x0(0)/0x0(0)/0x0(0)
+  Last flood scan length is 2, maximum is 3
+  Last flood scan time is 1 msec, maximum is 1 msec
+  Neighbor Count is 2, Adjacent neighbor count is 2 
+    Adjacent with neighbor 1.1.1.1
+    Adjacent with neighbor 2.2.2.2  (Backup Designated Router)
+  Suppress hello for 0 neighbor(s)
+GigabitEthernet0/0.200 is up, line protocol is up 
+  Internet Address 192.168.20.5/30, Area 1, Attached via Network Statement
+  Process ID 1, Router ID 3.3.3.3, Network Type BROADCAST, Cost: 1
+  Topology-MTID    Cost    Disabled    Shutdown      Topology Name
+        0           1         no          no            Base
+  Transmit Delay is 1 sec, State BDR, Priority 1
+  Designated Router (ID) 4.4.4.4, Interface address 192.168.20.6
+  Backup Designated router (ID) 3.3.3.3, Interface address 192.168.20.5
+  Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5
+    oob-resync timeout 40
+    Hello due in 00:00:07
+  Supports Link-local Signaling (LLS)
+  Cisco NSF helper support enabled
+  IETF NSF helper support enabled
+  Index 1/1/2, flood queue length 0
+  Next 0x0(0)/0x0(0)/0x0(0)
+  Last flood scan length is 3, maximum is 3
+  Last flood scan time is 0 msec, maximum is 8 msec
+  Neighbor Count is 1, Adjacent neighbor count is 1 
+    Adjacent with neighbor 4.4.4.4  (Designated Router)
+  Suppress hello for 0 neighbor(s)
+R3#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#int GigabitEthernet0/0.100
+R3(config-subif)#band
+R3(config-subif)#bandwidth ?
+  <1-10000000>   Bandwidth in kilobits
+  qos-reference  Reference bandwidth for QOS test
+  receive        Specify receive-side bandwidth
+
+R3(config-subif)#bandwidth 2000
+R3(config-subif)#exit
+R3(config)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+*Dec 20 12:05:24.010: %SYS-5-CONFIG_I: Configured from console by console
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>en
+R3#sho ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         unassigned      YES unset  up                    up      
+GigabitEthernet0/0.100     192.168.10.4    YES manual up                    up      
+GigabitEthernet0/0.200     192.168.20.5    YES manual up                    up      
+GigabitEthernet0/1         unassigned      YES unset  administratively down down    
+GigabitEthernet0/2         unassigned      YES unset  administratively down down    
+GigabitEthernet0/3         unassigned      YES unset  administratively down down    
+Loopback0                  3.3.3.3         YES manual up                    up      
+R3#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#int GigabitEthernet0/0.200
+R3(config-subif)#ip ospf network point-to-point ?
+  <cr>  <cr>
+
+R3(config-subif)#ip ospf network point-to-point 
+*Dec 20 12:13:47.539: %OSPF-5-ADJCHG: Process 1, Nbr 4.4.4.4 on GigabitEthernet0/0.200 from LOADING to FULL, Loading Done
+R3(config-subif)#
+*Dec 20 12:13:54.163: %OSPF-5-ADJCHG: Process 1, Nbr 4.4.4.4 on GigabitEthernet0/0.200 from FULL to DOWN, Neighbor Down: Interface down or detached
+*Dec 20 12:13:54.223: %OSPF-5-ADJCHG: Process 1, Nbr 4.4.4.4 on GigabitEthernet0/0.200 from LOADING to FULL, Loading Done
+R3(config-subif)#show ip ospf int
+                   ^
+% Invalid input detected at '^' marker.
+
+R3(config-subif)#exit
+R3(config)#exit
+R3#show ip ospf int
+GigabitEthernet0/0.100 is up, line protocol is up 
+  Internet Address 192.168.10.4/28, Area 0, Attached via Network Statement
+  Process ID 1, Router ID 3.3.3.3, Network Type BROADCAST, Cost: 888
+  Topology-MTID    Cost    Disabled    Shutdown      Topology Name
+        0           888       no          no            Base
+  Transmit Delay is 1 sec, State DR, Priority 1
+  Designated Router (ID) 3.3.3.3, Interface address 192.168.10.4
+  Backup Designated router (ID) 2.2.2.2, Interface address 192.168.10.3
+  Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5
+    oob-resync timeout 40
+    Hello due in 00:00:08
+  Supports Link-local Signaling (LLS)
+  Cisco NSF helper support enabled
+  IETF NSF helper support enabled
+  Index 1/1/1, flood queue length 0
+  Next 0x0(0)/0x0(0)/0x0(0)
+  Last flood scan length is 0, maximum is 5
+  Last flood scan time is 0 msec, maximum is 1 msec
+  Neighbor Count is 2, Adjacent neighbor count is 2 
+    Adjacent with neighbor 1.1.1.1
+    Adjacent with neighbor 2.2.2.2  (Backup Designated Router)
+  Suppress hello for 0 neighbor(s)
+ --More-- 
+*Dec 20 12:15:08.583: %SYS-5-CONFIG_I: Configured from console GigabitEthernet0/0.200 is up, line protocol is up 
+  Internet Address 192.168.20.5/30, Area 1, Attached via Network Statement
+  Process ID 1, Router ID 3.3.3.3, Network Type POINT_TO_POINT, Cost: 1
+  Topology-MTID    Cost    Disabled    Shutdown      Topology Name
+        0           1         no          no            Base
+  Transmit Delay is 1 sec, State POINT_TO_POINT
+  Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5
+    oob-resync timeout 40
+    Hello due in 00:00:00
+  Supports Link-local Signaling (LLS)
+  Cisco NSF helper support enabled
+  IETF NSF helper support enabled
+  Index 1/1/2, flood queue length 0
+  Next 0x0(0)/0x0(0)/0x0(0)
+  Last flood scan length is 5, maximum is 5
+  Last flood scan time is 1 msec, maximum is 8 msec
+  Neighbor Count is 1, Adjacent neighbor count is 1 
+    Adjacent with neighbor 4.4.4.4
+  Suppress hello for 0 neighbor(s)
+R3#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>Q
+R3>Q
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>
+R3>en
+R3#wr
+Building configuration...
+[OK]
+R3#
+*Dec 20 12:52:07.296: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Dec 20 12:52:08.203: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>
+R3>
+R3>enable
+R3#terminal length 0
+R3#more system:running-config
+!
+! Last configuration change at 12:15:08 UTC Sun Dec 20 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R3
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 3.3.3.3 255.255.255.255
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/0.100
+ bandwidth 2000
+ encapsulation dot1Q 110
+ ip address 192.168.10.4 255.255.255.240
+ ip ospf cost 888
+!
+interface GigabitEthernet0/0.200
+ encapsulation dot1Q 200
+ ip address 192.168.20.5 255.255.255.252
+ ip ospf network point-to-point
+ ospfv3 network point-to-point
+!
+interface GigabitEthernet0/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 3.3.3.3
+ network 192.168.10.0 0.0.0.255 area 0
+ network 192.168.20.0 0.0.0.255 area 1
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+R3#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+Connection closed by foreign host.
+spawn@mydebian:~/.ssh$ 
+

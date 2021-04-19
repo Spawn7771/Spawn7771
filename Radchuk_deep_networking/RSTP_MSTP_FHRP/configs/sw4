@@ -1,0 +1,1047 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sw4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+sw4>en
+sw4#show ip int bri
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+sw4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+sw4(config)#int
+sw4(config)#interface GigabitEthernet1/0
+sw4(config-if)#switchport trunk encapsulation dot1q
+sw4(config-if)#switchport mode trunk
+sw4(config-if)#exit
+sw4(config)#int
+sw4(config)#interface GigabitEthernet0/1
+sw4(config-if)#switchport trunk encapsulation dot1q
+sw4(config-if)#switchport mode trunk
+sw4(config-if)#exit
+sw4(config)#inter
+sw4(config)#interface GigabitEthernet0/2
+sw4(config-if)#switchport trunk encapsulation dot1q
+sw4(config-if)#switchport mode trunk
+sw4(config-if)#exit
+sw4(config)#exit
+sw4#w
+*Dec 10 10:56:19.435: %SYS-5-CONFIG_I: Configured from console by consoler
+Building configuration...
+Compressed configuration from 3108 bytes to 1483 bytes[OK]
+*Dec 10 10:56:24.472: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Dec 10 10:56:25.322: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+sw4#
+sw4#show run
+Building configuration...
+
+Current configuration : 3108 bytes
+!
+! Last configuration change at 10:56:19 UTC Thu Dec 10 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname sw4
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!         
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+interface GigabitEthernet0/0
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!         
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+sw4#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sw4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+sw4>
+sw4>
+sw4>en
+sw4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+sw4(config)#spanning-tree mst configuration
+sw4(config-mst)# name GEEK
+sw4(config-mst)# revision 8
+sw4(config-mst)# instance 1 vlan 100, 110, 120, 130
+sw4(config-mst)# instance 2 vlan 200, 210, 220, 230
+sw4(config-mst)#exit
+sw4(config)#exit
+sw4#
+*Dec 10 11:30:32.777: %SYS-5-CONFIG_I: Configured from console by consoles   
+% Type "show ?" for a list of subcommands
+sw4#show spa
+sw4#show spanning-tree 
+
+VLAN0001
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    32768
+             Address     5000.0001.0000
+             Cost        4
+             Port        5 (GigabitEthernet1/0)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32769  (priority 32768 sys-id-ext 1)
+             Address     5000.0008.0000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Gi0/0               Desg FWD 4         128.1    P2p 
+Gi0/1               Altn BLK 4         128.2    P2p 
+Gi0/2               Desg FWD 4         128.3    P2p 
+Gi0/3               Desg FWD 4         128.4    P2p 
+Gi1/0               Root FWD 4         128.5    P2p 
+Gi1/1               Desg FWD 4         128.6    P2p 
+Gi1/2               Desg FWD 4         128.7    P2p 
+Gi1/3               Desg FWD 4         128.8    P2p 
+          
+
+sw4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+sw4(config)#spann
+sw4(config)#spanning-tree modee mst
+                              ^
+% Invalid input detected at '^' marker.
+
+sw4(config)#spanning-tree mode mst 
+sw4(config)#exit
+sw4#show spanning-tree 
+*Dec 10 11:31:05.450: %SYS-5-CONFIG_I: Configured from console by console
+
+MST0
+  Spanning tree enabled protocol mstp
+  Root ID    Priority    32768
+             Address     5000.0001.0000
+             Cost        0
+             Port        5 (GigabitEthernet1/0)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32768  (priority 32768 sys-id-ext 0)
+             Address     5000.0008.0000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Gi0/0               Desg BLK 20000     128.1    P2p 
+Gi0/1               Desg BLK 20000     128.2    P2p Bound(STP) 
+Gi0/2               Desg BLK 20000     128.3    P2p 
+Gi0/3               Desg BLK 20000     128.4    P2p 
+Gi1/0               Root FWD 20000     128.5    P2p 
+Gi1/1               Desg BLK 20000     128.6    P2p 
+Gi1/2               Desg BLK 20000     128.7    P2p 
+Gi1/3               Desg BLK 20000     128.8    P2p 
+          
+sw4#show spanning-tree 
+
+MST0
+  Spanning tree enabled protocol mstp
+  Root ID    Priority    32768
+             Address     5000.0001.0000
+             Cost        0
+             Port        5 (GigabitEthernet1/0)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32768  (priority 32768 sys-id-ext 0)
+             Address     5000.0008.0000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Gi0/0               Desg FWD 20000     128.1    P2p 
+Gi0/1               Desg FWD 20000     128.2    P2p 
+Gi0/2               Desg FWD 20000     128.3    P2p 
+Gi0/3               Desg FWD 20000     128.4    P2p 
+Gi1/0               Root FWD 20000     128.5    P2p 
+Gi1/1               Desg FWD 20000     128.6    P2p 
+Gi1/2               Desg FWD 20000     128.7    P2p 
+Gi1/3               Desg FWD 20000     128.8    P2p 
+          
+
+sw4#wr
+Building configuration...
+Compressed configuration from 3238 bytes to 1564 bytes[OK]
+sw4#
+*Dec 10 11:36:04.425: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Dec 10 11:36:05.329: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sw4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+sw4>
+sw4>
+sw4>en
+sw4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+sw4(config)#vlan 100,110,120,130,200,210,220,230
+sw4(config-vlan)#exit
+sw4(config)#exit
+sw4#
+*Dec 10 12:03:37.304: %SYS-5-CONFIG_I: Configured from console by console
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sw4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+sw4>e
+% Ambiguous command:  "e"
+sw4>en
+sw4#show spa
+sw4#show spanning-tree vlan 200
+
+MST2
+  Spanning tree enabled protocol mstp
+  Root ID    Priority    32770
+             Address     5000.0001.0000
+             Cost        20000
+             Port        5 (GigabitEthernet1/0)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32770  (priority 32768 sys-id-ext 2)
+             Address     5000.0008.0000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Gi0/1               Desg FWD 20000     128.2    P2p 
+Gi0/2               Desg FWD 20000     128.3    P2p 
+Gi1/0               Root FWD 20000     128.5    P2p 
+
+
+sw4#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sw4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+-Traceback= 2419228z 9605E5z 989BFEz 989920z 98972Dz 9858B5z 9864EBz 98647Fz 3B6BB2Fz 95FC37z - Process "IOSv in console", CPU hog, PC 0x00981D1D
+
+*Dec 10 17:56:55.017: %SYS-3-CPUHOG: Task is running for (1999)msecs, more than (2000)msecs (0/0),process = IOSv in console.
+-Traceback= 2419228z 9605E5z 989BFEz 989920z 98972Dz 9858B5z 9864EBz 98647Fz 9766B4z - Process "IOSv e1000", CPU hog, PC 0x0097B050
+
+*Dec 11 06:46:39.675: %SYS-3-CPUHOG: Task is running for (1997)msecs, more than (2000)msecs (0/0),process = IOSv e1000.
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+sw4>
+sw4>
+sw4>enable
+sw4#terminal length 0
+sw4#show running-config
+Building configuration...
+
+Current configuration : 3238 bytes
+!
+! Last configuration change at 12:03:37 UTC Thu Dec 10 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname sw4
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode mst
+spanning-tree extend system-id
+!
+spanning-tree mst configuration
+ name GEEK
+ revision 8
+ instance 1 vlan 100, 110, 120, 130
+ instance 2 vlan 200, 210, 220, 230
+!
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+sw4#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sw4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+-Traceback= 2419228z 9605E5z 989BFEz 989920z 98972Dz 9858B5z 9864EBz 98647Fz 96BD21z 97C778z 97B0F2z 9766B4z - Process "IOSv e1000", CPU hog, PC 0x00981D0B
+
+*Dec 11 11:08:53.843: %SYS-3-CPUHOG: Task is running for (1999)msecs, more than (2000)msecs (0/0),process = IOSv e1000.
+-Traceback= 2419228z 9605E5z 989BFEz 989920z 98972Dz 9858B5z 9864EBz 98647Fz 96F3BDz 3B3EEFDz 86BCE3z - Process "Per-Second Jobs", CPU hog, PC 0x00970AF2
+
+*Dec 11 12:27:28.713: %SYS-3-CPUHOG: Task is running for (2000)msecs, more than (2000)msecs (0/0),process = Per-Second Jobs.
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+sw4>
+sw4>
+sw4>enable
+sw4#terminal length 0
+sw4#show running-config
+Building configuration...
+
+Current configuration : 3238 bytes
+!
+! Last configuration change at 12:03:37 UTC Thu Dec 10 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname sw4
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode mst
+spanning-tree extend system-id
+!
+spanning-tree mst configuration
+ name GEEK
+ revision 8
+ instance 1 vlan 100, 110, 120, 130
+ instance 2 vlan 200, 210, 220, 230
+!
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+sw4#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sw4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+Connection closed by foreign host.
+spawn@mydebian:~$ 

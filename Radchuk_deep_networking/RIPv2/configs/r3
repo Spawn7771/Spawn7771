@@ -1,0 +1,2348 @@
+spawn@mydebian:~/.ssh$ telnet 192.168.1.14 32771
+Trying 192.168.1.14...
+Connected to 192.168.1.14.
+Escape character is '^]'.
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>Q
+R3>Q
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>en
+R3#show run
+Building configuration...
+
+Current configuration : 2886 bytes
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R3
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!         
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!
+!
+!         
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ ip address 10.1.3.3 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 10.3.5.3 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!         
+!
+!
+control-plane
+!
+banner exec ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+R3#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>
+R3>en
+R3#show ip rip
+% Incomplete command.
+
+R3#show ip protocols
+*** IP Routing is NSF aware ***
+
+Routing Protocol is "application"
+  Sending updates every 0 seconds
+  Invalid after 0 seconds, hold down 0, flushed after 0
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Maximum path: 32
+  Routing for Networks:
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+  Distance: (default is 4)
+
+R3#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#exit
+R3#show rb
+*Dec 15 11:19:57.374: %SYS-5-CONFIG_I: Configured from console by consol 
+% Ambiguous command:  "show r"
+R3#show run
+Building configuration...
+
+Current configuration : 2948 bytes
+!
+! Last configuration change at 11:19:57 UTC Tue Dec 15 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R3
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ ip address 10.1.3.3 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 10.3.5.3 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!         
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+R3#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#router rip
+R3(config-router)#version 2
+R3(config-router)#no auto
+R3(config-router)#no auto-summary 
+R3(config-router)#?
+Router configuration commands:
+  address-family          Enter Address Family command mode
+  auto-summary            Enable automatic network number summarization
+  bfd                     BFD configuration commands
+  default                 Set a command to its defaults
+  default-information     Control distribution of default information
+  default-metric          Set metric of redistributed routes
+  distance                Define an administrative distance
+  distribute-list         Filter networks in routing updates
+  exit                    Exit from routing protocol configuration mode
+  flash-update-threshold  Specify flash update threshold in second
+  help                    Description of the interactive help system
+  input-queue             Specify input queue depth
+  maximum-paths           Forward packets over multiple paths
+  neighbor                Specify a neighbor router
+  network                 Enable routing on an IP network
+  no                      Negate a command or set its defaults
+  offset-list             Add or subtract offset from RIP metrics
+  output-delay            Interpacket delay for RIP updates
+  passive-interface       Suppress routing updates on an interface
+  redistribute            Redistribute information from another routing
+                          protocol
+  timers                  Adjust routing timers
+  traffic-share           How to compute traffic share over alternate paths
+  validate-update-source  Perform sanity checks against source address of
+                          routing updates
+  version                 Set routing protocol version
+
+R3(config-router)#network 10.1.3.0/24
+                                  ^
+% Invalid input detected at '^' marker.
+
+R3(config-router)#network 10.1.3.0   
+R3(config-router)#network 10.3.5.0
+R3(config-router)#exit
+R3(config)#exit
+R3#show
+*Dec 15 11:21:47.715: %SYS-5-CONFIG_I: Configured from console by console    
+% Type "show ?" for a list of subcommands
+R3#
+R3#show ip protocols
+*** IP Routing is NSF aware ***
+
+Routing Protocol is "application"
+  Sending updates every 0 seconds
+  Invalid after 0 seconds, hold down 0, flushed after 0
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Maximum path: 32
+  Routing for Networks:
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+  Distance: (default is 4)
+
+Routing Protocol is "rip"
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Sending updates every 30 seconds, next due in 0 seconds
+  Invalid after 180 seconds, hold down 180, flushed after 240
+  Redistributing: rip
+  Default version control: send version 2, receive version 2
+    Interface                           Send  Recv  Triggered RIP  Key-chain
+    GigabitEthernet0/0                  2     2          No        none            
+    GigabitEthernet0/1                  2     2          No        none            
+  Automatic network summarization is not in effect
+  Maximum path: 4
+  Routing for Networks:
+    10.0.0.0
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+    10.1.3.1             120      00:00:02
+  Distance: (default is 120)
+
+R3#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#router rip ?
+  <cr>  <cr>
+
+R3(config)#router rip 
+R3(config-router)#?
+Router configuration commands:
+  address-family          Enter Address Family command mode
+  auto-summary            Enable automatic network number summarization
+  bfd                     BFD configuration commands
+  default                 Set a command to its defaults
+  default-information     Control distribution of default information
+  default-metric          Set metric of redistributed routes
+  distance                Define an administrative distance
+  distribute-list         Filter networks in routing updates
+  exit                    Exit from routing protocol configuration mode
+  flash-update-threshold  Specify flash update threshold in second
+  help                    Description of the interactive help system
+  input-queue             Specify input queue depth
+  maximum-paths           Forward packets over multiple paths
+  neighbor                Specify a neighbor router
+  network                 Enable routing on an IP network
+  no                      Negate a command or set its defaults
+  offset-list             Add or subtract offset from RIP metrics
+  output-delay            Interpacket delay for RIP updates
+  passive-interface       Suppress routing updates on an interface
+  redistribute            Redistribute information from another routing
+                          protocol
+  timers                  Adjust routing timers
+  traffic-share           How to compute traffic share over alternate paths
+  validate-update-source  Perform sanity checks against source address of
+                          routing updates
+  version                 Set routing protocol version
+
+R3(config-router)#netwr
+R3(config-router)#netwo
+R3(config-router)#network 10.3.5.0
+R3(config-router)#exit
+R3(config)#exit
+R3#show
+*Dec 15 11:23:17.656: %SYS-5-CONFIG_I: Configured from console by console rub 
+          ^
+% Invalid input detected at '^' marker.
+
+R3#show ip protocols
+*** IP Routing is NSF aware ***
+
+Routing Protocol is "application"
+  Sending updates every 0 seconds
+  Invalid after 0 seconds, hold down 0, flushed after 0
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Maximum path: 32
+  Routing for Networks:
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+  Distance: (default is 4)
+
+Routing Protocol is "rip"
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Sending updates every 30 seconds, next due in 26 seconds
+  Invalid after 180 seconds, hold down 180, flushed after 240
+  Redistributing: rip
+  Default version control: send version 2, receive version 2
+    Interface                           Send  Recv  Triggered RIP  Key-chain
+    GigabitEthernet0/0                  2     2          No        none            
+    Interface                           Send  Recv  Triggered RIP  Key-chain
+    GigabitEthernet0/1                  2     2          No        none            
+  Automatic network summarization is not in effect
+  Maximum path: 4
+  Routing for Networks:
+    10.0.0.0
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+    10.1.3.1             120      00:00:16
+  Distance: (default is 120)
+
+R3#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>
+R3>en
+R3#debug rip
+           ^
+% Invalid input detected at '^' marker.
+
+R3#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#debug rip
+             ^
+% Invalid input detected at '^' marker.
+
+R3(config)#deb
+R3(config)#debu
+R3(config)#exit
+R3#deb
+R3#debug 
+*Dec 15 12:11:59.112: %SYS-5-CONFIG_I: Configured from console by console
+% Type "debug ?" for a list of subcommands
+R3#deb
+R3#debug ?
+  aaa                       AAA Authentication, Authorization and Accounting
+  access-expression         Boolean access expression
+  acircuit                  Attachment Circuit information
+  adjacency                 adjacency
+  all                       Enable all debugging
+  alps                      ALPS debug information
+  appfw                     Application Firewall events
+  application               Application routing
+  archive                   debug archive commands
+  arp                       IP ARP and HP Probe transactions
+  aspp                      ASPP information
+  async                     Async interface information
+  atm                       ATM interface packets
+  authentication            Auth Manager debugging
+  backhaul-session-manager  Backhaul SM options
+  backup                    Backup events
+  beep                      BEEP debugging
+  bfd                       Bi-directional forwarding detection
+  bgp                       BGP information
+  bing                      Bing(d) debugging
+  bridge-domain             Bridge-domain
+  bsc                       BSC information
+  bsd-client                Enable BSD Client debugging
+  bstun                     BSTUN information
+  bulkstat                  Bulsktat debugging
+  c3pl                      C3PL events
+  call                      Call Information
+  call-admission            Call admission control
+  callback                  Callback activity
+  cca                       CCA activity
+  cce                       Common Classification Engine (CCE)
+  cdp                       CDP information
+  cef                       CEF address family independent operations
+  cfgdiff                   debug cfgdiff commands
+  chat                      Chat scripts activity
+  checkpoint                Checkpoint Facility Debugging
+  clns                      CLNS information
+  cls                       CLS Information
+  cns                       CNS agents
+  compress                  COMPRESS traffic
+  condition                 Condition
+  confmodem                 Modem configuration database
+  conn                      Connection Manager information
+  control-plane             control-plane events
+  cops                      COPS
+  cpc                       CPC Pak Subblock
+  cpl                       Cisco Common Class-based Policy Language debugging
+  crm                       Carrier Resource Manager info
+  crypto                    Cryptographic subsystem
+  cts                       Cisco Trusted Security
+  ctunnel                   Generic CTunnel Interface
+  custom-queue              Custom output queueing
+  cws                       Cloud Web Security events
+  dampening                 Dampening
+  dcm                       dcm commands
+  decnet                    DECnet information
+  device-sensor             Device Sensor
+  dhcp                      DHCP client activity
+  dialer                    Dial on Demand
+  dlsw                      Data Link Switching (DLSw) events
+  dmvpn                     DMVPN protocol
+  dnsix                     Dnsix information
+  domain                    Domain debugging
+  dot1x                     Dot1x debugging support
+  drip                      DRiP debug information
+  dspu                      DSPU Information
+  dxi                       atm-dxi information
+  eap                       EAP debugging
+  ecfmpal                   ecfm debugging flags
+  eigrp                     EIGRP debug commands
+  elb-pal-pd                Elb Pal PD debugging flags
+  entry                     Incoming queue entries
+  eou                       EAPoUDP debugging support
+  epm                       Policy Enforcemnt Module
+  epmpal                    EPM platform debugging flags
+  ethernet                  Ethernet debugging commands
+  event                     Event related commands
+  event-manager             Event manager activity
+  fastethernet              Fast Ethernet interface information
+  fh_fd_rpc                 FH_FD_RPC information
+  fhrp                      Debug First Hop Router Protocol
+  filesystem                Debug filesystem during boot
+  flow                      Flow information
+  flow-sampler              Debug flow sampler
+  format                    format information
+  frame-relay               Frame Relay
+  fras                      FRAS Debug 
+  fras-host                 FRAS Host Debug 
+  funi                      FUNI interface packets
+  glbp                      Gateway Load Balancing Protocol (GLBP)
+  gssapi                    GSSAPI debugs
+  ha-infra                  HA Infra Debugging
+  hqf                       Debugging hqf
+  http                      HTTP Debugging
+  iamp                      IAMP Debug
+  ida-client                Enable IDA Client debugging
+  identity                  Identity debugging support
+  idmgr                     IDMGR interaction
+  if-mgr                    IF_MGR information
+  interface                 Interface Descriptor Block
+  ip                        IP information
+  ipam                      IP Address Manager (IPAM) information
+  ipc                       Interprocess communications debugging
+  iphc                      IPHC information
+  ipv6                      IPv6 information
+  isis                      IS-IS Information
+  kerberos                  KERBEROS authentication and authorization
+  keystore                  CTS Keystore
+  kron                      Kron subsys debugs
+  l2tp                      L2TP information
+  l4f                       L4F debugging
+  lapb                      LAPB protocol transactions
+  lapb-ta                   LAPB Terminal Adapter information
+  lat                       LAT Information
+  line                      Line debugging
+  lisp                      Locator/ID Separation Protocol
+  list                      Set interface or/and access list for the next debug
+                            command
+  llc2                      LLC2 type II Information
+  lldp                      LLDP information
+  lnx                       generic qllc/llc2 conversion activity
+  local-ack                 Local ACKnowledgement information
+  location-mgr              Location information manager
+  logging                   Add debug messages to logging
+  mab                       MAC-Authentication-Bypass debugging
+  macdb                     Debug MAC database
+  management                Management applications debugging
+  mdns                      MDNS feature
+  mediatrace                Mediatrace debugging
+  memory                    Memory related debugging
+  metadata                  Metadata debugs
+  mfib                      MFIB address family independent operations
+  mmi                       mmi process
+  modem                     Modem control/process activation
+  mop                       DECnet MOP server events
+  mpls                      MPLS debug
+  mtm                       MTM
+  mvpn                      MVPN events
+  mwi                       mwi debug information
+  nat64                     NAT64
+  nbf                       NetBIOS information
+  ncia                      Native Client Interface Architecture (NCIA) events
+  netbios-name-cache        NetBIOS name cache tracing
+  netconf                   NETCONF information
+  nhrp                      NHRP protocol
+  nmsp                      debug NMSP
+  ntp                       NTP information
+  nvram                     Debug NVRAM behavior
+  object-group              Object Group information
+  oce                       Output chain elements
+  onep                      ONE-P commands
+  ospfv3                    OSPFv3 debug commands
+  pa-wccp-proxy             PA WCCP Proxy
+  packet                    Log unknown packets
+  pad                       X25 PAD protocol
+  performance               Performance monitor debugging
+  persistent                Debug persistent
+  pfr                       Performance Routing(PfR) information
+  platform                  IOSv platform information
+  pnp                       Debug PNP behavior
+  police                    Debugging police
+  policy-firewall           Debug policy-firewall
+  policy-manager            Policy Manager
+  policy-map                Debug policy-map
+  ppp                       PPP (Point to Point Protocol) information
+  pppoe                     PPPoE information
+  printer                   LPD printer protocol
+  priority                  Priority output queueing
+  profile                   Media Services Debug 
+  protofltr                 Routing protocol filter manager
+  psp                       Packet-Service
+  qdm                       QoS Device Manager
+  qllc                      qllc debug information
+  qos                       QoS debugging
+  qos                       QoS debugging
+  radius                    RADIUS protocol
+  rbm                       Role-based Access Control Manager
+  redundancy                Redundancy Facility (RF) debug options
+  resource                  Embedded Resource Manager debug commands
+  rif                       RIF cache transactions
+  route-map                 Route-map
+  rpl                       RPL Protocol debugging
+  rpms-proc                 RPMS Process Information
+  rudpv1                    RUDP,V1 information
+  sadb                      sadb debug commands
+  sampler                   Sampler configuration and operation
+  sasl                      Simple Authentication and Security Layer
+  sdlc                      SDLC information
+  sdllc                     SDLLC media translation
+  serial                    Serial interface information
+  service-overlay           Service Overlay debug options
+  service-routing           Enable Service Routing Debug options
+  smf                       Software MAC filter
+  sna                       SNA Information
+  snapshot                  Snapshot activity
+  snmp                      SNMP information
+  sntp                      SNTP information
+  software                  Software
+  source                    Source bridging information
+  spanning-tree             Spanning tree debugging
+  srtp                      SRTP Library
+  ssl                       SSL Debug command
+  ssm                       Segment Switch Manager
+  standby                   Hot Standby Router Protocol (HSRP)
+  stun                      STUN information
+  subscriber                Subscriber Service Switch information
+  tacacs                    TACACS authentication and authorization
+  tagtemplate               Tag and Template
+  tarp                      TARP information
+  tbridge                   Transparent Bridging
+  tccs                      Transparent CCS information
+  telnet                    Incoming telnet connections
+  template                  Template activity
+  tftp                      TFTP debugging
+  tgrm                      Trunk Group Resource Manager info
+  token                     Token Ring information
+  topology                  Topology Manager
+  track                     Debug tracking
+  translate                 Protocol translation events
+  tunnel                    Generic Tunnel Interface
+  udptn                     UDPtn async data transport
+  user-group                Usergroup debugging
+  v120                      V120 information
+  video                     debug video
+  vlan                      vLAN information
+  vmi                       VMI interface debugging
+  vofm                      VO Flow Manager
+  vpdn                      VPDN information
+  vpn                       VPN information
+  vprofile                  Virtual Profile information
+  vrf                       VRF Manager
+  vrrp                      Debug Virtual Router Redundancy Protocol
+  vtemplate                 Virtual Template information
+  waas                      IOS Wide Area Application Services
+  wccp                      WCCP debugging
+  webvpn                    WebVPN packet debugs
+  wsma                      Web Services Management Agents debug
+  x25                       X.25, CMNS and XOT information
+  x28                       X28 mode
+  xcl2                      Xconnect L2TPv3 information
+  xconnect                  Xconnect debugs
+  xmpp                      Extensible Messaging and Presence Protocol debug
+  zone                      Zone security events
+
+R3#debug          q                           
+% Ambiguous command:  "debug          q                           "
+R3#debu
+R3#debug ip rip
+RIP protocol debugging is on
+R3#
+*Dec 15 12:12:35.229: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/1 (10.3.5.3)
+*Dec 15 12:12:35.230: RIP: build update entries
+*Dec 15 12:12:35.231: 	10.1.2.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:12:35.232: 	10.1.3.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:12:35.232: 	10.1.4.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:12:35.233: 	172.16.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:12:39.028: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/0 (10.1.3.3)
+*Dec 15 12:12:39.029: RIP: build update entries
+*Dec 15 12:12:39.030: 	10.2.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:12:39.030: 	10.3.5.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:12:39.031: 	10.4.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:12:39.031: 	192.168.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:12:39.885: RIP: received v2 update from 10.1.3.1 on GigabitEthernet0/0
+*Dec 15 12:12:39.886:      10.1.2.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:12:39.886:      10.1.4.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:12:39.887:      10.2.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:12:39.887:      10.4.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:12:39.888:      172.16.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:12:48.035: RIP: received v2 update from 10.3.5.5 on GigabitEthernet0/1
+*Dec 15 12:12:48.035:      10.1.2.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:12:48.036:      10.1.4.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:12:48.037:      10.2.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:12:48.037:      10.4.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:12:48.038:      192.168.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:13:03.488: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/1 (10.3.5.3)
+*Dec 15 12:13:03.489: RIP: build update entries
+*Dec 15 12:13:03.489: 	10.1.2.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:13:03.489: 	10.1.3.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:13:03.490: 	10.1.4.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:13:03.490: 	172.16.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:13:05.916: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/0 (10.1.3.3)
+*Dec 15 12:13:05.917: RIP: build update entries
+*Dec 15 12:13:05.917: 	10.2.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:13:05.918: 	10.3.5.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:13:05.919: 	10.4.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:13:05.919: 	192.168.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:13:07.951: RIP: received v2 update from 10.1.3.1 on GigabitEthernet0/0
+*Dec 15 12:13:07.951:      10.1.2.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:13:07.952:      10.1.4.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:13:07.952:      10.2.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:13:07.953:      10.4.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:13:07.953:      172.16.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:13:15.786: RIP: received v2 update from 10.3.5.5 on GigabitEthernet0/1
+*Dec 15 12:13:15.786:      10.1.2.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:13:15.788:      10.1.4.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:13:15.788:      10.2.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:13:15.789:      10.4.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:13:15.790:      192.168.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:13:29.596: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/1 (10.3.5.3)
+*Dec 15 12:13:29.597: RIP: build update entries
+*Dec 15 12:13:29.598: 	10.1.2.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:13:29.600: 	10.1.3.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:13:29.601: 	10.1.4.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:13:29.604: 	172.16.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:13:32.028: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/0 (10.1.3.3)
+*Dec 15 12:13:32.029: RIP: build update entries
+*Dec 15 12:13:32.029: 	10.2.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:13:32.030: 	10.3.5.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:13:32.030: 	10.4.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:13:32.031: 	192.168.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:13:37.512: RIP: received v2 update from 10.1.3.1 on GigabitEthernet0/0
+*Dec 15 12:13:37.512:      10.1.2.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:13:37.513:      10.1.4.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:13:37.514:      10.2.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:13:37.515:      10.4.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:13:37.516:      172.16.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:13:42.522: RIP: received v2 update from 10.3.5.5 on GigabitEthernet0/1
+*Dec 15 12:13:42.523:      10.1.2.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:13:42.523:      10.1.4.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:13:42.523:      10.2.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:13:42.524:      10.4.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:13:42.525:      192.168.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:13:58.380: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/1 (10.3.5.3)
+*Dec 15 12:13:58.380: RIP: build update entries
+*Dec 15 12:13:58.381: 	10.1.2.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:13:58.381: 	10.1.3.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:13:58.382: 	10.1.4.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:13:58.382: 	172.16.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:13:59.606: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/0 (10.1.3.3)
+*Dec 15 12:13:59.607: RIP: build update entries
+*Dec 15 12:13:59.607: 	10.2.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:13:59.608: 	10.3.5.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:13:59.608: 	10.4.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:13:59.608: 	192.168.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:14:03.934: RIP: received v2 update from 10.1.3.1 on GigabitEthernet0/0
+*Dec 15 12:14:03.935:      10.1.2.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:14:03.936:      10.1.4.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:14:03.937:      10.2.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:14:03.938:      10.4.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:14:03.938:      172.16.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:14:11.418: RIP: received v2 update from 10.3.5.5 on GigabitEthernet0/1
+*Dec 15 12:14:11.419:      10.1.2.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:14:11.419:      10.1.4.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:14:11.419:      10.2.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:14:11.420:      10.4.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:14:11.420:      192.168.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:14:25.562: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/0 (10.1.3.3)
+*Dec 15 12:14:25.563: RIP: build update entries
+*Dec 15 12:14:25.564: 	10.2.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:14:25.564: 	10.3.5.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:14:25.565: 	10.4.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:14:25.565: 	192.168.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:14:27.044: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/1 (10.3.5.3)
+*Dec 15 12:14:27.045: RIP: build update entries
+*Dec 15 12:14:27.046: 	10.1.2.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:14:27.046: 	10.1.3.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:14:27.046: 	10.1.4.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:14:27.047: 	172.16.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:14:30.307: RIP: received v2 update from 10.1.3.1 on GigabitEthernet0/0
+*Dec 15 12:14:30.308:      10.1.2.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:14:30.309:      10.1.4.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:14:30.309:      10.2.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:14:30.310:      10.4.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:14:30.311:      172.16.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:14:39.358: RIP: received v2 update from 10.3.5.5 on GigabitEthernet0/1
+*Dec 15 12:14:39.358:      10.1.2.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:14:39.359:      10.1.4.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:14:39.360:      10.2.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:14:39.360:      10.4.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:14:39.361:      192.168.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:14:51.695: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/0 (10.1.3.3)
+*Dec 15 12:14:51.697: RIP: build update entries
+*Dec 15 12:14:51.698: 	10.2.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:14:51.698: 	10.3.5.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:14:51.699: 	10.4.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:14:51.700: 	192.168.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:14:54.912: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/1 (10.3.5.3)
+*Dec 15 12:14:54.913: RIP: build update entries
+*Dec 15 12:14:54.914: 	10.1.2.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:14:54.914: 	10.1.3.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:14:54.915: 	10.1.4.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:14:54.916: 	172.16.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:14:57.159: RIP: received v2 update from 10.1.3.1 on GigabitEthernet0/0
+*Dec 15 12:14:57.159:      10.1.2.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:14:57.160:      10.1.4.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:14:57.161:      10.2.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:14:57.161:      10.4.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:14:57.162:      172.16.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:15:08.916: RIP: received v2 update from 10.3.5.5 on GigabitEthernet0/1
+*Dec 15 12:15:08.917:      10.1.2.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:15:08.918:      10.1.4.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:15:08.919:      10.2.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:15:08.920:      10.4.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:15:08.921:      192.168.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:15:20.343: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/0 (10.1.3.3)
+*Dec 15 12:15:20.344: RIP: build update entries
+*Dec 15 12:15:20.344: 	10.2.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:15:20.345: 	10.3.5.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:15:20.345: 	10.4.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:15:20.345: 	192.168.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:15:23.830: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/1 (10.3.5.3)
+*Dec 15 12:15:23.831: RIP: build update entries
+*Dec 15 12:15:23.831: 	10.1.2.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:15:23.832: 	10.1.3.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:15:23.833: 	10.1.4.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:15:23.834: 	172.16.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:15:25.011: RIP: received v2 update from 10.1.3.1 on GigabitEthernet0/0
+*Dec 15 12:15:25.011:      10.1.2.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:15:25.012:      10.1.4.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:15:25.013:      10.2.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:15:25.013:      10.4.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:15:25.014:      172.16.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:15:35.051: RIP: received v2 update from 10.3.5.5 on GigabitEthernet0/1
+*Dec 15 12:15:35.052:      10.1.2.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:15:35.053:      10.1.4.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:15:35.053:      10.2.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:15:35.053:      10.4.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:15:35.054:      192.168.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:15:46.992: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/0 (10.1.3.3)
+*Dec 15 12:15:46.994: RIP: build update entries
+*Dec 15 12:15:46.994: 	10.2.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:15:46.995: 	10.3.5.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:15:46.996: 	10.4.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:15:46.997: 	192.168.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:15:51.884: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/1 (10.3.5.3)
+*Dec 15 12:15:51.885: RIP: build update entries
+*Dec 15 12:15:51.885: 	10.1.2.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:15:51.886: 	10.1.3.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:15:51.886: 	10.1.4.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:15:51.887: 	172.16.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:15:53.858: RIP: received v2 update from 10.1.3.1 on GigabitEthernet0/0
+*Dec 15 12:15:53.859:      10.1.2.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:15:53.859:      10.1.4.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:15:53.860:      10.2.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:15:53.860:      10.4.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:15:53.861:      172.16.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:16:03.895: RIP: received v2 update from 10.3.5.5 on GigabitEthernet0/1
+*Dec 15 12:16:03.896:      10.1.2.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:16:03.897:      10.1.4.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:16:03.897:      10.2.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:16:03.898:      10.4.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:16:03.898:      192.168.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:16:15.564: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/0 (10.1.3.3)
+*Dec 15 12:16:15.565: RIP: build update entries
+*Dec 15 12:16:15.565: 	10.2.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:16:15.566: 	10.3.5.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:16:15.566: 	10.4.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:16:15.567: 	192.168.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:16:20.080: RIP: received v2 update from 10.1.3.1 on GigabitEthernet0/0
+*Dec 15 12:16:20.082:      10.1.2.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:16:20.082:      10.1.4.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:16:20.083:      10.2.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:16:20.083:      10.4.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:16:20.084:      172.16.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:16:20.991: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/1 (10.3.5.3)
+*Dec 15 12:16:20.992: RIP: build update entries
+*Dec 15 12:16:20.993: 	10.1.2.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:16:20.993: 	10.1.3.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:16:20.993: 	10.1.4.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:16:20.994: 	172.16.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:16:32.204: RIP: received v2 update from 10.3.5.5 on GigabitEthernet0/1
+*Dec 15 12:16:32.205:      10.1.2.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:16:32.206:      10.1.4.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:16:32.207:      10.2.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:16:32.209:      10.4.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:16:32.210:      192.168.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:16:42.995: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/0 (10.1.3.3)
+*Dec 15 12:16:42.996: RIP: build update entries
+*Dec 15 12:16:42.997: 	10.2.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:16:42.998: 	10.3.5.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:16:42.999: 	10.4.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:16:43.000: 	192.168.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:16:48.685: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/1 (10.3.5.3)
+*Dec 15 12:16:48.686: RIP: build update entries
+*Dec 15 12:16:48.687: 	10.1.2.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:16:48.687: 	10.1.3.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:16:48.688: 	10.1.4.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:16:48.689: 	172.16.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:16:49.237: RIP: received v2 update from 10.1.3.1 on GigabitEthernet0/0
+*Dec 15 12:16:49.238:      10.1.2.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:16:49.238:      10.1.4.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:16:49.239:      10.2.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:16:49.239:      10.4.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:16:49.240:      172.16.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:16:58.650: RIP: received v2 update from 10.3.5.5 on GigabitEthernet0/1
+*Dec 15 12:16:58.651:      10.1.2.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:16:58.651:      10.1.4.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:16:58.652:      10.2.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:16:58.652:      10.4.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:16:58.652:      192.168.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:17:08.728: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/0 (10.1.3.3)
+*Dec 15 12:17:08.729: RIP: build update entries
+*Dec 15 12:17:08.729: 	10.2.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:17:08.730: 	10.3.5.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:17:08.730: 	10.4.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:17:08.730: 	192.168.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:17:15.916: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/1 (10.3.5.3)
+*Dec 15 12:17:15.917: RIP: build update entries
+*Dec 15 12:17:15.917: 	10.1.2.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:17:15.918: 	10.1.3.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:17:15.918: 	10.1.4.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:17:15.919: 	172.16.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:17:16.004: RIP: received v2 update from 10.1.3.1 on GigabitEthernet0/0
+*Dec 15 12:17:16.004:      10.1.2.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:17:16.005:      10.1.4.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:17:16.005:      10.2.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:17:16.006:      10.4.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:17:16.006:      172.16.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:17:27.164: RIP: received v2 update from 10.3.5.5 on GigabitEthernet0/1
+*Dec 15 12:17:27.165:      10.1.2.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:17:27.166:      10.1.4.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:17:27.167:      10.2.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:17:27.168:      10.4.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:17:27.168:      192.168.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:17:36.385: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/0 (10.1.3.3)
+*Dec 15 12:17:36.386: RIP: build update entries
+*Dec 15 12:17:36.386: 	10.2.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:17:36.388: 	10.3.5.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:17:36.388: 	10.4.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:17:36.390: 	192.168.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:17:41.782: RIP: received v2 update from 10.1.3.1 on GigabitEthernet0/0
+*Dec 15 12:17:41.783:      10.1.2.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:17:41.783:      10.1.4.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:17:41.783:      10.2.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:17:41.784:      10.4.5.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:17:41.784:      172.16.0.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:17:42.947: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/1 (10.3.5.3)
+*Dec 15 12:17:42.948: RIP: build update entries
+*Dec 15 12:17:42.949: 	10.1.2.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:17:42.949: 	10.1.3.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:17:42.950: 	10.1.4.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:17:42.950: 	172.16.0.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:17:52.870: RIP: received v2 update from 10.3.5.5 on GigabitEthernet0/1
+*Dec 15 12:17:52.870:      10.1.2.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:17:52.871:      10.1.4.0/24 via 0.0.0.0 in 2 hops
+*Dec 15 12:17:52.871:      10.2.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:17:52.872:      10.4.5.0/24 via 0.0.0.0 in 1 hops
+*Dec 15 12:17:52.873:      192.168.0.0/24 via 0.0.0.0 in 1 hops
+R3#undeb
+R3#undebug all
+*Dec 15 12:18:03.761: RIP: sending v2 update to 224.0.0.9 via GigabitEthernet0/0 (10.1.3.3)
+*Dec 15 12:18:03.762: RIP: build update entries
+*Dec 15 12:18:03.763: 	10.2.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:18:03.763: 	10.3.5.0/24 via 0.0.0.0, metric 1, tag 0
+*Dec 15 12:18:03.764: 	10.4.5.0/24 via 0.0.0.0, metric 2, tag 0
+*Dec 15 12:18:03.764: 	192.168.0.0/24 via 0.0.0.0, metric 2, tag 0
+All possible debugging has been turned off
+R3#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>
+R3>
+R3>en
+R3#show run
+Building configuration...
+
+Current configuration : 3007 bytes
+!
+! Last configuration change at 12:11:59 UTC Tue Dec 15 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R3
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ ip address 10.1.3.3 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 10.3.5.3 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router rip
+ version 2
+ network 10.0.0.0
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+R3#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#ip acc
+R3(config)#ip acce
+R3(config)#ip access-list ?
+  extended    Extended Access List
+  helper      Access List acts on helper-address
+  log-update  Control access list log updates
+  logging     Control access list logging
+  resequence  Resequence Access List
+  standard    Standard Access List
+
+R3(config)#ip access-list sta
+R3(config)#ip access-list standard acl_172_and_192_all/24
+R3(config-std-nacl)#?
+Standard Access List configuration commands:
+  <1-2147483647>  Sequence Number
+  default         Set a command to its defaults
+  deny            Specify packets to reject
+  exit            Exit from access-list configuration mode
+  no              Negate a command or set its defaults
+  permit          Specify packets to forward
+  remark          Access list entry comment
+
+R3(config-std-nacl)#permin 192.168.0.0 0.0.0.255
+                         ^
+% Invalid input detected at '^' marker.
+
+R3(config-std-nacl)#permit 192.168.0.0 0.0.0.255
+R3(config-std-nacl)#permit 172.16.0.0 0.0.0.255 
+R3(config-std-nacl)#exit
+R3(config)#off
+R3(config)#offs
+R3(config)#router rip
+R3(config-router)#off
+R3(config-router)#offset-list ?
+  <0-99>       Access list of networks to apply offset (0 selects all networks)
+  <1300-1999>  Access list of networks to apply offset (expanded range)
+  WORD         Access-list name
+
+R3(config-router)#offset-list acl_172_and_192_all/24 out 4
+R3(config-router)#exit
+R3(config)#exit
+R3#
+*Dec 15 12:50:11.734: %SYS-5-CONFIG_I: Configured from console by console
+R3#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      10.0.0.0/8 is variably subnetted, 8 subnets, 2 masks
+R        10.1.2.0/24 [120/1] via 10.1.3.1, 00:00:04, GigabitEthernet0/0
+C        10.1.3.0/24 is directly connected, GigabitEthernet0/0
+L        10.1.3.3/32 is directly connected, GigabitEthernet0/0
+R        10.1.4.0/24 [120/1] via 10.1.3.1, 00:00:04, GigabitEthernet0/0
+R        10.2.5.0/24 [120/1] via 10.3.5.5, 00:00:19, GigabitEthernet0/1
+C        10.3.5.0/24 is directly connected, GigabitEthernet0/1
+L        10.3.5.3/32 is directly connected, GigabitEthernet0/1
+R        10.4.5.0/24 [120/1] via 10.3.5.5, 00:00:19, GigabitEthernet0/1
+      172.16.0.0/24 is subnetted, 1 subnets
+R        172.16.0.0 [120/1] via 10.1.3.1, 00:00:04, GigabitEthernet0/0
+R     192.168.0.0/24 [120/1] via 10.3.5.5, 00:00:19, GigabitEthernet0/1
+R3#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>
+R3>
+R3>en
+R3#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      1.0.0.0/32 is subnetted, 2 subnets
+R        1.1.1.1 [120/1] via 10.1.3.1, 00:00:25, GigabitEthernet0/0
+R        1.1.1.2 [120/1] via 10.1.3.1, 00:00:25, GigabitEthernet0/0
+      10.0.0.0/8 is variably subnetted, 8 subnets, 2 masks
+R        10.1.2.0/24 [120/1] via 10.1.3.1, 00:00:25, GigabitEthernet0/0
+C        10.1.3.0/24 is directly connected, GigabitEthernet0/0
+L        10.1.3.3/32 is directly connected, GigabitEthernet0/0
+R        10.1.4.0/24 [120/1] via 10.1.3.1, 00:00:25, GigabitEthernet0/0
+R        10.2.5.0/24 [120/1] via 10.3.5.5, 00:00:05, GigabitEthernet0/1
+C        10.3.5.0/24 is directly connected, GigabitEthernet0/1
+L        10.3.5.3/32 is directly connected, GigabitEthernet0/1
+R        10.4.5.0/24 [120/1] via 10.3.5.5, 00:00:05, GigabitEthernet0/1
+      172.16.0.0/24 is subnetted, 1 subnets
+R        172.16.0.0 [120/1] via 10.1.3.1, 00:00:25, GigabitEthernet0/0
+R     192.168.0.0/24 [120/1] via 10.3.5.5, 00:00:05, GigabitEthernet0/1
+R3#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>
+R3>en
+R3#show ip route    
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      1.0.0.0/32 is subnetted, 2 subnets
+R        1.1.1.1 [120/1] via 10.1.3.1, 00:00:17, GigabitEthernet0/0
+R        1.1.1.2 [120/1] via 10.1.3.1, 00:00:17, GigabitEthernet0/0
+      10.0.0.0/8 is variably subnetted, 8 subnets, 2 masks
+R        10.1.2.0/24 [120/1] via 10.1.3.1, 00:00:17, GigabitEthernet0/0
+C        10.1.3.0/24 is directly connected, GigabitEthernet0/0
+L        10.1.3.3/32 is directly connected, GigabitEthernet0/0
+R        10.1.4.0/24 [120/1] via 10.1.3.1, 00:00:17, GigabitEthernet0/0
+R        10.2.5.0/24 [120/1] via 10.3.5.5, 00:00:09, GigabitEthernet0/1
+C        10.3.5.0/24 is directly connected, GigabitEthernet0/1
+L        10.3.5.3/32 is directly connected, GigabitEthernet0/1
+R        10.4.5.0/24 [120/1] via 10.3.5.5, 00:00:09, GigabitEthernet0/1
+      172.16.0.0/24 is subnetted, 1 subnets
+R        172.16.0.0 [120/1] via 10.1.3.1, 00:00:17, GigabitEthernet0/0
+R     192.168.0.0/24 [120/1] via 10.3.5.5, 00:00:09, GigabitEthernet0/1
+R3#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>
+R3>en
+R3#wr
+Building configuration...
+[OK]
+R3#
+*Dec 15 19:43:14.965: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Dec 15 19:43:15.866: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+R3#
+R3#
+R3#terminal length 0
+R3#more system:running-config
+!
+! Last configuration change at 12:50:11 UTC Tue Dec 15 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R3
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ ip address 10.1.3.3 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 10.3.5.3 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router rip
+ version 2
+ offset-list acl_172_and_192_all/24 out 4
+ network 10.0.0.0
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ip access-list standard acl_172_and_192_all/24
+ permit 192.168.0.0 0.0.0.255
+ permit 172.16.0.0 0.0.0.255
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+R3#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R3 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>en
+R3#show run
+Building configuration...
+
+Current configuration : 3157 bytes
+!
+! Last configuration change at 12:50:11 UTC Tue Dec 15 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R3
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ ip address 10.1.3.3 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 10.3.5.3 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router rip
+ version 2
+ offset-list acl_172_and_192_all/24 out 4
+ network 10.0.0.0
+ no auto-summary
+!         
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ip access-list standard acl_172_and_192_all/24
+ permit 192.168.0.0 0.0.0.255
+ permit 172.16.0.0 0.0.0.255
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+R3#Connection closed by foreign host.
+spawn@mydebian:~/.ssh$ telnet 192.168.1.14 32771
+Trying 192.168.1.14...
+Connected to 192.168.1.14.
+Escape character is '^]'.
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R3>en
+R3#show run
+Building configuration...
+
+Current configuration : 3095 bytes
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R3
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!         
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!
+!
+!         
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ ip address 10.1.3.3 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 10.3.5.3 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router rip
+ version 2
+ offset-list acl_172_and_192_all/24 out 4
+ network 10.0.0.0
+ no auto-summary
+!
+ip forward-protocol nd
+!         
+!
+no ip http server
+no ip http secure-server
+!
+ip access-list standard acl_172_and_192_all/24
+ permit 192.168.0.0 0.0.0.255
+ permit 172.16.0.0 0.0.0.255
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login    
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+R3#Connection closed by foreign host.
+spawn@mydebian:~/.ssh$ sudo apt search kubectl
+[sudo] пароль для spawn: 
+Сортировка… Готово
+Полнотекстовый поиск… Готово
+kubectx/stable,stable 0.6.2-1 all
+  Fast way to switch between clusters and namespaces in kubectl
+
+kubetail/stable,stable 1.6.5-2 all
+  Aggregate logs from multiple Kubernetes pods into one stream
+
+spawn@mydebian:~/.ssh$ 
+

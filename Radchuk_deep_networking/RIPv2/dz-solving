@@ -1,0 +1,31 @@
+2. Трафик между VPC6 и VPC7 д. ходить по маршруту R1<->R2<->R5. В случае проблем с интерфейсами между роутерами R1 и R2 (или R2 и R5) трафик должен переключаться на маршрут R1<->R4<->R5
+Решение:
+Повисил метрики на out для 192.168.0.0 и 172.16.0.0 на R3 и R4 причем на R3 сделал выше чем на R4
+
+R3(config)#ip access-list standard acl_172_and_192_all/24
+R3(config-std-nacl)#permit 192.168.0.0 0.0.0.255
+R3(config-std-nacl)#permit 172.16.0.0 0.0.0.255 
+
+R3(config)#router rip
+R3(config-router)#offset-list acl_172_and_192_all/24 out 4
+
+
+R4(config)#ip access-list standard acl_172_and_192_all_bkp/24
+R4(config-std-nacl)#permit 192.168.0.0 0.0.0.255
+R4(config-std-nacl)#permit 172.16.0.0 0.0.0.255
+R4(config-router)#offset-list acl_172_and_192_all_bkp/24 out 3
+
+6. На R5 в таблице маршрутизации д. находиться только одна подсеть из лупбеков - 1.2.2.2/32 в качестве RIP маршрута
+
+Решение:
+Создал prefix-list где запретил трафик от 1.1.1.1/32
+
+R5(config)#ip prefix-list deny_lo_1.1.1.1/32_new123 seq 5 deny 1.1.1.1/32 
+
+Запретил входящий трафик от 1.1.1.1/32
+
+R5(config-router)#distribute-list prefix deny_lo_1.1.1.1/32_new123 in          
+
+
+
+

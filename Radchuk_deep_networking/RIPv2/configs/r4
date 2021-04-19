@@ -1,0 +1,1385 @@
+spawn@mydebian:~/.ssh$ telnet 192.168.1.14 32772
+Trying 192.168.1.14...
+Connected to 192.168.1.14.
+Escape character is '^]'.
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R4>en
+R4#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R4>en
+R4#show run
+Building configuration...
+
+Current configuration : 2886 bytes
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R4
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!         
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!
+!
+!         
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ ip address 10.1.4.4 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 10.4.5.4 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!         
+!
+!
+control-plane
+!
+banner exec ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+R4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#router rip ?
+  <cr>  <cr>
+
+R4(config)#router rip 
+R4(config-router)#version 2
+R4(config-router)#network 10.4.5.0 255.255.255.0
+                                   ^
+% Invalid input detected at '^' marker.
+
+R4(config-router)#network 10.4.5.0              
+R4(config-router)#network 10.1.4.0
+R4(config-router)#exit
+R4(config)#exit
+R4# 
+*Dec 15 11:25:15.604: %SYS-5-CONFIG_I: Configured from console by consolesho
+% Type "show ?" for a list of subcommands
+R4#show run
+Building configuration...
+
+Current configuration : 2990 bytes
+!
+! Last configuration change at 11:25:15 UTC Tue Dec 15 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R4
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!         
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ ip address 10.1.4.4 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 10.4.5.4 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router rip
+ version 2
+ network 10.0.0.0
+!
+ip forward-protocol nd
+!         
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!         
+end
+
+R4#show ip rptocols
+             ^
+% Invalid input detected at '^' marker.
+
+R4#show ip protocols 
+*** IP Routing is NSF aware ***
+
+Routing Protocol is "application"
+  Sending updates every 0 seconds
+  Invalid after 0 seconds, hold down 0, flushed after 0
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Maximum path: 32
+  Routing for Networks:
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+  Distance: (default is 4)
+
+Routing Protocol is "rip"
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Sending updates every 30 seconds, next due in 8 seconds
+  Invalid after 180 seconds, hold down 180, flushed after 240
+  Redistributing: rip
+  Default version control: send version 2, receive version 2
+    Interface                           Send  Recv  Triggered RIP  Key-chain
+    GigabitEthernet0/0                  2     2          No        none            
+    GigabitEthernet0/1                  2     2          No        none            
+  Automatic network summarization is in effect
+  Maximum path: 4
+  Routing for Networks:
+    10.0.0.0
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+    10.1.4.1             120      00:00:01
+  Distance: (default is 120)
+
+R4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#router rip
+R4(config-router)#version 2
+R4(config-router)#no aut
+R4(config-router)#no auto-summary 
+R4(config-router)#exit
+R4(config)#exit
+R4#
+*Dec 15 11:28:47.851: %SYS-5-CONFIG_I: Configured from console by console
+R4#show ip protocols
+*** IP Routing is NSF aware ***
+
+Routing Protocol is "application"
+  Sending updates every 0 seconds
+  Invalid after 0 seconds, hold down 0, flushed after 0
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Maximum path: 32
+  Routing for Networks:
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+  Distance: (default is 4)
+
+Routing Protocol is "rip"
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Sending updates every 30 seconds, next due in 22 seconds
+  Invalid after 180 seconds, hold down 180, flushed after 240
+  Redistributing: rip
+  Default version control: send version 2, receive version 2
+    Interface                           Send  Recv  Triggered RIP  Key-chain
+    GigabitEthernet0/0                  2     2          No        none            
+    Interface                           Send  Recv  Triggered RIP  Key-chain
+    GigabitEthernet0/1                  2     2          No        none            
+  Automatic network summarization is not in effect
+  Maximum path: 4
+  Routing for Networks:
+    10.0.0.0
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+    10.1.4.1             120      00:00:13
+  Distance: (default is 120)
+
+R4#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R4>en
+R4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#ip acc
+R4(config)#ip acce
+R4(config)#ip access-list stand
+R4(config)#ip access-list standard acl_172_and_192_all_bkp/24
+R4(config-std-nacl)#permit 192.168.0.0 0.0.0.255
+R4(config-std-nacl)#permit 172.16.0.0 0.0.0.255
+R4(config-std-nacl)#exit
+R4(config)#router rip
+R4(config-router)#offse
+R4(config-router)#offset-list ?
+  <0-99>       Access list of networks to apply offset (0 selects all networks)
+  <1300-1999>  Access list of networks to apply offset (expanded range)
+  WORD         Access-list name
+
+R4(config-router)#offset-list acl_172_and_192_all_bkp/24 out 3
+R4(config-router)#exit
+R4(config)#exit
+R4#
+*Dec 15 12:57:12.017: %SYS-5-CONFIG_I: Configured from console by console
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R4> en
+R4#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      1.0.0.0/32 is subnetted, 2 subnets
+R        1.1.1.1 [120/1] via 10.1.4.1, 00:00:01, GigabitEthernet0/0
+R        1.1.1.2 [120/1] via 10.1.4.1, 00:00:01, GigabitEthernet0/0
+      10.0.0.0/8 is variably subnetted, 8 subnets, 2 masks
+R        10.1.2.0/24 [120/1] via 10.1.4.1, 00:00:01, GigabitEthernet0/0
+R        10.1.3.0/24 [120/1] via 10.1.4.1, 00:00:01, GigabitEthernet0/0
+C        10.1.4.0/24 is directly connected, GigabitEthernet0/0
+L        10.1.4.4/32 is directly connected, GigabitEthernet0/0
+R        10.2.5.0/24 [120/1] via 10.4.5.5, 00:00:18, GigabitEthernet0/1
+R        10.3.5.0/24 [120/1] via 10.4.5.5, 00:00:18, GigabitEthernet0/1
+C        10.4.5.0/24 is directly connected, GigabitEthernet0/1
+L        10.4.5.4/32 is directly connected, GigabitEthernet0/1
+      172.16.0.0/24 is subnetted, 1 subnets
+R        172.16.0.0 [120/1] via 10.1.4.1, 00:00:01, GigabitEthernet0/0
+R     192.168.0.0/24 [120/1] via 10.4.5.5, 00:00:18, GigabitEthernet0/1
+R4#show ip rip database
+1.0.0.0/8    auto-summary
+1.1.1.1/32
+    [1] via 10.1.4.1, 00:00:02, GigabitEthernet0/0
+1.1.1.2/32
+    [1] via 10.1.4.1, 00:00:02, GigabitEthernet0/0
+10.0.0.0/8    auto-summary
+10.1.2.0/24
+    [1] via 10.1.4.1, 00:00:02, GigabitEthernet0/0
+10.1.3.0/24
+    [1] via 10.1.4.1, 00:00:02, GigabitEthernet0/0
+10.1.4.0/24    directly connected, GigabitEthernet0/0
+10.2.5.0/24
+    [1] via 10.4.5.5, 00:00:21, GigabitEthernet0/1
+10.3.5.0/24
+    [1] via 10.4.5.5, 00:00:21, GigabitEthernet0/1
+10.4.5.0/24    directly connected, GigabitEthernet0/1
+172.16.0.0/16    auto-summary
+172.16.0.0/24
+    [1] via 10.1.4.1, 00:00:02, GigabitEthernet0/0
+192.168.0.0/24    auto-summary
+192.168.0.0/24
+    [1] via 10.4.5.5, 00:00:21, GigabitEthernet0/1
+R4#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R4>en
+R4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#acc
+R4(config)#access-list ?
+  <1-99>            IP standard access list
+  <100-199>         IP extended access list
+  <1100-1199>       Extended 48-bit MAC address access list
+  <1300-1999>       IP standard access list (expanded range)
+  <200-299>         Protocol type-code access list
+  <2000-2699>       IP extended access list (expanded range)
+  <2700-2799>       MPLS access list
+  <300-399>         DECnet access list
+  <700-799>         48-bit MAC address access list
+  compiled          Enable IP access-list compilation
+  dynamic-extended  Extend the dynamic ACL absolute timer
+  rate-limit        Simple rate-limit specific access list
+
+R4(config)#ip acc      
+R4(config)#ip acc
+R4(config)#ip acc
+R4(config)#ip acc
+R4(config)#ip acc
+R4(config)#ip acc
+R4(config)#ip acce
+R4(config)#ip access-list 
+R4(config)#ip access-list ?
+  extended    Extended Access List
+  helper      Access List acts on helper-address
+  log-update  Control access list log updates
+  logging     Control access list logging
+  resequence  Resequence Access List
+  standard    Standard Access List
+
+R4(config)#ip pref        
+R4(config)#ip prefix-list ?
+  WORD             Name of a prefix list
+  sequence-number  Include/exclude sequence numbers in NVGEN
+
+R4(config)#ip prefix-list ?
+  WORD             Name of a prefix list
+  sequence-number  Include/exclude sequence numbers in NVGEN
+
+R4(config)#ip prefix-list ?
+  WORD             Name of a prefix list
+  sequence-number  Include/exclude sequence numbers in NVGEN
+
+R4(config)#ip prefix-list sdf ?
+  deny         Specify packets to reject
+  description  Prefix-list specific description
+  permit       Specify packets to forward
+  seq          sequence number of an entry
+
+R4(config)#ip prefix-list sdf deny ?
+  A.B.C.D/nn  IP prefix <network>/<length>, e.g., 35.0.0.0/8
+
+R4(config)#ip ?                    
+Global IP configuration subcommands:
+  access-list             Named access-list
+  accounting-list         Select hosts for which IP accounting information is
+                          kept
+  accounting-threshold    Sets the maximum number of accounting entries
+  accounting-transits     Sets the maximum number of transit entries
+  address-pool            Specify default IP address pooling mechanism
+  admission               Network Admission Control (NAC)
+  alias                   Alias an IP address to a TCP port
+  arp                     IP ARP global configuration
+  as-path                 BGP autonomous system path filter
+  auth-proxy              Authentication Proxy
+  bgp-community           format for BGP community
+  bootp                   Config BOOTP services
+  cef                     Cisco Express Forwarding
+  classless               Follow classless routing forwarding rules
+  community-list          Add a community list entry
+  ddns                    Configure dynamic DNS
+  default-gateway         Specify default gateway (if not routing IP)
+  default-network         Flags networks as candidates for default routes
+  device                  Device tracking
+  dfp                     DFP configuration
+  dhcp                    Configure DHCP server and relay parameters
+  dhcp-client             Configure parameters for DHCP client operation
+  dhcp-server             Specify target DHCP server parameters
+  dns                     Configure DNS server for a zone
+  domain                  IP DNS Resolver
+  domain-list             Domain name to complete unqualified host names.
+  domain-lookup           Enable IP Domain Name System hostname translation
+  domain-name             Define the default domain name
+  drp                     Director response protocol configuration commands
+  explicit-path           Configure explicit-path
+  extcommunity-list       Add a extended community list entry
+  finger                  finger server
+  flow-aggregation        Configure flow aggregation
+  flow-cache              Configure netflow cache parameters
+  flow-capture            Capture additional netflow information
+  flow-egress             Configure netflow egress
+  flow-export             Specify host/port to send flow statistics
+  flow-top-talkers        Configure netflow top talkers
+  forward-protocol        Controls forwarding of physical and directed IP
+                          broadcasts
+  ftp                     FTP configuration commands
+  gdp                     Router discovery mechanism
+  gratuitous-arps         Generate gratuitous ARPs for PPP/SLIP peer addresses
+  host                    Add an entry to the ip hostname table
+  host-list               Configure a host list
+  host-routing            Enable host-based routing (proxy ARP and redirect)
+  hostname                Configure hostname types
+  hp-host                 Enable the HP proxy probe service
+  http                    HTTP server configuration
+  icmp                    ICMP options
+  identd                  Ident server
+  igmp                    IGMP global configuration
+  inspect                 Context-based Access Control Engine
+  ips                     Intrusion Prevention System
+  kerberos                KERBEROS configuration commands
+  ldap                    LDAP configuration commands
+  local                   Specify local options
+  mfib                    Multicast Forwarding
+  mobile                  Enable Mobile IP services
+  mrm                     Configure IP Multicast Routing Monitor test
+                          parameters
+  mroute                  Configure static multicast routes
+  msdp                    MSDP global commands
+  multicast               Global IP Multicast Commands
+  multicast-routing       Enable IP multicast forwarding
+  mux                     IP Multiplex configuration commands
+  name-server             Specify address of name server to use
+  nat                     NAT configuration commands
+  nbar                    NBAR - Network Based Application Recognition
+  options                 IP Options treatment
+  ospf                    OSPF
+  pgm                     PGM Reliable Transport Protocol
+  pim                     PIM global commands
+  policy-list             Define IP Policy list
+  port-map                Port to application mapping (PAM) configuration
+                          commands
+  prefix-list             Build a prefix list
+  radius                  RADIUS configuration commands
+  rcmd                    Rcmd commands
+  reflexive-list          Reflexive access list
+  route                   Establish static routes
+  routing                 Enable IP routing
+  rsvp                    Configure static RSVP information
+  rtcp                    RTCP parameters
+  sap                     Global IP Multicast SAP Commands
+  scp                     Scp commands
+  sctp                    Global SCTP parameters
+  sdee                    Security Device Event Exchange
+  security                Specify system wide security information
+  sla                     IP Service Level Agreement
+  source-route            Process packets with source routing header options
+  ssh                     Configure ssh options
+  subnet-zero             Allow 'subnet zero' subnets
+  tacacs                  TACACS configuration commands
+  tcp                     Global TCP parameters
+  telnet                  Specify telnet options
+  tftp                    tftp configuration commands
+  traffic-export          IP traffic export configuration commands
+  trigger-authentication  Trigger-authentication configurations parameters
+  udptn                   UDPTN configuration commands
+  urlfilter               URL Filtering Engine
+  verify                  URPF SNMP trap and IP packet header validation
+                          command
+  vrf                     Configure an IP VPN Routing/Forwarding instance
+  wccp                    Web-Cache Coordination Protocol IPv4 Commands
+
+R4(config)#exit
+R4#conf 
+*Dec 15 15:34:28.873: %SYS-5-CONFIG_I: Configured from console by consolet
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#ip pref
+R4(config)#ip prefix-list deny_lo_1.1.1.1/32 ?
+  deny         Specify packets to reject
+  description  Prefix-list specific description
+  permit       Specify packets to forward
+  seq          sequence number of an entry
+
+R4(config)#ip prefix-list deny_lo_1.1.1.1/32 deny 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+*Dec 15 15:45:25.735: %SYS-5-CONFIG_I: Configured from console by consoleC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R4>en
+R4#show ip protocols
+*** IP Routing is NSF aware ***
+
+Routing Protocol is "application"
+  Sending updates every 0 seconds
+  Invalid after 0 seconds, hold down 0, flushed after 0
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Maximum path: 32
+  Routing for Networks:
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+  Distance: (default is 4)
+
+Routing Protocol is "rip"
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Outgoing routes will have 3 added to metric if on list acl_172_and_192_all_bkp/24
+  Sending updates every 30 seconds, next due in 6 seconds
+  Invalid after 180 seconds, hold down 180, flushed after 240
+  Redistributing: rip
+  Default version control: send version 2, receive version 2
+    Interface                           Send  Recv  Triggered RIP  Key-chain
+    Interface                           Send  Recv  Triggered RIP  Key-chain
+    GigabitEthernet0/0                  2     2          No        none            
+    GigabitEthernet0/1                  2     2          No        none            
+  Automatic network summarization is not in effect
+  Maximum path: 4
+  Routing for Networks:
+    10.0.0.0
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+    10.4.5.5             120      00:00:10
+    10.1.4.1             120      00:00:24
+  Distance: (default is 120)
+
+R4#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      1.0.0.0/32 is subnetted, 2 subnets
+R        1.1.1.1 [120/1] via 10.1.4.1, 00:00:05, GigabitEthernet0/0
+R        1.1.1.2 [120/1] via 10.1.4.1, 00:00:05, GigabitEthernet0/0
+      10.0.0.0/8 is variably subnetted, 8 subnets, 2 masks
+R        10.1.2.0/24 [120/1] via 10.1.4.1, 00:00:05, GigabitEthernet0/0
+R        10.1.3.0/24 [120/1] via 10.1.4.1, 00:00:05, GigabitEthernet0/0
+C        10.1.4.0/24 is directly connected, GigabitEthernet0/0
+L        10.1.4.4/32 is directly connected, GigabitEthernet0/0
+R        10.2.5.0/24 [120/1] via 10.4.5.5, 00:00:17, GigabitEthernet0/1
+R        10.3.5.0/24 [120/1] via 10.4.5.5, 00:00:17, GigabitEthernet0/1
+C        10.4.5.0/24 is directly connected, GigabitEthernet0/1
+L        10.4.5.4/32 is directly connected, GigabitEthernet0/1
+      172.16.0.0/24 is subnetted, 1 subnets
+R        172.16.0.0 [120/1] via 10.1.4.1, 00:00:05, GigabitEthernet0/0
+R     192.168.0.0/24 [120/1] via 10.4.5.5, 00:00:17, GigabitEthernet0/1
+R4#show ip rip database
+1.0.0.0/8    auto-summary
+1.1.1.1/32
+    [1] via 10.1.4.1, 00:00:22, GigabitEthernet0/0
+1.1.1.2/32
+    [1] via 10.1.4.1, 00:00:22, GigabitEthernet0/0
+10.0.0.0/8    auto-summary
+10.1.2.0/24
+    [1] via 10.1.4.1, 00:00:22, GigabitEthernet0/0
+10.1.3.0/24
+    [1] via 10.1.4.1, 00:00:22, GigabitEthernet0/0
+10.1.4.0/24    directly connected, GigabitEthernet0/0
+10.2.5.0/24
+    [1] via 10.4.5.5, 00:00:04, GigabitEthernet0/1
+10.3.5.0/24
+    [1] via 10.4.5.5, 00:00:04, GigabitEthernet0/1
+10.4.5.0/24    directly connected, GigabitEthernet0/1
+172.16.0.0/16    auto-summary
+172.16.0.0/24
+    [1] via 10.1.4.1, 00:00:22, GigabitEthernet0/0
+192.168.0.0/24    auto-summary
+192.168.0.0/24
+    [1] via 10.4.5.5, 00:00:04, GigabitEthernet0/1
+R4#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R4>
+R4>
+R4>
+R4>en
+R4#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      1.0.0.0/32 is subnetted, 2 subnets
+R        1.1.1.1 [120/1] via 10.1.4.1, 00:00:04, GigabitEthernet0/0
+R        1.1.1.2 [120/1] via 10.1.4.1, 00:00:04, GigabitEthernet0/0
+      10.0.0.0/8 is variably subnetted, 8 subnets, 2 masks
+R        10.1.2.0/24 [120/1] via 10.1.4.1, 00:00:04, GigabitEthernet0/0
+R        10.1.3.0/24 [120/1] via 10.1.4.1, 00:00:04, GigabitEthernet0/0
+C        10.1.4.0/24 is directly connected, GigabitEthernet0/0
+L        10.1.4.4/32 is directly connected, GigabitEthernet0/0
+R        10.2.5.0/24 [120/1] via 10.4.5.5, 00:00:09, GigabitEthernet0/1
+R        10.3.5.0/24 [120/1] via 10.4.5.5, 00:00:09, GigabitEthernet0/1
+C        10.4.5.0/24 is directly connected, GigabitEthernet0/1
+L        10.4.5.4/32 is directly connected, GigabitEthernet0/1
+      172.16.0.0/24 is subnetted, 1 subnets
+R        172.16.0.0 [120/1] via 10.1.4.1, 00:00:04, GigabitEthernet0/0
+R     192.168.0.0/24 [120/1] via 10.4.5.5, 00:00:09, GigabitEthernet0/1
+R4# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R4>
+R4>en
+R4#wr
+Building configuration...
+[OK]
+R4#
+*Dec 15 19:43:45.334: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Dec 15 19:43:46.219: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+R4#
+R4#
+R4#terminal length 0
+R4#more system:running-config
+!
+! Last configuration change at 15:45:25 UTC Tue Dec 15 2020
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R4
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ ip address 10.1.4.4 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 10.4.5.4 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router rip
+ version 2
+ offset-list acl_172_and_192_all_bkp/24 out 3
+ network 10.0.0.0
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ip access-list standard acl_172_and_192_all_bkp/24
+ permit 192.168.0.0 0.0.0.255
+ permit 172.16.0.0 0.0.0.255
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^CC
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
+
+R4#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+Connection closed by foreign host.
+spawn@mydebian:~/.ssh$ 
+

@@ -1,0 +1,1055 @@
+sw1#show run interface GigabitEthernet0/0  
+Building configuration...
+
+Current configuration : 218 bytes
+!
+interface GigabitEthernet0/0
+ switchport access vlan 200
+ switchport trunk allowed vlan 1,100,200
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 200
+ switchport mode trunk
+ negotiation auto
+end
+
+sw1#show show spanning-tree vlan 200
+          ^
+% Invalid input detected at '^' marker.
+
+sw1#show spanning-tree vlan 200     
+
+VLAN0200
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    20680
+             Address     5000.0003.0000
+             Cost        4
+             Port        5 (GigabitEthernet1/0)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32968  (priority 32768 sys-id-ext 200)
+             Address     5000.0001.0000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Gi0/0               Desg FWD 4         128.1    P2p 
+Gi0/1               Altn BLK 4         128.2    P2p 
+Gi0/2               Desg FWD 4         128.3    P2p 
+Gi1/0               Root FWD 4         128.5    P2p 
+
+
+sw1#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sw1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+sw1>Q
+sw1>Q
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sw1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+sw1>en
+sw1#sho ip int bri
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+sw1#sho ip int gi 0/1
+GigabitEthernet0/1 is up, line protocol is up
+  Inbound  access list is not set
+sw1#show run interface gi 0/1
+Building configuration...
+
+Current configuration : 156 bytes
+!
+interface GigabitEthernet0/1
+ switchport trunk allowed vlan 1,100,200
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+end
+
+sw1#show ?
+  aaa                Show AAA values
+  access-expression  List access expression
+  access-lists       List access lists
+  acircuit           Access circuit info
+  adjacency          Adjacent nodes
+  aliases            Display alias commands
+  alps               Alps information
+  ancp               ANCP information
+  apollo             Apollo network information
+  appletalk          AppleTalk information
+  application        Application Routing
+  arap               Show Appletalk Remote Access statistics
+  archive            Archive functions
+  arp                ARP table
+  async              Information on terminal lines used as router interfaces
+  authentication     Shows Auth Manager stats, registrations or sessions
+  auto               Show Automation Template
+  backup             Backup status
+  banner             Display banner information
+  beep               Show BEEP information
+  bfd                BFD protocol info
+  bgp                BGP information
+  bootvar            Boot and related environment variable
+  bridge             Bridge Forwarding/Filtering Database [verbose]
+  bridge-domain      Bridge-domain
+  bsc                BSC interface information
+  bstun              BSTUN interface information
+  buffers            Buffer pool statistics
+  caaa               Subscriber Policy Entity Information
+  cache              Shows Device-Sensor Cache Informations 
+  calendar           Display the hardware calendar
+  capability         Capability Information
+  cca                CCA information
+  cce                Common Classification Engine (CCE)
+  cdp                CDP information
+  cef                CEF address family independent status
+  cisp               Shows CISP information
+  class-map          Show CPL Class Map
+  clns               CLNS network information
+  clock              Display the system clock
+  cls                DLC user information
+  cns                CNS agents
+  compress           Show compression statistics
+  configuration      Contents of Non-Volatile memory
+  connection         Show Connection
+  controllers        Interface controller status
+  cops               COPS information
+  crypto             Encryption module
+  cts                Cisco Trusted Security information
+  dampening          Display dampening information 
+  data-corruption    Show data errors
+  debugging          State of each debugging option
+  decnet             DECnet information
+  derived-config     Derived operating configuration
+  device-sensor      Shows Device Sensor Information 
+  dhcp               Dynamic Host Configuration Protocol status
+  dialer             Dialer parameters and statistics
+  dlsw               Data Link Switching information
+  dnsix              Shows Dnsix/DMDP information
+  dot1q-tunnel       Display dot1q tunnel ports
+  dot1x              Dot1x information
+  drip               DRiP DB
+  dspu               Display DSPU information
+  dtp                DTP information
+  dxi                atm-dxi information
+  eap                Shows EAP registration/session information
+  eigrp              EIGRP show commands
+  energywise         EnergyWise show commands
+  entry              Queued terminal entries
+  epm                EPM information
+  errdisable         Error disable
+  etherchannel       EtherChannel information
+  ethernet           Ethernet parameters
+  event              Embedded event related commands
+  exception          exception informations
+  fallback           Display Fallback configuration
+  fhrp               FHRP information
+  file               Show filesystem information
+  flash0:            display information about flash0: file system
+  flash1:            display information about flash1: file system
+  flash2:            display information about flash2: file system
+  flash3:            display information about flash3: file system
+  flash:             display information about flash: file system
+  flow               Flow information
+  flow-sampler       Display the flow samplers configured
+  flowcontrol        show flow control information
+  format             Show format information
+  frame-relay        Frame-Relay information
+  fras               FRAS Information
+  fras-host          FRAS Host Information
+  funi               FUNI information
+  glbp               GLBP information
+  history            Display the session command history
+  hosts              IP domain-name, lookup style, nameservers, and host table
+  html               HTML helper commands
+  id-manager         ID pool manager
+  idb                List of Interface Descriptor Blocks
+  identity           Identity profiles and policies
+  if-mgr             if-mgr information
+  interfaces         Interface status and configuration
+  inventory          Show the physical inventory
+  ip                 IP information
+  ipc                Interprocess communications commands
+  ipv6               IPv6 information
+  isis               IS-IS routing information
+  kerberos           Show Kerberos Values
+  key                Key information
+  keymap             Terminal keyboard mappings
+  keystore           Show keystore information
+  kron               Kron Subsystem
+  l2                 Layer 2
+  l2protocol-tunnel  Display L2PT status and configurations
+  lacp               Port channel information
+  line               TTY line information
+  lisp               Locator/ID Separation Protocol
+  llc2               IBM LLC2 circuit information
+  lldp               LLDP information
+  lnm                IBM LAN manager
+  local-ack          Local Acknowledgement virtual circuits
+  location           Display the system location
+  logging            Show the contents of logging buffers
+  login              Display Secure Login Configurations and State
+  mab                MAB information
+  mac                MAC configuration
+  macdb              show MAC database
+  macsec             Shows MACSEC information
+  management         Display the management applications
+  mdns               MDNS feature
+  mediatrace         Mediatrace show commands
+  memory             Memory statistics
+  mfib               MFIB address family independent status
+  mka                MACsec Key Agreement (MKA) display
+  modemcap           Show Modem Capabilities database
+  monitor            Monitoring different system events
+  mpls               MPLS information
+  mtm                MTM
+  mvpn               Multicast VPN Information
+  nbf                NBF (NetBEUI) information
+  ncia               Native Client Interface Architecture
+  netbios-cache      NetBIOS name cache contents
+  netconf            Show NETCONF information
+  nmsp               nmsp show commands
+  ntp                Network time protocol
+  object-group       List object groups
+  odb                Opaque Database
+  odm-format         Show the schema used for ODM input file
+  onep               ONEP related commands
+  pagp               Port channel information
+  parameter-map      Show parameter map of type
+  parser             Display parser information
+  pas                Port Adaptor Information
+  pci                PCI Information
+  performance        Media Monitor show commands
+  persistent         Show persistent information
+  platform           Displays platform information
+  pm                 Show Port Manager commands
+  pnp                Display PNP information
+  policy-manager     Policy Manager
+  policy-map         Show Policy Map
+  port-security      Show secure port information
+  ppp                PPP parameters and statistics
+  pre                PRE show commands
+  privilege          Show current privilege level
+  processes          Active process statistics
+  protocols          Active network routing protocols
+  qos                Quality of Service show commands
+  queue              Show queue contents
+  queueing           Show queueing configuration
+  radius             Shows radius information
+  rate-limit stats   Show rate limit enforcement information
+  region             Region Manager Status
+  registry           Function registry information
+  reload             Scheduled reload information
+  resource           Resource group statistics
+  rhosts             Remote-host+user equivalences
+  rib                Routing Information Base
+  rif                RIF cache entries
+  route-map          route-map information
+  route-tag          route-tag information
+  rpl                RPL protocol status
+  running-config     Current operating configuration
+  sampler            Sampler information
+  sasl               show SASL information
+  scalable-queue     Scalable Queue statistics
+  sched-event        Scheduler event information
+  sdllc              Display sdlc - llc2 conversion information
+  service-routing    Service-Routing show commands
+  service-template   Show service-templates/identity policies
+  sessions           Information about Telnet connections
+  smf                Software MAC filter
+  smrp               Simple Multicast Routing Protocol (SMRP) information
+  sna                Display SNA host information
+  snapshot           Snapshot parameters and statistics
+  snmp               snmp statistics
+  sockets            Socket Details
+  software           List software information
+  source-bridge      Source-bridge parameters and statistics
+  spanning-tree      Spanning tree topology
+  ssh                Status of SSH server connections
+  ssm                Segment Switching Manager Status
+  stacks             Process stack utilization
+  standby            Hot Standby Router Protocol (HSRP) information
+  startup-config     Contents of startup configuration
+  stun               STUN status and configuration
+  subscriber         Subscriber Service Switch Information
+  subscriber-policy  Subscriber policy
+  subsys             Show subsystem information
+  table-map          Show Table Map
+  tacacs             Shows tacacs+ server statistics 
+  tarp               TARP information
+  tcp                Status of TCP connections
+  tech-support       Show system information for Tech-Support
+  template           Template information
+  terminal           Display terminal configuration parameters
+  test_rib_access    RIB_ACCESS TEST info
+  time-range         Time range
+  tn3270             TN3270 settings
+  topology           Topology instance information
+  trace              Show trace options
+  track              Tracking information
+  traffic-shape      traffic rate shaping configuration
+  translate          Protocol translation information
+  ttycap             Terminal capability tables
+  tunnel             Show configured tunnels
+  udld               UDLD information
+  udp                UDP Details
+  users              Display information about terminal lines
+  version            System hardware and software status
+  vfi                Virtual Forwarding Instance information
+  vines              VINES information
+  vlan               VTP VLAN status
+  vlans              Virtual LANs Information
+  vnet               Virtual NETwork instance information
+  vrf                VPN Routing/Forwarding instance information
+  vrrp               VRRP information
+  vtemplate          Virtual Template interface information
+  vtp                VTP information
+  wccp               WCCP information
+  whoami             Info on current tty line
+  wsma               Show Web Services Management Agents information
+  x25                X.25 information
+  x29                X.29 information
+  xconnect           xconnect information
+  xos                Cross-OS Library Information and Traces
+  xsd-format         Show the ODM XSD for the command
+
+sw1#show spanning-tree vlan 100
+
+VLAN0100
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    20580
+             Address     5000.0003.0000
+             Cost        4
+             Port        5 (GigabitEthernet1/0)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32868  (priority 32768 sys-id-ext 100)
+             Address     5000.0001.0000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Gi0/0               Desg FWD 4         128.1    P2p 
+Gi0/1               Altn BLK 4         128.2    P2p 
+Gi0/2               Desg FWD 4         128.3    P2p 
+Gi1/0               Root FWD 4         128.5    P2p 
+
+
+sw1#show spanning-tree vlan 200
+
+VLAN0200
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    20680
+             Address     5000.0003.0000
+             Cost        4
+             Port        5 (GigabitEthernet1/0)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32968  (priority 32768 sys-id-ext 200)
+             Address     5000.0001.0000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Gi0/0               Desg FWD 4         128.1    P2p 
+Gi0/1               Altn BLK 4         128.2    P2p 
+Gi0/2               Desg FWD 4         128.3    P2p 
+Gi1/0               Root FWD 4         128.5    P2p 
+
+
+sw1#show mac ?
+  access-group   MAC access-group
+  address-table  MAC forwarding table
+
+sw1#show mac address-table ?
+  address     Address to lookup in the table
+  aging-time  MAC address table aging parameters
+  count       Number of MAC addresses in the table
+  dynamic     List dynamic MAC addresses
+  interface   List MAC adresses on a specific interface
+  multicast   List multicast MAC addresses
+  secure      List secure MAC addresses
+  static      List static MAC addresses
+  vlan        List MAC addresses on a specific vlan
+  |           Output modifiers
+  <cr>
+
+sw1#show mac address-table vlan 100
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+ 100    5000.0003.0004    DYNAMIC     Gi1/0
+Total Mac Addresses for this criterion: 1
+sw1#show mac address-table interface gi 0/2
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+   1    5000.0007.0000    DYNAMIC     Gi0/2
+Total Mac Addresses for this criterion: 1
+sw1#show mac address-table                 
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+   1    5000.0003.0004    DYNAMIC     Gi1/0
+   1    5000.0007.0000    DYNAMIC     Gi0/2
+ 100    5000.0003.0004    DYNAMIC     Gi1/0
+ 200    5000.0003.0004    DYNAMIC     Gi1/0
+Total Mac Addresses for this criterion: 4
+sw1#show mac address-table
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+   1    5000.0003.0004    DYNAMIC     Gi1/0
+   1    5000.0007.0000    DYNAMIC     Gi0/2
+ 100    0050.7966.6806    DYNAMIC     Gi1/0
+ 100    5000.0003.0004    DYNAMIC     Gi1/0
+ 100    5000.0007.0000    DYNAMIC     Gi0/2
+ 200    0050.7966.6804    DYNAMIC     Gi0/0
+ 200    5000.0003.0004    DYNAMIC     Gi1/0
+ 200    5000.0007.0000    DYNAMIC     Gi0/2
+Total Mac Addresses for this criterion: 8
+sw1#show mac address-table
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+   1    5000.0003.0004    DYNAMIC     Gi1/0
+   1    5000.0007.0000    DYNAMIC     Gi0/2
+ 100    0050.7966.6806    DYNAMIC     Gi1/0
+ 100    5000.0003.0004    DYNAMIC     Gi1/0
+ 100    5000.0007.0000    DYNAMIC     Gi0/2
+ 200    0050.7966.6804    DYNAMIC     Gi0/0
+ 200    5000.0003.0004    DYNAMIC     Gi1/0
+ 200    5000.0007.0000    DYNAMIC     Gi0/2
+Total Mac Addresses for this criterion: 8
+sw1#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sw1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+sw1>
+sw1>
+sw1>en
+sw1#show int ip gi 0/1
+              ^
+% Invalid input detected at '^' marker.
+
+sw1#show ip int gi 0/1
+GigabitEthernet0/1 is up, line protocol is up
+  Inbound  access list is not set
+sw1#show int gi 0/1
+GigabitEthernet0/1 is up, line protocol is up (connected) 
+  Hardware is iGbE, address is 5000.0001.0001 (bia 5000.0001.0001)
+  MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Auto Duplex, Auto Speed, link type is auto, media type is RJ45
+  output flow-control is unsupported, input flow-control is unsupported
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:01, output 00:00:12, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/0 (size/max)
+  5 minute input rate 1000 bits/sec, 2 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     360449 packets input, 23903337 bytes, 0 no buffer
+     Received 0 broadcasts (0 multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 watchdog, 0 multicast, 0 pause input
+     28970 packets output, 3102344 bytes, 0 underruns
+     0 output errors, 0 collisions, 2 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier, 0 pause output
+     0 output buffer failures, 0 output buffers swapped out
+sw1#show run
+sw1#show running-config 
+Building configuration...
+
+Current configuration : 3394 bytes
+!
+! Last configuration change at 21:31:34 UTC Sun Dec 6 2020
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname sw1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!         
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+interface GigabitEthernet0/0
+ switchport access vlan 200
+ switchport trunk allowed vlan 1,100,200
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 200
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk allowed vlan 1,100,200
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk allowed vlan 1,100,200
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ switchport trunk allowed vlan 1,100,200
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+sw1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+sw1(config)#spann
+sw1(config)#spanning-tree vlan 200 ?
+  forward-time  Set the forward delay for the spanning tree
+  hello-time    Set the hello interval for the spanning tree
+  max-age       Set the max age interval for the spanning tree
+  priority      Set the bridge priority for the spanning tree
+  root          Configure switch as root
+  <cr>
+
+sw1(config)#spanning-tree vlan 200 port
+sw1(config)#spanning-tree vlan 200 port-pr
+sw1(config)#spanning-tree vlan 200 port-pr
+sw1(config)#spanning-tree vlan 200 ?      
+  forward-time  Set the forward delay for the spanning tree
+  hello-time    Set the hello interval for the spanning tree
+  max-age       Set the max age interval for the spanning tree
+  priority      Set the bridge priority for the spanning tree
+  root          Configure switch as root
+  <cr>
+
+sw1(config)#show spanning-tree vlan 200  
+              ^
+% Invalid input detected at '^' marker.
+
+sw1(config)#exit
+sw1#
+*Dec  8 19:48:17.027: %SYS-5-CONFIG_I: Configured from console by consoleshow spanning-tree vlan 200
+
+VLAN0200
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    20680
+             Address     5000.0003.0000
+             Cost        4
+             Port        5 (GigabitEthernet1/0)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32968  (priority 32768 sys-id-ext 200)
+             Address     5000.0001.0000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Gi0/0               Desg FWD 4         128.1    P2p 
+Gi0/1               Altn BLK 4         128.2    P2p 
+Gi0/2               Desg FWD 4         128.3    P2p 
+Gi1/0               Root FWD 4         128.5    P2p 
+
+
+sw1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+sw1(config)#span
+sw1(config)#spanning-tree ?
+  backbonefast  Enable BackboneFast Feature
+  bridge        STP Bridge Assurance parameters
+  etherchannel  Spanning tree etherchannel specific configuration
+  extend        Spanning Tree 802.1t extensions
+  logging       Enable Spanning tree logging
+  loopguard     Spanning tree loopguard options
+  mode          Spanning tree operating mode
+  mst           Multiple spanning tree configuration
+  pathcost      Spanning tree pathcost options
+  portfast      Spanning tree portfast options
+  transmit      STP transmit parameters
+  uplinkfast    Enable UplinkFast Feature
+  vlan          VLAN Switch Spanning Tree
+
+sw1(config)#int gi 1/0    
+sw1(config-if)#span
+sw1(config-if)#spanning-tree ?
+  bpdufilter     Don't send or receive BPDUs on this interface
+  bpduguard      Don't accept BPDUs on this interface
+  cost           Change an interface's spanning tree port path cost
+  guard          Change an interface's spanning tree guard mode
+  link-type      Specify a link type for spanning tree protocol use
+  mst            Multiple spanning tree
+  port-priority  Change an interface's spanning tree port priority
+  portfast       Portfast options for the interface
+  vlan           VLAN Switch Spanning Tree
+
+sw1(config-if)#spanning-tree guard root
+sw1(config-if)#
+*Dec  8 19:59:07.615: %SPANTREE-2-ROOTGUARD_CONFIG_CHANGE: Root guard enabled on port GigabitEthernet1/0.
+*Dec  8 19:59:07.942: %SPANTREE-2-ROOTGUARD_BLOCK: Root guard blocking port GigabitEthernet1/0 on VLAN0001.
+sw1(config-if)#exit
+sw1(config)#exit
+sw1#
+*Dec  8 20:01:02.095: %SYS-5-CONFIG_I: Configured from console by consoleshow spanning-tree vlan 200
+
+VLAN0200
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    20680
+             Address     5000.0003.0000
+             Cost        8
+             Port        2 (GigabitEthernet0/1)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32968  (priority 32768 sys-id-ext 200)
+             Address     5000.0001.0000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Gi0/0               Desg FWD 4         128.1    P2p 
+Gi0/1               Root FWD 4         128.2    P2p 
+Gi0/2               Desg FWD 4         128.3    P2p 
+Gi1/0               Desg BKN*4         128.5    P2p *ROOT_Inc 
+
+
+sw1#show mac address-table
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+   1    5000.0002.0001    DYNAMIC     Gi0/1
+   1    5000.0007.0000    DYNAMIC     Gi0/2
+ 100    5000.0002.0001    DYNAMIC     Gi0/1
+ 200    5000.0002.0001    DYNAMIC     Gi0/1
+Total Mac Addresses for this criterion: 4
+sw1#show mac address-table
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+   1    5000.0002.0001    DYNAMIC     Gi0/1
+   1    5000.0007.0000    DYNAMIC     Gi0/2
+ 100    0050.7966.6806    DYNAMIC     Gi0/1
+ 100    5000.0002.0001    DYNAMIC     Gi0/1
+ 100    5000.0007.0000    DYNAMIC     Gi0/2
+ 200    0050.7966.6804    DYNAMIC     Gi0/0
+ 200    5000.0002.0001    DYNAMIC     Gi0/1
+ 200    5000.0007.0000    DYNAMIC     Gi0/2
+Total Mac Addresses for this criterion: 8
+sw1#show spanning-tree vlan 100
+
+VLAN0100
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    20580
+             Address     5000.0003.0000
+             Cost        8
+             Port        2 (GigabitEthernet0/1)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32868  (priority 32768 sys-id-ext 100)
+             Address     5000.0001.0000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Gi0/0               Desg FWD 4         128.1    P2p 
+Gi0/1               Root FWD 4         128.2    P2p 
+Gi0/2               Desg FWD 4         128.3    P2p 
+Gi1/0               Desg BKN*4         128.5    P2p *ROOT_Inc 
+
+
+sw1#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sw1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+sw1>
+sw1>
+sw1>en
+sw1#show spanning-tree vlan 100
+
+VLAN0100
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    20580
+             Address     5000.0003.0000
+             Cost        8
+             Port        2 (GigabitEthernet0/1)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32868  (priority 32768 sys-id-ext 100)
+             Address     5000.0001.0000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Gi0/0               Desg FWD 4         128.1    P2p 
+Gi0/1               Root FWD 4         128.2    P2p 
+Gi0/2               Desg FWD 4         128.3    P2p 
+Gi1/0               Desg BKN*4         128.5    P2p *ROOT_Inc 
+
+
+sw1#show spanning-tree vlan 200
+
+VLAN0200
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    20680
+             Address     5000.0003.0000
+             Cost        8
+             Port        2 (GigabitEthernet0/1)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32968  (priority 32768 sys-id-ext 200)
+             Address     5000.0001.0000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Gi0/0               Desg FWD 4         128.1    P2p 
+Gi0/1               Root FWD 4         128.2    P2p 
+Gi0/2               Desg FWD 4         128.3    P2p 
+Gi1/0               Desg BKN*4         128.5    P2p *ROOT_Inc 
+
+
+sw1#wr
+Building configuration...
+Compressed configuration from 3420 bytes to 1623 bytes[OK]
+sw1#
+*Dec  8 20:43:59.752: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Dec  8 20:44:00.566: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+sw1#Connection closed by foreign host.
+spawn@mydebian:~$ 
+
