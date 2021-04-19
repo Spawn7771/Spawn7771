@@ -1,0 +1,60 @@
+stages:
+  - build
+  - test
+  - deploy
+
+
+
+image: busybox:latest
+
+before_script:
+  - echo "Before script section"
+  - echo "For example you might run an update here or install a build dependency"
+  - echo "Or perhaps you might print out some debugging details"
+
+after_script:
+  - echo "After script section"
+  - echo "For example you might do some cleanup here"
+
+build1:
+  stage: build
+  script:
+    - echo "Do your build here"
+    - echo "one" >> house.txt
+    - echo "two" >> house.txt
+    - echo "404 PAGE NOT FOUND" >> 404.html
+  artifacts:
+    paths:
+      - house.txt
+      - 404.html
+    expire_in: 1 week
+
+test1:
+  stage: test
+  script:
+    - echo "Do a test here"
+    - grep "one" house.txt
+
+test2:
+  stage: test
+  script:
+    - echo "Do another parallel test here"
+    - grep "two" house.txt
+
+deploy1:
+  stage: deploy
+  script:
+    - echo "Do your deploy here!"
+
+pages:
+  stage: deploy
+  script:
+    - mkdir public
+    - cp house.txt public/index.html
+    - cp 404.html public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+

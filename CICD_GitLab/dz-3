@@ -1,0 +1,126 @@
+stages:
+  - cancel
+  - stop previous jobs
+  - new job
+  - sleep
+  - build
+  - test
+  - deploy
+  - stop
+
+image: everpeace/curl-jq
+
+cancel:
+  stage: stop previous jobs
+  script: |
+    if [ "$CI_COMMIT_REF_NAME" != "master" ]; then echo "Cancel old pipelines from the same branch except last";OLD_PIPELINES=$( curl -s -H "PRIVATE-TOKEN: ${RUNNER_TOKEN}" "https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/pipelines?ref=${CI_COMMIT_REF_NAME}&status=running" | jq '.[] | .id' | tail -n +2 ); for pipeline in ${OLD_PIPELINES}; do echo "Killing ${pipeline}";curl -s --request POST -H "PRIVATE-TOKEN: ${RUNNER_TOKEN}" "https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/pipelines/${pipeline}/cancel";done || echo "Canceling old pipelines (${OLD_PIPELINES}) failed"; fi
+
+    
+
+sleep:
+  stage: new job
+  script:
+      - sleep 10
+
+
+build1:
+  stage: build
+  script:
+    - echo "build1"
+    
+test1:
+  stage: test
+  script:
+    - echo "test1"
+
+deploy to stage:
+  stage: deploy
+  variables:
+      TARGET_ENV: staging
+      MyLogin: stage
+  script:
+    - echo "Do your deploy here to ${TARGET_ENV}"
+    - echo user ${DB_USER} pass ${DB_PASSWORD}
+    - echo ${MyLogin}
+    - echo ${MyPassword}
+  only:
+    - master
+  environment:
+    name: staging
+    on_stop: stop to staging
+    auto_stop_in: 1 day
+
+stop to staging:
+  stage: stop
+  variables:
+    TARGET_ENV: staging
+  script:
+    - echo "STOP ${TARGET_ENV}"
+  only:
+    - master
+  when: manual
+  environment:
+    name: staging
+    action: stop
+
+deploy to preprod:
+  stage: deploy
+  variables:
+      TARGET_ENV: preprod
+      MyLogin: preprod
+  script:
+    - echo "Do your deploy here to ${TARGET_ENV}"
+    - echo ${MyLogin}
+    - echo ${MyPassword}
+    #- echo user ${DB_USER} pass ${DB_PASSWORD}
+  only:
+    - master
+  #when: manual
+  environment:
+    name: preprod
+    on_stop: stop to preprod
+
+stop to preprod:
+  stage: stop
+  variables:
+    TARGET_ENV: preprod
+  script:
+    - echo "STOP ${TARGET_ENV}"
+  only:
+    - master
+  when: manual
+  environment:
+    name: preprod
+    action: stop
+
+deploy to production:
+  stage: deploy
+  variables:
+      TARGET_ENV: production
+      MyLogin: prod
+  script:
+    - echo "Do your deploy here to ${TARGET_ENV}"
+    - echo user ${DB_USER} pass ${DB_PASSWORD}
+    - echo ${MyLogin}
+    - echo ${MyPassword}
+
+  only:
+    - master
+  when: manual
+  environment:
+    name: production
+    on_stop: stop to production
+
+stop to production:
+  stage: stop
+  variables:
+    TARGET_ENV: prod
+  script:
+    - echo "STOP ${TARGET_ENV}"
+  only:
+    - master
+  when: manual
+  environment:
+    name: production
+    action: stop
+
