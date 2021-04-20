@@ -1,0 +1,124 @@
+1) Запустите файл lab1.sh (~#./lab1.sh) Проблема. Пользователь vasya не в может удалить файл trash в home директории. Попробуйте помочь ей с этим
+
+Видим что файл создан от root:
+
+[vasya@localhost ~]$ ls -la
+total 12
+drwx------. 2 vasya vasya  75 Nov 10 16:12 .
+drwxr-xr-x. 6 root  root  200 Nov 10 16:12 ..
+-rw-r--r--. 1 vasya vasya  18 Mar 31  2020 .bash_logout
+-rw-r--r--. 1 vasya vasya 193 Mar 31  2020 .bash_profile
+-rw-r--r--. 1 vasya vasya 231 Mar 31  2020 .bashrc
+-rw-r--r--. 1 root  root    0 Nov 10 16:12 trash
+
+Видим что устанновлен immutable атрибут:
+
+[vasya@localhost ~]$ lsattr trash 
+----i----------- trash
+
+Решение:
+
+Убираем immutable атрибут:
+
+[root@localhost vasya]# chattr -i trash 
+
+Делаем пользователя владельцем файла:
+
+[root@localhost vasya]# chown vasya:vasya trash 
+
+2) Запустите файл lab2.sh (~#./lab2.sh) Пользователи жалуются, что не в состоянии анонимно загрузить файл (например /etc/hosts) на FTP сервер в pub директорию. Попробуйте проанализировать проблему и ее решить. Для эмуляции подключающихся анонимных клиентов можно использовать утилиту lftp и, находясь на ftp сервере, подключиться на localhost:
+
+[root@localhost audit]# getenforce 
+Enforcing
+[root@localhost audit]# setenforce 0
+[root@localhost audit]# getenf
+bash: getenf: command not found
+[root@localhost audit]# getenforce 
+Permissive
+
+Проверяем - не работает, значит не SELINUX, а скорее всего настройка vsftpd или права на папку
+
+man 5 vsftpd.conf - читаем man, ниже выдержка о том, что должно быть сделано чтобы анонимный клиент смог залить папку 
+
+anon_upload_enable
+                # Uncomment this to allow the anonymous FTP user to upload files. This only
+		# has an effect if the above global write enable is activated. Also, you will
+		# obviously need to create a directory writable by the FTP user.
+		# When SELinux is enforcing check for SE bool allow_ftpd_anon_write, allow_ftpd_full_access
+
+              Default: NO
+
+У нас стояло write_enable=YES ()
+and the anonymous ftp user must have write permission on desired upload locations - как раз этого права не было для всех
+
+drwxr-xr-x.  2 root root  19 Nov 10 18:10 pub
+ 
+
+[root@localhost ftp]# chmod a+w ./pub/
+
+drwxrwxrwx.  2 root root  19 Nov 10 18:10 pub
+
+
+
+заработало при SELINUX=Permissive
+lftp localhost:/pub> put /etc/hosts
+158 байтов перемещено
+
+Включаем SELINUX=Enforcing и видим что работать перестало
+
+Но мы помним что также было вот это: 
+
+# When SELinux is enforcing check for SE bool allow_ftpd_anon_write, allow_ftpd_full_access
+
+Но давайте это проверим:
+
+снова перестало работать, и вот что мы видем в логе:
+
+type=AVC msg=audit(1605051099.239:1124): avc:  denied  { write } for  pid=32156 comm="vsftpd" name="pub" dev="dm-0" ino=33607099 scontext=system_u:system_r:ftpd_t:s0-s0:c0.c1023 tcontext=system_u:object_r:public_content_t:s0 tclass=dir permissive=0
+type=SYSCALL msg=audit(1605051099.239:1124): arch=c000003e syscall=2 success=no exit=-13 a0=55e39db5ba50 a1=4c1 a2=1b6 a3=5fab22db items=0 ppid=32154 pid=32156 auid=4294967295 uid=14 gid=50 euid=14 suid=14 fsuid=14 egid=50 sgid=50 fsgid=50 tty=(none) ses=4294967295 comm="vsftpd" exe="/usr/sbin/vsftpd" subj=system_u:system_r:ftpd_t:s0-s0:c0.c1023 key=(null)
+type=PROCTITLE msg=audit(1605051099.239:1124): proctitle=2F7573722F7362696E2F767366747064002F6574632F7673667470642F7673667470642E636F6E66
+
+видим что произошел denied vsftpd на pub dir
+
+
+ставим semange (для установки и применения политик) и sealert (для просмотра сообщений)
+
+[root@localhost var]# sealert -l 224ad082-0ec7-4b05-bf5e-685f906e1471
+SELinux запрещает vsftpd доступ write к каталог pub.
+
+*****  Модуль allow_anon_write предлагает (точность 53.1)  *******************
+
+Если вы хотите разрешить vsftpd, чтобы иметь возможность писать в общий публичный контент
+То необходимо изменить метку pub на public_content_rw_t и, возможно, установить переменную allow_httpd_sys_script_anon_write.
+Сделать
+# semanage fcontext -a -t public_content_rw_t pub
+# restorecon -R -v pub
+# setsebool -P allow_ftpd_anon_write 1
+
+*****  Модуль catchall_boolean предлагает (точность 42.6)  *******************
+
+Если хотите allow ftpd to full access
+То вы должны сообщить SELinux об этом, включив переключатель «ftpd_full_access».
+
+Сделать
+setsebool -P ftpd_full_access 1
+
+*****  Модуль catchall предлагает (точность 5.76)  *************************
+
+собственно это и сделали :
+
+[root@localhost ftp]# semanage fcontext -a -t public_content_rw_t pub
+[root@localhost ftp]# restorecon -R -v pub
+[root@localhost ftp]# setsebool -P allow_ftpd_anon_write 1
+[root@localhost ftp]# setsebool -P ftpd_full_access 1
+
+и заработало:
+
+lftp localhost:/pub> put /etc/hosts
+158 bytes transferred
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+Задание:
+
+Научиться пользоваться journalctl. Выбрать диапазон логов, например за вчера и посмотреть на них
+Выбрать какой-то определенный systemd unit (например sshd) и посмотреть на логи для него.
+Сделать так, чтобы journal логи сохранялись после ребута
+Посмотреть контент файлов внутри /var/log директории. 
+
+
+Все сделал, более менее разобрался. Для того чтобы журнал сохранялся после перезагрузки, изменил настройку Storage=persistent в файле конфигурации /etc/systemd/journald.conf. Проверил действительно сохраняется.
+
+Query the systemd journal.
+
+    Show all messages from this boot:
+    journalctl -b
+
+    Show all messages from last boot:
+    journalctl -b -1
+
+    Follow new messages (like tail -f for traditional syslog):
+    journalctl -f
+
+    Show all messages by a specific unit:
+    journalctl -u { { unit}}
+
+    Filter messages within a time range (either timestamp or placeholders like "yesterday"):
+    journalctl --since { { now|today|yesterday|tomorrow}} --until { { YYYY-MM-DD HH:MM:SS}}
+
+    Show all messages by a specific process:
+    journalctl _PID={ { pid}}
+
+    Show all messages by a specific executable:
+    journalctl { { path/to/executable}}
+
+

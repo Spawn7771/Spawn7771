@@ -1,0 +1,22 @@
+информация по systemd
+https://habr.com/ru/company/southbridge/blog/255845/
+http://promaster.top/kak-upravljat-servisami-i-moduljami-039-systemd-039-s-pomoshhju-039-systemctl-039-v-linux/
+
+Задание:
+
+Скачайте архив в котором файл lesson2.sh
+Не смотрите содержимое файла, иначе чинить будет не так интенесно
+Загрузите файл на вашу виртуалку с linux (scp или winscp вам в помощь)
+Сделайте файл исполняемым (~# chmod +x lesson2.sh)
+Запустите файл от рута (~# ./lesson2.sh)
+Почините сломанный сервис (изменять unit sshd, переустанавливать ssh сервер, создавать новый sshd.service unit нельзя)
+Перезагрузите операционную систему и убедитесь, что сервис все еще работает.
+Сделайте рестарт серввису и убедитесь, что он продолжает работать после рестарта
+
+Решение:
+
+Сделал. Включил в автозагрузку vsftpd (systemctl enable vsftpd). Пришлось еще помучиться с паролем root. В итоге все получилось, но я столкнулся с одной странностью, даже в режиме восстановления (через init=/bin/bash) при смене root пароля, не получалось войти после перезагрузки, и только когда отключил SELinux=disabled - все получилось. 
+
+https://www.unixmen.com/reset-root-password-centos-7/
+
+touch /.autorelabel - Update selinux information - это нужно делать после смены пароля root в recue mode

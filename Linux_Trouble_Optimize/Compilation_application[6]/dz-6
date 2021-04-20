@@ -1,0 +1,202 @@
+Запускаем скрипт lab2.sh , после чего пробуем запустить программу nmap -sn 8.8.8.0/24. Определите в чем проблема и почините
+
+Решение:
+
+---------------
+
+rpm -Va (увидел что файлик библиотеки missing):
+
+[root@localhost hw-6]# rpm -Va
+missing     /usr/lib64/libpcap.so.1
+missing     /usr/lib64/libpcap.so.1.5.3
+S.5....T.  c /etc/vsftpd/vsftpd.conf
+.M.......    /var/ftp/pub
+.......T.  c /etc/yum/pluginconf.d/versionlock.list
+....L....  c /etc/pam.d/fingerprint-auth
+....L....  c /etc/pam.d/password-auth
+....L....  c /etc/pam.d/postlogin
+....L....  c /etc/pam.d/smartcard-auth
+....L....  c /etc/pam.d/system-auth
+S.5....T.  c /etc/systemd/journald.conf
+S.5....T.  c /etc/sysconfig/authconfig
+
+попробовал поставить библиотку через yum, увидел что он пропцщен Excluded в versionlock.
+
+посмотрел 
+
+yum versionlock list (/etc/yum/pluginconf.d/versionlock.list)
+
+и действительно там был рестриктед на библиотеку
+
+
+
+yum versionlock clear - очистил
+
+видно что файликов не было по путям 
+
+missing     /usr/lib64/libpcap.so.1
+missing     /usr/lib64/libpcap.so.1.5.3
+
+зато были 32битные, но они нам не подходили:
+
+find / -name libpcap*
+/usr/lib/libpcap.so.1
+/usr/lib/libpcap.so.1.5.3
+/usr/share/doc/libpcap-1.5.3
+
+
+---------------
+
+посмотрел что за пакет поставил libpcap.so.1:
+
+root@localhost pluginconf.d]# rpm -qf /usr/lib/libpcap.so.1
+libpcap-1.5.3-12.el7.i686
+
+
+---------------
+
+посмотрел что предоставляет yum для libpcap
+
+[root@localhost pluginconf.d]# yum provides libpcap
+Загружены модули: fastestmirror, versionlock
+Loading mirror speeds from cached hostfile
+ * base: mirrors.datahouse.ru
+ * extras: mirrors.datahouse.ru
+ * updates: mirror.axelname.ru
+14:libpcap-1.5.3-12.el7.i686 : A system-independent interface for user-level packet capture
+Источник: base
+
+14:libpcap-1.5.3-12.el7.x86_64 : A system-independent interface for user-level packet capture
+Источник: base
+
+14:libpcap-1.5.3-12.el7.x86_64 : A system-independent interface for user-level packet capture
+Источник: @base
+
+14:libpcap-1.5.3-12.el7.i686 : A system-independent interface for user-level packet capture
+Источник: @base
+
+
+---------------
+
+пробуем ставить 64 пакет, как раз там содержатся необходимые нам библиотеки:
+
+[root@localhost pluginconf.d]# yum install libpcap-1.5.3-12.el7.x86_64 
+Загружены модули: fastestmirror, versionlock
+Loading mirror speeds from cached hostfile
+ * base: mirrors.datahouse.ru
+ * extras: mirrors.datahouse.ru
+ * updates: mirror.axelname.ru
+Пакет 14:libpcap-1.5.3-12.el7.x86_64 уже установлен, и это последняя версия.
+Выполнять нечего
+
+---------------
+
+тогда удаляем и ставим заново:
+
+[root@localhost pluginconf.d]# yum remove libpcap-1.5.3-12.el7.x86_64 
+Загружены модули: fastestmirror, versionlock
+Разрешение зависимостей
+--> Проверка сценария
+---> Пакет libpcap.x86_64 14:1.5.3-12.el7 помечен для удаления
+--> Обработка зависимостей: libpcap.so.1()(64bit) пакета: 14:tcpdump-4.9.2-4.el7_7.1.x86_64
+--> Обработка зависимостей: libpcap.so.1()(64bit) пакета: 14:libpcap-devel-1.5.3-12.el7.x86_64
+--> Обработка зависимостей: libpcap.so.1()(64bit) пакета: 2:nmap-ncat-6.40-19.el7.x86_64
+--> Обработка зависимостей: libpcap.so.1()(64bit) пакета: 2:nmap-6.40-19.el7.x86_64
+--> Проверка сценария
+---> Пакет libpcap-devel.x86_64 14:1.5.3-12.el7 помечен для удаления
+---> Пакет nmap.x86_64 2:6.40-19.el7 помечен для удаления
+---> Пакет nmap-ncat.x86_64 2:6.40-19.el7 помечен для удаления
+---> Пакет tcpdump.x86_64 14:4.9.2-4.el7_7.1 помечен для удаления
+--> Проверка зависимостей окончена
+
+Зависимости определены
+
+==============================================================================================================================================================================================
+ Package                                         Архитектура                              Версия                                                Репозиторий                             Размер
+==============================================================================================================================================================================================
+Удаление:
+ libpcap                                         x86_64                                   14:1.5.3-12.el7                                       @base                                   317 k
+Удаление зависимостей:
+ libpcap-devel                                   x86_64                                   14:1.5.3-12.el7                                       @base                                   163 k
+ nmap                                            x86_64                                   2:6.40-19.el7                                         @base                                    16 M
+ nmap-ncat                                       x86_64                                   2:6.40-19.el7                                         @base                                   423 k
+ tcpdump                                         x86_64                                   14:4.9.2-4.el7_7.1                                    @base                                   1.0 M
+
+Итого за операцию
+==============================================================================================================================================================================================
+Удалить  1 пакет (+4 зависимых)
+
+Объем изменений: 18 M
+Продолжить? [y/N]: y
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Удаление    : 14:libpcap-devel-1.5.3-12.el7.x86_64                                                                                                                                      1/5 
+  Удаление    : 2:nmap-6.40-19.el7.x86_64                                                                                                                                                 2/5 
+  Удаление    : 2:nmap-ncat-6.40-19.el7.x86_64                                                                                                                                            3/5 
+  Удаление    : 14:tcpdump-4.9.2-4.el7_7.1.x86_64                                                                                                                                         4/5 
+  Удаление    : 14:libpcap-1.5.3-12.el7.x86_64                                                                                                                                            5/5 
+предупреждение: file /usr/lib64/libpcap.so.1.5.3: remove failed: Нет такого файла или каталога
+предупреждение: file /usr/lib64/libpcap.so.1: remove failed: Нет такого файла или каталога
+  Проверка    : 14:libpcap-devel-1.5.3-12.el7.x86_64                                                                                                                                      1/5 
+  Проверка    : 2:nmap-ncat-6.40-19.el7.x86_64                                                                                                                                            2/5 
+  Проверка    : 2:nmap-6.40-19.el7.x86_64                                                                                                                                                 3/5 
+  Проверка    : 14:libpcap-1.5.3-12.el7.x86_64                                                                                                                                            4/5 
+  Проверка    : 14:tcpdump-4.9.2-4.el7_7.1.x86_64                                                                                                                                         5/5 
+
+Удалено:
+  libpcap.x86_64 14:1.5.3-12.el7                                                                                                                                                              
+
+Удалены зависимости:
+  libpcap-devel.x86_64 14:1.5.3-12.el7                nmap.x86_64 2:6.40-19.el7                nmap-ncat.x86_64 2:6.40-19.el7                tcpdump.x86_64 14:4.9.2-4.el7_7.1      
+
+
+
+
+yum install libpcap-1.5.3-12.el7.x86_64 libpcap-devel.x86_64
+
+
+---------------
+
+после видим что в необходимой нам папке появились библиотеки
+
+[root@localhost pluginconf.d]# /usr/lib64/libpcap.so
+libpcap.so        libpcap.so.1      libpcap.so.1.5.3  
+
+---------------
+
+проверил rpm -Va показал что missing'ов больше нет
+
+S.5....T.  c /etc/vsftpd/vsftpd.conf
+.M.......    /var/ftp/pub
+.......T.  c /etc/yum/pluginconf.d/versionlock.list
+....L....  c /etc/pam.d/fingerprint-auth
+....L....  c /etc/pam.d/password-auth
+....L....  c /etc/pam.d/postlogin
+....L....  c /etc/pam.d/smartcard-auth
+....L....  c /etc/pam.d/system-auth
+S.5....T.  c /etc/systemd/journald.conf
+S.5....T.  c /etc/sysconfig/authconfig
+
+---------------
+
+установил/запустил nmap и заработало
+
+nmap -sn 8.8.8.0/24      
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2020-11-19 05:49 EST
+
+
+
+
+
+
+
+Запускаем скрипт lab3.sh (в отдельной вкладке либо как бэкграунд процесс) и подождите несколько минут. Найдите приложение, у которого утекает память.
+Попробуйте проанализировать его при помощи valgrind. При наличии у вас достаточного времени дождитесь пока память не кончится совсем и посмотрите в логах операционной системы что происходит.
+
+Решение:
+
+Программа у которой утекает память memory нашел изначально через top отсортировав по памяти и понаблюдав за столбцом VIRT. Посмотрел valgrind-ом, видно что программа теряет память definitely lost. Все что нашел в скриншотах.
