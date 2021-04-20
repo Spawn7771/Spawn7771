@@ -1,4 +1,3 @@
-Almost Full GB course DZ
 ### Hello Friends! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 <a href="https://vk.com/id976986">
   <img align="left" alt="VKontakte" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/vk.svg" />
